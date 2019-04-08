@@ -1,0 +1,42 @@
+git本地库的使用：
+---安装好git本地库之后，随便在某个文件中进入Git Base这里
+1、先使用mkdir创建一个文件 mkdir dirGit
+
+2、cd 进入文件并初始化本地库  cd dirGit
+
+
+3、对本地库进行初始化 git init
+
+4、设置git本地库的签名，用户名与邮箱，不过与github注册的不同，只能本地使用：
+$ git config user.name tom_pro
+git user.email tomManing@atguigu.com
+
+---pwd 命令：查看当前目录
+
+5、之后创建一个文本文件：touch test.txt 进入工作区
+
+6、git status 查看当前本地库中的状态，因为是刚创建test.txt 文件添加到工作区，所以缓存区没有此文件，其中显示的就是红色的警告。
+
+6、git add test.txt 讲文件添加进入缓存区，加入到缓存区之后，在使用git status查看本地库的状态就会变成绿色，表明已经存入缓存区
+
+7、git commit -m "提交日志" test.txt 将文件提交至本地库，使用git commit -m "日志信息" test.txt 提交之后信息显示没有可提交的文件了，代表文件已经提交入本地库了。
+
+9、git reflog 查看提交至本地库的版本信息，使用git reflog 查看提交至本地库中的日志 ，日中HEAD --> master 表明我第一次提交的是根路径,
+其中HEAD 是一个指针，我们回退提交版本与更新提交版本的时候是有HEAD这个指针操控着我们的版本。
+
+我们使用vim test.txt 修改文件的数据，并wq保存退出。
+
+之后再次git status 查看本地库的时候就会再次出现红色的警告，表示，我们缓存区没有工作区的某些数据。
+
+我们添加至缓存区之后再次提交，就会出现以下的情况：
+
+其中用cat test.txt 命令查看最新的文件数据信息，表明我们已经提交成功
+
+10、git reset head 索引哈希值 -----进入到日志中的某个版本，先查看日志，然后根据前面黄色的哈希值为索引更换版本
+
+之后跟换到第一次提交的版本的时候，使用cat test.txt 查看最新信息，结果没有，说明正确，因为第一次没有写数据
+
+再使用reflog 查看日志，发现HEAD指针已经切换到了第一次提交时
+
+11、git rm --cached test.txt 删除本地库中的文件
+删除就不演示了....
