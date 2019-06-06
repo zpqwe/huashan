@@ -1,0 +1,380 @@
+    *{margin: 0;padding: 0;list-style: none;}
+body{ background:#fff !important; font:normal 12px/22px;}
+img{border: 0;}
+a{color: #333333;text-decoration: none;}
+.raiders-content a:hover {text-decoration:underline; color:#ffa019; }
+.raiders-content{}
+/*导航*/
+.raiders-body{width: 1000px; margin:0 auto;  }
+.raiders-content .raiders-head-wrap{height: 118px; background: #fff;} 
+.raiders-content .raiders-head-box{width: 1000px;  margin: 0 auto;}
+.raiders-content .raiders-head-box .raiders-logo{padding-top: 33px; float: left; }
+.raiders-content .raiders-head-box .raiders-nav{float: right; padding-top: 37px;}
+.raiders-content .raiders-head-box .raiders-nav ul{height: 44px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background:#ff9900; padding: 0 20px;}
+.raiders-content .raiders-head-box .raiders-nav ul li{float: left; position: relative; z-index: 100}
+.raiders-content .raiders-head-box .raiders-nav ul li>a{  display: block; height: 44px; line-height: 44px; color: #fff; text-decoration: none; font-size: 16px; padding: 0 25px;    }
+.raiders-content .raiders-head-box .raiders-nav ul li>a:hover{background: #ff7519; color: #fff !important; }
+.raiders-content .raiders-head-box .raiders-nav .child-nav{position: absolute;  padding-top: 10px; top: 43px ; z-index: 100;}
+.raiders-content .raiders-head-box .raiders-nav .child-nav-list  {  width: 100px; border: 1px solid #E6E6E6; border-radius:4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background: #fff;  position: relative;  z-index: 100;}
+.raiders-content .raiders-head-box .raiders-nav .child-nav-list a{height: 30px; text-align: center; line-height: 30px; display: block;    font-size: 12px; color: #333;}
+.raiders-content .raiders-head-box .raiders-nav .child-nav-list a:hover{ background: #f5f5f5;}
+.raiders-content .raiders-head-box .raiders-nav .child-nav-list .child-nav-arrow{position: absolute; left: 50%;  margin-left: -7px;     top: -6px;  width: 14px; height: 6px; display: block; background: url("../images/icons.png"/*tpa=https://www.tuandai.com/article/images/icons.png*/) 0 0 no-repeat; }
+.raiders-content .raiders-position{padding: 10px 0px 14px;    color: #666;    line-height: 24px;    text-align: left;    font-size: 12px;    width: 1000px;    margin: 0 auto;position:relative;}
+.raiders-content .raiders-position a{color: #666;}
+
+/*搜索框*/
+.seek{width:337px;height:28px;position:absolute;right:0px;top:8px;}
+.seek .all_word{width:90px;height:26px;border:1px solid #cfcfcf;float:left;cursor:pointer;}
+.seek .all_word p{width:72px;height:100%;float:left;text-align: center;line-height: 28px;color:#888;font-size: 12px;}
+.seek .all_word .btn_word{float:left;}
+.seek .all_word .btn_word span{width:10px;height:7px;background:url("../images/arrow.png-v=20160920001"/*tpa=https://www.tuandai.com/article/images/arrow.png?v=20160920001*/) 0px -7px no-repeat;margin-top:12px;display:block;}
+.seek ul{position:absolute;left:0px;top:28px;display:none;}
+.seek ul li{list-style-type: none;width:90px;height:26px;border:1px solid #cfcfcf;border-top:none;text-align: center;line-height: 26px;font-size: 12px;color:#888;cursor:pointer;background:#fff;}
+.seek ul li:hover{background:#f8f8f8;}
+.seek input:hover,.seek input:visited,.seek input:link,.seek input:active{text-decoration: none;}
+.seek input{width:175px;height:26px;border:1px solid #cfcfcf;border-left:none;float:left;;border-right: 1px solid #cfcfcf;font-size: 12px;color:#666;outline:none}
+.seek .btn_seek{float:left;width:59px;height:26px;background-color:#fff;cursor:pointer;color:#ff9900;text-align: center;line-height: 28px;font-size: 14px;border:1px solid #ff9900;margin-left: 5px;}
+.seek .btn_seek:hover{background-color:#ff9900;color:#fff;}
+.list-item strong{font-weight:normal;color:#ff6600;}
+
+
+/*banner*/ 
+.raiders-content .raiders-banner{  color: #666; line-height: 24px; text-align: left; font-size: 12px; width: 1000px; margin: 0 auto 10px;}
+.raiders-content .raiders-banner .raiders-banner-box{width: 1000px; height:318px; margin: 0px auto;}
+.raiders-content .raiders-banner .banner{width: 608px; float: left;}
+.slideBanner{ width:608px; height:318px; position:relative;  overflow:hidden;  zoom:1;   }
+.slideBanner .hd{ overflow:hidden; width:608px;  height:9px; position:absolute; bottom:16px; left:0px; z-index:3;}
+.slideBanner .hd ul{  overflow:hidden; zoom:1; margin-top:10px; margin:auto; display:table; *width:100px;}
+.slideBanner .hd ul li{ float:left; width:8px; height:8px; overflow:hidden; margin-right:15px; text-indent:-999px; cursor:pointer; background:url("../images/icoCircle.png"/*tpa=https://www.tuandai.com/article/images/icoCircle.png*/) 0 -8px no-repeat; }
+.slideBanner .hd ul li.on{ background-position:0 0; }
+.slideBanner .bd{ width:608px;  height:318px; position:relative;  }
+.slideBanner .bd li{ position:relative; zoom:1; vertical-align:middle;}
+.slideBanner .bd li .pic{ position:relative; z-index:0;  }
+.slideBanner .bd li .pic img{ width:608px; height:318px; overflow:hidden;}
+.slideBanner .bd li .bg{ width:608px; height:42px; position:absolute; left:0; bottom:0; z-index:1;  background:#000; filter:alpha(opacity=50);opacity:0.5;    }
+.slideBanner .bd li .title{ width:608px; height:42px; line-height:42px; left:0; bottom:0; position:absolute; z-index:2;  }
+.slideBanner .bd li .title a{ color:#fff; font-size:16px; padding-left:15px;}
+.raiders-content .raiders-banner .raiders-banner-right{ width:374px; float:right;}
+.slideNews{ width:372px; height:274px; border:1px solid #e6e6e6;background:#fff;}
+.slideNews .hd{ height:48px; line-height:48px;  position:relative;  }
+.slideNews .hd ul{ float:left; position:absolute; right:-1px; top:0px; height:48px;   }
+.slideNews .hd ul li{ float:left; width:185px; border-right:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6; cursor:pointer; text-align:center; font-size:20px; color:#333;}
+.slideNews .hd ul li.on{border-bottom:1px solid #fff; color:#ff9900;}
+.slideNews .bd .news_box{width:320px; margin:12px auto 0px;}
+.slideNews .bd .news_box dl{ height:76px; overflow:hidden;}
+.slideNews .bd .news_box dl dt{ width:136px; float:left;}
+.slideNews .bd .news_box dl dt img{ width:136px; height:76px; overflow:hidden;}
+.slideNews .bd .news_box dl dd{ float:right; padding-top:8px; width:168px; height:52px; overflow:hidden; font-size:16px; line-height:26px;}
+.slideNews .bd .news_box ul{ padding:6px 0px 0px;}
+.slideNews .bd .news_box ul li{ width:310px; height:32px; line-height:32px; font-size:14px; overflow:hidden;background:url("../images/wzdian.png"/*tpa=https://www.tuandai.com/article/images/wzdian.png*/) 0 16px no-repeat; padding-left:10px;}
+.toolBox{ width:320px; padding:5px 26px 4px; height:32px; border:#e6e6e6 solid 1px; border-top:none;}
+.toolBox a{ padding-right:30px; line-height:32px; font-size:14px;}
+.toolBox a.last{ padding-right:0px;}
+.slideNews .bd .news_box dl dd a:hover,.toolBox a:hover{ text-decoration:none;}
+
+/*20170309新增*/ 
+.tuijianNews{width:372px; height:274px; border:1px solid #e6e6e6;background:#fff;}
+.tuijianNews h3{border-bottom:1px solid #fff;color: #ff9900;height:48px; line-height:48px;font-size:20px; padding-left:26px;}
+.tuijianNews .tuijianCon{width:320px; margin:12px auto 0px;}
+.tuijianNews .tuijianCon dl{ height:76px; overflow:hidden;}
+.tuijianNews .tuijianCon dl dt{ width:136px; float:left;}
+.tuijianNews .tuijianCon dl dt img{ width:136px; height:76px; overflow:hidden;}
+.tuijianNews .tuijianCon dl dd{ float:right; padding-top:8px; width:168px; height:52px; overflow:hidden; font-size:16px; line-height:26px;}
+.tuijianNews .tuijianCon ul{ padding:6px 0px 0px;}
+.tuijianNews .tuijianCon ul li{ width:310px; height:32px; line-height:32px; font-size:14px; overflow:hidden;background:url("../images/wzdian.png"/*tpa=https://www.tuandai.com/article/images/wzdian.png*/) 0 16px no-repeat; padding-left:10px;}
+
+.raiders-content .raiders-banner .download{width: 258px; height: 278px;  margin-top:10px;background: #fff; border: 1px solid #E6E6E6; float: right;}
+.raiders-content .raiders-banner .QR-code{width: 258px; padding-top: 10px;}
+.raiders-content .raiders-banner .raiders-tools{}
+.raiders-content .raiders-banner .raiders-tools ul{padding-left: 2px;}
+.raiders-content .raiders-banner .raiders-tools li{float: left; margin: 0 6px;}
+.raiders-content .raiders-banner .raiders-tools li span{display: block; text-align: center;}
+.raiders-content .raiders-banner .raiders-tools li a{text-decoration: none;}
+.raiders-content .raiders-banner .raiders-tools li .pic-box{background: url("../images/tools.png"/*tpa=https://www.tuandai.com/article/images/tools.png*/) no-repeat; width: 52px; height: 52px; margin-bottom: 10px; display: block; -webkit-transition: background 0.3s;-moz-transition: background 0.3s;-ms-transition: background 0.3s;-o-transition: background 0.3s;transition: background 0.3s;}
+.raiders-content .raiders-banner .raiders-tools li .b1{background-position: 0  0;}
+.raiders-content .raiders-banner .raiders-tools li:hover .b1{background-position: 0  -65px;}
+.raiders-content .raiders-banner .raiders-tools li .b2{background-position: -57px  0;}
+.raiders-content .raiders-banner .raiders-tools li:hover .b2{background-position: -57px  -65px;}
+.raiders-content .raiders-banner .raiders-tools li .b3{background-position: -114px  0;}
+.raiders-content .raiders-banner .raiders-tools li:hover .b3{background-position: -114px  -65px;}
+.raiders-content .raiders-banner .raiders-tools li .b4{background-position: -171px  0;}
+.raiders-content .raiders-banner .raiders-tools li:hover .b4{background-position: -171px  -65px;}
+/*内容板块*/
+.raiders-content .raiders-mode{  width: 970px; margin:10px auto; padding:0 15px;  background:#fff;}
+.raiders-content .raiders-mode .title-h2 ,.raiders-content .friend-link .title-h2  {height: 63px; line-height: 63px; font-size: 22px; position: relative; color: #333;  border-bottom: 1px solid #E6E6E6;}
+.raiders-content .raiders-mode .title-h2 a:hover{ text-decoration:none!important;}
+.raiders-content .raiders-mode .title-h2 .news-hd{position: absolute;   right: 0; top: 24px; height: 38px; background: #fff; }
+.raiders-content .raiders-mode .title-h2 .news-hd ul{padding-right: 10px;}
+.raiders-content .raiders-mode .title-h2 .news-hd ul li{ float: left; padding:0 20px; cursor: pointer;  line-height: 38px; font-size: 16px;}
+.raiders-content .raiders-mode .title-h2 .news-hd-ed{color: #ff9900;border: 1px solid #E6E6E6; border-bottom: 1px solid #fff;}
+.raiders-content .raiders-mode .title-h2 .news-hd-ed a{color: #ff9900; text-decoration: none;}
+.raiders-content .raiders-mode .mode-list{margin-top: 22px;padding-bottom: 20px;}
+.raiders-content .raiders-mode .mode-list-pic{position: relative; width: 310px; height: 235px; float: left;}
+.raiders-content .raiders-mode .mode-list-pic img{width: 310px; height: 235px;}
+.raiders-content .raiders-mode .mode-list-pic .title{position: absolute; width: 310px; bottom: 0; cursor: pointer; z-index: 1;  left: 0; text-decoration: none; height: 30px; line-height: 30px; text-align: left; text-align: center; background:rgba(0,0,0,0.5) none repeat scroll !important;background:#000; filter:Alpha(opacity=50);   }
+.raiders-content .raiders-mode .mode-list-pic .title p{ position: relative;   color: #fff; }
+.raiders-content .raiders-mode .mode-list-box{width: 310px;   float: right; margin-left: 15px;}
+.raiders-content .raiders-mode .mode-list-box ul{}
+.raiders-content .raiders-mode .mode-list-box ul li{ overflow: hidden; white-space:nowrap;    }
+.raiders-content .raiders-mode .mode-list-box ul li span{ padding-right: 5px; font-size: 15px; color: #333; display: inline-block; line-height: 24px;}
+.raiders-content .raiders-mode .mode-list-box ul li a{font-size: 14px; line-height: 30px; white-space:nowrap;    }
+/*友情链接*/
+.raiders-content .friend-link{  width: 970px; margin:10px auto; padding:0 15px;  background:#fff;}
+.raiders-content .friend-link .link-content{padding: 10px 0px;}
+.raiders-content .friend-link .link-content a{float:left; padding: 0px 20px; line-height: 28px; font-size: 14px; color: #333; display:inline-block; *zoom:1;*display:inline; *white-space:nowrap}
+
+/*列表*/
+
+
+/*列表左边*/
+.raiders-content .raiders-body .list-left{float: left; width: 720px; background: #fff;}
+.raiders-content .raiders-body .list-left .list-h2{ font-size: 16px; width: 703px; padding-left: 17px; color: #ff6600; height: 46px; line-height: 46px; position: relative; border-bottom: 1px solid #cfcfcf}
+.raiders-content .raiders-body .list-left .list-h2 i{width: 16px; height: 16px; display: block; background: url("../images/icons.png"/*tpa=https://www.tuandai.com/article/images/icons.png*/) no-repeat;  position: absolute; cursor: pointer;}
+.raiders-content .raiders-body .list-left .list-h2 .arrow-left{background-position: 0 -24px; right: 36px; top: 20px;}
+.raiders-content .raiders-body .list-left .list-h2 .arrow-left:hover{background-position: 0 -8px}
+.raiders-content .raiders-body .list-left .list-h2 .arrow-right:hover{background-position: -16px -8px; }
+.raiders-content .raiders-body .list-left .list-h2 .arrow-right {background-position: -16px -24px; right: 10px; top: 20px;}
+.raiders-content .list-left .list-item{border-bottom:1px solid #E6E6E6; width: 703px; margin: 0 auto; padding-top: 30px; padding-bottom: 24px;}
+.raiders-content .list-left .list-item:hover{background: #fafafa;}
+.raiders-content .list-left .item-title{ margin-bottom: 16px; height: 20px;}
+.raiders-content .list-left .item-title .time{float: right; width: 150px; }
+.raiders-content .list-left .item-title .time span{display: inline-block; color: #666; font-size: 12px;     }
+.raiders-content .list-left .item-title .time-icon{background: url("../images/icons.png"/*tpa=https://www.tuandai.com/article/images/icons.png*/) 0 -43px; float: left; margin-top: 3px;  width: 12px; height: 12px; display: inline-block;}
+.raiders-content .list-left .item-title a{font-size: 18px; color: #000;}
+.raiders-content .list-left .item-text{color: #666; font-size: 14px; line-height: 20px;}
+.raiders-content .list-left .item-text a{color: #ff9900;}
+
+.raiders-content .list-left   .pages-list{float: right; padding: 22px 30px 22px 15px; }
+.raiders-content .list-left   .pages-list ul{float: right }
+.raiders-content .list-left   .pages-list ul .target{background: #fff; padding: 0 10px;}
+.raiders-content .list-left   .pages-list ul .target:hover{background: #fff;  border-color:#d4d4d4; }
+.raiders-content .list-left   .pages-list ul .target input{background: #fff; width: 27px; height: 17px; color: #666; text-align: center; }
+.raiders-content .list-left   .pages-list li{ float: left; margin-left: 10px;   height:26px; line-height: 26px; border: 1px solid #d4d4d4; background: #ffffff;
+    border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+    -webkit-transition: background 0.4s, border 0.4s, color 0.4s;-moz-transition: background 0.4s, border 0.4s, color 0.4s;-ms-transition: background 0.4s, border 0.4s, color 0.4s;-o-transition: background 0.4s, border 0.4s, color 0.4s;transition: background 0.4s, border 0.4s, color 0.4s;}
+.raiders-content .list-left   .pages-list li:hover{background: #ff6600; border-color:#ff6600; }
+.raiders-content .list-left   .pages-list li:hover a{color: #fff; }
+.raiders-content .list-left  .pages-list li a{text-decoration: none; color: #666666; padding:0 10px;}
+.raiders-content .list-left .and-inf {width:720px; padding: 0 17px; margin: 0 auto;}
+
+/*右*/
+.raiders-content .list-right{width: 260px; float: right; }
+.raiders-content .list-right .right-box{width: 260px; background: #fff; margin-bottom: 15px;}
+.raiders-content .right-title-h2{height: 46px; font-size: 16px; font-weight:bold;  color: #ff6600; padding-left: 17px; line-height: 46px; }
+.raiders-content .list-right .manage-money{border-top: 1px solid #E6E6E6;   }
+.raiders-content .list-right .manage-money a{float: left; width: 128px; height: 50px; font-size: 15px; border: 1px solid #e6e6e6 ; border-right:none; border-top:none;   line-height: 50px; text-align: center;text-decoration: none;
+-webkit-transition: background 0.3s, border 0.3s;-moz-transition: background 0.3s, border 0.3s;-ms-transition:background 0.3s,  border 0.3s ;-o-transition:background 0.3s,  border 0.3s ;transition: background 0.3s,  border 0.3s;}
+.raiders-content .list-right .manage-money a:hover{background: #ff9900; color: #fff !important; border-color:#E6E6E6; }
+.raiders-content .list-right .right-banner{width: 260px; height: 163px;}
+.raiders-content .pic-news{}
+.raiders-content .pic-news dl{padding: 15px 0 15px 8px; border-bottom:1px solid #E6E6E6; }
+.raiders-content .pic-news dl dt{float: left; width: 80px; height: 53px; margin-right: 8px;}
+.raiders-content .pic-news dl dt img{width: 80px; height: 53px;}
+.raiders-content .pic-news dl dd{float: left; width: 154px;}
+.raiders-content .pic-news dl dd .title{margin-bottom: 10px; width: 154px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.raiders-content .pic-news dl dd .title a{font-size: 14px; line-height: 14px; font-weight: bold;  }
+
+/*详情页*/
+.raiders-content .detail-left{width:720px; float: left;}
+.raiders-content .detail-left .detail-left{ background: #fff; }
+.raiders-content .detail-left .detail-h2{font-size: 24px; line-height: 24px; text-align: center; color: #ff6600; padding-top: 35px;}
+.raiders-content .detail-left .publish-time{line-height: 12px; height: 12px; margin-top: 25px; color: #999; text-align: center; padding-bottom: 24px; border-bottom: 1px solid #cfcfcf;}
+.raiders-content .detail-left .detail-content{width: 650px; margin: 0 auto; padding-top: 40px;padding-bottom: 40px; overflow: hidden; font-size:14px; line-height:2;}
+.raiders-content .detail-left .detail-content p{font-size: 14px; color: #333}
+.raiders-content .detail-left .detail-label{width: 650px; margin: 0 auto; padding-bottom: 36px;}
+.raiders-content .detail-left .detail-label span{color: #999; float: left; font-size: 14px; line-height: 24px; }
+.raiders-content .detail-left .detail-label a{color: #666; background: #f0f0f0; display: block; float: left; margin-left: 10px; font-size: 14px; height: 24px; line-height: 24px;padding: 0 5px; text-decoration: none;
+border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px}
+.raiders-content .detail-left .detail-label a:hover{color: #ff6600; }
+.raiders-content .detail-left .change-page{color: #333; font-size: 16px; line-height: 16px; border-top:1px solid #cfcfcf; font-weight: bold;  padding: 23px  30px 40px;  }
+.raiders-content .detail-left .change-page a{color: #333; font-size: 16px; font-weight: normal;  }
+.raiders-content .detail-left .change-page .prev-page{float: left;}
+.raiders-content .detail-left .change-page .next-page{float: right;}
+/*详情页右*/
+.raiders-content .detail-right{width: 260px;  float: right;}
+.raiders-content .right-box{width:260px; background: #fff; margin-bottom: 10px; }
+.raiders-content .right-box .right-box-h2{font-size:16px; color:#ff6600; padding-left:17px; font-weight:bold; padding-top:20px;}
+.raiders-content .right-box .news-list{width: 226px; margin: 0 auto; }
+.raiders-content .right-box .news-list{padding: 20px 0 20px;}
+.raiders-content .right-box .news-list span{margin-right: 5px; color: #000; font-size: 18px; display: inline-block; line-height: 18px;padding-top: 2px;}
+.raiders-content .right-box .news-list a{line-height: 30px; color:#474747; font-size: 13px; white-space:nowrap;  overflow: hidden;  }
+/*.raiders-content .right-box .another-inf a{line-height: 30px; color:#474747; font-size: 13px; white-space:nowrap;  overflow: hidden; font-weight: bold!important;}*/
+.raiders-content .right-box .news-list .point{display: inline-block; width: 16px; height: 16px; line-height: 15px; color: #fff; text-align: center; font-size: 12px;
+border-radius:2px; -moz-border-radius:2px; -webkit-border-radius: 2px; }
+.raiders-content .right-box .news-list .point-1{ background: #ff9966;}
+.raiders-content .right-box .news-list .point-2{  background: #b0b0b0;}
+.raiders-content .right-box .another-new li{ margin-bottom:16px}
+.raiders-content .right-box .another-new  p{  line-height: 20px;}
+.raiders-content .right-box .another-new  a{ display: block; font-size: 13px; line-height: 16px; margin-bottom: 5px;  font-weight: bold; color:#666;}
+.raiders-content .right-box .raiders-tools{padding-bottom: 20px;}
+.raiders-content .right-box .raiders-tools ul{padding-left: 2px;}
+.raiders-content .right-box .raiders-tools li{float: left; margin: 0 6px;}
+.raiders-content .right-box .raiders-tools li span{display: block; text-align: center;}
+.raiders-content .right-box .raiders-tools li a{text-decoration: none;}
+.raiders-content .right-box .raiders-tools li .pic-box{background: url("../images/tools.png"/*tpa=https://www.tuandai.com/article/images/tools.png*/) no-repeat; width: 52px; height: 52px; margin-bottom: 10px; display: block; -webkit-transition: background 0.3s;-moz-transition: background 0.3s;-ms-transition: background 0.3s;-o-transition: background 0.3s;transition: background 0.3s;}
+.raiders-content .right-box .raiders-tools li .b1{background-position: 0  0;}
+.raiders-content .right-box .raiders-tools li:hover .b1{background-position: 0  -65px;}
+.raiders-content .right-box .raiders-tools li .b2{background-position: -57px  0;}
+.raiders-content .right-box .raiders-tools li:hover .b2{background-position: -57px  -65px;}
+.raiders-content .right-box .raiders-tools li .b3{background-position: -114px  0;}
+.raiders-content .right-box .raiders-tools li:hover .b3{background-position: -114px  -65px;}
+.raiders-content .right-box .raiders-tools li .b4{background-position: -171px  0;}
+.raiders-content .right-box .raiders-tools li:hover .b4{background-position: -171px  -65px;}
+
+
+.raiders-content   .time{float: left; width: 150px; margin-top: 5px; }
+.raiders-content   .time span{display: inline-block; color: #666; font-size: 12px;     }
+.raiders-content   .time-icon{background: url("../images/icons.png"/*tpa=https://www.tuandai.com/article/images/icons.png*/) 0 -43px; float: left; margin-top: 3px;  width: 12px; height: 12px; display: inline-block;}
+.raiders-content .subject-news{float: left; width: 180px; height: 120px; margin-right: 22px;}
+.raiders-content .right-label{width: 240px; margin:0 auto; color: #666; font-size: 14px;  padding: 10px 0; }
+.raiders-content .right-label a{font-size: 14px; display: inline-block; white-space:nowrap; background: #f0f0f0; color: #666666; padding: 0 7px; height: 24px; line-height: 24px;
+-moz-border-radius: 2px; -webkit-border-radius: 2px; -border-radius:2px; margin: 3px;}
+.raiders-content .right-label a:hover{color: #ff6600;}
+.raiders-content .subject-introduction{background: url("../images/introduction-bg.jpg"/*tpa=https://www.tuandai.com/article/images/introduction-bg.jpg*/);    }
+.raiders-content .subject-introduction i{width: 51px; height: 25px; display: block; background: url("../images/icons.png"/*tpa=https://www.tuandai.com/article/images/icons.png*/) 0 -57px no-repeat; color: #fff; font-style: normal; padding-left: 10px; line-height: 25px; position: absolute;   }
+.raiders-content .subject-introduction .int-content{position: relative; padding: 20px 0; width: 678px; margin: 0 auto; font-size: 14px; line-height: 28px;}
+.raiders-content .subject-left-news{}
+.raiders-content .subject-left-news ul{width: 680px; margin: 0 auto; padding-top: 30px; padding-bottom: 20px;}
+.raiders-content .subject-left-news li{width: 340px; overflow: hidden; float: left;}
+.raiders-content .subject-left-news li a{white-space:nowrap; font-size: 14px; line-height: 30px; color: #474747;  }
+.raiders-content .subject-left-news li span{font-size: 16px; margin-right: 8px;}
+.raiders-content .subject-banner{height: 330px; background: url("../images/jt-banner-bg.jpg"/*tpa=https://www.tuandai.com/article/images/jt-banner-bg.jpg*/); }
+.raiders-content .subject-banner .banner-pic { width: 1000px; margin: 0 auto;}
+.raiders-content .subject-banner .banner-pic img{ width: 1000px; height: 330px;}
+.raiders-content .list-left .detail-label{width: 650px; margin: 20px auto 0; }
+.raiders-content .list-left .detail-label span{color: #999; float: left; font-size: 14px; line-height: 24px; }
+.raiders-content .list-left .detail-label a{color: #666; background: #f0f0f0; display: block; float: left; margin-left: 10px; font-size: 14px; height: 24px; line-height: 24px;padding: 0 5px; text-decoration: none;
+    border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px}
+.raiders-content .list-left .detail-label a:hover{color:#fff !important; background: #ff6600 }
+.raiders-content .right-box .sign{padding-bottom: 20px; padding-left: 17px; font-size: 0}
+.raiders-content .right-box .sign a{ padding: 3px 6px; background: #cdedfa; margin: 5px 10px 10px 0px; display: inline-block;
+border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; font-size: 14px;}
+.raiders-content .right-box .sign a:hover{text-decoration: none;}
+
+
+/* 热点排行榜css */
+.slideTxtBox{ width:260px;text-align:left;background:#fff;margin-bottom:10px;}
+.slideTxtBox .hd{ height:30px; line-height:30px; background:#fff; padding:15px 10px 0 17px; position:relative; }
+.slideTxtBox .hd span{font-size:16px;font-weight:bold;color:#f60;}
+.slideTxtBox .hd ul{ float:left;  position:absolute; left:160px; top:13px; height:32px;   }
+.slideTxtBox .hd ul li{ float:left; padding:0 5px; cursor:pointer; font-size:14px;color:#f60;}
+.slideTxtBox .hd ul li.on{ height:27px;border-bottom:2px solid #ff6600;}
+.slideTxtBox .bd ul{ padding:15px;  zoom:1; }
+.slideTxtBox .bd li{width: 226px; height:30px; line-height:30px; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.slideTxtBox .bd li b{display:inline-block;width:20px;height:20px;background:#ff9966;text-align:center;line-height:20px;color:#fff;margin-right:10px; border-radius: 1px; -webkit-border-radius: 1px;}
+.slideTxtBox .bd li .b2{background:#ddd;}
+
+/*20160825 left-banner*/
+.left-banner{position:fixed;top:200px;left:50px;width:127px;height:271px}
+.left-banner .pic{position:relative;width:127px;height:271px}
+.left-banner .pic img{width:127px;height:271px}
+.left-banner i{position:absolute;top:118px;left:110px;display:block;width:10px;height:10px;cursor:pointer}
+* html .left-banner{position:absolute;right:auto;background-attachment:fixed;left:expression(eval(document.documentElement.scrollLeft))}
+* html,* html body{background-image:url(about:blank)}
+.left-banner .close{position:absolute;top:0;right:-5pc;z-index:2;color:#999;text-decoration:none;font-style:normal;font-size:28px;cursor:pointer}
+/*20160825 相关资讯*/
+.another-inf{background: #fff;}
+.another-inf .line{height:15px;background:#f7f7f7}
+.another-inf .list-box{padding:0 20px}
+.another-inf .title{font-size:16px;color:#333;padding-top:22px;font-weight:700}
+.another-inf .list{margin-top:15px;padding-bottom:20px}
+.another-inf .list li{float:left;width:340px}
+.another-inf .list li span{vertical-align:2px;margin-right:6px;font-size:24px;color:#999;font-weight:700;line-height:24px}
+.another-inf .list li a{font-size:14px;line-height:30px; color: #474747}
+
+/*20160825 列表页面修改*/
+.raiders-content .r-tabtit{height: auto; overflow: hidden; width:auto;}
+.raiders-content .r-tabtit .hd{padding-top: 17px; padding-left: 17px;}
+.raiders-content .r-tabtit .hd ul{float: none; position: static; left: 0;}
+.raiders-content .r-tabtit .hd ul li{float: left; height: 26px; line-height: 26px; padding: 0; margin-right: 34px; color: #333; font-size: 16px; cursor: pointer;}
+.raiders-content .r-tabtit .hd ul li.on{ height:26px;border-bottom:2px solid #ff6600; color:#ff6600; font-weight:bold;}
+.raiders-content .r-tabtit .bd ul{ padding:13px 17px;  zoom:1; }
+.raiders-content .r-tabtit .bd li{width: 226px; height: auto; list-style-type: none; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+/*20160825 文章页面修改*/
+.raiders-content .subnva{padding-left: 17px; padding-bottom: 10px;}
+.raiders-content .subnva a{display: block; float: left; width: 114px; height: 50px; line-height: 50px; text-align: center; font-size: 16px;}
+.raiders-content .subnva .border-bt{border-bottom: 1px solid #e5e5e5;}
+.raiders-content .subnva .border-rt{border-right: 1px solid #e5e5e5;}
+.tabTxtBox{border:1px solid #e5e5e5; text-align:left;  margin-top: 10px; background: #fff}
+.tabTxtBox .hd{ height:44px; line-height:44px; background:#f4f4f4; padding:0 10px 0 20px;  position:relative; }
+.tabTxtBox .hd ul{ float:left;  position:absolute; left:0;  height:44px;   }
+.tabTxtBox .hd ul li{ float:left; padding:0 25px; cursor:pointer; font-size: 16px;  color: #333}
+.tabTxtBox .hd ul li.on{ height:44px; background:#fff; font-weight: 700;}
+.tabTxtBox .bd .bd-box{ padding:24px 25px;  zoom:1;  height: auto; overflow: hidden; }
+.tabTxtBox .bd .bd-box dt,.tabTxtBox .bd .bd-box dd{float: left;}
+.tabTxtBox .bd .bd-box dt,.tabTxtBox .bd .bd-box dt a,.tabTxtBox .bd .bd-box dt a img{width: 215px; height: 138px; }
+.tabTxtBox .bd .bd-box dt a{position: relative; display: block;}
+.tabTxtBox .bd .bd-box dt p{position: absolute; left: 0; bottom: 0; width: 100%; height: 28px; line-height: 28px; color: #fff; font-size: 14px; font-weight: 700; text-align: center; background: rgba(0,0,0,0.4); background: #000\9; filter:Alpha(opacity=40);}
+.tabTxtBox .bd .bd-box dd{margin-left: 20px;}
+.tabTxtBox .bd .bd-box dd p{width: 392px; padding-left: 10px; font-size: 14px; line-height: 28px; height: 28px; background: url("../images/disc.png"/*tpa=https://www.tuandai.com/article/images/disc.png*/) no-repeat left top; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.tabTxtBox .bd .bd-box dd a{color: #474747}
+
+
+
+/*20160830*/
+.raiders-content .detail-right .manage-money{border-top: 1px solid #E6E6E6;   }
+.raiders-content .detail-right .manage-money a{float: left; width: 128px; height: 50px; font-size: 15px; border: 1px solid #e6e6e6 ; border-right:none; border-top:none;   line-height: 50px; text-align: center;text-decoration: none;
+-webkit-transition: background 0.3s, border 0.3s;-moz-transition: background 0.3s, border 0.3s;-ms-transition:background 0.3s,  border 0.3s ;-o-transition:background 0.3s,  border 0.3s ;transition: background 0.3s,  border 0.3s;}
+.raiders-content .detail-right .manage-money a:hover{background: #ff9900; color: #fff !important; border-color:#E6E6E6; }
+
+/*20161009专题详情页加广告位*/
+.s_banner{ margin:10px auto 20px; width:690px; height:90px;}
+.s_banner img{width:690px; height:90px; overflow:hidden;}
+
+/*20161011主页右侧广告*/ 
+.right_banner{ height:270px; width:118px; padding:5px; background:#f8f8f8; position:fixed; top:260px; right:10px; z-index:9999;}
+.right_banner img{height:270px; width:118px; overflow:hidden;}
+
+
+
+/*注册框*/
+.box{width:260px;height:341px;background:url("../images/box-bg.png-v=20180131001"/*tpa=https://www.tuandai.com/article/images/box-bg.png?v=20180131001*/) no-repeat center;}
+.box .msg-box{width:100%;height:100%;position:relative;*padding:8px 0 0 44px;}
+.box .msg-box .per{font-size: 18px;color:#ff6600;font-weight: bold; line-height: 18px;width: 100%; text-align: center; position:absolute;left:0px;top:26px;}
+
+#imgVcode{width:77px;height:28px;position:absolute;right:28px;top:143px;*right:69px;}
+#phone,#passWord{width:192px;height:28px;border-radius: 3px;}
+#txtValidNumber,#messCode{width:107px;height:28px;border-radius: 3px;}
+#btnReg{width:202px;height:38px;overflow:hidden;background:url("../images/but_bg.png-v=20180131001"/*tpa=https://www.tuandai.com/article/images/but_bg.png?v=20180131001*/) no-repeat center;display:block;cursor:pointer;font-size: 18px;line-height: 38px;text-align: center;color:#a75e00;letter-spacing: 2px;
+    *position:absolute;*right:18px;*bottom:3px;position:absolute;left:28px;top:270px;font-weight: bold;border-radius: 3px;}
+#btnReg:hover{ text-decoration: none;}
+#dvValidNumber{clear:both;}
+#dvPhoneError,#dvPwdError,#dvCodeError,#dvValidNumber{height:15px;font-size: 12px;color:#f00;line-height: 15px;}
+.msg-box span.ti-word{height:14px;margin-left: 12px;font-size: 12px;color:#a75e00;line-height: 14px;text-align: center;}
+.msg-box .get-num{right:28px;top:188px;height:28px;display:block;width:76px;*right:69px;cursor:pointer;background:#ff9900;position:absolute;font-size: 12px;color:#fff;text-align: center;line-height: 28px;border-radius: 4px;}
+.msg-box span.me .tuan-word{color:#a75e00;}
+.msg-box span.me{position:absolute;left:47px;top:234px;*left: 50px;}
+.msg-box span.me a{color: #fff;}
+.msg-box span.me a:hover{color: #fe2a00;text-decoration: underline;}
+.msg-box p.msg{height:14px;width: 100%; font-size: 12px;color:#fff;line-height: 14px;text-align: center;position:absolute;left: 0px;bottom: 8px;*bottom:15px;}
+.msg-box p.msg a{color:#fdff4a;text-decoration:none}
+.msg-box p.msg a:hover{text-decoration: underline;}
+.box input{position:absolute;line-height: 28px;border:none; background: #fff; text-indent: 10px;}
+.box input.qu{-webkit-appearance: caret;box-shadow:none;appearance: caret;}
+#phone{left:40px;top:53px;}
+#passWord{left:40px;top:98px;}
+#txtValidNumber{left:40px;top:143px;}
+#messCode{left:40px;top:188px;}
+#agreexieyi{left:40px;top:234px;*top:231px;}
+.box .tell{position:absolute;}
+#dvPhoneError{left:40px;top:82px;}
+#dvPwdError{left:40px;top:127px;}
+#dvValidNumber{left:40px;top:172px;}
+#dvCodeError{left:40px;top:217px;}
+.box p{ line-height: 28px; text-indent: 10px;}
+.box p.introduce{position:absolute;font-size: 12px;color:#999999;width:192px;height:28px;}
+.box p.font1{left:40px;top:53px;}
+.box p.font2{left:40px;top:98px;}
+.box p.font3{left:40px;top:143px;width:107px;}
+.box p.font4{left:40px;top:188px;width:107px;}
+*.box *input{left:45px;}.denglu{font-size: 14px;color: #fff;position: absolute;top:303px;*top:303px;left: 23px;}
+.denglu a{color: #ffc840;}
+*.box *input{left:45px;}
+#btnSendMsg:hover{ color: #fff !important;}
+
+
+.foot_ban{position: fixed;bottom: 0px;left: 0; width: 100%;height: 129px;background:url("../../baike/images/foot_ban.png-v=20180424001"/*tpa=https://www.tuandai.com/baike/images/foot_ban.png?v=20180424001*/) no-repeat center;}
+.foot_ban .close{ position: absolute;width: 20px; height: 20px; right: 6px; top: 45px;background:url("../../baike/images/close.png-v=20180302001"/*tpa=https://www.tuandai.com/baike/images/close.png?v=20180302001*/) no-repeat center;z-index: 2; cursor: pointer;}
+.foot_ban .hr{position: absolute;width: 100%; height: 88px; left: 0; bottom: 0;z-index: 1;}
+.foot_ban .but{position: absolute;width: 130px; height: 30px; left: 50%; margin-left: -54px; bottom: 6px;cursor: pointer;}

@@ -1,0 +1,117 @@
+/* CSS Document */
+@charset "utf-8";
+.cl{clear: both !important;}
+.c-ff7800{color: #ff7800 !important;}
+.c-000{color: #000 !important;}
+.c-333{color: #333 !important;}
+.c-666{color: #666 !important;}
+.c-999{color: #999 !important;}
+.f18{font-size: 18px !important;}
+.f36{font-size: 36px !important;}
+.bid_invest_inf{width: 1200px;border:none;}
+.bid_inf_content{width:770px;margin:25px 0 55px 40px;}
+.bid_inf_main{width: 740px;}
+.bid_inf_line{width: 740px;}
+
+.newh37{height: 37px !important;}/*智享计划申购份数样式*/
+
+.gong{background: url(//js3.tuandai.com/images/member/zhixiang-con.png) no-repeat 0px -2px;}
+/*.bao{background: url(//js.tuandai.com/images/member/zhixiang-con.png) no-repeat 0px -41px;}*/
+
+.bid_inf_unit,.bid_inf_incopies, .bid_inf_outcopies, .bid_inf_way, .bid_inf_progress{height: 35px;font-size: 14px;line-height: 35px;}
+.bid_inf_unit{top:175px;}
+.bid_inf_incopies{top: 215px;}
+.bid_inf_progress{top:175px;}
+.bid_inf_way{top:215px;width: 200px;}
+.bid_progress_bar{top:184px;}
+.bid_finish{width: 315px;height: 220px;margin: 20px auto 0px;}
+
+.bid_invest_nav{width:100%;height: 75px;}
+.bid_invest_nav ul{position: relative;}
+.bid_invest_nav .nav_line{width: 1120px;height: 1px;background: #e6e6e6;position: absolute;top:75px;left:40px;}
+.bid_invest_nav ul{width:1120px;padding:34px 40px 0 40px;margin: 0 auto;height:41px;border:none;background: #fff;}
+.bid_nav{line-height: 19px;}
+.bid_ensure_box{width: 1120px;padding: 40px;border:none;}
+.bid_invest_main{width: 1120px;padding: 40px;border:none;}
+.bid_content_box{width: 1120px;padding: 40px;border:none;}
+
+.business_modelbox{width: 1120px;}
+.staging_info_box{width: 1120px;}
+.staging_info_box .titl{width: 125px;font-size: 18px;color: #333;float: left;margin: 5px 10px 0px 0px;height: 40px;}
+.staging_certifia{width: 985px;padding-right: 0;}
+.staging_blist{width: 985px;padding-right: 0;}
+.staging_blist li{text-align: left;font-size: 14px;color: #333;}
+
+.bid_ensure_box dl{width: 1120px;}
+.bid_ensure_box dt{width: 5px;height: 18px;}
+.bid_ensure_box dd{width: 990px;}
+.bid_ensure_box dd p{width: 990px;}
+.bid_ensure_box dt.ensure_t01{background-position: 0px -345px;}
+.bid_ensure_box dt.ensure_t02{background-position: 0px -443px;}
+.clearfloat .to-view{display: block;width: 200px;height: 40px;background:#ffa019;border-radius: 3px;text-align: center;line-height: 40px;font-size: 16px;color: #fff;margin: 15px 0 25px 0;}
+
+.bid_content_box .bid_records tr:nth-child(odd){background: #f4f4f4;border:none;}
+.bid_records tr td{border-bottom: none;}
+.bid_records td{line-height: 0;}
+
+.invent-input{background: #fff; padding: 25px 40px 0 30px; width: 310px; height: 383px;}
+.capital{line-height:32px; }
+.invent-input .recharge{top: 31px;  right:40px; display: block; border-radius: 3px;  padding: 0 12px; height: 28px; line-height: 28px; text-align: center; border: 1px solid #d8d8d8;}
+.invent-input .recharge{transition: background 0.2s ease-in-out ,color 0.1s ease-in;   -webkit-transition: background 0.2s ease-in-out ,color 0.1s ease-in;}
+.invent-input .recharge:hover{  background: #ffc62c;  color: #fff;  border:1px solid #ffc62c;}
+.sumbit-box{margin-top: 20px;}
+.sumbit-box .all{background: none; color: #666666;width: 80px;height: 37px; line-height: 37px;border:1px solid #d8d8d8;}
+.sumbit-box .all:hover{color:#ffbc1b; border: 1px solid #ffbc1b; }
+.sumbit-box .input-box{border: 1px solid #d8d8d8;border-radius: 4px 0 0 4px; width: 180px;}
+.sumbit-box .fen{*vertical-align: 8px;}
+.sumbit-box input{border:none; border-radius: 3px; padding: 10px 0 9px 12px; color: #000; font-size: 16px; font-weight: bold; width: 140px; height: 18px;}
+.sumbit-box .re-invent-arrow{width: 36px; height: 18px; *height: 19px;   z-index: 0; border: 1px solid; cursor: pointer; position: absolute; border:1px solid #dedede ;}
+.sumbit-box .re-invent-arrow:hover{border: 1px solid #ffa019;z-index: 1;}
+.sumbit-box .re-invent-arrow.up{border-radius: 0 3px 0 0; right: -38px; top: -1px;}
+.sumbit-box .re-invent-arrow.down{border-radius: 0 0px 3px 0; right: -38px; bottom: -1px;    }
+
+.invent-input .submit-btn{width: 310px; height:40px; line-height:40px; font-size: 16px;margin-top: 23px;}
+.invent-input .agreement{margin-top:15px; *margin-top: 15px; font-size: 12px; color: #666;}
+.invent-input .agreement input{vertical-align:-2px;}
+.invent-input .agreement a:hover{text-decoration: underline; color: #ffb700;}
+.re-invent-detail-icon{background: url(//js3.tuandai.com/images/invent_detail/re_invent_detail/re_invent_detail_iocn.png) no-repeat;}
+.re-invent-detail-icon-1{background: url(//js3.tuandai.com/images/invent_detail/re_invent_detail/re_invent_detail_iocn_1.png) no-repeat;}
+
+.down {height: 7px;width: 13px;background-position:  -80px 6px;}
+.down:hover {background-position:  -153px 6px;}
+.up {height: 7px;width: 13px;background-position:  -120px 5px; }
+.up:hover { background-position:  -190px 5px; }
+.re-invent-arrow-gray.down,.re-invent-arrow-gray.down:hover{background-position:  -80px 6px;}
+.re-invent-arrow-gray.up,.re-invent-arrow-gray.up:hover{background-position:  -120px 5px;}
+
+.sumbit-box .re-invent-arrow-gray:hover{border: 1px solid #dedede;z-index: 1;}
+
+
+.bid_inf_main_titl{width: 740px;height: 45px;}
+.bid_inf_main_conditions{width: 740px;height: 75px;margin-top: 28px;}
+.bid_inf_sum, .bid_inf_rate, .bid_inf_time{float: left;}
+
+.bid_inf_sum,.bid_inf_rate,.bid_inf_time{width: 210px;height: 75px;border-right:1px solid #eeeeee;}
+.bid_inf_sum span, .bid_inf_rate span, .bid_inf_time span{line-height: 60px;}
+.bid_inf_rate{padding-left: 30px;width:190px;position: static;}
+.bid_inf_time{padding-left: 30px;width:275px;border-right: none;}
+
+.bin_inf_main_four{width: 740px;height: 90px;margin-top: 35px;}
+.bin_inf_main_four div{float: left;}
+.bin_inf_main_four .bin_inf_one{width: 225px;}
+.bin_inf_main_four .bin_inf_two{width: 515px;}
+.bin_inf_main_four .bin_inf_two .box_dw_width{float: left;line-height: 35px;}
+.bin_inf_main_four .bin_inf_two .box_dw_width span.money{padding-right: 10px;}
+.bin_inf_main_four .bin_inf_two .bid_progress_bar{float: left;padding-top: 8px;}
+
+.f14px{font-size: 14px !important;}
+
+/*提示信息*/
+.bid_inf_question{top: 228px; left: 140px;}
+
+/*原始项目信息*/
+.item-information{ padding:10px 0; height:auto; overflow:hidden;}
+.item-information li{ float:left; height:28px; line-height:28px;}
+.item-information .w335{ width:335px;}
+.item-information .w300{ width:300px;}
+.item-information li span{color:#999;}

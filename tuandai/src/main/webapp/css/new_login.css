@@ -1,0 +1,239 @@
+/*
+date:2015-12-26 16:22
+name:ljb
+*/
+.fl-l{float: left;}
+.fl-r{float: right;}
+.pa{position: absolute;}
+.pr{position: relative;}
+.mt35{margin-top: 35px;}
+.mb25{margin-bottom: 25px;}
+.mb13{margin-bottom: 13px;}
+
+/*页面样式*/
+a.fc-green,.fc-green{color: #ffb700;}
+a.fc-red,.fc-red{color: #ff0000;}
+a.fc-666,.fc-666{color: #666666}
+a.fc-orange,.fc-orange{color: #ff7301}
+a.fc-9e9,.fc-9e9{color: #9e9e9e}
+a.fc-ffb,.fc-ffb{color: #ffbc1b}
+.fz-18{font-size: 18px;}
+.fz-16{font-size: 16px;}
+.fz-14{font-size: 14px;}
+a.tdl{text-decoration: none;}
+a.tdl:hover{text-decoration: underline;}
+
+/*注册页面*/
+.container{width: 1200px; height: auto; overflow: hidden; margin: 34px auto 0; *padding-top: 34px;}
+
+.reg-content{height: auto; overflow: hidden; padding: 0 90px; background: #fff;}
+.reg-top{height: auto; overflow: hidden; padding: 50px 0 18px; border-bottom: 1px solid #ececec }
+.reg-top p{height: auto; overflow: hidden; font-size: 14px;}
+.reg-top .p-l{float: left;font-size: 18px; color: #9e9e9e;}
+.reg-top .p-r{float: right;}
+.reg-con{height: auto; overflow: hidden; padding: 30px 0 60px;}
+.reg-con .reg-c-left{width: 640px; height: auto; overflow: hidden; padding-top: 70px;}
+.reg-con .reg-c-right{width: 370px; height: auto; overflow: hidden; }
+.reg-con .reg-c-right img{width: 370px; height: 370px;}
+.reg-input-group{height: 40px;/* overflow: hidden;*/ clear:both; position: relative; font-size: 14px;}
+.reg-input-group label,.reg-input-group .reg-text,.reg-input-group .reg-message{float: left;}
+.reg-input-group label{width: 85px; line-height: 40px; text-align: right; padding-right: 21px; color: #5d5c5c;  }
+.reg-input-group input{ font-family: 'Microsoft Yahei','\5FAE\8F6F\96C5\9ED1'}
+.reg-input-group .text-input{*height: 18px; line-height: 18px; padding: 10px 0; width: 288px; margin-left: 0; *float: left; text-indent: 15px; font-size: 14px; border: 1px solid #e2e2e2; border-radius: 2px; -webkit-border-radius: 2px; color: #333;}
+.reg-input-group .w1{width: 180px; float: left;}
+.reg-input-group #imVcode{width: 100px; height: 40px; vertical-align: -41%; margin-left: 10px;}
+.reg-input-group .change{font-size: 14px; color: #9e9e9e}
+.btn-group a{font-size: 16px;}
+.hide-sougou-key{background: #fff; width: 24px; height: 24px; display: inline-block; right: 4px; top: 8px; z-index: 10}
+.reg-register{padding-left: 106px;}
+.reg-register .agree1{padding-bottom:2px; height: auto; padding-top: 15px;   }
+.reg-register .agree1 .agree_left{font-size: 14px;}
+.reg-register .btn-group{height: auto; overflow: hidden; *margin-top: 0;}
+.reg-register .btn-group a{width: 290px; height: 48px; border-radius: 2px; -webkit-border-radius: 2px; background: #ffb700; display: block; overflow: hidden; border: 0px;  cursor: pointer; text-align: center;
+    line-height: 48px; color: #FFF; font-size: 18px; text-decoration: none;}
+.reg-register .btn-group a:hover{background: #ff7800}
+.reg-register .btn-group .btn-reg-gray,.reg-register .btn-group .btn-reg-gray:hover{background:#ccc;}
+.reg-con .reg-mail{padding:20px 0 20px 106px; }
+.reg-con .reg-mail a{font-size: 14px; color: #9e9e9e}
+
+/*20160106去掉浏览器表单自动填充后有黄色背景*/
+input.text-input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px #ffffff inset; }
+
+/*信息提示*/
+.reg-input-group .red-border-input{border: 1px solid #ff0000}
+.reg-input-group .green-border-input{border: 1px solid #ffb700}
+.reg-input-group .yellow-border-input{border: 1px solid #ffbc1b}
+.reg-input-group .reg-message{position: absolute; left: 405px; text-align: left; line-height: 40px; color: #5c5c5c;}
+.reg-input-group .reg-message .info-mes,
+.reg-input-group .reg-message .reg_wrong,.reg-input-group .reg-message .error-mes{width: 178px; height: 38px; overflow: hidden; font-size: 12px; padding-left: 8px;border-radius: 2px; -webkit-border-radius: 2px;}
+.reg-input-group .reg-message .info-mes{border: 1px solid #e2e2e2; background: #f7f7f7; color: #666666;}
+.reg-input-group .reg-message .reg_wrong,.reg-input-group .reg-message .error-mes{border: 1px solid #ff7a7a; background: #ffebeb; color: #ff0000;}
+.reg-input-group .eyes{width: 24px; height: 14px; top: 12px; right: 12px; cursor: pointer; background: url(//js3.tuandai.com/images/users/eyes.png?v=2018011001) no-repeat;}
+.reg-input-group .eyes-box{top: 0; right: 0; z-index: 11;}
+.reg-input-group .close-eyes{background-position: 0 0; }
+.reg-input-group .eyes.hover{background-position: 0 -14px; }
+.reg-input-group .open-eyes{background-position: 0 -14px; }
+
+
+/*注册成功页面*/
+.reg-suc-top{padding-top: 50px; padding-bottom: 31px;}
+.reg-top .reg-t-lt{width: 54px; height: auto; padding-top: 12px;}
+.reg-icons,.arrow-icon{background: url(//js3.tuandai.com/images/users/register_icon.png?v=2018011001) no-repeat;}
+.reg-succeed-icon{width: 54px; height: 54px; display: inline-block; background-position: 0 0;vertical-align: middle;}
+.reg-top .reg-t-lt .reg-succeed-icon{width: 54px; height: 54px; display: block; background-position: 0 0}
+.reg-top .reg-t-rt{height: auto; overflow: hidden; margin-left: 20px; color: #585858; }
+.reg-top .reg-t-rt p{font-size: 26px; margin-bottom:10px; line-height: 38px;text-align: center;}
+.reg-top .reg-t-rt .title{display: inline-block;text-align: center;line-height: 54px;padding-left: 25px;}
+.reg-top .reg-t-rt p span.red{color: #ff4546; font-weight: 700}
+.reg-con .info-text{font-size: #5d5c5c; font-size: 16px;}
+.reg-con .safe-list{height: auto; overflow: hidden; padding: 28px 0 20px; border-bottom: 1px solid #ececec; }
+.reg-con .safe-icon,.reg-con .safe-c-text {float: left;}
+.reg-con .safe-icon,.safe-btn{padding-top: 6px;}
+.reg-con .safe-btn{float: right;}
+.reg-con .safe-btn span{font-size: 16px;}
+.reg-con .safe-icon {margin-right: 15px;}
+.reg-con .safe-icon span{width: 37px; height: 38px; display: inline-block;}
+.reg-con .safe-icon .phone-icon{ background-position: 0 -62px; }
+.reg-con .safe-icon .name-icon{background-position: -38px -62px;}
+.reg-con .safe-icon .bank-icon{background-position: -76px -62px;}
+.reg-con .safe-c-text p{margin-bottom: 5px;}
+.safe-btn .phone-btn{width: 120px;}
+.getin-usercenter{text-align: right;}
+
+.zhakan{padding: 50px 0 60px;}
+.reg-con .envelope{width: 230px;float: left;margin-left: 250px;margin-right: 55px;}
+/*.reg-con img{padding-left: 12px;}*/
+.reg-con .envelope p{text-align: center;font-size: 14px;color: #666;}
+.reg-con .gold{width: 230px;float: left;}
+.reg-con .gold p{text-align: center;font-size: 14px;color: #666;}
+.cl{clear: both;height: 40px;}
+.reg-con a.view{width: 198px;height: 36px;display: block;background: #ffbc1b;clear: both;margin:0px auto;text-align: center;line-height: 36px;font-size: 16px;color: #fff;}
+.reg-con .browse{text-align: center;font-size: 14px;color: #9e9e9e;padding-top: 15px;display: block;margin: 0 auto;}
+/*弹窗*/
+
+.dial-window{margin-left: -290px;}
+.dial-window{width: auto;}
+.dial-window .body{width: auto; text-align: left; padding: 25px 30px 0;}
+.dial-window.dial-window-w1{width: 540px; margin-left: -270px;}
+.dial-window.dial-window-w2{width: 580px; margin-left: -290px;}
+.dial-window.dial-window-w3{width: 418px; margin-left: -209px;}
+.dial-window.dial-window-w4{width: 608px; margin-left: -304px; margin-top: -245px;}
+.dial-window.dial-window-w5{width: 630px; margin-left: -315px;}
+
+/*验证手机信息弹窗*/
+.reg-code-text{height: auto; overflow: hidden; font-size: 14px;}
+.reg-code-text label{font-size: 14px; width: 100px; margin-right: 10px;}
+.reg-code-text .phone{height: auto; padding: 10px 0 15px;}
+.reg-code-text .phone .tel-num{font-size: 16px; color: #000; font-weight: 700}
+.reg-code-text .reg-input-group label{width: 100px; margin-right: 10px; padding-right: 0;}
+.reg-code-text .reg-input-group1 {height: auto;}/*当reg-input-group内容不固定时，高度设置为自动*/
+.reg-code-text .reg-input-group .w2{width: 138px; float: left;}/*自定义输入框宽度*/
+.reg-code-text .reg-input-group .w4{width: 272px; float: left;}
+.reg-code-text .reg-input-group .get_code{width: 122px; height: 38px; border-radius: 2px;  -webkit-border-radius: 2px;  margin-left: 10px; display: block;  line-height: 38px; float: left; border: 1px solid #e2e2e2; color: #ffbc1b; text-align: center; font-size: 14px;}
+.reg-code-text .reg-input-group .hav-other{display: inline-block; width: 90px; margin-left: 8px; margin-top: 2px; font-size: 12px; line-height: 17px; color: #9e9e9e;}
+.reg-code-text .reg-input-group .hav-other .other-btn{color: #ffbc1b}
+.dial-window .reg-message1{clear: both;  padding-left:110px; height: 30px; line-height: 30px;}
+.dial-window  .reg-message1 .reg_wrong1,.dial-window .reg-message1 .error-mes1{font-size: 14px; color: #ff4546; height: auto; }
+.dial-window .btn-group.pl140,.dial-window .pl140{padding-left: 140px; }
+.dial-window .pl138{padding-left: 138px;}
+.dial-window .btn-group.pl166{padding-left: 166px; }
+.dial-window .btn-group { padding-bottom: 35px;}
+.dial-window .btn-group span{display: inline-block;}
+.dial-window .btn-group .btnReg{width: 120px;}
+.dial-window .btn-group .btnReg1{width: 250px;}
+.dial-window .btn-group .btnReg2{width: 154px;}
+.dial-window .btn-group .btnReg3{width: 100px; margin-left: -4px;}
+.dial-window .btn-group .btnReg4{width: 290px; height: 38px; line-height: 38px;}
+#VoiceCode{display: none;}
+/*手机认证*/
+.reg-code-text .reg-input-group .w3{width: 248px;}
+.reg-code-text .reg-input-group .reg-message{left: 370px;}
+.reg-code-text .reg-input-group .mes-w1{left: 390px; }
+.reg-code-text .reg-input-group .mes-w1 div{width: 120px;}
+.reg-code-text .reg-message .info-mes,
+.reg-code-text .reg-message .reg_wrong,.reg-code-text .reg-message .error-mes{width: 130px;}
+.reg-prompt-box{padding: 15px 0 25px 0;}
+.sm-icon-box{ height: auto; overflow: hidden;}
+.reg-prompt-box .sm-icon-box,.reg-prompt-box p{padding-left: 50px;}
+
+.reg-prompt-box .sm-icon-box{margin-top: 8px;}
+.reg-prompt-box p{font-size: 14px; clear: both; color: #666; line-height: 25px;}
+.reg-prompt-box .reg-succeed-icon-sm{margin-right: 10px; margin-top: 2px;}
+.reg-prompt-box .reg-succeed-icon-sm,.reg-prompt-box .sm-icon-box span{float: left; padding-left: 0;}
+
+/*绑定银行卡*/
+.reg-bank-box .input-group-box{margin-top: 26px;}
+.reg-bank-box .prompt-info{padding: 14px 14px; border: 1px dashed #e2e2e2; font-size: 14px; }
+.reg-bank-box .reg-input-group{height: 36px}
+.reg-bank-box .w2{width: 112px;}
+.reg-bank-box .h36{height: 14px;}
+.reg-bank-box .label1{width: 98px;height: 36px; line-height: 36px; padding-right: 10px; font-size: 14px;}
+.reg-bank-box .reg-input-group .reg-message{left: 405px;}
+.reg-bank-box .reg-input-group1{height: auto;}
+.reg-bank-box .reg-input-group .mw1 div{width: 132px; height: 34px; line-height: 34px;}
+.reg-code-text .reg-input-group .mw2 div{width: 110px;}
+.input[disabled],input:disabled{background: #f5f5f5}
+.reg-bank-box .bank-iconbox{right: 8px; top: 5px;}
+.reg-bank-box .bank-iconbox img{width: 24px; height: 24px;}
+
+/*20160112绑定银行卡修改*/
+.reg-bank-box .reg-input-group input{color: #666; }
+.reg-bank-box .reg-input-group .text-input{text-indent: 10px}
+.reg-bank-box .reg-input-group .get_code,.reg-bank-box .reg-input-group .reset_get_code{width: 106px; height: 34px; border-radius: 2px;  -webkit-border-radius: 2px;  margin-left: 10px; display: block;  line-height: 34px; float: left; border: 1px solid #ffecbe; color: #ffbc1b; background: #fffaee; text-align: center; font-size: 12px;}
+.reg-bank-box .reg-input-group .get_code:hover{border: 1px solid #ffe19a; background: #fff6e0}
+.reg-bank-box .reg-input-group .reset_get_code{background: #f5f5f5; border: 1px solid #f5f5f5; color: #666}
+.reg-bank-box .reg-input-group .reset_get_code b{color: #ffbc1b}
+.reg-bank-box .bank-tips{width: 240px; height: 70px; padding: 8px 10px; top: -86px; left: -8px; border-radius: 3px; -webkit-border-radius: 3px; display: none; font-size: 12px; border: 1px solid #ffbc1b; background: #fff; z-index: 105}
+.reg-bank-box .bank-tips-icon{width: 16px; height: 16px; left: 5px; top: 10px; cursor: pointer; background-position: -18px -182px; display: inline-block;}
+.reg-bank-box .bank-arrow-down{background-position: -37px -182px; width: 17px; height: 7px; display: inline-block; bottom: -7px; left: 10px; overflow-y: hidden;}
+.reg-bank-box .ffb{color: #ffb80d}
+.reg-bank-box .close-cleartext{width: 18px; height: 18px; display: none; right: 9px; top: 10px; cursor: pointer; background-position: -1px -109px; }
+.reg-bank-box .abs-r{right: 154px;}
+.reg-bank-box .validate{display: inline-block; float: left; line-height: 34px; font-size: 12px; text-decoration: underline;}
+.reg-bank-box .zindex6{z-index: 6}
+.reg-bank-box .reg-promt{font-size: 12px;}
+
+/*select美化*/
+.reg-bank-box .text-box{width: 140px;}
+.select-wrapper{position:relative; cursor:pointer; display:inline-block; *display:inline; *float:left; *margin-right:10px; background:#fff;border-radius:3px;	border:1px solid #e2e2e2; }
+.select-button{width: 138px; height:34px; font-size: 14px; border:0; border-radius:2px; outline: none; background:url(//js3.tuandai.com/images/users/register_icon.png?v=2018011001) no-repeat #fff; cursor:pointer; background-position: 107px -207px; padding:0 26px 0 10px; overflow:hidden; text-align:left; outline:none; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.select-button:focus{outline: none;}
+.select-down{position:absolute; top:0; right:0;  overflow:hidden; }
+.select-list{width: 140px; background:#fff; border-radius:2px; display:none; z-index:2; position:absolute; left:-1px;top:34px; overflow:hidden;}
+.select-list ul{margin:0;padding:0; height: 165px; overflow-y: auto; overflow-x:hidden; border: 1px solid #e2e2e2; color: #666}
+.select-list ul li{text-indent: 10px; height: 34px; line-height: 34px; font-size: 14px; cursor:pointer; overflow:hidden; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.select-list ul li.selected,
+.select-list ul li:hover{background: #ffa019; color: #fff;}
+
+/* 下拉列表不可用样式 */
+.select-button-disable{color:#ccc;width:155px;height:34px;border:1px solid #e2e2e2;border-radius:3px;background:#fff;cursor:pointer;padding-left:10px;overflow:hidden;text-align:left;outline:none;}
+.select-down-disable{color:#ccc;font-size:18px;position:absolute;top:0;right:10px;line-height:34px;}
+
+/*认证成功*/
+.reg-rz-box{padding: 15px 0 35px;}
+
+
+/*提交成功*/
+.submit-succeed,.submit-failed{height:270px;padding-top: 150px; text-align: center;}
+.reg-succeed-icon-sm,.reg-failed-icon-sm{ width: 20px; height: 20px; display: inline-block;}
+.reg-succeed-icon-sm{background-position: -32px -107px;}
+.reg-failed-icon-sm{background-position: -54px -107px;}
+.reg-succeed-icon-mm{background-position: -61px 0; width: 30px; height: 30px; display: inline-block;}
+
+.box-center{display: inline-block; margin: 0 auto; *display: inline; *zoom:1;}
+.submit-succeed .btn-group,.submit-failed .btn-group{ margin: 0 auto; margin-top: 12px; }
+.submit-succeed .btn-group .btnReg5,.submit-failed .btn-group .btnReg5{width: 198px; font-size: 16px; margin: 0 auto;}
+
+/*span 手势*/
+.handCursor {cursor: pointer}
+
+/*20160815 推荐人手机号*/
+.recomm-phone{padding-left: 106px; height: auto; }
+.recomm-phone span{cursor: pointer;}
+.recomm-phone .arrow-icon{display: inline-block; margin-right: 3px; *vertical-align: middle;}
+.recomm-phone .arrow-trans-def{width: 10px; height: 10px; background-position: -61px -182px;}
+.recomm-phone .arrow-trans-down{width: 10px; height: 10px; background-position: -72px -182px;}
+
+
+
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="dao.TSiRecordMapper" >
+	<resultMap type="TSiRecord" id="resultTSiRecordList">
+	<result column="sirid" property="sirid"/>
+	<result column="sirinmoney" property="sirinmoney"/>
+	<result column="sirdate" property="sirdate"/>
+	<result column="sirstate" property="sirstate"/>
+	<result column="sirisfinish" property="sirisfinish"/>
+	
+  <association property="tSiItem" javaType="TSiItem">
+  <id property="siiid" column="siiid"/>
+  <result column="siitmoney" property="siitmoney"/>
+	<result column="siismoney" property="siismoney"/>
+	<result column="siirmoney" property="siirmoney"/>
+	<result column="siireturn" property="siireturn"/>
+	<result column="siiairate" property="siiairate"/>
+	<result column="siipubdate" property="siipubdate"/>
+	<result column="siiresidue" property="siiresidue"/>
+	<result column="siirepayment" property="siirepayment"/>
+	<result column="siiicondition" property="siiicondition"/>
+	<result column="siistate" property="siistate"/>
+	<result column="siititle" property="siititle"/>
+	<result column="siitype" property="siitype"/>
+	 </association>
+  </resultMap>
+		<select id="getTSiRecordList" resultMap="resultTSiRecordList"  parameterType="TSiRecordQuery">
+	SELECT * FROM t_si_record AS sir
+INNER JOIN t_si_item AS sii ON sir.siiid=sii.siiid
+		<where>
+			and sir.userid=#{userid}
+			<if test="null!=sirstate and ''!=sirstate">
+					and sir.sirstate=#{sirstate}
+				</if>
+				<if test="null!=sirisfinish and ''!=sirisfinish">
+					<if test="1==sirisfinish">
+					and sir.sirisfinish=1
+					</if>
+					<if test="2==sirisfinish">
+					and sir.sirisfinish=2
+					</if>
+				</if>
+		</where>		
+		 limit #{from},#{pageSize}		
+		</select>
+		<select id="getTSiRecord" resultType="TSiRecord">
+	SELECT * FROM t_si_record AS sir
+		</select>
+		<select id="getCounts" resultType="Integer"  parameterType="TSiRecordQuery">
+			SELECT count(1) totalCount FROM t_si_record AS sir
+INNER JOIN t_si_item AS sii ON sir.siiid=sii.siiid
+		<where>
+			and sir.userid=#{userid}
+			<if test="null!=sirstate and ''!=sirstate">
+					and sir.sirstate=#{sirstate}
+				</if>
+				<if test="null!=sirisfinish and ''!=sirisfinish">
+					<if test="1==sirisfinish">
+					and sir.sirisfinish=1
+					</if>
+					<if test="2==sirisfinish">
+					and sir.sirisfinish=2
+					</if>
+				</if>
+		</where>
+		</select>
+		
+		
+		<select id="getCountsByState" resultType="Integer"  parameterType="TSiRecordQuery">
+			SELECT count(1) totalCount FROM t_si_record AS sir
+INNER JOIN t_si_item AS sii ON sir.siiid=sii.siiid
+		<where>
+				and sir.userid=#{userid}
+				<if test="null!=sirstate and ''!=sirstate">
+					and sir.sirstate=#{sirstate}
+				</if>
+				
+					and sir.sirisfinish=1
+					
+				
+		</where>
+		</select>
+		
+		<!-- 添加投资记录 -->
+	<insert id="addSirecord" useGeneratedKeys="true" keyProperty="sirid" parameterType="entity.TSiRecord">
+	INSERT  INTO `t_si_record`(`drid`,`userid`,`sirinmoney`,`sirmethod`,`sirdate`,`sirstate`,`sirisfinish`,`siiid`,`sirreinst`,`sirinst`) VALUES 
+	(NULL,#{userid},#{sirinmoney},NULL,#{sirdate},'投标中',1,#{siiid},#{sirreinst},0)
+	</insert>
+	
+	
+		
+		
+		<resultMap type="TSiRecord" id="TSiItemAndRecord">
+	<result column="sirinmoney" property="sirinmoney"/>
+	<result column="sirdate" property="sirdate"/>
+	
+  <association property="tUserData" javaType="TUserData">
+  <id property="userid" column="userid"/>
+  <result column="phone" property="phone"/>
+	 </association>
+		</resultMap>
+		<!-- 获取投资项目-投资记录 -->
+		<select id="getTSiRecordListBySiiid" resultMap="TSiItemAndRecord"  parameterType="TSiItemQuery">
+			SELECT user.phone,sir.sirinmoney,sir.sirdate FROM t_user_data AS USER
+			INNER JOIN t_si_record AS sir ON user.userid=sir.userid
+			WHERE sir.siiid=#{siiid}  ORDER BY sir.sirdate DESC  limit #{from},#{pageSize}	
+		</select>
+		<!-- 获取投资项目-投资记录 -->
+		<select id="getCountsBySiiid" resultType="Integer"  parameterType="TSiItemQuery">
+			SELECT count(1) totalCount FROM t_user_data AS USER
+			INNER JOIN t_si_record AS sir ON user.userid=sir.userid
+			WHERE sir.siiid=#{siiid}
+		</select>
+		<update id="updateSirreinst" parameterType="TSiRecordQuery">
+		UPDATE t_si_record SET sirreinst=(SELECT SUM(rrinterest) FROM t_rece_record WHERE sirid=#{sirid} AND rrisfinish=1)
+  WHERE sirid=#{sirid};
+		</update>
+		<update id="updateSirinst" parameterType="TSiRecordQuery">
+		UPDATE t_si_record SET sirinst=(SELECT SUM(rrinterest) FROM t_rece_record WHERE sirid=#{sirid} AND rrisfinish=2)
+  WHERE sirid=#{sirid};
+		</update>
+		<select id="getReinstByUserid" resultType="java.math.BigDecimal"  parameterType="TSiRecordQuery">
+		SELECT SUM(sirreinst) FROM t_si_record WHERE userid=#{userid}
+		</select>
+		<select id="getInstByUserid" resultType="java.math.BigDecimal"  parameterType="TSiRecordQuery">
+		SELECT SUM(sirinst) FROM t_si_record WHERE userid=#{userid}
+		</select>
+		<select id="getInmoneyByUserid" resultType="java.math.BigDecimal"  parameterType="TSiRecordQuery">
+		SELECT SUM(sirinmoney) FROM t_si_record WHERE userid=#{userid} and sirisfinish=1
+		</select>
+		<select id="getRemoneyByUserid" resultType="java.math.BigDecimal"  parameterType="TSiRecordQuery">
+		SELECT SUM(sirinmoney) FROM t_si_record WHERE userid=#{userid} and sirisfinish=2
+		</select>
+		
+		
+		<!-- 投资完成后 将回款记录改正 -->
+	<update  id="updateisfinish" parameterType="TSiItemQuery" >
+	 UPDATE t_rece_record SET isfinish=1,rrdate=NOW() WHERE rrid IN (
+SELECT t.id FROM(
+SELECT rr.rrid id FROM t_si_record AS sir INNER JOIN
+ t_rece_record AS rr ON sir.sirid=rr.sirid WHERE sir.siiid=#{siiid}) AS t)
+	</update>
+	
+		
+</mapper>

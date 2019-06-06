@@ -1,0 +1,147 @@
+.guarantee-out-box{width: 940px;min-height:450px;padding: 30px; border: 1px solid #E5E5E5; margin: 0 auto 10px; background: #fff;}
+.color-red{color: red!important;}
+.color-orange{color: #ff9900;}
+.bdr-1{border-right: 1px solid #E5E5E5!important;}
+ .z-index1{z-index: 1;}
+ .z-index2{z-index: 2;}
+ .z-index3{z-index: 3;}
+ .w-140{width: 140px!important;}
+ .w-150{width: 150px!important;}
+ .m-g-b-0{margin-bottom: 0!important;}
+ .auto-height{height: auto!important; margin-bottom: 15px!important;}
+.btn{-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; width: 130px; height: 44px;  display: block; text-align: center;  font-size: 16px; line-height: 44px; }
+.btn1{background: none; float: left; color: #FE9601; border: 1px solid #FE9601; color: #fff; background: #fe9601; }
+.btn2{background: none; float: left; color: #FE9601; border: 1px solid #FE9601; margin-left: 15px;  }
+.btngar{background:#CDCDCD!important; border: 1px solid #CDCDCD!important; opacity: 1!important;  filter:alpha(opacity=100)!important ;}
+.btn2:hover{background: #FE9601; color: #fff; opacity: 1; filter:alpha(opacity=100) ;text-decoration: none;}
+.btn1:hover{text-decoration: none; opacity: 0.8;  filter:alpha(opacity=80) ;}
+ .textarea-1{width: 524px; height: 140px; font-size: 14px; font-family: "microsoft yahei"; color: #333; padding: 2px; border: 1px solid #E5E5E5;}
+.guarantee-out-box .tip1{font-size: 14px; color: #666; padding-left: 26px; height: 42px;  border-bottom: 1px solid #E5E5E5; background:
+    url("//js.tuandai.com/images/member/my_borrow/tip-icon-1.png") 0 0px no-repeat ; }
+.guarantee-out-box .input-box{height: 14px; line-height:20px; border: 1px solid #E5E5E5; padding: 10px 5px; width: 324px; font-size: 14px; color: #666;}
+.guarantee-out-box .guarantee-content{width: 940px; padding-top: 26px;}
+.guarantee-out-box .guarantee-content .item{}
+.guarantee-out-box .guarantee-content .itemfix{height: auto!important;}
+.guarantee-out-box .guarantee-content .item .left-i{width: 285px; height: 58px; text-align:right; line-height:34px; font-size: 14px; color: #333; float: left;}
+.guarantee-out-box .guarantee-content .item .right-i{float: left; padding-left: 20px; font-size: 14px; line-height: 34px;  color: #666;}
+.guarantee-out-box .guarantee-content .item .line{ display: inline-block; *display: inline; vertical-align: -2px; width: 1px; height: 24px;  border-left: 1px solid #e5e5e5; margin: 0  26px;}
+.guarantee-out-box .guarantee-content .item .ver-l{ vertical-align: 4px;}
+
+.guarantee-out-box .text-box{width: 324px; height: 36px; border: 1px solid #E5E5E5; padding:0 5px; font-size: 14px; line-height: 36px; position: relative;cursor:pointer; }
+.guarantee-out-box .text-box ul{position: absolute; background: #fff; top: 36px; left: -1px; width: 334px; border: 1px solid #E5E5E5; max-height: 250px;overflow: auto; }
+.guarantee-out-box .text-box ul li{height: 30px; background: #fff; line-height: 30px;  padding-left: 5px;  font-size: 14px; cursor: pointer; }
+.guarantee-out-box .text-box ul li:hover{background: #ff9900; color: #fff; }
+.guarantee-out-box .text-box .arrow{background:url("//js.tuandai.com/images/member/arrow.png") 10px 15px no-repeat; right: -1px!important; width: 34px; height: 36px; position: absolute; border-left:1px solid #E5E5E5;  right: 0; top: 0; cursor: pointer;
+    -webkit-transition: 0.3s;-moz-transition: 0.3s;-ms-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;
+}
+.guarantee-out-box  .text-box .arrow1-rotate{
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);  }
+.guarantee-out-box .right-i .img-box{width: 88px; height: 88px;}
+.guarantee-out-box .right-i .img-tip{font-size: 12px; color: #333;}
+.tag{width: 1000px; height: 44px; margin:  auto; background: #fff;  border: 1px solid #E5E5E5; border-bottom: none; border-left:none;  }
+.tag ul li  {float: left; text-align: center;  border-left: 1px solid #E5E5E5;   line-height: 44px; font-size: 14px; padding: 0 16px; height: 44px; display: block;   position: relative;  }
+.tag ul li a{display: inline-block; }
+.tag .selected{ border-top: 2px solid #fe9400; background: #fff; padding-left: 0; padding: 0 24px; border-bottom: none;  position: relative;  }
+.tag .selected a{color: #FE9400; font-weight: bold; text-decoration: none;}
+.tag .finished{width: 17px; height: 14px; display: inline-block;  background: url("//js.tuandai.com/images/member/check.png") 0 -28px; vertical-align: middle; margin-right: 2px; }
+
+.guarantee-out-box .check-icon{}
+.guarantee-out-box .checked{}
+.guarantee-out-box .table-style{width: 700px;  margin: 0 auto;}
+.guarantee-out-box .table-style table{width: 700px; border: 1px solid #d9d9d9;  }
+.guarantee-out-box .table-style table th{height: 46px; font-size: 14px; background: #e9e9e9; text-align: center; line-height: 46px; border: 1px solid #d9d9d9;  }
+.guarantee-out-box .table-style table td{height: 46px; background: #fff; text-align: center; line-height: 46px;  border: 1px solid #d9d9d9;}
+.guarantee-out-box  .pics{padding-left: 4px; padding-bottom: 20px;}
+.guarantee-out-box  .pics li{float: left; margin: 0 15px 20px 0px;}
+.guarantee-out-box  .pics li .pic2{padding: 10px; border: 1px solid #E5E5E5;}
+.guarantee-out-box  .pics li .pic-title{text-align: center;margin-top: 5px; width: 170px; overflow: hidden; height: 28px; line-height: 26px; font-size: 14px; border: 1px solid transparent; }
+.guarantee-out-box  .pics li .pic-title:hover{background: #eeeeee; border: 1px solid #E5E5E5;}
+.guarantee-out-box  .pics li img{width: 150px; height: 113px; }
+.guarantee-out-box  .pics .pic-title .change-name{   line-height: 25px; height: 27px; padding-bottom: 1px; font-size: 14px; text-align: center; width: 168px; margin: 0 auto; border:none; }
+.guarantee-out-box  .content-list{width: 610px; height: 44px; margin: 0  auto 15px;}
+.guarantee-out-box  .content-list dd{float: left;  height: 44px; margin-left: 20px; font-size: 14px; line-height: 44px}
+.guarantee-out-box  .content-line{border-bottom: 1px solid #E5E5E5; margin-bottom: 30px;}
+
+.loading-mask{width: 100%;height: 100%;position: fixed;z-index: 20000000;top: 0px;left: 0px;overflow: hidden;background-color:#A3A3A3;filter:alpha(opacity=30); /*IE滤镜，透明度50%*/-moz-opacity:0.3; /*Firefox私有，透明度50%*/opacity:0.3;/*其他，透明度50%*/}
+.loading{position:absolute;left:50%;top:50%;margin-top:-80px;margin-left:-170px;width:340px;height:120px;background:#fff;z-index:200000001;height:auto;}
+.loading .loading-indicator{background:white;color:#444;font-size:14px;font-family:"微软雅黑",Arial, Helvetica,sans-serif,"宋体";padding:10px;text-align:center;margin:0;height:auto;}
+.loading-msg  {color:Gray;line-height:22px;font-size:14px;font-family:"微软雅黑",Arial, Helvetica,sans-serif,"宋体"}
+.loading .title{height: 28px;line-height: 25px;font-size: 14px;background:orange;color:white;padding:2px 5px;}
+.loading input[type='button']{width: 80px;height: 28px;line-height: 25px;font-size: 14px;cursor: pointer;background: #FFF;border: #c7c7c7 solid 1px;color: #828282;font-size: 14px;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;margin:10px;float:right;}
+.loading input[type='button']:hover{background: orange;border: orange solid 1px;color:white;}
+.file {position: relative;display: inline-block;border: 1px solid gray;border-radius: 4px;width:200px;overflow: hidden;color:orange;text-decoration: none;text-indent: 0;line-height: 20px;margin-top:10px;} 
+.file:hover {background:orange;color: #fff;text-decoration: none;}
+.bid_inf_question {
+vertical-align: -6px;
+width: 20px;
+height: 20px;
+display: inline-block;
+*display: inline;
+background: url("//js.tuandai.com/images/investlist/invest_detail/fqbicons_que.png?v=20160330") 0 0 no-repeat;
+cursor: pointer; }
+
+.bid_inf_question2 {
+left: 434px; }
+
+.bid_inf_question:hover {
+background: url("//js.tuandai.com/images/investlist/invest_detail/fqbicons_que.png?v=20160330") 0 0 no-repeat; }
+
+.bid_tipbox {
+bottom: 31px;
+left: 50%;
+margin-left: -231px;
+width: 462px;
+display: none;
+z-index: 100000;
+cursor: text; }
+
+.bid_tipbox2 {
+top: -29px;
+left: -140px;
+width: 290px;
+height: 20px;
+padding: 10px;
+color: #666666; }
+
+.bond_tipbox {
+position: relative;
+width: 290px;
+height: 20px;
+text-align: center;
+color: #ff7506;
+border: 1px solid #ff7506;
+line-height: 20px;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px; }
+
+.bond_tipbox p i.bond_arrow {
+position: absolute;
+left: 143px;
+bottom: -4px;
+width: 7px;
+height: 4px;
+display: block;
+background: url("//js.tuandai.com/images/investlist/invest_detail/bond_arrow.gif") 0 0 no-repeat; }
+
+.bid_tipbox .tips-detail {
+position: relative;
+padding: 12px 16px 14px;
+background: #fff;
+border: 1px solid #ffa019;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px; }
+
+.bid_tipbox .tips-detail .tips-arrow {
+position: absolute;
+width: 17px;
+height: 7px;
+display: block;
+background: url("//js.tuandai.com/images/investlist/invest_detail/icons.png?v=20150814") -17px -74px;
+left: 50%;
+margin-left: -8px;
+bottom: -7px; }

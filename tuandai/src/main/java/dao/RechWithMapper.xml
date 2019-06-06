@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="dao.RechWithMapper">
+	<!-- 根据用户 -->
+	<select id="tuser" resultType="entity.TUserData" parameterType="String">
+	<!-- SELECT * FROM t_user_data WHERE username=#{username} -->
+	SELECT * FROM t_uc_account tuc INNER JOIN t_user_data tud ON tuc.userid=tud.userid WHERE username=#{username}
+	</select>
+	<!-- 充值 -->
+	<insert id="addRech" useGeneratedKeys="true" keyProperty="reid" parameterType="entity.TRecharge">
+	INSERT INTO t_recharge (ucid,drid,remethod,remoney,retime,restate)
+	VALUES(#{ucid},#{drid},#{remethod},#{remoney},#{retime},#{restate})
+	</insert>
+	<!-- 查询充值记录 -->
+	<select id="selechar" resultType="entity.TRecharge" parameterType="query.RechWithQuery">
+	SELECT reid,remethod,remoney,retime,restate FROM t_recharge tr INNER JOIN t_user_data tu ON tr.ucid=tu.userid WHERE tr.ucid=#{userid}
+	<trim>
+	<if test="restate!=null and restate!=''">and restate=#{restate}</if>
+	<if test="txtBegin!=null and txtBegin!=''">and retime BETWEEN #{txtBegin}</if>
+	<if test="txtEnd!=null and txtEnd!=''">and #{txtEnd}</if>
+	</trim>
+	 limit #{index},#{pageSize}
+	</select>
+	<!-- 添加交易记录 -->
+	<insert id="addreco" useGeneratedKeys="true" keyProperty="drid" parameterType="entity.TDealRecord">
+	INSERT  INTO `t_deal_record`(`userid`,`drdate`,`drdtype`,`drexpenditure`,`drincome`,`drbalance`,`drexplain`)
+	 VALUES (#{userid},#{drdate},#{drdtype},#{drexpenditure},#{drincome},#{drbalance},#{drexplain})
+	</insert>
+	
+	<!-- 查询资金表 -->
+	<select id="seleauca" resultType="entity.TUcAccount" parameterType="query.RechWithQuery">
+	SELECT * FROM t_uc_account WHERE userid=#{userid}
+	</select>
+	<!-- 充值成功修改金额 -->
+	<update id="updamaney" parameterType="entity.TUcAccount">
+	UPDATE t_uc_account SET ucavail=#{ucavail}
+	</update>
+	<!-- 查询充值总记录数 -->
+	<select id="TRecharCount" parameterType="query.RechWithQuery" resultType="Integer">
+	SELECT COUNT(1) FROM t_recharge tr INNER JOIN t_user_data tu ON tr.ucid=tu.userid WHERE tr.ucid=#{userid} 
+	<trim>
+	<if test="restate!=null and restate!=''">and restate=#{restate}</if>
+	<if test="txtBegin!=null and txtBegin!=''">and retime BETWEEN #{txtBegin}</if>
+	<if test="txtEnd!=null and txtEnd!=''">and #{txtEnd}</if>
+	</trim>
+	</select>
+	<!-- 查询充值成功的金额 -->
+	<select id="manySuccess" resultType="Double" parameterType="entity.TRecharge">
+	SELECT SUM(remoney) FROM t_recharge WHERE restate=#{restate}
+	</select>
+	<!-- 提现   获取自增主键-->
+	<insert id="addWith" useGeneratedKeys="true" keyProperty="wcid" parameterType="entity.TWithdrawCash">
+	INSERT INTO t_withdraw_cash (drid,ucid,wcnumber,wctime,wcmoney,
+	wcstate,wcresult,wcmode)VALUES(#{drid},#{ucid},#{wcnumber},#{wctime},#{wcmoney},
+	#{wcstate},#{wcresult},#{wcmode})
+	</insert>
+	<!-- 提现成功修改金额 -->
+	<update id="updatwith" parameterType="entity.TUcAccount">
+		UPDATE t_uc_account SET ucavail=#{ucavail} WHERE ucid=#{ucid}
+	</update>
+	<!-- 查看提现记录 -->
+	<select id="twith" resultType="entity.TWithdrawCash" parameterType="query.RechWithQuery">
+	SELECT wcmode,wcid,wcnumber,wctime,wcmoney,wcstate,wcresult FROM t_withdraw_cash wi INNER JOIN t_user_data tu ON wi.ucid=tu.ucid 
+WHERE wi.ucid=1
+GROUP BY wcid
+	 limit #{index},#{pageSize}
+	</select>
+	<!-- 查询提现总记录 -->
+	<select id="twithCount" parameterType="query.RechWithQuery" resultType="Integer">
+	SELECT COUNT(1) FROM t_withdraw_cash WHERE 1=1
+	
+	</select>
+	
+	<!-- 修改交易密码，判断 -->
+	<select id="ifuser" resultType="entity.TBankcardtable" parameterType="entity.TBankcardtable">
+	SELECT * FROM t_bankcardtable WHERE realName=#{realName} AND idCardNo=#{idCardNo} AND cardNo=#{cardNo}
+	</select>
+	
+	<!-- 保存交易密码 -->
+	<update id="updaPwd" parameterType="entity.TBankcardtable">
+		<!-- UPDATE t_user_data SET tranpassword=#{tranpassword} WHERE userid=#{userid} -->
+	UPDATE t_bankcardtable SET Transactionpassword=#{Transactionpassword}
+WHERE userid=#{userid}
+	</update>
+	
+	<!-- 查询银行卡表 -->
+	<select id="selectTB" parameterType="entity.TUserData" resultType="entity.TBankcardtable">
+	SELECT * FROM t_bankcardtable WHERE userid=#{userid}
+	</select>
+	</mapper>

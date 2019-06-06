@@ -1,0 +1,856 @@
+/*20161010厦门银行托管*/
+
+.xm-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 1000001;
+}
+
+.xiamen-pop {
+    position: fixed;
+    width: 553px;
+    height: auto;
+    padding-bottom: 38px;
+    text-align: center;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin-left: -276px;
+    margin-top: -200px; 
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    z-index: 1000002;
+}
+
+.xiamen-pop .close {
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    background: url("../images/close.png"/*tpa=images/close.png*//*tpa=images/close.png*/) no-repeat;
+}
+
+.xiamen-pop .close {
+    transition: all .3s linear;
+    transform: rotate(0deg)
+}
+
+.xiamen-pop .close:hover {
+    transform: rotate(180deg)
+}
+
+.xiamen-pop .pop-tit {
+    width: 100%;
+    height: 192px;
+    padding-top: 50px;
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+    background: url("../images/xmbank-topbg.png"/*tpa=images/xmbank-topbg.png*//*tpa=images/xmbank-topbg.png*/) no-repeat;
+}
+
+.xiamen-pop .pop-tit h3 {
+    width: 317px;
+    height: 45px;
+    margin: 0 auto;
+    background: url("../images/logo-03.png-v=201801151549.png"/*tpa=images/logo-03.png?v=201801151549*/) no-repeat;
+}
+
+.xiamen-pop .pop-tit h4 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.xiamen-pop .pop-tit p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.xiamen-pop .pop-body p {
+    margin-top: 20px;
+    line-height: 30px;
+    color: #989898;
+    font-size: 14px;
+}
+
+.xiamen-pop .pop-body p b {
+    color: #ff7200
+}
+
+.xiamen-pop .pop-body .btn {
+    width: 310px;
+    height: 52px;
+    line-height: 52px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    background: #ffbc1b;
+}
+
+.xiamen-pop .pop-body .btn:hover {
+    background: #ffa019;
+}
+
+
+/*20161025充值提现等提示弹窗*/
+
+.xm-window {
+    width: 531px;
+}
+
+.bankBindAlert {
+    width: auto;
+}
+
+.bankBindAlert .body {
+    width: auto;
+    padding: 50px 38px 0px;
+}
+
+.bankBindAlert .body .p1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #555;
+}
+
+.bankBindAlert .body .p2 {
+    font-size: 14px;
+    color: #b5b5b5;
+}
+
+.bankBindAlert .bottom {
+    height: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.xm-window .bottom .btn {
+    height: 38px;
+    margin: 0 auto;
+    line-height: 38px;
+    display: block;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    background: #ffbc1b;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.xm-window .bottom .btn:hover {
+    background: #ffa019
+}
+
+.xm-window .bottom .btn-group span {
+    font-size: 14px
+}
+
+.bankBindAlert .bottom .btn {
+    width: 243px;
+}
+
+.bankBindAlert .bottom .question {
+    color: #b5b5b5;
+    font-size: 14px;
+    line-height: 34px;
+    margin-top: 8px;
+}
+
+.bankBindAlert .bottom .question:hover {
+    text-decoration: underline;
+}
+
+.xm-window .btn-group {
+    padding-bottom: 0;
+}
+
+
+/*20161019弹窗 开通免密功能*/
+
+.passwordAlt .title1 {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    background: #f7f7f7;
+    color: #666;
+    position: relative;
+}
+
+.passwordAlt {
+    width: 487px;
+    margin-top: -201px;
+}
+
+.passwordAlt .body {
+    height: auto;
+    padding: 35px 68px 0px;
+    text-align: left;
+}
+
+.passwordAlt .body p {
+    color: #555;
+    line-height: 22px;
+}
+
+.passwordAlt .body .p1 {
+    width: auto;
+    height: auto;
+}
+
+.passwordAlt .body .p2 {
+    width: auto;
+    height: auto;
+    margin-top: 12px;
+}
+
+.passwordAlt .body .p2 em {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: -3px;
+    *vertical-align: 1px;
+    display: inline-block;
+    background: url("../images/ok-icon.png-v=20180119.png"/*tpa=images/ok-icon.png?v=20180119*/) no-repeat 0 -52px;
+}
+
+.passwordAlt .body .p2 span {
+    color: #b5b5b5;
+}
+
+.passwordAlt .bottom {
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 43px;
+}
+
+.passwordAlt .bottom .btn {
+    width: 243px;
+}
+
+.xm-window .bottom .btn {
+    height: 38px;
+    margin: 0 auto;
+    line-height: 38px;
+    display: block;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    background: #ffbc1b;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.xm-window .bottom .btn:hover {
+    background: #ffa019
+}
+
+
+/*20161222香港澳门开通存管账户提示*/
+
+.xm-window.hongkong {
+    width: 610px;
+    margin-top: -209px;
+    margin-left: -305px
+}
+
+.xm-window.hongkong .body {
+    width: auto;
+    padding: 40px 50px;
+}
+
+.xm-window.hongkong .body p {
+    text-align: left;
+}
+
+.xm-window.hongkong .body p {
+    padding-bottom: 26px;
+    color: #333;
+    line-height: 26px;
+}
+
+.xm-window.hongkong .body p b {
+    font-size: 16px;
+}
+
+.xm-window.hongkong .body p a {
+    font-weight: 700;
+    width: 79px;
+    height: 24px;
+    padding-left: 26px;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+    color: #333;
+    background: url("../images/qq_btn.png-v=20170309001.png"/*tpa=images/qq_btn.png?v=20170309001*/) no-repeat;
+}
+
+.xm-window.hongkong .btn {
+    width: 235px;
+}
+
+
+/*20170106弹窗 资产标借款提示*/
+
+.borrow-window {
+    width: 490px;
+    margin-left: -245px;
+}
+
+.borrow-window .body {
+    padding: 25px 30px
+}
+
+.borrow-window .body p {
+    color: #b5b5b5
+}
+
+.borrow-window .body .p1 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 26px;
+    color: #555
+}
+
+.borrow-window .bottom {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.borrow-window .bottom .btn {
+    width: 220px;
+    font-size: 14px;
+}
+
+.borrow-window .bottom .closebtn {
+    display: inline-block;
+    text-decoration: underline;
+    padding: 5px 0;
+}
+
+
+/*客服btn*/
+
+.xm-window .qq-service-btn {
+    font-weight: 700;
+    width: 81px;
+    height: 24px;
+    padding-left: 24px;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+    background: url("../images/qq_btn.png-v=20170309001.png"/*tpa=images/qq_btn.png?v=20170309001*/) no-repeat;
+}
+
+
+/*20161019弹窗 开通免密功能*/
+
+.passwordAlt .title1 {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    background: #f7f7f7;
+    color: #666;
+    position: relative;
+}
+
+.passwordAlt {
+    width: 487px;
+    margin-top: -201px;
+}
+
+.passwordAlt .body {
+    height: auto;
+    padding: 35px 68px 0px;
+    text-align: left;
+}
+
+.passwordAlt .body p {
+    color: #555;
+    line-height: 22px;
+}
+
+.passwordAlt .body .p1 {
+    width: auto;
+    height: auto;
+}
+
+.passwordAlt .body .p2 {
+    width: auto;
+    height: auto;
+    margin-top: 12px;
+}
+
+.passwordAlt .body .p2 em {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: -3px;
+    *vertical-align: 1px;
+    display: inline-block;
+    background: url("../images/ok-icon.png-v=20180119.png"/*tpa=images/ok-icon.png?v=20180119*/) no-repeat 0 -52px;
+}
+
+.passwordAlt .body .p2 span {
+    color: #b5b5b5;
+}
+
+.passwordAlt .bottom {
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 43px;
+}
+
+.passwordAlt .bottom .btn {
+    width: 243px;
+}
+
+
+
+.layer-win .title1 {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    background: #f7f7f7;
+    color: #666;
+    position: relative;
+}
+
+.layer-win {
+    margin-top: -300px!important;
+    width: 740px!important;
+    left: 50%;
+    margin-left: -350px!important;
+}
+
+.layer-win .body {
+    height: auto;
+    text-align: left;
+}
+
+ 
+
+.layer-win .body .p1 {
+    width: auto;
+    height: auto;
+}
+
+.layer-win .body .p2 {
+    width: auto;
+    height: auto;
+    margin-top: 12px;
+}
+
+.warning-icon{
+    
+     background-position:-48px 0!important ;
+}
+.layer-win .body .p2 em {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: -3px;
+    *vertical-align: 1px;
+    display: inline-block;
+    background: url("../images/ok-icon.png-v=20180119.png"/*tpa=images/ok-icon.png?v=20180119*/) no-repeat 0 -52px;
+}
+
+.layer-win .body .p2 span {
+    color: #b5b5b5;
+}
+
+.layer-win .bottom {
+    clear: both;
+    padding-bottom: 38px;
+}
+
+.layer-win .bottom .btn {
+    width: 243px;
+}
+
+.layer-win {
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.layer-win .top {
+    height: 58px;
+    line-height: 58px;
+    padding-bottom: 27px;
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+}
+
+.layer-win .border-bottom {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.layer-win .top p {
+    display: inline-block;
+    margin: 0 auto;
+    *display: inline;
+    *zoom: 1;
+}
+
+.layer-win .top .ok-icon,
+.layer-win .top .fail-icon {
+    width: 47px;
+    height: 47px;
+    vertical-align: -10px;
+    display: inline-block;
+    background: url("../images/ok-icon.png-v=20180119.png"/*tpa=images/ok-icon.png?v=20180119*/) no-repeat;
+}
+
+.layer-win .top .ok-icon {
+    background-position: 0 0
+}
+
+.layer-win .bottom {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.layer-win .bottom .money {
+    display: inline-block;
+    margin: 0 auto 46px;
+    *display: inline;
+    *zoom: 1;
+}
+
+.layer-win .bottom .money p {
+    color: #888;
+    font-size: 16px;
+}
+
+.layer-win .bottom .money p span {
+    color: #333
+}
+
+.layer-win .bottom .money .p1 {
+    padding-right: 40px;
+    border-right: 1px solid #ccc
+}
+
+.layer-win .bottom .money .p2 {
+    padding-left: 40px;
+}
+
+.layer-win .bottom .count {
+    clear: both;
+    line-height: 40px;
+}
+
+.layer-win .bottom .count p {
+    /* line-height: 35px; */
+}
+
+.layer-win .bottom .count .num {
+    color: #ffbc1b;
+}
+
+.layer-win .bottom .count .btn {
+    width: 366px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    margin: 0 auto;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.layer-win .info {
+    padding-left: 115px;
+}
+
+.layer-win .info p {
+    padding-bottom: 30px;
+    color: #333;
+    line-height: 26px;
+}
+
+.layer-win .info p b {
+    font-size: 16px;
+}
+
+.layer-win .info p span {
+    font-weight: 700;
+    color: #ff9705
+}
+
+.layer-win .top .fail-icon {
+    background-position: -48px 0
+}
+
+.layer-win .ff7301 {
+    color: #ff7301;
+}
+    .layer-win .ffb700 {
+    color: #ffb700;
+}
+
+.layer-win .cgt-box {
+    width: 680px!important;
+    margin: 0 auto;
+    padding: 30px 0 25px!important;
+}
+.layer-win .cgt-box-s {
+    width: 680px!important;
+    margin: 0 auto;
+    padding: 30px 0 25px!important;
+}
+
+.layer-win .btn-s{width: 250px!important;}
+
+.layer-win .qq-icon {
+    width: 12px; margin-right: 3px;
+    height: 14px;display: inline-block; *display: inline;
+    background: url("../images/qq-icon.png"/*tpa=images/qq-icon.png*//*tpa=images/qq-icon.png*/)
+}
+.layer-win .qq-bg {
+    display: inline-block; *display: inline; height: 24px;
+    background: #ffbc1b; color: #fff; vertical-align: middle;  line-height: 24px; border-radius:3px; padding: 0 5px 
+}
+/* ====一账通长级成功页面= */
+
+.cgt-page-warper .title1 {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    background: #f7f7f7;
+    color: #666;
+    position: relative;
+}
+
+
+
+.cgt-page-warper .body {
+    height: auto;
+    text-align: left;
+}
+
+
+
+.cgt-page-warper .body .p1 {
+    width: auto;
+    height: auto;
+}
+
+.cgt-page-warper .body .p2 {
+    width: auto;
+    height: auto;
+    margin-top: 12px;
+}
+
+.warning-icon{
+
+     background-position:-48px 0!important ;
+}
+.cgt-page-warper .body .p2 em {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: -3px;
+    *vertical-align: 1px;
+    display: inline-block;
+    background: url("../images/ok-icon.png-v=20180119.png"/*tpa=images/ok-icon.png?v=20180119*/) no-repeat 0 -52px;
+}
+
+.cgt-page-warper .body .p2 span {
+    color: #b5b5b5;
+}
+
+.cgt-page-warper .bottom {
+    clear: both;
+    padding-bottom: 38px;
+}
+
+.cgt-page-warper .bottom .btn {
+    width: 243px;
+}
+
+.cgt-page-warper {
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.cgt-page-warper .top {
+    height: 58px;
+    line-height: 58px;
+    padding-bottom: 27px;
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 170px;
+}
+
+.cgt-page-warper .border-bottom {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.cgt-page-warper .top p {
+    display: inline-block;
+    margin: 0 auto;
+    *display: inline;
+    *zoom: 1;
+}
+
+.cgt-page-warper .top .ok-icon,
+.cgt-page-warper .top .fail-icon {
+    width: 47px;
+    height: 47px;
+    vertical-align: -10px;
+    display: inline-block;
+    margin-right: 8px;
+    background: url("../images/ok-icon.png-v=20180119.png"/*tpa=images/ok-icon.png?v=20180119*/) no-repeat;
+}
+.cgt-page-warper .clock-icon{
+    background-position: -96px 0!important;
+}
+
+.cgt-page-warper .top .ok-icon {
+    background-position: 0 0
+}
+
+.cgt-page-warper .bottom {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cgt-page-warper .bottom .money {
+    display: inline-block;
+    margin: 0 auto 46px;
+    *display: inline;
+    *zoom: 1;
+}
+
+.cgt-page-warper .bottom .money p {
+    color: #888;
+    font-size: 16px;
+}
+
+.cgt-page-warper .bottom .money p span {
+    color: #333
+}
+
+.cgt-page-warper .bottom .money .p1 {
+    padding-right: 40px;
+    border-right: 1px solid #ccc
+}
+
+.cgt-page-warper .bottom .money .p2 {
+    padding-left: 40px;
+}
+
+.cgt-page-warper .bottom .count {
+    clear: both;
+    line-height: 40px;
+}
+
+.cgt-page-warper .bottom .count p {
+    /* line-height: 35px; */
+}
+
+.cgt-page-warper .bottom .count .num {
+    color: #ffbc1b;
+}
+
+.cgt-page-warper .bottom .count .btn {
+    width: 366px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    margin: 0 auto;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.cgt-page-warper .info {
+    padding-left: 115px;
+}
+
+.cgt-page-warper .info p {
+    padding-bottom: 30px;
+    color: #333;
+    line-height: 26px;
+}
+
+.cgt-page-warper .info p b {
+    font-size: 16px;
+}
+
+.cgt-page-warper .info p span {
+    font-weight: 700;
+    color: #ff9705
+}
+
+.cgt-page-warper .top .fail-icon {
+    background-position: -48px 0
+}
+
+.cgt-page-warper .ff7301 {
+    color: #ff7301;
+}
+.cgt-page-warper .ffb700 {
+    color: #ffb700;
+}
+
+.cgt-page-warper .cgt-box {
+    width: 680px!important;
+    margin: 0 auto;
+    padding: 30px 0 25px!important;
+}
+.cgt-page-warper .cgt-box-s {
+    width: 680px!important;
+    margin: 0 auto;
+    padding: 30px 0 25px!important;
+}
+
+.cgt-page-warper .btn-s{width: 250px!important;}
+
+.cgt-page-warper .qq-icon {
+    width: 12px; margin-right: 3px;
+    height: 14px;display: inline-block; *display: inline;
+    background: url("../images/qq-icon.png"/*tpa=images/qq-icon.png*//*tpa=images/qq-icon.png*/)
+}
+.cgt-page-warper .qq-bg { 
+    display: inline-block; *display: inline; height: 24px;
+    background: #ffbc1b; color: #fff; vertical-align: middle;  line-height: 24px; border-radius:3px; padding: 0 5px
+}
+.cgt-page-warper .cgt-line { margin-top: 35px; height: 1px; line-height: 1px;
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+}
+.cgt-page-warper{width: 720px; height: 810px; margin: 10px auto 0;  padding: 0 240px;    }

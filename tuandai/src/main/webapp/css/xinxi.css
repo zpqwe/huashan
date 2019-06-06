@@ -1,0 +1,70 @@
+.modular {background: #fff;}
+.clearfix:after {clear: both;content: ".";display: block;height: 0;visibility: hidden;}
+.clearfix {*zoom:1;zoom:1;}
+.z5{z-index: 5001;}
+
+.ban{ width: 964px; height: 291px; background:url("../../images/about_us/add/Banner.png?v=201803061632") 0px 0px no-repeat;}
+.ban p{height:36px;text-align: center;font-size: 24px;color:#fff;line-height: 36px;width:100%; padding-top: 160px;}
+.ban span{display:inline-block;border:1px solid #fed786;width:34px;height:34px;}
+.ban span.sp1{margin-left: 27px;margin-right: 13px;}
+.ban span.sp2{margin-left: 13px;margin-right: 5px;}
+.ban span.sp3{margin-left: 5px;margin-right: 13px;}
+.ban span.sp4{margin-left: 13px;margin-right: 13px;}
+.titleBox{ width: 856px; height: 30px; margin:38px auto; }
+.titleBox .title{float: left;background:url("../../images/about_us/add/icon-tit.png?v=201803061632") 0px 4px no-repeat; width: 400px; padding-left: 16px; line-height: 30px; font-size: 24px; color: #333; font-weight: bold;}
+.titleBox .time{ float: right; width: 360px; line-height: 30px; font-size: 16px;color:#999; text-align: right;}
+.data-list{ width: 854px; height: auto; margin:0px auto; padding: 14px 0px; border: #e6e6e6 solid 1px; border-radius: 4px;}
+.data-list dl{ float: left; width: 369px; height: 66px; padding: 22px 0px 22px 58px; }
+.data-list1 dl{padding: 30px 0px 30px 58px;}
+.data-list dl dt{ float: left; width: 66px; height: 66px; background:url("../../images/about_us/add/icon-data.png?v=201803061632") no-repeat;}
+.data-list dl dt.icon-data01{ background-position: 0px 0px; }
+.data-list dl dt.icon-data02{ background-position: 0px -66px; }
+.data-list dl dt.icon-data03{ background-position: 0px -132px; }
+.data-list dl dt.icon-data04{ background-position: 0px -198px; }
+.data-list dl dt.icon-data05{ background-position: 0px -264px; }
+.data-list dl dt.icon-data06{ background-position: 0px -330px; }
+.data-list dl dd{ float: right; width: 274px; line-height: 30px;}
+.data-list dl dd h5{ height: 30px; overflow: hidden; font-size: 18px; color: #333; font-weight: bold; padding-top: 4px;}
+.data-list dl dd p{ height: 30px; overflow: hidden; color: #999; font-size: 14px; }
+.data-list ul{ width: 854px; height: auto; overflow: hidden; border-top:#e6e6e6 dashed 1px; }
+.data-list ul li{ float: left; padding-left: 16px; background:url("../../images/about_us/add/icon-kdian.png?v=201803061632") 0px 6px no-repeat; width: 353px; margin:25px 0px 15px 58px;}
+.month-box{width: 856px; height: 430px; margin:50px auto 24px;}
+.month-box .month-tit{ width: 856px; height: 41px;}
+.month-box .month-tit li{ float: left; height: 38px; line-height: 38px; margin-right: 40px; font-size: 18px; font-weight: bold; color: #666; cursor: pointer; border-bottom: #fff solid 3px;}
+.month-box .month-tit li:hover,.month-box .month-tit li.on{ color: #ffb700; border-bottom:#ffb700 solid 3px; }
+.month-box .month-con{ position: relative; }
+.month-box .month-con .box{}
+#month-all-money,#deal-time{height:330px;width:856px;margin:35px auto 0px;}
+.month-box .month-con .box i{ position: absolute; top:-62px; right: 0px; font-size: 16px; color: #999; }
+.small-tit{width: 838px; height: 30px; line-height: 30px; background:url("../../images/about_us/add/icon-dian.png?v=201803061632") 0px 10px no-repeat; padding-left: 18px; font-size: 18px; font-weight: bold; color: #333; margin:50px auto 24px;}
+.man-info{ width: 856px; height: 200px; margin:0px auto;}
+.man-info .piebox{ width: 428px; height: 200px; position: relative;}
+.man-info .piebox p{ position: absolute; left: 67px; top:89px; z-index: 10; font-size: 16px; color: #333;}
+.man-info .piebox .age-list{ position: absolute; left: 220px; top:10px; width: 164px; height:184px;}
+.man-info .piebox .age-list dl{ width: 164px; height: 46px; }
+.man-info .piebox .age-list dl dt{ margin-top:19px; float: left; width: 8px; height: 8px;background:url("../../images/about_us/add/icon-pie1.png?v=201803061632") no-repeat; }
+.man-info .piebox .age-list dl dt.age1{ background-position: 0px 0px; }
+.man-info .piebox .age-list dl dt.age2{ background-position: 0px -8px; }
+.man-info .piebox .age-list dl dt.age3{ background-position: 0px -16px; }
+.man-info .piebox .age-list dl dt.age4{ background-position: 0px -24px; }
+.man-info .piebox .age-list dl dd{ float: right; width: 150px; line-height: 46px; }
+.man-info .piebox .age-list dl dd h4{float: left; width: 88px; font-size: 14px; color: #999;}
+.man-info .piebox .age-list dl dd h5{ float: left; width: 62px; font-size: 14px; color: #333;}
+.man-info .piebox .sex-list{ position: absolute; left: 220px; top:18px; width: 140px; height:192px;}
+.man-info .piebox .sex-list dl{ width: 140px; height: 60px; margin:18px 0px;}
+.man-info .piebox .sex-list dl dt{ margin-top:6px; float: left; width: 34px; height: 48px;background:url("../../images/about_us/add/icon-pie2.png?v=201803061632") no-repeat; }
+.man-info .piebox .sex-list dl dt.sex1{background-position: 0px 0px; }
+.man-info .piebox .sex-list dl dt.sex2{background-position: 0px -48px; }
+.man-info .piebox .sex-list dl dd{ float: right; width: 80px; line-height: 30px; }
+.man-info .piebox .sex-list dl dd h4{font-size: 14px; color: #999;}
+.man-info .piebox .sex-list dl dd h5{font-size: 20px; color: #333;}
+#invest-age,#invest-sex,#get-age,#get-sex{width: 200px; height: 200px; position: absolute;left: 0px; top:0px; z-index: 20;}
+.area-box{ width: 856px; height: 534px; margin:0px auto 40px; position: relative;}
+.map-list{ width: 94px; height: auto; padding:12px 20px; background: #fff; border-radius: 10px; border:#99cbff solid 1px; z-index: 10; position: absolute; right: 0px; bottom: 0px;}
+.map-list li{ line-height: 30px; color: #333; font-size: 14px;}
+#map-get,#map-invest{ width: 856px; height:680px; position: absolute; top:-60px; left: 0px; z-index: 20;}
+.overdue{width: 854px; height: auto; margin:0px auto; border: #e6e6e6 solid 1px; border-radius: 4px;}
+.overdue table tr td{font-size: 14px;color:#666; padding-top:20px; padding-bottom: 20px; text-align: left;}
+.trb{ border-top: #e6e6e6 dashed 1px; }
+.pl58{ padding-left: 58px; }
+.overdue b{ font-weight: bold; color: #333; }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		PUBLIC  "-//mybatis.org//DTD mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.UserInfoMapper">
+	<update id="saveUser" parameterType="entity.TUserData">
+	UPDATE t_user_data tud SET tud.maxeducation = #{maxeducation},tud.userugf = #{userugf},
+	tud.marriage = #{marriage},tud.address = #{address},tud.company = #{company},
+	tud.company_size = #{companySize},tud.position = #{position},
+	tud.moincome = #{moincome},tud.ishouse = #{ishouse},tud.isvehicle = #{isvehicle},
+	tud.udname = #{udname},tud.udphone = #{udphone},tud.udnexus = #{udnexus}
+	WHERE tud.userid = #{userid}
+	
+	</update>
+	
+	<update id="updateNickName" parameterType="entity.TUserData">
+	update t_user_data tud set tud.nickname = #{nickname} where tud.userid = #{userid}
+	</update>
+</mapper>

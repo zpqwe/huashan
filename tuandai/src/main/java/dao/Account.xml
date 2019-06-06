@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="dao.Account" >
+	<select id="Tucselect" resultType="entity.TUcAccount" parameterType="entity.TUserData">
+	SELECT * FROM t_uc_account WHERE userid=#{userid};
+	</select>
+	<!-- 查看回款 -->
+	<select id="trecesele" resultType="entity.TReceRecord" parameterType="String">
+	SELECT tre.rrdate,tre.rrtotal FROM t_rece_record tre
+INNER JOIN t_si_item tsi ON tre.sirid=tsi.siiid
+INNER JOIN t_user_data tuser ON tsi.siiid=tuser.siiid WHERE isfinish=#{isfinish} GROUP BY tre.rrdate
+	</select>
+	<!-- 收益统计 -->
+	<select id="tsiiresele" resultType="entity.TSiRecord" parameterType="query.Account_moneyQuery">
+	SELECT SUM(sirreinst) sirreinst,SUM(sirinst) sirinst  FROM t_si_record WHERE userid=#{userid} AND sirstate=#{sirstate} GROUP BY userid 
+	</select>
+	<!-- 资金流量 -->
+	<select id="tdealsele" resultType="entity.TDealRecord" parameterType="query.Account_moneyQuery">
+	SELECT SUM(drexpenditure) drexpenditure FROM t_deal_record WHERE userid=1 AND drexplain LIKE '%${drexplain}%'
+	</select>
+	</mapper>

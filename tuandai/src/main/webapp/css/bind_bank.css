@@ -1,0 +1,168 @@
+﻿/*
+date:2016-01-13 11:53
+name:ljb
+*/
+
+/*
+date:2015-12-26 16:22
+name:ljb
+*/
+.fl-l{float: left;}
+.fl-r{float: right;}
+.pa{position: absolute;}
+.pr{position: relative;}
+.db{display: block}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mt35{margin-top: 35px;}
+.mb25{margin-bottom: 25px;}
+.mb13{margin-bottom: 13px;}
+.lh30{ line-height: 30px;}
+.z4{z-index: 4}
+
+
+/*页面样式*/
+a.fc-green,.fc-green{color: #10c980;}
+a.fc-red,.fc-red{color: #ff0000;}
+a.fc-666,.fc-666{color: #666666}
+a.fc-orange,.fc-orange{color: #ff7301}
+a.fc-9e9,.fc-9e9{color: #9e9e9e}
+a.fc-ffb,.fc-ffb{color: #ffbc1b}
+.fz-18{font-size: 18px;}
+.fz-16{font-size: 16px;}
+.fz-14{font-size: 14px;}
+a.tdl{text-decoration: none;}
+a.tdl:hover{text-decoration: underline;}
+
+/*表单输入框公共样式*/
+.reg-icons{background: url(//js3.tuandai.com/images/users/register_icon.png?v=201601261656) no-repeat;}
+.reg-input-group{height: 40px;/* overflow: hidden;*/ clear:both; position: relative; font-size: 14px;}
+.reg-input-group label,.reg-input-group .reg-text,.reg-input-group .reg-message{float: left;}
+.reg-input-group label{width: 70px; line-height: 40px; text-align: right; padding-right: 21px; color: #5d5c5c;  }
+.reg-input-group .text-input{height: 18px; line-height: 18px; padding: 10px 0; width: 288px; *float: left; text-indent: 15px; font-size: 14px; border: 1px solid #e2e2e2; border-radius: 2px; -webkit-border-radius: 2px; color: #333}
+.btnReg4 {font-size: 18px;}
+
+/*20160106去掉浏览器表单自动填充后有黄色背景*/
+input.text-input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px #ffffff inset; }
+
+/*信息提示*/
+.reg-input-group .red-border-input{border: 1px solid #ff0000}
+.reg-input-group .green-border-input{border: 1px solid #ffb700}
+.reg-input-group .yellow-border-input{border: 1px solid #ffbc1b}
+.reg-input-group .reg-message{position: absolute; left: 390px; text-align: left; line-height: 40px; color: #5c5c5c;}
+.reg-input-group .reg-message .info-mes,
+.reg-input-group .reg-message .reg_wrong,.reg-input-group .reg-message .error-mes{width: 178px; height: 38px; overflow: hidden; font-size: 12px; padding-left: 8px;border-radius: 2px; -webkit-border-radius: 2px;}
+.reg-input-group .reg-message .info-mes{border: 1px solid #e2e2e2; background: #f7f7f7; color: #666666;}
+.reg-input-group .reg-message .reg_wrong,.reg-input-group .reg-message .error-mes{border: 1px solid #ff7a7a; background: #ffebeb; color: #ff0000;}
+
+/*弹窗*/
+
+.dial-window{margin-left: -290px;}
+.dial-window{width: auto; overflow: visible;}
+.dial-window .body,.dial-window.dial-window-w4 .body{width: auto; text-align: left; padding: 25px 30px 0;}
+.dial-window.dial-window-w1{width: 540px; margin-left: -270px;}
+.dial-window.dial-window-w2{width: 580px; margin-left: -290px;}
+.dial-window.dial-window-w3{width: 418px; margin-left: -209px;}
+.dial-window.dial-window-w4{width: 608px; margin-left: -304px; margin-top: -245px;}
+.dial-window.dial-window-w5{width: 630px; margin-left: -315px;}
+.dial-window.dial-window-w6{width: 330px; margin-left: -165px; margin-top: -50px}
+.dial-window.dial-window-w7{width: 608px;  margin-left: -304px; margin-top: -179px;}
+.dial-window .reg-message1{clear: both;  padding-left:110px; height: 30px; line-height: 30px;}
+.dial-window .btn-group { padding-bottom: 35px;}
+.dial-window .btn-group .btnReg4{width: 290px; border: 0;}
+.dial-window .btn-group input[type="submit"],.dial-window .btn-group button{border: 0;}
+.dial-window .pl138{padding-left: 138px;}
+.dial-window .pl140{padding-left: 140px;}
+
+/*绑定银行卡*/
+.reg-bank-box .input-group-box{margin-top: 26px;}
+.reg-bank-box .prompt-info{padding: 14px 14px; border: 1px dashed #e2e2e2; font-size: 14px; }
+.reg-bank-box .reg-input-group{height: 36px}
+.reg-bank-box .w2{width: 112px;}
+.reg-bank-box .h36{height: 14px;}
+.reg-bank-box .label1{width: 98px;height: 36px; line-height: 36px; padding-right: 10px; font-size: 14px;}
+.reg-bank-box .reg-input-group .reg-message{left: 405px;}
+.reg-bank-box .reg-input-group1{height: auto;}
+.reg-bank-box .reg-input-group .mw1 div{width: 132px; height: 34px; line-height: 34px;}
+.reg-code-text .reg-input-group .mw2 div{width: 110px;}
+.input[disabled],input:disabled{background: #f5f5f5}
+.reg-bank-box .bank-iconbox{right: 8px; top: 5px;}
+.reg-bank-box .bank-iconbox img{width: 24px; height: 24px;}
+
+/*20160112绑定银行卡修改*/
+.reg-bank-box .reg-input-group input{color: #666; }
+.reg-bank-box .reg-input-group .text-input{text-indent: 10px}
+.reg-bank-box .reg-input-group .get_code,.reg-bank-box .reg-input-group .reset_get_code{width: 106px; height: 34px; border-radius: 2px;  -webkit-border-radius: 2px;  margin-left: 10px; display: block;  line-height: 34px; float: left; border: 1px solid #ffecbe; color: #ffbc1b; background: #fffaee; text-align: center; font-size: 12px;}
+.reg-bank-box .reg-input-group .get_code:hover{border: 1px solid #ffe19a; background: #fff6e0}
+.reg-bank-box .reg-input-group .reset_get_code{background: #f5f5f5; border: 1px solid #f5f5f5; color: #666}
+.reg-bank-box .reg-input-group .reset_get_code b{color: #ffbc1b}
+.reg-bank-box .bank-tips{width: 240px; height: 70px; padding: 8px 10px; top: -86px; left: -8px; border-radius: 3px; -webkit-border-radius: 3px; display: none; font-size: 12px; border: 1px solid #ffbc1b; background: #fff; z-index: 105}
+.reg-bank-box .bank-tips-icon{width: 16px; height: 16px; left: 5px; top: 10px; cursor: pointer; background-position: -18px -182px; display: inline-block;}
+.reg-bank-box .bank-arrow-down{background-position: -37px -182px; width: 17px; height: 7px; display: inline-block; bottom: -7px; left: 10px; overflow-y: hidden;}
+.reg-bank-box .ffb{color: #ffb80d}
+.reg-bank-box .close-cleartext{width: 18px; height: 18px; display: none; right: 9px; top: 10px; cursor: pointer; background-position: -1px -109px; }
+.reg-bank-box .abs-r{right: 154px;}
+.reg-bank-box .validate{display: inline-block; float: left; line-height: 34px; font-size: 12px; text-decoration: underline;}
+.reg-bank-box .zindex6{z-index: 6}
+.reg-bank-box .zindex1000{z-index: 1000}
+.reg-bank-box .reg-promt{font-size: 12px;}
+
+/*select美化*/
+.reg-bank-box .text-box1{width: 140px;}
+.select-wrapper{position:relative; cursor:pointer; display:inline-block; *display:inline; *float:left; *margin-right:10px; background:#fff;border-radius:3px;	border:1px solid #e2e2e2; }
+.select-button{width: 138px; height:34px; font-size: 14px; border:0; border-radius:2px; outline: none; background:url(//js3.tuandai.com/images/users/register_icon.png?v=201601261656) no-repeat #fff; cursor:pointer; background-position: 107px -207px; padding:0 26px 0 10px; overflow:hidden; text-align:left; outline:none; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.select1 .select-button{background-position: 257px -207px;}
+.select-button:focus{outline: none;}
+.select-down{position:absolute; top:0; right:0;  overflow:hidden; }  
+.select-list{width: 140px; background:#fff; border-radius:2px; display:none; z-index:2; position:absolute; left:-1px;top:34px; overflow:hidden;}
+.select-list ul{margin:0;padding:0; height: 165px; overflow-y: auto; overflow-x:hidden; border: 1px solid #e2e2e2; color: #666}
+.select-list ul li{text-indent: 10px; height: 34px; line-height: 34px; font-size: 14px; cursor:pointer; overflow:hidden; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.select-list ul li.selected,
+.select-list ul li:hover{background: #ffa019; color: #fff;}
+
+.sel_city3 .select-button{background-position:256px -207px;}
+/*span 手势*/
+.handCursor {cursor: pointer}
+
+/*20160125绑定银行卡前实名认证*/
+.dial-window.dial-window-w3 .body{  padding-right:50px}
+.dial-window .btn-group .btnReg2{width: 122px;}
+.dial-window .prompt-box{padding: 15px 0 25px 0;}
+.dial-window .prompt-box p{font-size: 14px; clear: both; color: #666; line-height: 25px; text-align: left;}
+.dial-window .prompt-box p.pl20{padding-left: 20px;}
+.dial-window .prompt-box p.pl30{padding-left: 30px;}
+.dial-window .prompt-box p.pl40{padding-left: 40px;}
+.dial-window .prompt-box p.pl50{padding-left: 50px;}
+.dial-window .prompt-box p.pl60{padding-left: 60px;}
+.dial-window .prompt-box p.pl70{padding-left: 70px;}
+.dial-window .prompt-box p.pl80{padding-left: 80px;}
+.dial-window .btn-group span{font-size: 16px; display: inline-block;}
+
+/*成功提示*/
+.reg-rz-box{padding: 5px 0 35px;}
+.sm-icon-box{ height: auto; overflow: hidden;}
+.reg-succeed-icon-mm{background-position: -61px 0; width: 30px; height: 30px; display: inline-block;}
+
+/*20160225 获取验证码基本样式*/
+.mem-getcode-text{height: auto; overflow: hidden; font-size: 14px;}
+.mem-getcode-text .reg-input-group label{width: 100px; margin-right: 10px; padding-right: 0;}
+.mem-getcode-text .reg-input-group1 {height: auto;}/*当reg-input-group内容不固定时，高度设置为自动*/
+.mem-getcode-text .reg-input-group .w2{width: 138px; float: left;}/*自定义输入框宽度*/
+.mem-getcode-text .reg-input-group .w4{width: 272px; float: left;}
+.mem-getcode-text .reg-input-group .money-dig{line-height: 40px;}
+.mem-getcode-text .reg-input-group .money-dig span{font-size: 22px; font-weight: 700; color: #ff8c00}
+.mem-getcode-text .reg-input-group .get_code{width: 106px; height: 38px; border-radius: 2px;  -webkit-border-radius: 2px;  margin-left: 10px; display: block;  line-height: 38px; float: left; border: 1px solid #ffecbe; color: #ffbc1b; background: #fffaee; text-align: center; font-size: 12px;}
+.mem-getcode-text .reg-input-group .get_code:hover{border: 1px solid #ffe19a; background: #fff6e0}
+.mem-getcode-text .reg-input-group .reset_get_code{background: #f5f5f5; border: 1px solid #f5f5f5; color: #666}
+.mem-getcode-text .reg-input-group .reset_get_code b{color: #ffbc1b}
+.mem-getcode-text .reg-input-group .hav-other{display: inline-block; width: 90px; margin-left: 8px; margin-top: 2px; font-size: 12px; line-height: 17px; color: #9e9e9e;}
+.mem-getcode-text .reg-input-group .hav-other .other-btn{color: #ffbc1b}
+.mem-getcode-text .reg-message1 .wrong-mes{font-size: 14px; color: #ff4546; height: auto; }
+/*发送手机提示*/
+.send-info {height: 30px; }
+.send-info p{color: #ff8c00; font-size: 14px; padding-left: 110px;}
+
+
+
+
+

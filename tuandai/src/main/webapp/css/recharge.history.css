@@ -1,0 +1,17 @@
+.nav_top{border-bottom:1px solid #e5e5e5;height:46px;margin:0 auto;overflow:hidden;padding:0;position:relative;width:800px}
+.nav_title{float:left;height:44px;line-height:44px}
+.nav_title li{float:left;margin:0;font-size:16px;width:90px}
+.nav_title li:hover{border-bottom:2px solid #ff8c00}
+.nav_title li:hover a{color:#ff8c00}
+.tab_title_a a:active,.tab_title_a a:hover,.tab_title_a a:link,.tab_title_a a:visited{font-size:16px;text-decoration:none;color:#ff8c00}
+.tab_title_b a:active,.tab_title_b a:hover,.tab_title_b a:link,.tab_title_b a:visited{color:#000;text-decoration:none;font-size:16px}
+.tab_title_a{height:44px;line-height:44px;border-bottom:#ff8c00 solid 2px;text-align:center;cursor:pointer}
+.tab_title_b{height:44px;line-height:44px;border-bottom:#fff solid 2px;text-align:center;cursor:pointer}
+.tab2_title_a a:active,.tab2_title_a a:hover,.tab2_title_a a:link,.tab2_title_a a:visited{font-size:16px;text-decoration:none;color:#000}
+.tab2_title_b a:active,.tab2_title_b a:hover,.tab2_title_b a:link,.tab2_title_b a:visited{color:#000;text-decoration:none;font-size:16px}
+.tab2_title_a{width:100px;height:44px;line-height:44px;border-bottom:#ffa200 solid 4px;text-align:center;cursor:pointer}
+.tab2_title_b{width:100px;height:44px;line-height:44px;border-bottom:#fff solid 4px;text-align:center;cursor:pointer}
+.capital-account .account{float:left;width:190px;padding:6px 0;height:29px;line-height:29px;position:relative;cursor:pointer;margin-right:10px;margin-bottom:10px;border:1px solid #eee;overflow:hidden;-webkit-border-radius:2px;border-radius:2px;text-align:center}
+.capital-account .account.on,.capital-account .account:hover{color:#333;border:1px solid #fe9b00}
+.capital-account .account.on i{position:absolute;top:0;left:0;display:block;width:17px;height:17px;background:url(//js3.tuandai.com/images/member/bank/onselect.png) 0 0 no-repeat}
+.protect-green{background:0 0}

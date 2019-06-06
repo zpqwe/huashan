@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.areaopt_div	{ display:none; position:absolute; width:0; text-indent:0;}
+div.areaopt,div.areaopt_back	{width:510px;height:auto;position:absolute;margin-left:0px;margin-top:0px;z-index:100}
+div.areaopt			{font-size:12px;font-weight:normal;border:2px solid #B7D8ED;background:#fff}
+div.areaopt_back		{z-index:99;border:none;height:40px;}
+div.areaopt div.areaopt_con	{ margin:5px; }
+div.areaopt .clear		{ clear:both; display:block;}
+
+div.areaopt a{ color:#444;text-decoration:none;padding:1px;text-align:left;margin:0 5px;width:44px;height:16px; float:left;overflow:hidden;margin-bottom:2px;text-align:center;cursor:pointer;line-height:16px;_width:42px}
+div.areaopt a:hover	{ background-color:#d9f1fc; color:#000; }
+div.areaopt .areaopt_mouseon	{ background-color:#4482b4; color:#fff; }
+
+div.areaopt .areaopt_province{width:100%; height:auto; overflow:hidden;padding-top:3px}
+div.areaopt .areaopt_province div	{ margin:3px; display:block; margin-bottom:0;}
+div.areaopt .areaopt_province a	{ }
+div.areaopt .areaopt_city{height:auto;background-color:#f4fefc;margin:3px 5px 0;padding-bottom:4px;display:none;border:1px solid #B7D8ED;border-bottom:none;overflow:hidden;}
+div.areaopt .areaopt_city div	{ margin-bottom:0;}
+div.areaopt .areaopt_city a	{ width:60px;margin:0 5px; }
+div.areaopt .areaopt_zone		{ width:100%; height:auto; background-color:#fff; display:none; border:solid 1px #ccc; overflow:hidden;}
+div.areaopt .areaopt_zone div	{ margin-bottom:0;}
+div.areaopt .areaopt_zone a	{ width:55px; }
+div.areaopt .areaopt_tools		{ text-align:right;color:#F60;padding:3px 0;height:30px;line-height:30px;border-top:1px solid #B7D8ED;margin:0 5px}
+div.areaopt .areaopt_btn{width:77px;height:25px;padding:0px;border:none;background:url(../images/btn_add.gif) no-repeat;color:#346483;*font-family:"微软雅黑","宋体";font-size:12px;overflow:hidden;margin-left:10px;}
+div.areaopt .areaopt_tip		{ color:#4482b4; margin-left:10px; margin-right:10px;}

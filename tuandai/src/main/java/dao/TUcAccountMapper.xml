@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="dao.TUcAccountMapper" >
+
+		<select id="getTUcAccount" resultType="TUcAccount"  parameterType="TUserData">
+	SELECT * FROM t_uc_account AS uc
+INNER JOIN t_user_data AS USER ON uc.userid=user.userid
+		<where>
+		
+			and user.userid=#{userid}
+			
+		</where>			
+		</select>
+		<update id="updatermoney" parameterType="query.TUcAccountQuery">
+	 UPDATE t_uc_account SET ucavail=#{upmoney} WHERE userid=#{userid};
+	
+	</update>
+</mapper>

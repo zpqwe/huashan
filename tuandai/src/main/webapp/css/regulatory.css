@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.cl{clear: both;}
+.pt10{padding-top: 10px;}
+.pt20{padding-top: 20px;}
+.pt25{padding-top: 25px;}
+.pt30{padding-top: 30px;}
+.pt40{padding-top: 40px;}
+.regulatory{background: #fff;padding: 30px 45px 40px;}
+.regulatory .wz{font-size: 14px;color: #666;line-height: 24px;}
+.regulatory ul li{margin-top: 35px;clear: both;}
+.regulatory ul li .tu{float: left;width: 162px;height: 162px;border:1px solid #e6e6e6;margin-right: 27px;}
+.regulatory ul li .describe{float: left;width: 680px;height: 162px;margin: auto 0;}
+.regulatory ul li .describe .p1{font-size: 16px;color: #333;}
+.regulatory ul li .describe .tb{font-size: 16px;color: #ffb400;text-decoration: underline;}
+.regulatory ul li .describe .p2{font-size: 14px;color: #666;line-height: 28px;padding-top: 10px;}

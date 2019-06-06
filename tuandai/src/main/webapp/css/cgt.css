@@ -1,0 +1,66 @@
+
+/*20161010厦门银行托管*/
+.xm-mask{position: fixed; width: 100%; height: 100%; top: 0 ; left: 0; background: #000; opacity: 0.5; filter:alpha(opacity=50); z-index:1000001; }
+.xiamen-pop{position: fixed; width: 553px; height: auto; padding-bottom: 38px; text-align: center; background: #fff;  left: 50%; top:50%; margin-left: -276px; margin-top: -200px; border-radius: 8px; -webkit-border-radius: 8px; z-index:1000002;}
+.xiamen-pop .close{position: absolute; top: 12px; right: 13px; width: 22px; height: 22px; cursor: pointer; background: url("//js3.tuandai.com/images/member/Bank/xm_bank/close.png") no-repeat;}
+.xiamen-pop .close{transition:all .3s linear; transform:rotate(0deg)}
+.xiamen-pop .close:hover{transform:rotate(180deg)}
+.xiamen-pop .pop-tit{width: 100%; height: 192px; padding-top: 50px; border-radius: 6px 6px 0 0; color: #fff; background: url("//js3.tuandai.com/images/member/Bank/xm_bank/xmbank-topbg.png") no-repeat;}
+.xiamen-pop .pop-tit h3{width: 317px; height: 45px; margin: 0 auto; background: url("//js3.tuandai.com/images/member/Bank/xm_bank/logo-03.png?v=201801151549") no-repeat;}
+.xiamen-pop .pop-tit h4{margin-top: 20px;font-size: 40px; font-weight: 700;}
+.xiamen-pop .pop-tit p{margin-top: 5px; font-size: 16px;}
+.xiamen-pop .pop-body p{margin-top: 20px; line-height: 30px; color: #989898; font-size: 14px;}
+.xiamen-pop .pop-body p b{color: #ff7200}
+.xiamen-pop .pop-body .btn{width: 310px; height: 52px; line-height: 52px; display: block; margin: 10px auto 0; border-radius: 6px; -webkit-border-radius: 6px; -webkit-transition:all .3s linear; transition:all .3s linear; color: #fff; font-size: 18px; text-align: center; background: #ffbc1b;}
+.xiamen-pop .pop-body .btn:hover{background: #ffa019;}
+
+/*20161025充值提现等提示弹窗*/
+.xm-window{width: 531px;}
+.bankBindAlert{width: auto;}
+.bankBindAlert .body{width: auto; padding: 50px 38px 0px;}
+.bankBindAlert .body .p1{margin-bottom: 15px; font-size: 24px; color: #555;}
+.bankBindAlert .body .p2{font-size: 14px; color: #b5b5b5;}
+.bankBindAlert .bottom{height: auto; margin-top: 40px; text-align: center; padding-bottom: 30px;}
+.xm-window .bottom .btn{ height: 38px; margin: 0 auto; line-height: 38px; display: block; -webkit-border-radius: 3px; border-radius: 3px; cursor: pointer; color: #fff; text-align: center; font-size: 14px; background: #ffbc1b; -webkit-transition:all .3s linear; transition:all .3s linear;}
+.xm-window .bottom .btn:hover{background: #ffa019}
+.xm-window .bottom .btn-group span{font-size: 14px}
+.bankBindAlert .bottom .btn{width: 243px;}
+.bankBindAlert .bottom .question{color: #b5b5b5; font-size: 14px;  line-height: 34px; margin-top: 8px;}
+.bankBindAlert .bottom .question:hover{text-decoration: underline;}
+.xm-window .btn-group{padding-bottom: 0;}
+
+
+ /*20161019弹窗 开通免密功能*/
+.passwordAlt .title1 {height: 40px; line-height: 40px; font-size: 14px; padding-left: 20px; background: #f7f7f7; color: #666; position: relative;}
+.passwordAlt{width: 487px; margin-top: -201px;}
+.passwordAlt .body{height: auto; padding: 35px 68px 0px;  text-align: left;}
+.passwordAlt .body p{color: #555; line-height: 22px;}
+.passwordAlt .body .p1{width: auto;height: auto;}
+.passwordAlt .body .p2 {width: auto; height: auto; margin-top: 12px;}
+.passwordAlt .body .p2 em{width: 16px; height: 16px; margin-right: 5px; vertical-align: -3px; *vertical-align: 1px; display: inline-block; background: url("//js2.tdw.cn/images/member/Bank/xm_bank/ok-icon.png") no-repeat 0 -52px;}
+.passwordAlt .body .p2 span{color: #b5b5b5;}
+.passwordAlt .bottom{clear: both; padding-top: 30px; padding-bottom: 43px;}
+.passwordAlt .bottom .btn{width: 243px;}
+.xm-window .bottom .btn{ height: 38px; margin: 0 auto; line-height: 38px; display: block; -webkit-border-radius: 3px; border-radius: 3px; cursor: pointer; color: #fff; text-align: center; font-size: 16px; background: #ffbc1b; -webkit-transition:all .3s linear; transition:all .3s linear;}
+.xm-window .bottom .btn:hover{background: #ffa019}
+
+/*20161222香港澳门开通存管账户提示*/
+.xm-window.hongkong {width: 610px; margin-top:-209px; margin-left:-305px}
+.xm-window.hongkong .body{width: auto; padding: 40px 50px;}
+.xm-window.hongkong .body p{text-align: left;}
+.xm-window.hongkong .body p{padding-bottom: 26px; color: #333; line-height: 26px;}
+.xm-window.hongkong .body p b{font-size: 16px; }
+.xm-window.hongkong .body p a{font-weight: 700; width: 79px; height: 24px; padding-left: 26px; display: inline-block; margin: 0 5px; font-size: 12px; color:#333; background: url("//js2.tdw.cn/images/member/Bank/xm_bank/qq_btn.png?v=20170309001") no-repeat;}
+.xm-window.hongkong .btn{width: 235px;}
+
+/*20170106弹窗 资产标借款提示*/
+.borrow-window{width: 490px; margin-left: -245px;}
+.borrow-window .body{padding: 25px 30px}
+.borrow-window .body p{color: #b5b5b5}
+.borrow-window .body .p1{padding-top: 15px; padding-bottom: 20px; font-size: 26px; color: #555}
+.borrow-window .bottom{padding-top: 30px; text-align: center;}
+.borrow-window .bottom .btn{width: 220px; font-size: 14px;}
+.borrow-window .bottom .closebtn{display: inline-block; text-decoration: underline; padding: 5px 0;}
+
+/*客服btn*/
+.xm-window .qq-service-btn{font-weight: 700; width: 81px; height: 24px; padding-left: 24px; display: inline-block; margin: 0 5px; font-size: 12px; background: url("//js2.tdw.cn/images/member/Bank/xm_bank/qq_btn.png?v=20170309001") no-repeat;}

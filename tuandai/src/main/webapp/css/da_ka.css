@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*sass源文件位置_bulid-->dev_sass-->about_us-->da_ka.scss*/
+.modular {
+  background: #fff; }
+
+.pic {
+  background: url(/dist/images/about_us/da_ka/da_ka_icon.png);
+  display: inline-block;
+  *display: inline; }
+
+.wang-li-fen {
+  height: 225px;
+  width: 173px;
+  background-position: -0px -0px; }
+
+.feng-lun {
+  height: 225px;
+  width: 173px;
+  background-position: -173px -0px; }
+
+.jiang-nan-chun {
+  height: 225px;
+  width: 173px;
+  background-position: -346px -0px; }
+
+.shi-yu-zhu {
+  height: 225px;
+  width: 173px;
+  background-position: -0px -225px; }
+
+.team-list {
+  width: 880px;
+  margin:  5px auto 0; }
+.team-list dl {
+  clear: both;
+  padding: 35px 0; }
+.team-list dl:after {
+  display: table;
+  content: '';
+  clear: both; }
+.team-list dl ~ dl {
+  border-top: 1px solid #e6e6e6; }
+.team-list dt {
+  float: left;
+  margin-right: 40px; }
+.team-list dd {
+  float: left;
+  width: 665px;
+  color: #666; }
+.team-list table {
+  margin-top: -6px; }
+.team-list table, .team-list table td {
+  border: none; }
+.team-list .name {
+  font-size: 26px;
+  color: #ffb400;
+  margin-right: 25px; }
+.team-list .team-position {
+  font-size: 16px; }
+.team-list .int {
+  line-height: 26px;
+  padding-top: 12px; }
+.team-list .middle {
+  display: inline-block;
+  *display: inline; }
+
+/*亿路前行*/
+.da-ka-text {
+  width: 860px;
+  margin: 40px auto 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+}
+
+#lrtk {
+  width: 900px;
+  margin: 0 auto; }
+
+#lrtk > li {
+  width: 600px; }
+
+.mb-wrapper {
+  margin: 0 auto 20px;
+  position: relative;
+  left: 0;
+  top: 0; }
+
+.mb-slider, .mb-scroll {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  left: 0;
+  top: 0; }
+
+.mb-active-slider {
+  border-color: #333; }
+
+.mb-slider .mb-panel {
+  margin-top: 100px;
+  display: block;
+  cursor: pointer;
+  float: left;
+  list-style: none; }
+
+.mb-panel a {
+  outline: 0; }
+
+.mb-slider .mb-panel.current {
+  cursor: auto; }
+
+.mb-inside {
+  position: relative; }
+
+.mb-inside * {
+  max-width: 100%; }
+
+a.mb-scrollButtons {
+  display: block;
+  width: 24px;
+  height: 42px;
+  background: transparent url(/dist/images/about_us/icon.png) no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -47px !important;
+  cursor: pointer;
+  text-decoration: none; }
+
+a.mb-scrollButtons.mb-left {
+  background-position: -518px -61px;
+  left: 40px;
+  z-index: 1; }
+
+a.mb-scrollButtons.mb-right {
+  background-position: -518px -19px;
+  right: 40px;
+  z-index: 1; }
+
+a.mb-scrollButtons.disabled {
+  display: none; }
+
+.mb-panel {
+  margin-top: 90px; }
+
+.mb-controls a:hover {
+  color: black; }
+
+.mb-controls a.current {
+  color: #900; }
+
+.mb-inside img {
+  width: 100%; }
+
+.mb-inside .have {
+  display: none;
+  text-align: left;
+  position: absolute;
+  font-size: 16px;
+  color: #ffffff;
+  z-index: 100;
+  top:332px;
+  width: 600px;
+  height: 34px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: rgba( 0, 0, 0, .5 );
+}
+
+.current .have {
+  display: block; }
+
+/*# sourceMappingURL=da_ka.css.map */

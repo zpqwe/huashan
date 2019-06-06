@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+<display-name>tuandai</display-name>
+	<welcome-file-list>
+    	<welcome-file>/WEB-INF/login.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+			<servlet-class>
+				org.springframework.web.servlet.DispatcherServlet
+			</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:springmvc-servlet.xml</param-value>
+		</init-param>
+	</servlet>
+	<!-- 用户session的 键   sessionKEY -->  
+  <context-param>  
+    <param-name>userSessionKey</param-name>  
+    <param-value>user</param-value>  
+  </context-param>  
+  <!-- 重定向的页面 -->  
+  <context-param>
+    <param-name>rediretPage</param-name>  
+    <param-value>/login</param-value>  
+  </context-param> 
+  <!-- 不需要过滤的页面 -->  
+  <context-param>  
+    <param-name>uncheckUrls</param-name>  
+    <param-value>/*</param-value>
+<!--     /index,/login,/ver,/ajaxindex,/exit,/check,/invest_list,/Transfer/list  --> 
+  </context-param>
+	<!-- 设置请求地址 -->
+<filter>
+	<display-name>IfLogin</display-name>
+	<filter-name>IfLogin</filter-name>
+	<filter-class>filter.IfLogin</filter-class>
+</filter>
+
+	<listener>
+		<listener-class>listener.StartListener</listener-class>
+	</listener>
+
+<!-- shiro -->
+	<filter>
+	    <filter-name>shiroFilter</filter-name>
+	    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	    <!-- 设置true由servlet容器控制filter的生命周期 -->
+	     <init-param>
+	       <param-name>targetFilterLifecycle</param-name>
+	        <param-value>true</param-value>
+	     </init-param>
+	</filter>
+	
+	
+	<filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+<filter-mapping>
+<filter-name>IfLogin</filter-name><!-- 设置过滤的页面 -->
+<url-pattern>/account_default</url-pattern>
+<!-- account_default -->
+</filter-mapping>
+ <!-- 过滤器，设置编码 -->
+	<filter>
+		<filter-name>SetFilter</filter-name>
+		<filter-class>filter.SetFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>SetFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>     
+		<url-pattern>*.html</url-pattern>
+		<url-pattern>*.htm</url-pattern>   
+	 </servlet-mapping>
+  
+
+	<context-param>
+	  	<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext.xml</param-value>
+	</context-param>
+	<listener>
+  		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- <session-config>
+	<session-timeout>1</session-timeout>
+	</session-config> -->
+</web-app>

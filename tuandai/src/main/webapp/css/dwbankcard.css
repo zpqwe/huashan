@@ -1,0 +1,217 @@
+/* CSS Document */
+@charset "utf-8";
+
+/*我的银行帐号*/
+.newbankcard{ width:800px; height:auto; margin:20px auto 0px;}
+.bankcard_list{ width:800px; height:auto; margin:0px auto 15px;}
+.bankcard{ float:left; width:348px; height:210px; overflow:hidden; border:#dddddd solid 1px; margin-right:12px; margin-bottom:15px;}
+.mycard{ background:#f5f5f5;}
+.addcard{ background:#FFF;}
+.bankcard h3{ height:24px; padding:10px 20px; position:relative; font-size:14px; color:#000; line-height:24px;}
+.bankcard h3 i{ width:24px; height:24px; overflow:hidden; padding-right:4px;}
+.bankcard h3 .bank_revise{ float:right; line-height:24px; color:#666; font-size:14px; text-decoration:none; position:absolute; top:10px; right:20px;}
+.bankcard h3 .bank_revise:hover{ color:#ff9600;}
+.bankcard p{ width:298px; height:80px; display:block; overflow:hidden;text-overflow: ellipsis; white-space: nowrap; background:url(..images/bank_card_bg.gif) repeat-x; padding:20px 25px; line-height:26px; font-size:14px; color:#333;}
+.bankcard p span{ width:60px; height:26px; display:inline-block; font-weight:bold; text-align:right;}
+.bankcard p a.addcard_tip{ display:block; width:180px; height:40px; margin:0px auto; background:url(..images/add_bank.gif) 0px 28px no-repeat; padding:20px 0px 20px 40px; font-size:24px; font-weight:bold; line-height:40px; color:#0099cc; text-decoration:none;}
+.bankcard_explain{ width:686px; height:900px; background:#f5f5f5; line-height:28px; padding:15px 20px;}
+.bankcard_explain h5{ color:#ff9600; font-size:14px;}
+.bankcard_explain p{ font-size:14px; color:#666;}
+/*马上提现*/
+.deposit_main{ width:100%; margin:0px auto 20px; font-size:14px;  color:#333; border:none; }
+/* .deposit_main tr{border-right: 1px;} */
+/* .deposit_main td{ border-collapse:collapse; position: relative; z-index: 1;  } */
+.deposit_title{ width:115px; padding:16px 5px; text-align:right;  position:relative; top: 0; left: 0; z-index: 1; }
+.deposit_title-1 .deposit_dian{   width:15px; height:15px; display:inline-block; position: relative; font-size: 14px;   background:url(//js3.tuandai.com/images/default/fqbicons_que.png) 0px 0px no-repeat; cursor:pointer;   margin-top:2px;}
+.deposit_title-1 span{display:inline-block;}
+.deposit_title-1 .deposit_dian i{  position: absolute;    width: 17px;    height: 7px;  display: block;    background: url(//js3.tuandai.com/images/member/icons.png?v=20150814) -17px -74px;    left: 50%;    margin-left: -8px;    bottom: -7px;}
+.deposit_title-1 .jedian {}
+ .deposit_title-1 .hide_deposit{ position:absolute;  bottom: 30px; text-align:left; padding:10px 15px; width:418px;  left: 50%; margin-left: -251px; background:#f2f2f2; line-height:22px; display:none; z-index:10000; cursor:text;}
+  .deposit_title-1 .hide_deposit table{text-align: center; margin-top: 10px;}
+.deposit_title-1 .hideje{  padding:12px 16px; background: #fff; border-radius: 4px; font-size: 14px; -webkit-border-radius: 4px;  border: 1px solid #ffa019;}
+.deposit_title-1 .hidefee{height:90px; z-index: 2;}
+.deposit_title-1 .hidecoupon{ padding:12px 16px; background: #fff; border-radius: 4px; -webkit-border-radius: 4px;  border: 1px solid #ffa019;}
+.mline{display: inline-block; height: 14px; width: 0; border-left:3px solid #cccccc; vertical-align: -2px; margin-right: 10px; }
+.w85{width: 70px; padding-right: 5px; display: inline-block; text-align: right; }
+.mr-79{margin-left: -79px;}
+.ml80{margin-left:80px; line-height: 26px; }
+.vline{width: 700px; display: inline-block; border-bottom:1px #cccccc dashed ; vertical-align: 4px; margin-left: 9px;}
+
+.deposit_content{ padding-left:20px;font-size:12px; font-size: 14px;}
+.deposit_content a{ color:#999;}
+.deposit_content a.deposit_yz{ color:#329add;}
+.deposit_content i{color:#999; font-style:normal; font-size:12px;}
+.deposit_content b{    font-size:14px; margin-right: 10px; height: 24px;display: inline-block; font-weight: normal;}
+.deposit_txt{width:240px; height:24px;  font-family: 'Microsoft Yahei';  padding:7px 5px; padding-left:5px ; background:#FFF; border:#dddddd solid 1px; line-height:24px; color:#8D8C8C;}
+.deposit_content dl dt{ float:left;}
+.deposit_content dl dd{float:left;}
+.deposit_soupon dd{ padding-left:11px;}
+.deposit_items dt{ width:252px;}
+.deposit_bank_sz{ width:180px; height:40px; line-height: 40px;   border:1px solid #dddddd;}
+.deposit_bank_sz img{display: inline; vertical-align: -5px; padding-left: 5px; padding-right: 15px;}
+/* .card_Selected,.card_noSelected,.carde_Selectadd,.dl_select{ width:160px; height:24px; padding:9px 20px 9px 7px; border:1px solid #dddddd; display:block; float:left;  margin:20px 18px 0px 0px;}
+.card_Selected dd,.card_noSelected dd{ line-height:24px; padding-left:8px; color:#999; font-size:14px;}
+.card_Selected{ background-position:0px 0px !important;} */
+.card_noSelected,.dl_select{ background-position:-187px 0px;}
+.carde_Selectadd{ background-position:-374px 0px;}
+.carde_Selectadd dt{ padding-left:25px; padding-top:3px;}
+.carde_Selectadd dd{ padding-left:10px; color:#333; font-size:16px;}
+.deposit_btn{ width:140px; height:40px; display:block; text-align:center; line-height:40px; text-decoration:none; background: #ffa019;border-radius: 3px;  -webkit-border-radius: 3px;-moz-border-radius: 3px;color:#FFF; font-size:16px; margin:15px 20px;}
+.deposit_btn:hover,.deposit_btn_gray:hover{ text-decoration:none;color:#FFF;}
+.deposit_btn_gray{background: #ccc;}
+.deposit_table2 td{ border:none;}
+.deposit_table2 .deposit_main tr td.deposit_title{ border-bottom:0px !important;}
+/*弹出框修改银行卡*/
+.revisecard_content{display:none;}
+
+/*弹出框添加银行卡*/
+.addcard_content{display:none;}
+.addcard_left{ font-size:14px; color:#666; font-weight:bold;}
+.addcard_mx{ font-size:14px; color:#ff9600;}
+.selectcard{ width:140px; height:28px;}
+.selectcardbig{width:236px; height:28px;}
+.bankcard_txt{width:226px; height:24px; padding:1px 5px; background:#FFF; border:#cdcdcd solid 1px; line-height:24px; color:#8D8C8C;}
+.bankcard_txtmin{width:130px; height:24px; padding:1px 5px; background:#FFF; border:#cdcdcd solid 1px; line-height:24px; color:#8D8C8C;}
+.addcard_hqyz{ font-size:14px;}
+.addcard_right{ width:18px; height:14px; display:block; background:url(..images/addcard_right.gif) 0px 0px no-repeat;}
+.keepcard_btn{ width:108px; height:30px; display:block; background:#ffbb08; border:#f5af00 solid 1px; line-height:30px; text-align:center; color:#FFF; font-size:16px; font-weight:bold; text-decoration:none !important;}
+.cancelcard_btn{ width:108px; height:30px; display:block; background:#ccc; border:#c6c6c6 solid 1px; line-height:30px; text-align:center; color:#666; font-size:16px; font-weight:bold; text-decoration:none !important;}
+
+/*充值限额表*/
+.bank_limit_box{ width:100%;}
+.bank_limit_box p{ line-height:24px; font-size:14px; padding-bottom:10px;}
+.bank_recharge_limit{ font-size:12px; border:#ccc solid 1px; border-collapse:collapse; color:#333; text-align:center;}
+.bank_recharge_limit th{ font-weight:normal; height:40px; background:#d7d7d7; border:#ccc solid 1px;}
+.bank_recharge_limit td{ height:40px; background:#fff; border:#ccc solid 1px;}
+.limit_01{ width:120px;}
+.limit_02,.limit_03,.limit_04{ width:100px;}
+.bank_recharge_limit td.limit_05{ padding-left:5px; text-align:left;}
+
+/*20160831银行卡信息备注*/
+.bank-info {height: auto; overflow: hidden; cursor: pointer;}
+.bank-info .textmask{height: 15px; background: url(..images/repeat-png.png) repeat-x; left: 0; bottom: 0; width: 100%; }
+
+
+/*20171024新增提现方式*/
+.draw-way{padding: 15px 0;}
+.draw-way .li-mb{margin-bottom: 10px;}
+.draw-way p {color: #999}
+.draw-way p span{color: #ff9600;}
+.draw-way p .fc-red{color: #f00}
+.draw-way .d-p1{margin-top: 3px; padding-left: 18px;}
+.draw-way label{margin-right: 10px;  font-size: 14px; color: #333; cursor: pointer;  -moz-user-select:none; -webkit-user-select:none; -ms-user-select:none; user-select:none;}
+.draw-way .radio-disabled label{cursor: default; color: #999}
+/*20180515新增提现方式*/
+.draw-way-1{}
+.draw-way-1 li{width: 314px; height: 80px; position: relative; margin-right: 0; border: 1px solid #dddddd; float: left; cursor: pointer;}
+.draw-way-1 li.selected{border-color: #ff8c00; background: url('..images/check.png') top right no-repeat;  }
+.draw-way-1 .float-tip{position: absolute; width:316px ; height:82px; top: -1px; left: -1px; line-height: 80px; text-align: center; background: #000; color: #fff; opacity: 0.5; filter: alpha(opacity=50);}
+#dial-window .btns{padding-bottom: 35px;}
+
+.draw_tnotice {
+    width: 470px !important;
+    margin-left: -215px;
+    height: 310px;
+}
+
+/*后台提现下拉框效果*/
+
+#diallayer {
+    z-index: 101;
+}
+
+.select_box {
+    width: 250px;
+    margin: 10px 10px 0 0;
+    padding: 0px;
+    position: relative;
+    z-index: 100 !important;
+}
+
+.select_box input {
+    width: 100%;
+    height: 40px;
+    line-height: 25px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #ccc;
+   padding-left: 10px;
+   font-family: 'Microsoft Yahei';
+    background: #fff url(//js3.tuandai.com/images/member/arrow.png) no-repeat 220px center;
+}
+
+.select_box ul {
+    width: 260px;
+    /**ul的宽度（div的宽度+input的padding-left+input的padding-right）**/
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    top: 31px;
+    /**等于input的高度**/
+    border: 1px solid #ccc;
+    border-top: none;
+    color: #666666;
+    background: #fff;
+    overflow: hidden;
+    display: none;
+    /**隐藏**/
+    background: #fff;
+    z-index: 10000000;
+}
+
+.select_box ul li {
+    list-style-type: none;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    
+    padding-left: 10px;
+    /**设置li离左边的距离**/
+    cursor: pointer;
+}
+
+.hover {
+    color: #ff9900;
+}
+
+.deduction-tb-box {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.deduction-tb-box span {
+    color: #ff9600;
+}
+
+.deduction-tb-box .tbonoff {
+    width: 16px;
+    height: 16px;
+    background: url('//js3.tuandai.com/images/tb-onoff.png?v=20180626');
+    display: inline-block;
+    vertical-align: -4px;
+    cursor: pointer;
+     margin-top: 2px;
+     margin-right:5px; 
+     float: left;
+}
+
+.deduction-tb-box .tbonoff.status-off {
+    background-position: 0 0;
+}
+
+.deduction-tb-box .tbonoff.status-on {
+    background-position: 0 -16px;
+}
+
+.deduction-tb-box .not-deduction {
+    color: #f00;
+}

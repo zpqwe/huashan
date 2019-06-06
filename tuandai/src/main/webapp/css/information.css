@@ -1,0 +1,745 @@
+.line-h30{ line-height: 30px !important;}
+.cl{clear:both}
+.h13{height: 13px;*height: 0px;}
+/*边框*/
+.information{
+    width: 800px;
+    height: 219px;
+}
+.information .name{
+    position: relative;
+    padding-bottom: 15px;
+     border-bottom: 1px solid #e1e1e1;
+}
+.information .name p{
+    font-weight: bold;
+}
+.information .name p span.vip{
+    display: inline-block;
+    width: 32px;
+    height: 19px;
+    margin-left: 12px;
+    background: #c6c62a;
+    font-weight: normal;
+    color: #fff;
+    padding-left: 3px;
+}
+.information .name s{
+    position: absolute;
+    display: inline-block;
+    top: -4px;
+    left: 699px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon2.png") 0px -183px;
+}
+.information .name b{
+    position: absolute;
+    display: inline-block;
+    top:-4px;
+    left: 739px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon2.png") 0px -210px;
+}
+.information .name em{
+    position: absolute;
+    display: inline-block;
+    font-style: normal;
+    color: #fff;
+    top: -10px;
+    left: 716px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    background: url("../images/icon2.png") 0px -243px;
+}
+.information .name em.em1{
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    left: 754px;
+    width: 16px;
+    height: 18px;
+    padding-left: 1px;
+    background: url("../images/icon2.png") 0px -243px;
+}
+.information .name_information{
+    padding-top: 30px;
+}
+.information .name_information .name_left{
+    float: left;
+    width: 479px;
+    height: 151px;
+    border-right: 1px solid #e1e1e1;
+}
+.information .name_information .name_left .touxiang_tu{
+    float: left;
+    margin-right: 30px;
+}
+.information .name_information .name_left .touxiang_tu img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.information .name_information .name_left p{
+    text-align: center;
+    line-height: 35px;
+}
+.information .name_information .name_left .information_liebiao{
+    width: 222px;
+    float: left;
+}
+.information .name_information .name_left .information_liebiao ul li{
+    padding-bottom: 15px;
+}
+.information .name_information .name_left .information_liebiao ul li.no1{
+    position: relative;
+}
+.information .name_information .name_left .information_liebiao ul li i{
+    position: absolute;
+    top: -3px;
+    left:68px;
+    width: 24px;
+    height: 24px;
+    /*background: url("../images/icon2.png") 0px -24px;*/
+    background: url("../images/icon2.png") 0px -0px;
+}
+.information .name_information .name_left .information_liebiao ul li b{
+    position: absolute;
+    top: -3px;
+    left: 100px;
+    width: 24px;
+    height: 24px;
+    /*background: url("../images/icon2.png") -24px 0px;*/
+    background: url("../images/icon2.png") -24px -24px;
+}
+.information .name_information .name_left .information_liebiao ul li s{
+    position: absolute;
+    top: -3px;
+    left: 132px;
+    width: 24px;
+    height: 24px;
+    /*background: url("../images/icon2.png") -48px 0px;*/
+    background: url("../images/icon2.png") -48px -24px;
+}
+ 
+.information .name_information .name_left .information_liebiao ul li em{
+    position: absolute;
+    top: -3px;
+    left: 164px;
+    width: 24px;
+    height: 24px;
+    /*background: url("../images/icon2.png") -72px 0px;*/
+    background: url("../images/icon2.png") -72px -24px;
+}
+.information .name_information .name_left .connection{
+    float: left;
+}
+.information .name_information .name_left .connection ul li{
+    padding-bottom: 15px;
+}
+
+.information .name_information .name_right{
+    float: left;
+}
+.information .name_information .name_right .login_bg{
+    width: 280px;
+    height: 143px;
+    margin-left: 28px;
+     margin-top: 4px;
+ }
+
+.information .name_information .name_right .login_bg p{
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 20px;
+}
+.information .name_information .name_right .login_bg .weibo{
+    float: left;
+    width: 88px;
+    margin-left:5px;
+    height:55px;
+}
+.information .name_information .name_right .login_bg .weibo ul
+{
+    overflow:hidden;
+}
+.information .name_information .name_right .login_bg .weibo .tu{
+    width: 40px;
+    height: 35px;
+    margin-left: 21px;
+    background: url("../images/icon2.png") -55px -150px;
+    /*background: url("../images/icon2.png") -55px -194px;*/
+}
+.information .name_information .name_right .login_bg .weibo .tu a
+{
+    width:40px;
+    height:35px;
+    display:block;
+}
+.information .name_information .name_right .login_bg .QQ{
+    float: left;
+    width: 88px;
+    height:55px;
+}
+.information .name_information .name_right .login_bg .QQ .tu{
+    width: 40px;
+    height: 35px;
+    margin-left: 21px;
+    background: url("../images/icon2.png") -114px -148px;
+    /*background: url("../images/icon2.png") -114px -192px;*/
+}
+.information .name_information .name_right .login_bg .QQ .tu a
+{
+    width:40px;
+    height:35px;
+    display:block;
+}
+.information .name_information .name_right .login_bg .QQ .wz{
+    text-align: center;
+}
+
+/*--------------------*/
+
+.information .name_information .name_right .login_bg .WeiXin{
+    float: left;
+    width: 88px;
+    height:55px;
+}
+.information .name_information .name_right .login_bg .WeiXin .tu{
+    width: 40px;
+    height: 35px;
+    margin-left: 21px;
+    background: url("../images/weixin_gray.png");
+    /*background: url("../images/icon2.png") -114px -192px;*/
+}
+.information .name_information .name_right .login_bg .WeiXin .tu a
+{
+    width:40px;
+    height:35px;
+    display:block;
+}
+.information .name_information .name_right .login_bg .WeiXin .wz{
+    text-align: center;
+}
+/*----------------------*/
+
+
+.Personal{
+    width: 800px;
+}
+.Personal .infor_portrait{
+
+ }
+
+
+/*头像上传样式*/
+.headerPhoto{
+    width: 700px;
+    height: 412px;
+    background: #fff;
+    position: absolute;
+    z-index: 2;
+}
+.headerPhoto .current{
+    display: none;
+}
+.headerPhoto .alignR{
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.headerPhoto .alignR .button_upload{
+    margin-right: 30px;
+}
+
+/*系统头像样式*/
+.por{
+    position: relative;
+    height: 540px;
+}
+.portrait{
+    position: absolute;
+    top: 154px;
+    left: 351px;
+    z-index: 3;
+}
+.face-img{
+    width: 520px;
+    height: 600px;
+    background: #fff;
+}
+
+
+/*头像上传*/
+
+
+
+
+
+.face-img{ margin: 0px auto; width: 600px; padding:  20px;  position: relative;}
+.face-img .system-face img{width: 60px; height: 60px;}
+.face-img ul{}
+.face-img ul li{float: left; margin:10px; cursor:pointer; border: 2px solid transparent; width: 60px; height: 60px;}
+.face-img ul li.selected{border: 2px solid #ff9900;}
+.face-img .close{width: 20px; height: 20px; position: absolute; right: 20px; top: 20px; display: block; background: url("../images/plot.png") -240px -302px;}
+.face-save{margin: 40px auto 0; width: 520px; padding:  20px;    }
+.face-save .face{ border: 1px solid #E5E5E5; float: left; margin-right: 18px; background: #d7d7d7;}
+.face-save .face1{width:130px; height: 130px;}
+.face-save .face1 img{width:130px; height: 130px;}
+.face-save .face2{width:100px; height: 100px; }
+.face-save .face2 img{width:100px; height: 100px; }
+.face-save .face3{width:60px; height: 60px; }
+.face-save .face3 img{width:60px; height: 60px; }
+.face-save .submit-btn{height: 40px; width: 80px; text-align: center; line-height: 40px; display:inline-block;}
+.local-pic{width: 750px; height: 400px; padding: 40px;}
+.local-pic .close{width: 20px; height: 20px; position: absolute; right: 20px; top: 20px; display: block; background: url("../images/plot.png") -240px -302px;}
+
+/*图片上传按钮*/
+.up-pic-btn{
+    margin: 50px auto 0;
+    width: 450px;
+    height:253px ;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+    background: url("../images/picture_by_03.png") no-repeat;
+}
+
+
+
+
+/*头像上传*/
+.Picture_upload{
+ position: relative;
+}
+.Picture_upload .up-pic-btn a.Local_image{
+    overflow: hidden;
+    position: absolute;
+    top: 250px;
+    left: 337px;
+    display: block;
+    width: 182px;
+    height: 47px;
+    background: url("../images/Picture_upload.png") no-repeat -2px -3px;
+}
+.Picture_upload .up-pic-btn a.Local_image:hover{
+    background: url("../images/Picture_upload.png") no-repeat -2px -52px;
+}
+.Picture_upload .up-pic-btn a.System_image{
+    position: absolute;
+    top: 290px;
+    left: 337px;
+    display: block;
+    width: 182px;
+    height: 47px;
+    background: url("../images/Picture_upload.png") no-repeat -2px -113px;
+}
+.Picture_upload .up-pic-btn a.System_image:hover{
+    background: url("../images/Picture_upload.png") no-repeat -2px -165px;
+}
+
+/*会员体系-成长等级*/
+.account-rightBox .user-inf{margin-top: 20px;}
+.account-rightBox .user-inf .name{font-size: 16px; color: #333; margin-right: 10px;}
+.account-rightBox .user-inf .vip{background: #c6c62a; font-size: 12px; margin-right: 5px; display: inline-block; margin-bottom: 3px; color: #fff; padding: 1px 5px; border-radius: 3px; -webkit-border-radius: 3px;}
+.account-rightBox .user-inf .lv{font-size: 12px; font-style: normal}
+.account-rightBox .user-inf .group-item{float: left; height: 70px;}
+.account-rightBox .user-inf .i-t-1{float: left;  width:380px; border-right: 1px solid #E5E5E5; }
+.account-rightBox .user-inf .i-t-2{float: left; text-align: center; width: 200px}
+
+.account-rightBox  .group-progress-box{margin:20px 0 0 0;   padding-bottom: 28px; }
+.account-rightBox  .group-progress-box .group-progress-bg{height: 22px;padding: 1px; position: relative;  border: 1px solid #E5E5E5; width: 800px; background: #f3f3f3; border-radius: 5px; -webkit-border-radius: 5px; }
+.account-rightBox  .group-progress-box .group-progress{height: 22px; border-radius: 5px 0 0 5px; -webkit-border-radius:5px 0 0 5px; }
+.account-rightBox  .group-progress-box .group-progress-line {position: absolute; top:2px; left: 2px; }
+.account-rightBox  .group-progress-box .group-progress-line ul{border-radius: 5px 0 0 5px; -webkit-border-radius:5px 0 0 5px; background: #f3f3f3;    }
+.account-rightBox  .group-progress-box .group-progress-line li{float: left;  width: 79px;   height: 20px; color: #333; line-height: 20px; text-align: center;border-right:1px dashed #e6e6e6 }
+.account-rightBox .border-left-radius{border-radius: 5px 0 0 5px; -webkit-border-radius:5px 0 0 5px;}
+
+ .a-upload input {     position: absolute;   line-height: 55px;  font-size: 100px;  display: block;   right: 0;     top: 0;    opacity: 0;     filter: alpha(opacity=0);     cursor: pointer;  width: 400px;  height: 55px; }
+
+.account-rightBox  .task{margin-top: 20px;  position: relative; }
+.account-rightBox  .task dt{width: 120px; height: 120px; float: left;   }
+ .account-rightBox  .task .per-text{position: absolute ; z-index: 2; top: 40%;   font-size: 14px; width: 120px; text-align: center; color: #fff;}
+.account-rightBox  .task dd{width: 88px; float:left; margin: 0 10px; padding-top: 30px;}
+.account-rightBox  .task dd .icon{background: url("../images/task.png"); height: 40px;}
+.account-rightBox  .task dd .i1{background-position: 18px -14px}
+.account-rightBox  .task dd .i2{background-position: 18px  -69px}
+.account-rightBox  .task dd .i3{background-position: 14px -126px}
+.account-rightBox  .task dd .i4{background-position: 18px -183px}
+.account-rightBox  .task dd .i5{background-position: 16px -238px}
+.account-rightBox  .task dd .i6{background-position: 12px -294px}
+
+  #leftMenu {
+            border: 1px solid #e6e6e6;
+        }
+
+        .dv_r_5, .dv_r_5_1, .dv_r_5_2 {
+            padding-left: 40px;
+            height: 42px;
+            line-height: 40px;
+            background: url(../images/baktag.jpg) no-repeat;
+            background-repeat: no-repeat;
+            font-family: 宋体;
+            font-size: 14px;
+            text-align: left;
+            background-position: 0 0;
+            border: 1px solid #e6e6e6;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .dv_r_5_1, .dv_r_5_2, .dv_r_5_3, .dv_r_5_4, .dv_r_5_5, .dv_r_5_6, .dv_r_5_7 {
+            border-top: 0;
+        }
+
+        .dv_r_5_1 {
+            background-position: 0 -42px;
+        }
+
+        .dv_r_5_2 {
+            background-position: 0 -84px;
+        }
+
+        .dv_r_5_3 {
+            background-position: 0 -126px;
+        }
+
+        .dv_r_5_4 {
+            background-position: 0 -126px;
+        }
+
+        .dv_r_5_5 {
+            background-position: 0 -126px;
+        }
+
+        .dv_r_5_6 {
+            background-position: 0 -168px;
+        }
+
+        .dv_r_6 {
+            height: 100%;
+            overflow: hidden;
+            line-height: 25px;
+            text-align: left;
+        }
+
+            .dv_r_6 ul {
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                background-color: #fff;
+                padding-bottom: 0px;
+                padding-top: 0px;
+                border: 1px solid #e6e6e6;
+                border-top: none;
+            }
+
+                .dv_r_6 ul li {
+                    height: 38px;
+                    line-height: 34px;
+                    padding-left: 35px;
+                    background: url(../images/bakdotted.jpg);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                }
+
+                .dv_r_6 ul .over {
+                    background: #f5f5f5;
+                }
+
+                .dv_r_6 ul li a {
+                    text-decoration: none;
+                }
+
+                .dv_r_6 ul li.last {
+                    padding-left: 35px;
+                    background: none;
+                }
+
+                    .dv_r_6 ul li.last:hover {
+                        background: #f5f5f5;
+                    }
+
+                .dv_r_6 ul li a {
+                    margin-left: 8px;
+                    color: #666;
+                    font-size: 14px;
+                }
+
+                .dv_r_6 ul li div {
+                    padding-left: 3px;
+                    clear: both;
+                    width: 180px;
+                    color: #000;
+                    line-height: 20px;
+                    text-indent: 17px;
+                }
+
+                .dv_r_6 ul li a.red {
+                    color: #DD8800;
+                }
+
+        #leftMenu .dv_r_5 strong {
+            font-family: "微软雅黑", "宋体", Arial;
+            color: #333;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        #leftMenu .dv_r_5_1 strong, #leftMenu .dv_r_5_2 strong, #leftMenu .dv_r_5_3 strong, #leftMenu .dv_r_5_4 strong {
+            color: #333;
+        }
+
+        .current {
+            font-weight: bold;
+        }
+
+        .otherline .li1 strong {
+            font-weight: normal;
+        }
+
+        #leftMenu .hidden {
+            display: none;
+        }
+
+        #leftMenu .up {
+            width: 14px;
+            height: 7px;
+            display: inline-block;
+            cursor: pointer;
+            background: url(../images/gr_arrow_01.gif);
+            position: absolute;
+            right: 20px;
+            top: 18px;
+        }
+
+        #leftMenu .down {
+            width: 14px;
+            height: 7px;
+            display: inline-block;
+            cursor: pointer;
+            background: url(../images/gr_arrow_02.gif);
+            position: absolute;
+            right: 20px;
+            top: 18px;
+        }
+
+        #menu_autoTender {
+            position: relative;
+            
+        }
+
+        #menu_myWePlan {
+            position: relative;
+            
+        }
+
+        .account-left .emClass, .account-left.emClass {
+            width: 18px;
+            height: 18px;
+            display: block;
+            left: 16px;
+            top: 50%;
+            margin-top: -10px;
+            position: absolute;
+            background: url("../images/we-financing.png") -191px -23px;
+        }
+
+        .account-left .tip-box {
+            position: absolute;
+            left: 110px;
+            top: -4px;
+            width: 357px;
+            height: 126px;
+            cursor: default;
+        }
+
+        .account-left .tip {
+            width: 357px;
+            position: relative;
+            background: #fef8e0;
+            padding: 15px;
+            padding-bottom: 0;
+            font-size: 14px;
+            line-height: 22px;
+            border: 1px solid #e4e4e4;
+            z-index: 1;
+        }
+
+            .account-left .tip p {
+                text-align: right;
+            }
+
+                .account-left .tip p a {
+                    margin-left: 10px;
+                    color: #CC6600;
+                }
+
+                    .account-left .tip p a:hover {
+                        color: #EA7E00;
+                    }
+
+            .account-left .tip .arrow {
+                width: 9px;
+                height: 14px;
+                display: block;
+                position: absolute;
+                background: url("../images/icon2.png") 0 -605px;
+                left: -9px;
+            }
+
+            .account-left .tip .close {
+                width: 9px;
+                height: 9px;
+                display: block;
+                position: absolute;
+                background: url("../images/icon2.png") 0 -621px;
+                right: 8px;
+                top: 8px;
+                cursor: pointer;
+            }
+
+        .left-new {
+            position: absolute;
+            width: 20px;
+            height: 14px;
+            background: url("../images/left-new.gif") 0 0 no-repeat;
+            right: 24px;
+            top: 4px;
+        }
+
+
+        .ny .tip-box {
+            position: absolute;
+            left: 110px;
+            top: -4px;
+            width: 357px;
+            height: 126px;
+            cursor: default;
+        }
+
+        .ny .tip {
+            width: 446px;
+            position: relative;
+            background: #fef8e0;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 22px;
+            border: 1px solid #e4e4e4;
+            z-index: 1;
+        }
+
+            .ny .tip p {
+                text-align: right;
+            }
+
+
+            .ny .tip .arrow {
+                width: 9px;
+                height: 14px;
+                display: block;
+                position: absolute;
+                background: url("../images/icon2.png") 0 -605px;
+                left: -9px;
+            }
+
+            .ny .tip .close {
+                width: 9px;
+                height: 9px;
+                display: block;
+                position: absolute;
+                background: url("../images/icon2.png") 0 -621px;
+                right: 8px;
+                top: 8px;
+                cursor: pointer;
+            }
+
+   
+ 
+
+        .tdTitle {
+            text-align: right;
+            padding-left: 10px;
+            font-size: 12px;
+            height: 50px;
+            line-height: 50px;
+            vertical-align: middle;
+            width: 160px;
+            font-weight: bold;
+            background-color: #F9F9F9;
+            border: #E9E8E7 solid 1px;
+        }
+
+        .tdContent {
+            text-align: left;
+            padding-left: 10px;
+            font-size: 12px;
+            height: 50px;
+            line-height: 50px;
+            vertical-align: middle;
+            border: #E9E8E7 solid 1px;
+        }
+
+        .alertDiv {
+            margin: 0px auto;
+            background-color: #FEFACF;
+            border: 1px solid green;
+            line-height: 25px;
+            background: url(../images/001_30.png);
+            background-position: 20px 4px;
+            background-repeat: no-repeat;
+        }
+
+            .alertDiv li {
+                margin: 5px 0;
+                list-style-type: decimal;
+                color: #DD8800;
+                padding: 0px;
+                line-height: 20px;
+            }
+
+            .alertDiv ul {
+                text-align: left;
+                list-style-type: decimal;
+                display: block;
+                padding: 0px;
+                margin: 0px 0px 0px 75px;
+            }
+
+        .font666 {
+            color: #666;
+        }
+
+        .dv_header_8 {
+            background: url();
+        }
+        
+        .nav_top {
+            border-bottom: 1px solid #e5e5e5;
+            height: 46px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+            width: 800px;
+        }
+
+        /*选项卡*/
+.nav_title{ float:left;   height:44px; line-height:44px;}
+.nav_title li{float:left; margin:0px;   font-size:16px; width: 90px; }
+.nav_title li:hover{border-bottom: 2px solid #ff8c00;}
+.nav_title li:hover a{color: #ff8c00;}
+
+/*选项卡*/
+.tab_title_a a:link,.tab_title_a a:visited,.tab_title_a a:hover,.tab_title_a a:active{ font-size:16px;text-decoration: none; color: #ff8c00; }
+.tab_title_b a:link,.tab_title_b a:visited,.tab_title_b a:hover,.tab_title_b a:active {color: #000;text-decoration: none; font-size:16px;}
+.tab_title_a {  height:44px; line-height:44px; border-bottom:#ff8c00 solid 2px; text-align:center; cursor:pointer;}
+.tab_title_b { height:44px; line-height:44px; border-bottom:#fff solid 2px; text-align:center; cursor:pointer;}
+
+.tab2_title_a a:link,.tab2_title_a a:visited,.tab2_title_a a:hover,.tab2_title_a a:active{ font-size:16px;text-decoration: none; color: #000; }
+.tab2_title_b a:link,.tab2_title_b a:visited,.tab2_title_b a:hover,.tab2_title_b a:active {color: #000;text-decoration: none; font-size:16px;}
+.tab2_title_a {width:100px; height:44px; line-height:44px; border-bottom:#ffa200 solid 4px; text-align:center; cursor:pointer;}
+.tab2_title_b {width:100px; height:44px; line-height:44px; border-bottom:#fff solid 4px; text-align:center; cursor:pointer;}

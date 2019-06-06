@@ -1,0 +1,529 @@
+﻿body,div,p,ul,ol,dl,dd, dt,li,h1,h2,h3,h4,h5,em,form,input,button { margin:0; padding:0; font-family:"微软雅黑",Arial, Helvetica,sans-serif,"宋体"; font-size:12px; font-weight:normal;    }
+html,body{zoom:1; background:#f8f8f8;color:#5d5c5c;}
+body{behavior:url("//js3.tuandai.com/scripts/user/csshover.htc"); min-width:1000px;}
+img{ border: 0; vertical-align:middle;}
+ul, dl ,ol{ list-style:none;}
+table{border-collapse:collapse;  }
+:focus { outline:0;}
+a:link{text-decoration:none;}
+a:hover {text-decoration:underline;color:#ffa019; }
+a:visited {text-decoration:none;}
+.fl_l{float:left;}
+.fl_r{float:right;}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0;}
+.clearfloat{zoom:1;}
+.top{width:998px; margin:0 auto; margin-top:6px; }
+.content{width:100%;background:#f8f8f8;}
+.main{width:1000px; margin:0 auto; }
+a{color:#666666;  }
+.margin-left-0{margin-left: 0!important;}
+.margin-right-0{margin-right: 0!important;}
+.mgt5{margin-top: 5px;}
+.mgt10{margin-top: 10px;}
+.mgt15{margin-top: 15px;}
+.bdr0{border-right: 0!important;}
+.bdb0{border-bottom: 0!important;}
+.bdt0{border-top: 0!important;}
+.bdl0{border-left: 0!important;}
+/*padding*/
+.pdt10{padding-top: 10px;}
+.bold{font-weight: bold;}
+.c-ff9e16{color:#ff9e16;}
+.c-fdf264{color:#fdf264;}
+.c-f4750c{color:#f4750c;}
+.font-12{font-size: 12px!important; }
+.font-14{font-size: 14px!important;}
+.font-16{font-size: 16px!important;}
+.font-18{font-size: 18px!important;}
+.font-20{font-size: 20px!important;}
+.font-24{font-size: 24px!important;}
+.font-26{font-size: 26px!important;}
+.font-28{font-size: 28px!important;}
+.font-30{font-size: 30px!important;}
+.font-32{font-size: 32px!important;}
+.font-42{font-size: 42px!important;}
+.font-54{font-size: 54px!important;}
+.font-68{font-size: 68px!important;}
+.font-red{color: #FF0000!important;}
+
+.bold{font-weight:bold;}
+.t-c{text-align:center}
+#container{margin: 0 auto; padding: 0; width: auto; height: auto; overflow: hidden;}
+.inline-block-debug { display:inline-block; zoom:1; _display:inline;} /*推荐*/
+.inline-block-debug { display:inline-block; zoom:1; *display:inline;} /*推荐:IE67*/
+.justify_fix{display:inline-block; width:100%; height:0; overflow:hidden;}
+
+/*右则QQ*/
+.right_servers_box{width: 125px; position:fixed; top:140px; right:0;  z-index: 9999;  }
+.right_servers_box{position:absolute;top:expression(eval(document.documentElement.scrollTop)) ;  margin:140px 0 0 0;   right:-2px;}
+.right_servers_box .servers_content{display:none;top: 250px;position: fixed;}
+.right_servers_box a{display: block; line-height: 45px; font-size: 12px; font-weight:bold;}
+.right_servers_box .left_servers_title_none{top:110px;width:32px; height: 100px; background:url(//js3.tuandai.com/images/old/left_servers_title_none.jpg?v=20150703); right:0;   position: absolute; z-index:9998;  border: 1px solid #f3f3f3;}
+.right_servers_box .left_servers_title_none_help{cursor: pointer;width:32px; height: 100px; background:url(//js3.tuandai.com/images/old/left_servers_title_none_help.jpg?v=20150703); right:0;   position: absolute; z-index:9998;  border: 1px solid #f3f3f3;}
+.right_servers_box .servers_title {height:44px; width: 125px;  background:url(//js3.tuandai.com/images/old/left_servers_title.jpg?v=20150703);  position:relative;}
+.right_servers_box .servers_title  #close{position: absolute;right: 0; top:3px;}
+.right_servers_box .qq{ width:125px; height:126px; background:url(//js3.tuandai.com/images/old/left_servers_qq.jpg?v=20150703) no-repeat;text-decoration:none;}
+.right_servers_box a.qq:hover{background:url(//js3.tuandai.com/images/old/left_servers_qq_hover.jpg?v=20150703) no-repeat; text-decoration:none;}
+.right_servers_box .question{ width:125px; height:90px; background:url(//js3.tuandai.com/images/old/left_servers_questions.jpg?v=20150703) no-repeat;}
+.right_servers_box a.question:hover{background:url(//js3.tuandai.com/images/old/left_servers_questions_hover.jpg?v=20150703) no-repeat;}
+.right_servers_box .tools{ width:125px; height:41px; background:url(//js3.tuandai.com/images/old/left_servers_title_tools.jpg?v=20150703) no-repeat;}
+.right_servers_box a.tools:hover{background:url(//js3.tuandai.com/images/old/left_servers_title_tools_hover.jpg?v=20150703) no-repeat;}
+
+/*顶部*/
+.top_bar{	height:30px;background: url(//js3.tuandai.com/images/old/bar_bg.jpg?v=20150611001);  overflow:visible!important;}
+.top_bar .line{width:6px; height:30px; margin:0 6px; background:url(//js3.tuandai.com/images/old/top_line.png?v=20150703) no-repeat center;    display:block;}
+.top_bar .top{width:1050px; margin:0 auto; height:30px; }
+.top_bar .top a{font-family:"宋体"; line-height: 30px;}
+.top_bar .top a:hover{font-family:"宋体";color:#ff9600;}
+.top_bar .top_right_box{float: right; color: #d2d2d2;display: inline;   }
+.top_bar .top_right_box{float: right; color: #d2d2d2;display: inline;   }
+.top_bar .top_right_box .tuandai_id{  color:#ff9600; }
+.top_bar .top_right_box .login_after{float: right; display: inline;  line-height: 30px;      }
+.top_bar .top_right_box a { color:#d2d2d2;}
+.top_bar .top_left_box{ float: left;  display: inline;}
+.top_bar .phone{padding:0 10px 0 30px;height:30px; color:#d2d2d2; line-height: 30px;  font-size:16px!important; font-family:"微软雅黑" !important ;  background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001) -3px 2px no-repeat  ; float:left;}
+.top_bar .jbrk{ padding:0 26px 0 10px;height:30px;color:#feb206;line-height:30px;font-family:"微软雅黑" !important ;font-weight:bold;color:#f1a700;background:url(//js3.tuandai.com/images/old/top_icon_jbrk.png?v=20150703) right no-repeat; float:left;}
+.top_bar .top .attention{  float:left; display: inline; }
+.top_bar .top .attention span{height:30px; color:#d2d2d2; line-height: 30px;  font-size: 12px; font-family:"宋体" !important ; cursor: pointer; float: left }
+.top_bar .top .sina{   background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001) 50px  -120px no-repeat  ;  width: 72px;  height: 30px; }
+.top_bar .top .sina:hover{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)  50px -30px no-repeat  ; }
+
+
+
+.top_bar .top .weixin{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)  6px -60px no-repeat  ;  width: 40px;  height: 30px; position:relative; z-index: 19998;}
+.top_bar .top .weixin:hover{background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)  6px -90px no-repeat  ;}
+.top_bar .top .hide_weixin{width: 128px; height: 136px ; background:url(//js3.tuandai.com/images/old/tuandaiservice.jpg?v=20160112) no-repeat center;   position:absolute; top:30px; left: -80px;  display:none;  z-index: 1000;}
+.top_bar .top .help{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)   -4px -150px no-repeat  ; display:block; width: 50px;   padding-left: 25px;     height: 30px; }
+.top_bar .top .red-page{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001) -3px -360px  no-repeat  ; display:block; padding-right: 5px;   padding-left: 25px;     height: 30px; }
+.top_bar .top .vip-Logo{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001) -3px -426px  no-repeat  ; display:block; padding-right: 5px;   padding-left: 25px;     height: 30px; }
+.top_bar .top .selphone{background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001) -3px -390px  no-repeat  ;}
+ /**/
+/*.top_bar .top .weixin{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20150611001)  6px -60px no-repeat  ;  width: 40px;  height: 30px; position:relative; z-index: 19998;}*/
+/*.top_bar .top .weixin:hover{background:url(//js3.tuandai.com/images/old/top_icon.png?v=20150611001)  6px -90px no-repeat  ;}*/
+/*.top_bar .top .hide_weixin{width: 128px; height: 136px ; background:url(//js3.tuandai.com/images/old/two-dimen.png?v=20150611001) no-repeat center;   position:absolute; top:30px; left: -80px;  display:none;  z-index: 1000;}*/
+/*.top_bar .top .help{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20150611001)   -4px -150px no-repeat  ; display:block; width: 50px;   padding-left: 25px;     height: 30px; }*/
+/*.top_bar .top .red-page{ background:url(//js3.tuandai.com/images/old/red-page.png?v=20150611001) 0 7px  no-repeat  ; display:block; padding-right: 5px;   padding-left: 25px;     height: 30px; }*/
+
+
+.top_bar .top .td_newtask{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)   -4px -300px no-repeat  ; display:inline-block; width:78px;  padding-left: 25px; height:30px;    position:relative; }
+.top_bar .top .td_newtask i{background:url(//js3.tuandai.com/images/old/td_new.png?v=20150703) no-repeat 0 0; display:inline-block; width:25px; height:11px;  _overflow:hidden; position:absolute; top:4px; _top:2px;  }
+.top_bar .top .tuandai{ background:url(//js3.tuandai.com/images/old/bbs-gif.gif?v=20150814) -4px 0px   no-repeat  ; display:block; padding-left: 25px;   height: 30px;  padding-right: 5px;}
+.top_bar .top .shop{ background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)   -6px -331px no-repeat  ; display:block; padding-left: 25px;   height: 30px; padding-right: 5px;}
+.login{color:#d2d2d2; line-height: 30px;}
+.top_bar .top .top_login{width: 40px;  background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)   -4px -210px no-repeat  ; display:block;  padding-left: 25px;    height: 30px; float: left;}
+.top_bar .top .top_login a{line-height: 34px;}
+.top_bar .top .top_reg{float: left;  }
+.top_bar .top .top_logined{ float:left; zoom:1; overflow:hidden; background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)   -4px -240px no-repeat  ; display:block;  padding-left: 25px;   height: 30px; float: left;}
+.top_bar .top .top_reg_ed{float:left; zoom:1; overflow:hidden; background:url(//js3.tuandai.com/images/old/top_icon.png?v=20160324001)   -4px -270px no-repeat  ; display:block;  margin-left:5px; padding-left:24px; line-height:30px;   height: 30px; float: left; }
+.top_bar .top .top_lgoing_qq,.top_bar .top .top_lgoing_sina{background:url(//js3.tuandai.com/images/old/loginbtn_qqsina.png?v=20150703) no-repeat; width:76px; height:22px; margin:4px 0; display:block; float:left; margin-right:10px;}
+.top_bar .top .top_lgoing_qq{background-position:0 0;}
+.top_bar .top .top_lgoing_sina{ background-position:-76px 0; width:96px;}
+.top_bar .top .top_lgoing_qq:hover{background-position:0 -22px;}
+.top_bar .top .top_lgoing_sina:hover{ background-position:-76px -22px; width:96px;}
+.logo_bg{background: #fff;}
+.logo_box{  width:998px;  height:100px; margin:0 auto; z-index:0;}
+.logo{width: 216px; height: 100px;float:left; }
+.logo_box .logo_text .gundong_banner{width:320px;height:58px;float:left;margin:0;padding-left:15px;}
+.logo h1{position:absolute; display:block; font-size:30px; line-height:30px; margin-top:35px; padding-left:10px;color:#cc1400 !important; }
+/*--导航--*/
+.nav {width: 580px;  height: 102px; float:right;}
+.nav ul {width: 100%}
+.nav ul li{width:86px; float:left; margin-left:14px; display: inline;   }
+.nav ul li.nav_first {margin-left:0px; width:67px; text-align:center}
+.nav ul li a{display: block; width: 86px; height:100px; line-height: 100px;  font-size: 18px; text-align: center; color: #282828;    }
+.nav ul li a:hover{background: url(//js3.tuandai.com/images/old/nav_bg.jpg?v=20150703) 0 76px no-repeat; color: #282828; font-weight: bold; line-height: 100px; text-decoration: none;}
+.nav ul li.nav_first a{width:67px;}
+
+.nav ul li.nav_one{ position:relative; z-index:19997;}
+.nav ul li.nav_one a{ background:none;}
+.nav ul li.nav_one .nav_arrows{ display:block; width:16px; height:16px; position: absolute; top:43px; right:-12px;background: url(//js3.tuandai.com/images/old/nav_arrow01.png?v=20150703) 0 0 no-repeat;}
+.nav ul li.nav_one:hover .nav_arrows{background: url(//js3.tuandai.com/images/old/nav_arrow02.png?v=20150703) 0 0 no-repeat;}
+.nav .nav_one .head-nav-child{position: relative; z-index: 19997;}
+.nav ul li .nav_second{ display:none; width:120px; height:80px; border: 1px solid #d9d9d9;cursor: auto;background:#fff;filter:alpha(opacity=95); -moz-opacity:0.95; -khtml-opacity:0.95; opacity:0.95; position: absolute;top:76px; left:-27px; z-index:19997;}
+.nav ul li .nav_second dd a{display:block; width:120px; height:40px; font-size:15px; text-align:center; color: #282828; line-height:40px; }
+.nav ul li .nav_second dd a:hover{ background:#ffca0a; color:#fff;}
+
+table{border-collapse: collapse; border: none;}
+.nav ul li.nav_one .head-nav-child{position:relative;}
+
+/*公告*/
+
+/* background:url(//js3.tuandai.com/images/old/bg.gif) no-repeat; */
+.index_ad{ overflow:hidden; position:relative; width:186px; height:58px; float:left; margin-top:25px; margin-left:10px;}
+.index_ad ul {padding:0px;margin:0px;position:absolute;left:0px;}
+.index_ad .index_slider, .content_right .num{position:absolute;}
+.index_ad .index_slider li{list-style:none;display:inline;text-align:left;padding:0px;margin:0px;}
+.index_ad .index_slider img{width:186px;height:58px;display:block;}
+.index_ad .index_num {right:5px;bottom:5px;}
+.index_ad .index_num li{display:none;}
+
+/*用户所在位置*/
+.position{ padding:10px 0px 14px; color:#000; line-height:24px; text-align:left;  font-size:14px; width: 1000px; margin: 0 auto;}
+.position a:link,#position a:visited{ text-align:left; color:#000;   padding-bottom:4px; font-size:14px;}
+.position a:hover{color:#ff9600; text-decoration:underline;}
+.position .share { float: right;  line-height: 24px; border: none; }
+.position .share a{ text-decoration: none;}
+
+/*底部*/
+.footer_box{  background:#f8f8f8; margin-top:10px; border-top:#e6e6e6 solid 2px; color:#282828;}
+.footer_box .footer{width: 1000px; padding: 30px 0 0 0; margin: 0 auto; font-size: 14px;  position:relative; }
+.footer_box .footer em{font-style:normal;color:#282828; font-size: 14px; padding-right: 10px;}
+.footer_box .footer span{padding: 10px;}
+/*新手指引*/
+.footer_box .footer .user_index a{color:#282828; line-height: 28px; font-size: 14px }
+.footer_box .footer .user_index a:hover{color:#ff9600; text-decoration: none;}
+.footer_box .footer .user_index{text-align: left;}
+
+/*关注我们*/
+.footer_box .footer .footer_attention{height: 30px; line-height: 28px; padding-top: 0px; }
+.footer_box .footer .footer_attention span{float: left; padding: 0;}
+.footer_box .footer .footer_attention strong{font-weight:normal;color:#282828;}
+.footer_box .footer .footer_attention em{float: left; padding:10px 24px 0 0;}
+.footer_box .footer .footer_attention a{ text-decoration: none; display: block; float:left; color:#282828; line-height: 28px; text-align: left; font-size: 14px;padding: 10px 10px 5px 10px;   }
+.footer_box .footer .footer_attention .footer_sina{   height: 34px; padding-left: 50px;  background:url(//js3.tuandai.com/images/old/footer_icon.png?v=20150703) 5px -39px no-repeat; width: 60px;}
+.footer_box .footer .footer_attention a.footer_sina:hover{color:#ff9600;background:url(//js3.tuandai.com/images/old/footer_icon.png?v=20150703) 5px -39px no-repeat;}
+.footer_box .footer .footer_attention .footer_weixin{   height: 34px; padding-left: 50px;  background:url(//js3.tuandai.com/images/old/footer_icon.png?v=20150703) 5px 7px no-repeat; width: 70px;}
+.footer_box .footer .footer_attention a.footer_weixin:hover{color:#ff9600;background:url(//js3.tuandai.com/images/old/footer_icon_02.gif?v=20150703) 5px 7px no-repeat;}
+.footer_box .footer .footer_attention .footer_line1{height: 34px; background: url(//js3.tuandai.com/images/old/footer_line2.gif?v=20150703) 10px 10px no-repeat ;  float: left; }
+.footer_box .footer .footer_attention .footer_servers{height: 34px; background: url(//js3.tuandai.com/images/old/footer_icon.png?v=20150703) 5px -98px no-repeat ; width:70px; padding-left:50px; float: left;  }
+.footer_box .footer .footer_attention a.footer_servers:hover{background:url(//js3.tuandai.com/images/old/footer_icon.png?v=20150703) 5px -98px no-repeat; color:#ff9600; }
+.footer_box .footer .footer_attention .footer_QQ{height: 34px; background: url(//js3.tuandai.com/images/old/footer_icon.png?v=20150703) 8px -218px no-repeat ; width:85px; padding-left:50px; float: left;  }
+.footer_box .footer .qq-tips{width:130px; display: none; height :86px;   position:absolute; left:  48px; top:30px; color: #666666 ; font-size: 12px; line-height: 18px;}
+.footer_box .footer .qq-tips .box{position: relative; background: #fff; left: 400px; height :86px; padding: 10px 12px; border: 1px solid #d5d5d5; border-radius: 2px; -webkit-border-radius: 2px;      }
+.footer_box .footer  .qq-tips .box .arrow{width: 5px; height: 8px; right: -5px; top: 50%; margin-top: -4px;  position: absolute; display: block; background: url("//js3.tuandai.com/images/default/window-login-icon.png?v=20150703") 0 -160px no-repeat;}
+.footer_box .footer .footer_attention a.footer_QQ:hover .qq-tips{color: #666666;}
+.footer_box .footer .footer_attention .footer_QQQun{height: 34px; background: url("//js3.tuandai.com/images/old/footer_icon_04.gif?v=20150703") 5px 5px no-repeat ; width:180px; padding-left:50px; float: left; }
+.footer_box .footer .footer_attention a.footer_QQQun:hover{background:url("//js3.tuandai.com/images/old/footer_icon_04.gif?v=20150703") 5px 5px no-repeat; color:#ff9600; }
+
+
+/*服务热线*/
+.footer_box .footer .footer_contact{color:#282828; font-size: 14px; text-align: right;line-height:30px; position: absolute; right: 0; top: 25px;}
+.footer_box .footer .footer_contact span{display: block; width:200px; height:30px;  padding:0;}
+.footer_box .footer .footer_contact p{font-size:26px; color:#ff6400; }
+.footer_box .footer .footer_contact .footer-icon{background: url("//js3.tuandai.com/images/old/footer-icon.png?v=20150629"); width: 42px; height: 42px;}
+
+/*媒体报道*/
+.footer_box .footer .media{height:48px; margin-top: 20px; padding-top: 10px;}
+.footer_box .footer .media em{ height:40px;line-height:40px; float: left; }
+.footer_box .footer .media a{ height:40px; width:122px; margin-left: 20px;  float:left;display: inline-block; }
+.footer_box .footer a.footer_midia1{background:url(//js3.tuandai.com/images/old/footer_midia01.gif?v=20150703) no-repeat;  }
+.footer_box .footer a.footer_midia1:hover{background:url(//js3.tuandai.com/images/old/footer_midia01.gif?v=20150703) no-repeat;}
+.footer_box .footer a.footer_midia2{background:url(//js3.tuandai.com/images/old/footer_midia02.gif?v=20150703) no-repeat;}
+.footer_box .footer a.footer_midia2:hover{background:url(//js3.tuandai.com/images/old/footer_midia02.gif?v=20150703) no-repeat;}
+.footer_box .footer a.footer_midia3{background:url(//js3.tuandai.com/images/old/footer_midia03.gif?v=20150703) no-repeat;}
+.footer_box .footer a.footer_midia3:hover{background:url(//js3.tuandai.com/images/old/footer_midia03.gif?v=20150703)  no-repeat;}
+.footer_box .footer a.footer_midia4{background:url(//js3.tuandai.com/images/old/footer_midia04.gif?v=20150703) no-repeat;}
+.footer_box .footer a.footer_midia4:hover{background:url(//js3.tuandai.com/images/old/footer_midia04.gif?v=20150703)  no-repeat;}
+.footer_box .footer a.footer_midia5{background:url(//js3.tuandai.com/images/old/footer_midia05.gif?v=20150703) no-repeat;}
+.footer_box .footer a.footer_midia5:hover{background:url(//js3.tuandai.com/images/old/footer_midia05.gif?v=20150703) no-repeat;}
+.footer_box .footer a.footer_midia6{background:url("//js3.tuandai.com/images/old/footer_midia06.gif?v=20150703") no-repeat;}
+.footer_box .footer a.footer_midia6:hover{background:url("//js3.tuandai.com/images/old/footer_midia06.gif?v=20150703") no-repeat;}
+
+/*友情链接*/
+.footer_box .footer .f_links{height:30px;padding-top:15px;width:958px;}
+.footer_box .footer .f_links em{height:30px;line-height:30px;float:left;padding-right:15px;}
+.footer_box .footer .f_links a{height:30px;line-height:30px;padding:0 12px; text-align:center;font-size:14px;float:left;display: inline-block; }
+
+
+/*版权*/
+.footer_box .footer .copyright{line-height: 20px; padding: 15px 0; text-align: center; color:#282828; font-size: 14px;}
+.footer_box .footer .links{width: 840px; margin: 0 auto;  padding-bottom: 20px;}
+.footer_box .footer .links img{width: 120px;height:40px;}
+.footer_box .footer .links a{float: left; height:40px; width:120px;  margin-left: 20px;  background: url("//js3.tuandai.com/images/old/footer-links.png?v=20150703")}
+.footer_box .footer .links a.link1{background-position: 0 0;}
+.footer_box .footer .links a.link2{background-position: -120px 0;}
+.footer_box .footer .links a.link3{background-position: -240px 0;}
+.footer_box .footer .links a.link4{background-position: -360px 0;}
+.footer_box .footer .links a.link5{background-position: -480px 0;}
+.footer_box .footer .links a.link6{background-position: -600px 0;}
+
+.footer_box .footer .links .footer_midia6  {background:url(//js3.tuandai.com/images/old/footer_xr01.png?v=20150703);}
+.footer_box .footer .links a.footer_midia6:hover{background:url(//js3.tuandai.com/images/old/footer_xr01.png?v=20150703);}
+.footer_box .footer .links .footer_midia7  {background:url(//js3.tuandai.com/images/old/footer_xr02.png?v=20150703);}
+.footer_box .footer .links a.footer_midia7:hover{background:url(//js3.tuandai.com/images/old/footer_xr02.png?v=20150703);}
+.footer_box .footer .links .footer_midia8  {background:url(//js3.tuandai.com/images/old/footer_xr03.gif?v=20150703);}
+.footer_box .footer .links a.footer_midia8:hover{background:url(//js3.tuandai.com/images/old/footer_xr03.gif?v=20150703);}
+.footer_box .footer .links .footer_midia9  {background:url(//js3.tuandai.com/images/old/footer_xr04.png?v=20150703);}
+.footer_box .footer .links a.footer_midia9:hover{background:url(//js3.tuandai.com/images/old/footer_xr04.png?v=20150703);}
+.footer_box .footer .links .footer_midia10  {background:url(//js3.tuandai.com/images/old/footer_xr10.png?v=20150703);}
+.footer_box .footer .links a.footer_midia10:hover{background:url(//js3.tuandai.com/images/old/footer_xr10.png?v=20150703);}
+.footer_box .footer .links .footer_midia11  {background:url(//js3.tuandai.com/images/old/footer_xr11.png?v=20150703);}
+.footer_box .footer .links a.footer_midia11:hover{background:url(//js3.tuandai.com/images/old/footer_xr11.png?v=20150703);}
+.footer_box .footer .links .footer_midia12  {background:url(//js3.tuandai.com/images/old/footer_xr12.png?v=20150703);}
+.footer_box .footer .links a.footer_midia12:hover{background:url(//js3.tuandai.com/images/old/footer_xr12.png?v=20150703);}
+
+/*登录弹出框*/
+.tc_login{width:450px; height:235px; color:#575757; }
+.tc_login .tc_login_btn{border:1px solid #c2c2c2; padding-bottom:30px;}
+.tc_login .title{ background: url(//js3.tuandai.com/images/old/tck_img/chujie_title_bg.png?v=20150703) repeat-x; height:39px; line-height:42px; font-size:16px; color:#FFF; padding-left:10px;}	
+.tc_login .submit{ display:block; width:260px; height:37px; background:url(//js3.tuandai.com/images/old/tck_img/tck_login_btn.png?v=20150703); margin:0 auto;   }
+.tc_login .title .tc_close{ cursor:pointer; float:right; background:url(//js3.tuandai.com/images/old/tck_img/tck_close.png?v=20150703)  no-repeat; width:40px; height:40px; display:block; }
+.tc_login  p{ width:100%; font-size:22px; line-height:90px; text-align:center;}
+
+
+.jiechu{ width:624px; height:320px;  }
+.jiechu .wrap{padding:24px 44px; border: 1px solid #c2c2c2;  margin-top: -1px;}
+.jiechu .title{ background: url(//js3.tuandai.com/images/old/tck_img/chujie_title_bg.png?v=20150703) repeat-x; height:40px; line-height:42px; font-size:16px; color:#FFF; padding-left:10px;}
+.jiechu .title .tc_close{ cursor:pointer; float:right; background:url(//js3.tuandai.com/images/old/tck_img/tck_close.png?v=20150703)  no-repeat; width:40px; height:40px; display:block; }
+
+.jiechu .jiechu_l{ width:212px; float:left;  }
+.jiechu .jianli{ line-height: 26px; margin-top: 16px;}
+.jiechu .jiechu_r{ width:320px; float:right; position: relative;}
+.jiechu .recharge{position: absolute; right: 1px ;top: 1px;}
+.jiechu .recharge a{ height:25px;  width:80px; background:url(//js3.tuandai.com/images/old/tck_img/wycj.png?v=20150703) no-repeat; display: block;}
+.jiechu .recharge a:hover{ background:url(//js3.tuandai.com/images/old/tck_img/wycj_hover.png?v=20150703) no-repeat; }
+.jiechu p{ font-size: 14px; line-height: 24px;}
+.jiechu p i{}
+.jiechu span{}
+.jiechu .fontcolor{color: #ff4800;}
+.jiechu .buy{ height:36px; width: 300px;      margin:20px 0 10px 0 ; }
+.jiechu  .buy .add_numbers{ background: url(//js3.tuandai.com/images/old/add_btn.jpg?v=20150703) no-repeat; width:136px; height:36px;  float:left; display:inline; position:relative;  }
+.jiechu .buy .add_numbers .reduce{display: block;height: 24px;width: 24px;position: absolute;left: 12px;top: 11px;background: url(//js3.tuandai.com/images/old/reduce_icon.jpg?v=20150703) 1px 6px no-repeat;cursor: pointer;}
+.jiechu  .buy .add_numbers .numbers{ text-align:right; color:#000; font-size:18px;  height:36px; width:73px; line-height:35px; display:block; margin:0 auto; overflow:visible;     }
+.jiechu .buy .add_numbers .numbers input{ line-height:28px; width:55px; text-align:center;    border:none;   background:none; font-size:14px; overflow:visible}
+.jiechu .buy .add_numbers .crease{display: block;height: 24px;width: 24px;position: absolute;right: 4px;top: 12px;background: url(//js3.tuandai.com/images/old/crease_icon.jpg?v=20150703) no-repeat;cursor: pointer;}
+.jiechu  .ren_gou_btn{background: url(//js3.tuandai.com/images/old/ren_gou_btn.jpg?v=20150703) no-repeat; margin-left:10px; width:136px; height:36px;  float:left; display:inline; font-size:16px; line-height:36px; text-align:center; text-decoration:none; color:#fff; }
+.jiechu .buy  .ren_gou_btn:hover{background: url(//js3.tuandai.com/images/old/ren_gou_btn_hover.jpg?v=20150703) no-repeat;}
+.jiechu .buy .phone{background: url(//js3.tuandai.com/images/old/phone_icon.jpg?v=20150703) 9px 7px no-repeat; width:36px; height:36px;  float:left; display:inline; top:100px; bottom:0;}
+
+/*加载CSS*/
+ .showbox{position:fixed;top:33%;left:50%;z-index:9999; margin-left:-52px; }
+ *html .showbox,*html .overlay{position:absolute;top:expression(eval(document.documentElement.scrollTop));}
+#AjaxLoading{ color:#37a;font-size:12px;font-weight:bold;}
+#AjaxLoading div.loadingWord{ line-height:50px;   text-align:center; line-height:120px;}
+#AjaxLoading img{margin:10px 15px;float:left;display:inline;}
+
+/*已经完成层*/
+.finish{ width:660px;  height:270px; top: 120px;width: 660px;z-index: 999;background:url(//js3.tuandai.com/images/old/finish.png?v=20150703) 238px 95px no-repeat; position:absolute; z-index:999; }
+
+/*分页样式 */
+.list_page{width:726px;margin:0 auto;padding:0;}
+.pager {margin-top:5px; padding:10px 3px; text-align: center;}
+.pager a, .pager span { border: 1px solid #DDDDDD; border-radius: 2px; color: #333333; margin: 3px; padding: 2px 7px; text-decoration: none;  }
+.pager .current.prev, .pager .current.next { color: #ccc; border-color: #ccc; background-color: #fff; }
+.pager .current, .pager a:hover, .pager a.prev:hover, .pager a.next:hover { background-color: #FF842C; border: 1px solid #FF6602; border-radius: 2px; -webkit-border-radius: 2px;
+  -moz-border-radius: 2px; color: #FFFFFF; font-weight: bold; margin: 3px; padding: 2px 7px; text-decoration:none; }
+.pager a.prev, .pager a.next { background-color: #fff; border: 1px solid #ebebeb; width: 50px; }
+
+/*分页样式*/
+.pagination {padding-top:15px;text-align:center;height:33px;margin:0 auto;width:650px;font-size:14px;}
+.pagination a, .pagination span {float:left;border: 1px solid #DDDDDD; color: #666666; border-radius: 2px;  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px; margin: 0px 2px; padding:5px 10px; text-decoration: none; }
+.pagination .current { border: 1px solid #ffbc1b; color: #fff; background-color: #ffbc1b;}
+.pagination a[disabled='disabled']{ color: #ccc; border-color: #ccc; background-color: #fff;}
+.pagination .current.prev, .pagination .current.next{ color: #ccc; border-color: #ccc; background-color: #fff;width:50px;}
+.pagination a:hover, .pagination a.prev:hover, .pagination a.next:hover { border: 1px solid #ffbc1b; color: #666666; background-color: #fff;text-decoration: none; }
+.pagination a[disabled='disabled']:hover{ color: #ccc; border-color: #ccc; background-color: #fff;}
+.pagination a.prev, .pagination a.next { border: 1px solid #DDDDDD; color: #333333; border-radius: 2px; -webkit-border-radius: 2px;
+  -moz-border-radius: 2px; margin: 0px 2px; padding:5px 10px; text-decoration: none;width:50px; }
+
+
+.novice { color:#FEB206; }
+
+/*2014-04-02新增样式_LSH*/
+
+.index_data{width:940px;height:45px;font-size:14px;color:#3c3c3c;float:left;}
+.index_data ul{width:940px;list-style:none;}
+.index_data ul li{width:940px;padding:0px;text-align:left;height:45px;line-height:45px;float:left;}
+.index_data .box{height:45px;overflow:hidden;}
+.t_news{height:45px;color:#f60;overflow:hidden;position:relative;}
+.news_li,.swap{line-height:45px;display:inline-block;position:absolute;top:0;}
+.news_li a,.swap a{color:#f60;}
+.news_li a:hover,.swap a:hover{color:#f60;}
+
+
+.message{background: #5b5b5b; position: relative; width: 34px; height: 24px; top: 2px;   background: url("//js3.tuandai.com/images/old/message-icon.png?v=20150703") no-repeat; z-index:1000000}
+.message_0{background: #5b5b5b; position: relative; width: 16px; height: 24px; top: 2px;   background: url("//js3.tuandai.com/images/old/message-icon.png?v=20150703") no-repeat;}
+.message_0 .num{width: 15px; height: 13px; text-align: center; line-height: 13px; font-size: 9px; color: #fff; right: 0px; position: absolute; display:block;}
+.message .num{width: 15px; height: 13px; text-align: center; line-height: 13px; font-size: 9px; color: #fff; right: 0px; position: absolute; display:block;}
+.top_bar .member-list{position: absolute; top: 30px; right: -9px; z-index: 1000000;}
+.top_bar .member-list ul{display: none;}
+.top_bar .member-list li{height: 34px; background: #5b5b5b; padding-left: 20px; padding-right: 16px;width:76px; }
+.top_bar .member-list li:hover{background: #515151;}
+.top_bar .member-list a{height: 34px; width: 96px; display: block; }
+.top_bar .login{position: relative;  z-index:1000000;}
+.top_bar .login .member-arrow{width: 9px; height: 5px; display: block; position: absolute; right: 6px; top: 13px; background: url("//js3.tuandai.com/images/old/top-arrow2.png?v=20150703") 0 -5px;}
+.top_bar .login .member-arrow-hover{ background-position: 0 0px;}
+.top_bar .tuandai_id{padding-right: 28px;}
+/*//顶部子菜单*/
+.member-list .account-child-list{  position: absolute;top:0px;right:0px;z-index: 1000000;width: 122px; background: #ffffff; border: 1px solid #cacaca; overflow: hidden;display:none;}
+.member-list .account-child-list dt {color: #8b8b8b;  height: 30px; line-height: 30px; padding-left: 12px;font-size:13px;}
+.member-list .account-child-list dd a{color: #464646; height:30px; line-height: 30px; padding-left: 30px;font-size:13px;font-family:"微软雅黑",Arial, Helvetica,sans-serif,"宋体"}
+.member-list .account-child-list dd a:hover{font-family:"微软雅黑",Arial, Helvetica,sans-serif,"宋体"; text-decoration: none; background: #ff9600; color: #fff;}
+
+
+/*登陆框*/
+#layer{width: 100%; height: 100%; top: 0 ; left: 0; background: #000; opacity: 0.3; filter:alpha(opacity=30); position: fixed; z-index:1000020;display:none; }
+#login-window{width: 408px; height: 450px;background: #fff; position: fixed; left: 50%; top: 50%;   margin-left: -204px; margin-top: -225px; z-index: 1000021; overflow: hidden; display:none; border-radius: 4px; -webkit-border-radius: 4px; }
+#login-window .icons{background: url("//js3.tuandai.com/images/default/window-login-icon.png") no-repeat; display: block;  }
+#login-window .font-666{color: #666!important;}
+#login-window .title{ height: 40px; line-height: 40px; font-size: 14px; padding-left:20px ; background: #f7f7f7; color: #666; position: relative;}
+#login-window .title i.close{width: 14px; height: 14px;display: block; background-position: 0 0; position:absolute; right: 20px; top: 14px; cursor: pointer; -webkit-transition: all .3s linear;transition: all .3s linear;transform:rotate(0deg)}
+#login-window .title i.close:hover{transform:rotate(180deg);}
+#login-window .body{width: 300px; margin: 0 auto;}
+#login-window .body .text{font-size: 21px;line-height: 18px; height: 18px; padding-top:40px; color: #666;margin-bottom:10px;}
+#login-window .body .text span{float: right; font-size: 14px; line-height: 26px; color: #a3a3a3;}
+#login-window .body .text .reg-btn{color: #10c980; }
+#login-window .body .text .reg-btn:hover{color: #10c980; text-decoration: underline; }
+#login-window .body .tips{border: 1px solid #ff7a7a;visibility: hidden;background: #ffebeb;width: 265px; padding-left: 35px;padding-top: 5px;padding-bottom: 5px; color: #ff0000; border-radius: 2px; -webkit-border-radius: 2px; min-height:20px; line-height: 18px; position: relative;}
+#login-window .body .tips .tip-icon{width: 15px; height: 15px; background-position: 0 -66px; position: absolute; left: 10px; top: 7px;}
+#login-window .body .form{margin-top:10px;}
+#login-window .body .form input{border: 1px solid #d5d5d5; color: #ADADAD; font-size: 14px; height: 20px; line-height: 20px; padding:9px 0;  padding-left: 10px; border-radius: 2px; -webkit-border-radius: 2px; width: 290px;   margin-bottom: 20px;  }
+#login-window .body .form .green-border-input{border: 1px solid #48d6a2;}
+#login-window .body .form .red-border-input{border: 1px solid #ff0000;}
+#login-window .body .mark{ padding-left: 24px;color:#666;height: 14px;line-height: 14px;position: relative;font-size:14px;}
+#login-window .body .mark .mark-icon{width: 14px; height: 14px; position: absolute; left: 4px; top: 0; background-position: 0 -14px;}
+#login-window .body .mark .mark-icon-selected{background-position: -14px -14px;}
+#login-window .body .mark a{ float: right}
+#login-window .body .mark a:hover{text-decoration: underline; color: #666;}
+#login-window .body .mark label{cursor: pointer;}
+#login-window .body .login-btn{height: 40px;width:302px;display: block; text-align: center; line-height: 40px; color: #fff; background: #48d6a2; border-radius: 2px; -webkit-border-radius: 2px;  font-size: 16px; margin-top: 20px;}
+#login-window .body .login-btn:hover{ background: #10c980; text-decoration: none}
+#login-window .body .other-way{margin-top: 23px; font-size: 14px; line-height: 32px; padding-bottom: 28px; padding-left: 5px;}
+#login-window .body .other-way .qq{width: 30px; height: 30px; background-position: 6px -86px; border: 1px solid transparent; }
+#login-window .body .other-way .sina{width: 30px; height: 30px; background-position: 2px -118px ; border: 1px solid transparent; }
+#login-window .body .other-way .qq:hover, #login-window .body .other-way .sina:hover{border: 1px solid #f0f0f0; border-radius: 2px; -webkit-border-radius: 2px;}
+#login-window .body .other-way span{ color: #a3a3a3; float: left;}
+#login-window .body .other-way a{ float: left; width: 30px; height: 30px; margin-left: 20px;}
+/*新手提示*/
+#login-window .body .tip-text{text-align: center; font-size: 14px; color: #666666; padding-top: 66px;  }
+#login-window .body .new-hand-btn{width: 140px; height: 40px; line-height: 40px; text-align: center; margin: 0 auto; display: block; color: #fff; font-size: 14px; background:#ffbc1b; margin-top: 26px; border-radius: 2px; -webkit-border-radius: 2px;}
+#login-window .body .new-hand-btn:hover{background: #ffa019;  }
+@keyframes close-animate
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
+@-moz-keyframes close-animate /* Firefox */
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
+@-webkit-keyframes close-animate /* Safari 和 Chrome */
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
+@-o-keyframes close-animate /* Opera */
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+.protect-green { float: right;
+    padding-left: 24px;
+    color: #48d6a2;
+    font-size: 12px;
+    line-height: 30px;
+    background: url("//js3.tuandai.com/images/default/icon-green-2.png") 5px 7px no-repeat;}
+.protect-green:hover{    color: #48d6a2; text-decoration: none;}
+
+.tip-wrap{  width: 15px;height: 15px;  z-index: 100; position: relative; vertical-align: -2px; *vertical-align: 1px;  margin-left: 2px;}
+.tip-wrap .tip{background:url('//js3.tuandai.com/images/default/fqbicons_que02.gif') no-repeat; width: 15px;height: 15px; position:absolute; display:block; z-index: 100; }
+.tip-wrap .detail{position: absolute; z-index: 100; display:block;  width: 200px ;    bottom: 28px;left: -2px; background: #fff; border: 1px solid #ffa019; border-radius: 4px; padding: 10px 15px;   color: #999; font-size: 12px;}
+.tip-wrap .arrow{position: absolute; z-index: 100; width: 17px;height: 7px;display: block;background: url(//js3.tuandai.com/images/old/icons.png?v=20150814) -17px -74px; bottom: 22px; left: -2px; z-index: 101;}
+
+
+/*首页1218新增弹窗*/
+.hidden{ display: none;}
+.mask1218{ height: 100%; width: 100%; background:url(//js3.tuandai.com/images/old/151218mask.png) repeat; background: rgba(0,0,0,.8); position: fixed; top: 0; left: 0; z-index: 1000001;}
+.popupbox{ position:fixed; top:50%; left: 50%; z-index:1100000;}
+.popupbox01{ width:770px; height:620px; margin-left: -385px; margin-top:-310px;}
+.popupbox01 .popupboxclose{ width:39px; height:39px; position:absolute; top:114px; right:125px;}
+.popupbox01 .popup_bg{width:770px; height:620px; background:url(//js3.tuandai.com/images/old/151218bg01.png?v=2015121801) 0 0 no-repeat; position:absolute; top:0px; left:0px;}
+.popupbox01 .popup_bglight{width:770px; height:620px; background:url(//js3.tuandai.com/images/old/151218bglight01.png?v=2015121101) 0 0 no-repeat; position:absolute; top:0px; left:0px;-webkit-animation: Light 13s infinite linear; 
+	-ms-animation: Light 13s infinite linear;
+	animation: Light 13s infinite linear;
+}
+.popupbox02{ width:770px; height:600px; margin-left: -385px; margin-top:-300px;}
+.popupbox02 .popupboxclose{ width:39px; height:39px; position:absolute; top:170px; right:180px;}
+.popupbox02 .popup_bg{width:770px; height:600px; background:url(//js3.tuandai.com/images/old/151218bg02.png?v=2015121101) 0 0 no-repeat; position:absolute; top:0px; left:0px;}
+.popupbox02 .popup_bglight{width:770px; height:600px; background:url(//js3.tuandai.com/images/old/151218bglight01.png?v=2015121101) 0 0 no-repeat; position:absolute; top:8px; left:5px;-webkit-animation: Light 13s infinite linear; 
+	-ms-animation: Light 13s infinite linear;
+	animation: Light 13s infinite linear;
+}
+.popupbox03{ width:410px; height:336px; background:url(//js3.tuandai.com/images/old/151218bg03.png) 0 0 no-repeat; margin-left: -205px; margin-top:-168px;}
+.popupbox03 .popupboxclose{ width:39px; height:39px; position:absolute; top:5px; right:12px;}
+.popuptxt{ font-size:24px; line-height:29px; color:#FFF;}
+.popuptxt span{ color:#ffc000;}
+.txt01{ margin-left:90px; margin-top:76px;}
+.txt02{ margin:32px 20px 0px 30px;}
+.popup_btnbox{width:184px; height:43px; position:absolute; bottom:194px; left:292px;}
+.popup_btn{width:184px; height:43px; display:block;background:url(//js3.tuandai.com/images/old/151218btn01.png) 0 0 no-repeat; text-indent:-99999px;}
+
+@-webkit-keyframes Light{	
+	0%{ -webkit-transform:rotate(0deg)}
+	100%{ -webkit-transform:rotate(360deg)}
+	}
+@keyframes Light{
+	0%{ transform:rotate(0deg)}
+	100%{transform:rotate(360deg)}
+	}
+.popupbox04{ width:840px; height:420px; background:url(//js3.tuandai.com/images/old/151218bg04.png?v=20151216001) 0 0 no-repeat; margin-left: -420px; margin-top:-210px;}
+.popupbox04 .popupboxclose{ width:32px; height:32px; position:absolute; top:0px; right:190px;}
+.popup_btnbox02{width:138px; height:33px; margin:382px auto 0px;}
+.popup_btn02{width:138px; height:33px; display:block;background:url(//js3.tuandai.com/images/old/151218btn02.png?v=20151216001) 0 0 no-repeat; text-indent:-99999px;}
+
+/*新版标图标 2015-12-26*/
+.tao-biao{background: url(//js3.tuandai.com/images/default/icon.png?v=20151228001) no-repeat; width: 26px;height: 26px; display:inline-block;   *display:inline; vertical-align:-4px; *vertical-align: middle; margin-right: 5px;}
+.shan{background-position: -106px 0;}
+.bao{background-position: -131px 0;}
+.zi{background-position: 0px -700px;}
+.che{background-position:-26px -700px;}
+.lian{background-position: -52px -700px;}
+.shang{background-position: -78px -700px;}
+.xiao{background-position: -104px -700px;}
+.fang{background-position: -130px -700px;}
+.pei{background-position: -156px -700px;}
+.te{background-position: -182px -700px;}
+.ling{background-position: 0 -726px;}
+.xin{background-position: -26px -726px;}
+.feng{background-position: -52px -726px;}
+.mu{background-position: -78px -726px;}
+.zhuan{background-position: -104px -726px;}
+.gong{background-position: -130px -726px;}
+.huo{background-position: -156px -726px;}
+.xiang{background-position: -182px -726px;} 
+.dan{background-position: -208px -726px; width: 64px!important; height: 26px!important;}
+
+
+/*提示框样式 Allen 2016-01-12*/
+#dial-window a { text-decoration: none;font-size:14px; }
+#dial-window   .dete, #dial-window .cancle{display:inline-block; *zoom:1; *display:inline; margin: 0 10px}
+#dial-window {width: 408px;  background: #fff; position: fixed; left: 50%; top: 50%;   margin-left: -204px; top:50%; margin-top:-124px; overflow: hidden; display:none; border-radius: 4px; -webkit-border-radius: 4px;z-index:1111111102; }
+#dial-window .font-666{color: #666!important;}
+#dial-window .title{ height: 40px; line-height: 40px; font-size: 14px; padding-left:20px ; background: #f7f7f7; color: #666; position: relative;}
+#dial-window .body{width: 360px; margin: 0 auto; padding: 20px 0; text-align:center;} 
+#dial-window .body div{font-size:14px!important;} 
+#dial-window .btns{padding: 0 0 20px 0; text-align:center;} 
+a{color: #666666; text-decoration: none; }
+a:hover{color: #ffad2c; text-decoration: none;  }
+
+#diallayer{width: 100%; height: 100%; top: 0 ; left: 0; background: #000; opacity: 0.3; filter:alpha(opacity=30); position: fixed; display:none; z-index:1111111101; }
+#dial-window .close-x{background: url(//js3.tuandai.com/images/default/icon.png?v=201512310001) no-repeat; position:absolute; background-position: 0 -946px; width: 14px; height: 14px; right: 18px; top: 12px; cursor: pointer;-webkit-transition: all .3s linear;transition: all .3s linear;transform:rotate(0deg)}
+#dial-window .close-x:hover{transform:rotate(180deg); -webkit-transform:rotate(180deg);} 
+/*宽度104px*/
+.td-btn-1{width: 104px;height: 36px; display: block;  line-height: 36px; text-align: center; border-radius: 4px;   }
+.td-btn-1-or{background: #ffbc1b; color: #fff; }
+.td-btn-1-or{ transition: background 0.4s ease-in-out ,color 0.5s ease-in;   -webkit-transition: background 0.4s ease-in-out ,color 0.3s ease-in;}
+.td-btn-1-gar{background: #cecece; color: #fff; }
+.td-btn-1-gar:hover{background: #cecece; color: #fff; }
+.td-btn-1-or:hover{background: #ffa019;  color: #fff; }
+
+/*20160408 新手福利提示信息*/
+.dial-window {width: 408px;  background: #fff; position: fixed; left: 50%; top: 50%;   margin-left: -204px; top:50%; margin-top:-124px; overflow: hidden;z-index: 1111111102;  border-radius: 4px; -webkit-border-radius: 4px; }
+.dial-window .font-666{color: #666!important;}
+.dial-window .title{ height: 40px; line-height: 40px; font-size: 14px; padding-left:20px ; background: #f7f7f7; color: #666; position: relative;}
+.dial-window .body{width: 360px; margin: 0 auto; padding: 20px 0; text-align:center;}
+
+.dial-window-prompt{width: 330px;}
+.dial-window-prompt .body{width: auto;}
+.dial-window-prompt .promptbox{text-align: center; height: auto; padding: 10px 0 11px;}
+.dial-window-prompt .promptbox .promptbox-innder{display: inline-block; *display: inline; *zoom: 1; margin: 5px auto 0;}
+.dial-window-prompt .promptbox .prom-icon{background: url(//js3.tuandai.com/images/default/icon.png?v=20160408001)}
+.dial-window-prompt .promptbox .prom-icon{width: 20px; height: 20px;position: relative; top: 3px; *top: 0px; display: inline-block; background-position: 0 -2221px}
+.dial-window-prompt .promptbox .lh30{ line-height: 30px;}
+.dial-window-prompt .promptbox .f16{ font-size: 16px;}
+.dial-window-prompt .promptbox .fc9{color: #999}

@@ -1,0 +1,48 @@
+﻿body,div,p,ul,ol,dl,dd, dt,li,h1,h2,h3,h4,h5,em,form,input,button { margin:0; padding:0; font-family:"微软雅黑",Arial, Helvetica,sans-serif,"宋体"; font-size:12px; font-weight:normal;    }
+html,body{zoom:1; background:#fff;color:#5d5c5c;}
+body{behavior:url("../scripts/csshover.htc"/*tpa=https://www.tuandai.com/article/scripts/csshover.htc*/); min-width:1000px;}
+img{ border: 0; vertical-align:middle;}
+ul, dl ,ol{ list-style:none;}
+table{border-collapse:collapse;  }
+:focus { outline:0;}
+a:link{text-decoration:none;}
+a:hover {text-decoration:underline;color:#ffa019; }
+a:visited {text-decoration:none;}
+.fl_l{float:left}
+.fl_r{float:right;}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+.top{width:998px; margin:0 auto; margin-top:6px; }
+.content{widht:100%;background:#f8f8f8;}
+.main{width:1000px; margin:0 auto; }
+a{color:#666666;  }
+.margin-left-0{margin-left: 0!important;}
+.margin-right-0{margin-right: 0!important;}
+
+/*底部*/
+.footer{padding-top: 20px; background: #fff; margin-top: 50px; border-top:1px solid #f0f0f0;}
+.footer .link,.footer .foot_nav{ width:1000px; margin: 6px auto; line-height: 30px; text-align:left; }
+.footer .link .link-head,.footer .foot_nav .navtishi{width:70px; text-align:left; font-size:13px; color:#666; font-weight:bold; }
+.footer .links{width: 880px; text-align: left;  height: 30px; overflow:hidden; }
+.footer .links li{ float:left;}
+.footer .links li a{ color:#666; display:block;*display:inline;*zoom:1;white-space: nowrap; padding:0 8px;font-size:13px; }
+.footer .links li a:hover{ background:#eaeaea; text-decoration:none; color:#666;}
+.footer .links li .linksub{ width:840px; height:auto;}
+.footer .link .hide-btn{ cursor:pointer; color:#666;font-size:13px; width:45px; height:30px; zoom:1;}
+.footer .link .hide-btn i{width: 13px; height:13px; margin-top:9px; background:url("../images/links_arrow.png"/*tpa=https://www.tuandai.com/article/images/links_arrow.png*/) 0 0 no-repeat; display:inline-block; float:right;}
+.footer .link .hide-btn span{ width:32px; height:30px; line-height:30px; display:inline-block; float:left;}
+.footer .foot_nav .tab { width:930px; height: auto; overflow: hidden;}
+.footer .foot_nav .tab .tab-tit{height:auto; overflow:hidden;}
+.footer .foot_nav .tab .tab-tit li{float:left;}
+.footer .foot_nav .tab .tab-tit li a{color:#666; display:inline-block;*display:inline;*zoom:1;white-space: nowrap;padding:0 8px;font-size:13px;text-decoration:none;}
+.footer .foot_nav .tab .tab-tit .on,.footer .tab .tab-tit li:hover{background:#eaeaea; text-decoration:none;color:#666;}
+.footer .foot_nav .tab .tab-box .hide{display: none;}
+.footer .foot_nav .tab-box{ height:auto;}
+.footer .foot_nav .tab-box .box{ margin-top:5px;background: none;}
+.footer .foot_nav .tab-box .box{height: auto; overflow: hidden;width: auto;}
+.footer .foot_nav .tab-box .box dd{ float:left;}
+.footer .foot_nav .tab-box .box dd a{color:#666; display:inline-block;*display:inline;*zoom:1;white-space: nowrap;padding:0 8px;font-size:13px;text-decoration:none;}
+.footer .foot_nav .tab-box .box dd a:hover{ background:#eaeaea; text-decoration:none;color:#666;}
+.footer .address,.address{ margin-top:25px; padding-top:30px; padding-bottom:30px; border-top:1px solid #f0f0f0; line-height:24px; text-align:center; color:#666; font-size:13px;}
+
+

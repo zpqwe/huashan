@@ -1,0 +1,144 @@
+﻿/*新购买弹窗*/
+#td-atr-layer{width:100%; height: 100%; position: fixed; background: #000000; opacity: 0.6; filter:alpha(opacity=60); top:0; left:0;  }
+#td-art{position: fixed; top: 50%; left: 50%; margin-top: -205px; background: #fff; padding: 40px 46px;;  border-radius: 4px;  }
+#td-art .art-body{position: relative;}
+#td-art .art-body .close{ width: 14px; height: 14px; display: block; position: absolute; background: url("//js3.tuandai.com/images/investlist/invest_detail/td-art-icon.png") 0 -77px; right: -30px; top: -28px; cursor: pointer;-webkit-transition: all .3s linear;transition: all .3s linear;transform:rotate(0deg)}
+#td-art .art-body .close:hover{transform:rotate(180deg);}
+/**------------------*/
+#recharge-art p{font-size: 14px; line-height: 15px; padding-bottom: 17px;}
+.font-000{color:#000!important;}
+.font-666{color:#666!important;}
+.font-999{color:#999!important;}
+.font-orange{color:#ff7800!important;}
+.font-bold{font-weight: bold!important; }
+.padding-bottom-0{padding-bottom: 0!important;}
+#recharge-art .left{float: left; width: 190px; border-right: 1px dashed #d5d5d5; position: relative; height: 100%;}
+#recharge-art .left p{color: #a3a2a2;}
+#recharge-art .reward{  position: absolute;bottom: 0;}
+#recharge-art .reward p{font-size: 12px;  }
+#recharge-art .reward{margin-top: 10px;}
+#recharge-art .reward i{width: 19px; height: 19px; margin-right: 5px;   background: url("//js3.tuandai.com/images/investlist/invest_detail/td-art-icon.png") no-repeat; display: inline-block; vertical-align: -4px; *vertical-align: -2px}
+#recharge-art .reward .i-1{background-position: 0 0;}
+#recharge-art .reward .i-2{background-position: 0 -19px;}
+/*右*/
+#recharge-art .right{float: left; padding-left: 35px; position: relative; color:#666}
+#recharge-art .right a{ text-decoration: none;}
+#recharge-art .right .charge{padding:0 10px; height: 25px; display: block; position: absolute; line-height: 25px; text-align: center;  border: 1px solid #d8d8d8; border-radius: 3px; -webkit-border-radius:
+    3px; right: 0; top: -6px; }
+#recharge-art .right .charge:hover{border: 1px solid #ffbc1b; background: #ffbc1b; color: #fff;}
+#recharge-art .right .invent-form{position: relative; width: 300px; margin-top: 6px;}
+#recharge-art .right .invent-form .input-text{height: 18px; line-height: 16px; font-size: 16px; border: none; border: 0; width: 135px; font-weight: bold; color: #000000;}
+#recharge-art .right .invent-form .form-box{height: 15px; border: 1px solid #d8d8d8; width: 150px; padding: 7px 7px 11px 12px; font-size: 14px; display: inline-block; border-radius: 3px 0 0 3px; -webkit-border-radius: 3px 0 0 3px; }
+#recharge-art .right .invent-form  i{width: 37px; height: 16px; border: 1px solid #D8D8D8; display: block; position: absolute; z-index: 1; cursor: pointer;  right:91px; background: url("//js3.tuandai.com/images/investlist/invest_detail/td-art-icon.png") no-repeat;}
+#recharge-art .right .invent-form i.top{top:0px;  border-radius:0 3px 0 0; -webkit-border-radius: 0 3px 0 0; background-position: 7px -40px; }
+#recharge-art .right .invent-form i.top:hover{border: 1px solid #ffbc1b;  background-position: -22px -40px;}
+#recharge-art .right .invent-form i.bottom{top:17px; border-radius:0 0 3px 0; -webkit-border-radius: 0 0 3px 0; background-position: 7px -54px;}
+#recharge-art .right .invent-form i.bottom:hover{border: 1px solid #ffbc1b; background-position: -22px -54px; }
+#recharge-art .right .invent-form i.gray:hover{border: 1px solid #dedede;z-index: 1;}
+
+
+#recharge-art .right .invent-form a{ width: 80px; height: 33px; line-height: 33px; font-size: 14px;  text-align: center; border: 1px solid #d8d8d8; display: block; position: absolute; right: 0; top: 0; border-radius: 3px; -webkit-border-radius: 3px;}
+#recharge-art .right .invent-form a:hover{border: 1px solid #ffbc1b;   color: #ffbc1b;}
+#recharge-art .right .invent-btn{   width: 300px; height: 38px; line-height: 38px; text-align: center;background:#ffbc1b; color: #fff;  display: block; font-size: 16px; margin-top: 15px; border-radius: 4px; -webkit-border-radius: 4px;}
+#recharge-art .right .invent-btn:hover{ background: #ffa019;}
+#recharge-art .right .invent-btn-1{width: 300px; height: 38px; line-height: 38px; text-align: center;background:#ffbc1b; color: #fff;  display: block; font-size: 16px; margin-top: 15px; border-radius: 4px; -webkit-border-radius: 4px;}
+#recharge-art .right .invent-btn-2{background:#CDCDCD!important; color: #fff; }
+
+#recharge-art .right .invent-btn-1:hover{ background: #ffa019;}
+#recharge-art .right .agreement{margin-top: 12px; cursor: pointer;}
+#recharge-art .right .agreement a:hover{text-decoration: underline; color: #ffb700;}
+#recharge-art .right .agreement input{vertical-align: -2px;}
+
+/*红包*/
+#recharge-art .right .red-package{width: 286px; height: 36px; border: 1px dashed  #ff7800; border-radius: 3px; -webkit-border-radius: 3px; margin-top: 15px; line-height: 36px; font-size: 14px; padding-left: 12px; color: #ff7800; cursor: pointer; position: relative; z-index: 2;}
+#recharge-art .right .red-package .list{width: 300px; padding-top: 5px; position: absolute; left: -1px; display: none; top: 36px; z-index: 2;}
+#recharge-art .right .red-package ul{width: 300px; border: 1px solid #e8e8e6; background: #fff;border-radius: 3px;  -webkit-border-radius: 3px;}
+#recharge-art .right .red-package ul li{color: #666666; line-height: 28px; height: 28px; padding-left: 15px; font-size: 14px;}
+#recharge-art .right .red-package ul li:hover{color: #FF7800;}
+#recharge-art .right .red-package i.arrow{background: url("//js3.tuandai.com/images/investlist/invest_detail/td-art-icon.png") -34px -58px no-repeat; width: 13px; height: 7px; position: absolute; display: block; right: 10px;
+    top: 50%; margin-top: -4px;;}
+#recharge-art .right .pass-word{margin-top: 15px; height: 16px; line-height: 16px; padding: 9px 0;  border:1px solid #d5d5d5; width: 298px; overflow: hidden; border-radius: 3px; -webkit-border-radius: 3px;}
+#recharge-art .right .pass-word-err{border: 1px solid #ff0000;}
+#recharge-art .right .pass-word input{  height: 16px; line-height: 16px; padding-left: 12px; border:none; *border:0; width: 298px;}
+#recharge-art .right .remark-password{margin-top: 15px; height: 14px; width: 300px;}
+#recharge-art .right .remark-password input{vertical-align: -2px;}
+#recharge-art .right .remark-password .forget-password{float: right;}
+#recharge-art .right .remark-password .forget-password a:hover{text-decoration: underline; color: #666666;}
+@keyframes close-animate
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
+@-moz-keyframes close-animate /* Firefox */
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
+@-webkit-keyframes close-animate /* Safari 和 Chrome */
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
+@-o-keyframes close-animate /* Opera */
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
+
+/*20160106 分期宝购买弹窗样式添加*/
+
+#recharge-art .fqb-left{width: 345px;}
+#recharge-art .fqb-right a{text-decoration: none;}
+#recharge-art .fqb-right p{margin-bottom:0;}
+#recharge-art .fqb-right .invent-btn:hover{background: #ffa019; }
+#recharge-art .fqb-right .interest-box{height: 19px;  margin-bottom: 17px; font-size: 14px; position:relative}
+#recharge-art .fqb-right .interest{margin-left: 34px; *margin-left: 26px;}
+#recharge-art .fqb-right .chk-radio{vertical-align: middle;}
+#recharge-art .fqb-right .inter-icon,#recharge-art .fqb-right .arrow-tip{background: url(//js3.tuandai.com/images/investlist/invest_detail/td-art-icon.png);}
+#recharge-art .fqb-right .inter-icon{width: 14px; height: 14px; position: absolute;right:93px; *right:-20px; top: 2px; *top:3px; cursor:pointer; background-position: -34px -77px; display: inline-block;}
+#recharge-art .fqb-right .inter-showtips{display:none; position: absolute; top: -52px; right: -66px; *right: -230px; width: 290px;  *width: 340px; height: 36px; padding: 2px 0 2px 4px; color: #666; background: #fff; border-radius: 4px; -webkit-border-radius: 4px; border: 1px solid #fbab4a}
+#recharge-art .fqb-right .inter-showtips p{padding-bottom: 0; line-height: 18px; font-size: 12px;}
+#recharge-art .fqb-right .arrow-tip{width: 12px; height: 11px; background-position: -56px -77px; position: absolute; left: 122px; bottom: -10px;}
+
+.inter-icon , .arrow-tip{background: url(//js3.tuandai.com/images/investlist/invest_detail/td-art-icon.png?v=20160122001);}
+.inter-icon{width: 14px; height: 14px; position: relative; top: 1px; *top: -3px; cursor:pointer; background-position: -34px -77px; display: inline-block;}
+.inter-showtips{display:none; position: absolute; top: 108px; right: -63px;  height: 36px; padding: 2px 0 2px 4px; color: #666; background: #fff; border-radius: 4px; -webkit-border-radius: 4px; border: 1px solid #fbab4a}
+.inter-showtips p{padding-bottom: 0; line-height: 18px; font-size: 12px;}
+.arrow-tip{width: 12px; height: 11px; background-position: -56px -77px; position: absolute; left: 62px; bottom: -10px;}
+
+/*20161010厦门银行托管*/
+.xm-mask{position: fixed; width: 100%; height: 100%; top: 0 ; left: 0; background: #000; opacity: 0.5; filter:alpha(opacity=50); z-index:1000001; }
+.xiamen-pop{position: fixed; width: 553px; height: auto; padding-bottom: 38px; text-align: center; background: #fff;  left: 50%; top:50%; margin-left: -276px; margin-top: -200px; border-radius: 8px; -webkit-border-radius: 8px; z-index:1000002;}
+.xiamen-pop .close{position: absolute; top: 12px; right: 13px; width: 22px; height: 22px; cursor: pointer; background: url("//js3.tuandai.com/images/member/Bank/xm_bank/close.png") no-repeat;}
+.xiamen-pop .close{transition:all .3s linear; transform:rotate(0deg)}
+.xiamen-pop .close:hover{transform:rotate(180deg)}
+.xiamen-pop .pop-tit{width: 100%; height: 192px; padding-top: 50px; border-radius: 6px 6px 0 0; color: #fff; background: url("//js3.tuandai.com/images/member/Bank/xm_bank/xmbank-topbg.png") no-repeat;}
+.xiamen-pop .pop-tit h3{width: 317px; height: 45px; margin: 0 auto; background: url("//js3.tuandai.com/images/member/Bank/xm_bank/logo-03.png") no-repeat;border:0}
+.xiamen-pop .pop-tit h4{margin-top: 20px;font-size: 40px; font-weight: 700;}
+.xiamen-pop .pop-tit p{margin-top: 5px; font-size: 16px;}
+.xiamen-pop .pop-body p{margin-top: 20px; line-height: 30px; color: #989898; font-size: 14px;}
+.xiamen-pop .pop-body p b{color: #ff7200}
+.xiamen-pop .pop-body .btn{width: 310px; height: 52px; line-height: 52px; display: block; margin: 10px auto 0; border-radius: 6px; -webkit-border-radius: 6px; -webkit-transition:all .3s linear; transition:all .3s linear; color: #fff; font-size: 18px; text-align: center; background: #ffbc1b;}
+.xiamen-pop .pop-body .btn:hover{background: #ffa019;}
+
+ 
+
+ /*20161019弹窗 开通免密功能*/
+.passwordAlt .title1 {height: 40px; line-height: 40px; font-size: 14px; padding-left: 20px; background: #f7f7f7; color: #666; position: relative;}
+.passwordAlt{width: 487px; margin-top: -201px;}
+.passwordAlt .body{height: auto; padding: 35px 68px 0px;  text-align: left;}
+.passwordAlt .body p{color: #555; line-height: 22px;}
+.passwordAlt .body .p2 {margin-top: 12px;}
+.passwordAlt .body .p2 em{width: 16px; height: 16px; margin-right: 5px; vertical-align: -3px; *vertical-align: 1px; display: inline-block; background: url("//js3.tuandai.com/images/member/Bank/xm_bank/ok-icon.png") no-repeat 0 -52px;}
+.passwordAlt .body .p2 span{color: #b5b5b5;}
+.passwordAlt .bottom{clear: both; padding-top: 30px; padding-bottom: 43px;}
+.passwordAlt .bottom .btn{width: 243px;}
+.xm-window .bottom .btn{ height: 38px; margin: 0 auto; line-height: 38px; display: block; -webkit-border-radius: 3px; border-radius: 3px; cursor: pointer; color: #fff; text-align: center; font-size: 16px; background: #ffbc1b; -webkit-transition:all .3s linear; transition:all .3s linear;}
+.xm-window .bottom .btn:hover{background: #ffa019}
+
+
+

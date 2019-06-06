@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="dao.TSiItemMapper" >
+		<!-- 查询投资列表 -->
+		<select id="getTSiItemList" resultType="TSiItem"  parameterType="TSiItemQuery">
+		SELECT siirmoney/siitmoney sisop,siiid,tiid,biid,siitype,siitmoney,siismoney,siirmoney,siireturn,
+		siiairate,siipubdate,siiresidue,siirepayment,siiicondition,siistate,siititle
+  		FROM t_si_item
+		<where>
+			<if test="null!=siitype and ''!=siitype">
+				and siitype =#{siitype}
+			</if>
+			<if test="null!=siireturn and ''!=siireturn">
+				<if test="siireturn==1">
+					and siireturn between 1 and 3
+				</if>
+				<if test="siireturn==3">
+					and siireturn between 3 and 6
+				</if>
+				<if test="siireturn==6">
+					and siireturn between 6 and 12
+				</if>
+				<if test="siireturn==12">
+					and siireturn >= 12
+				</if>
+				
+			</if>
+			<if test="null!=siiairate and ''!=siiairate">
+				
+				and siiairate >=#{siiairate}
+			</if>
+			<if test="null!=siirepayment and ''!=siirepayment">
+				and siirepayment =#{siirepayment}
+			</if>
+			<if test="rmoney==1">
+				and siistate ='发布中'
+			</if>
+			<if test="rmoney==2">
+				and siistate ='已完成'
+			</if>
+			<if test="rmoney==3">
+				and siistate ='已满标'
+			</if>
+			
+		</where>
+		<if test="null!=order and ''!=order">
+				<if test="order==1">
+				order by siiairate ASC
+				</if>
+				<if test="order==2">
+				order by siireturn ASC
+				</if>
+				<if test="order==3">
+				order by sisop DESC
+				</if>
+				<if test="order==4">
+				order by siipubdate ASC
+				</if>
+				<if test="order==11">
+				order by siiairate DESC
+				</if>
+				<if test="order==12">
+				order by siireturn DESC
+				</if>
+				<if test="order==13">
+				order by sisop ASC
+				</if>
+				<if test="order==14">
+				order by siipubdate DESC
+				</if>
+			</if>
+			
+		 limit #{from},#{pageSize}
+			
+		</select>
+		<select id="getTSiItem" resultType="TSiItem">
+		SELECT * FROM t_si_item		
+		</select>
+		<!-- 查询投资列表数量 -->
+		<select id="getCounts" resultType="Integer"  parameterType="TSiItemQuery">
+			SELECT count(1) totalCount FROM t_si_item
+		<where>
+			<if test="null!=siitype and ''!=siitype">
+				and siitype =#{siitype}
+			</if>
+			<if test="null!=siireturn and ''!=siireturn">
+				<if test="siireturn==1">
+					and siireturn between 1 and 3
+				</if>
+				<if test="siireturn==3">
+					and siireturn between 3 and 6
+				</if>
+				<if test="siireturn==6">
+					and siireturn between 6 and 12
+				</if>
+				<if test="siireturn==12">
+					and siireturn >= 12
+				</if>
+				
+			</if>
+			<if test="null!=siiairate and ''!=siiairate">
+				and siiairate >=#{siiairate}
+			</if>
+			<if test="null!=siirepayment and ''!=siirepayment">
+				and siirepayment =#{siirepayment}
+			</if>
+			<if test="rmoney==1">
+				and siistate ='发布中'
+			</if>
+			<if test="rmoney==2">
+				and siistate ='已完成'
+			</if>
+			<if test="rmoney==3">
+				and siistate ='已满标'
+			</if>
+		</where>
+		</select>
+		<!--
+		 <select id="getCounts" resultType="TSIitem" parameterType="TSItemQuery">
+		SELECT COUNT(1) totalCount FROM t_si_item
+		<where>
+			<if test="null!=siitype and ''!=siitype">
+				and siitype =#{siitype}
+			</if>
+			<if test="null!=siireturn and ''!=siireturn">
+				and siireturn =#{streetId}
+			</if>
+			<if test="null!=siiairate and ''!=siiairate">
+				and siiairate =#{siiairate}
+			</if>
+			<if test="null!=siirepayment and ''!=siirepayment">
+				and siirepayment =#{siirepayment}
+			</if>
+		</where>
+	</select>
+	-->
+	<resultMap type="TSiItem" id="resultTSiItemList">
+	<result column="siiid" property="siiid"/>
+	<result column="siitype" property="siitype"/>
+	<result column="siitmoney" property="siitmoney"/>
+	<result column="siismoney" property="siismoney"/>
+	<result column="siirmoney" property="siirmoney"/>
+	<result column="siireturn" property="siireturn"/>
+	<result column="siiairate" property="siiairate"/>
+	<result column="siipubdate" property="siipubdate"/>
+	<result column="siiresidue" property="siiresidue"/>
+	<result column="siirepayment" property="siirepayment"/>
+	<result column="siiicondition" property="siiicondition"/>
+	<result column="siistate" property="siistate"/>
+	<result column="siititle" property="siititle"/>
+	<result column="siifinishtime" property="siifinishtime"/>
+	
+  <association property="tBorrowerInfo" javaType="TBorrowerInfo">
+
+  <id property="biid" column="biid"/>
+  <result property="biname" column="biname"/>
+  <result property="biage" column="biage"/>
+  <result property="bitype" column="bitype"/>
+  <result property="biphone" column="biphone"/>
+  <result property="bisex" column="bisex"/>
+  <result property="biindustry" column="biindustry"/>
+  <result property="biliab" column="biliab"/>
+  <result property="bicity" column="bicity"/>
+  <result property="bioverdue" column="bioverdue"/>
+  <result property="biloan" column="biloan"/>
+  <result property="bihousing" column="bihousing"/>
+  <result property="biincome" column="biincome"/>
+  <result property="bimarriage" column="bimarriage"/>
+
+        
+  </association>
+  </resultMap>
+  <!-- 根据ID查询投资详情 -->
+	 <select id="getTSiItemById" resultMap="resultTSiItemList" parameterType="Integer">
+		SELECT *
+FROM t_si_item AS sii 
+left JOIN t_borrower_info AS bi ON sii.biid=bi.biid WHERE sii.siiid=#{siiid}
+	</select>
+	<update id="updateSiirmoney" parameterType="TSiItemQuery">
+	 UPDATE t_si_item SET siirmoney=#{qtmoney} WHERE siiid=#{siiid};
+	</update>
+	<update id="updateSiistate" parameterType="TSiItemQuery">
+	 UPDATE t_si_item SET siistate=#{siistate} WHERE siiid=#{siiid};
+	</update>
+	<update id="updateSiifinishtime" parameterType="TSiItemQuery">
+	  UPDATE t_si_item SET siifinishtime=NOW() WHERE siiid=#{siiid};
+	</update>
+	
+	 <!-- 投资完成后 将投资记录状态改为正常回款 -->
+	<update  id="updateSirstate" parameterType="TSiItemQuery" >
+	 UPDATE t_si_record SET sirstate='正常回款' WHERE siiid IN (
+ SELECT t.id FROM (
+ SELECT sir.siiid id FROM t_si_record AS sir INNER JOIN
+t_si_item AS sii ON sii.`siiid`=sir.`siiid` WHERE sirstate='投标中' AND sii.siiid=#{siiid}) AS t)
+	</update>
+	
+	</mapper>

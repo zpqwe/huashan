@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+	<mapper namespace="dao.UserMapper">
+		<!-- 注册添加用户 -->
+		<insert id="addUser" useGeneratedKeys="true" keyProperty="userid" parameterType="TUserData">
+			INSERT INTO t_user_data (username,password,phone,pubdate,nickname,usergrade)
+			VALUES (#{username},#{password},#{phone},NOW(),#{nickname},#{usergrade})
+		</insert>
+		
+		<select id="getUser" resultType="TUserData" parameterType="String">
+			SELECT * FROM t_user_data WHERE phone=#{phone}
+		</select>
+		
+		<select id="getNewUser" resultType="TUserData" parameterType="String">
+			SELECT * FROM t_user_data where phone=#{phone}
+		</select>
+		
+		<insert id="addUserId" parameterType="TUcAccount">
+			INSERT INTO t_uc_account (userid,ucavail)
+			VALUES (#{userid},#{ucavail})
+		</insert>
+		
+		<update id="updatepwd" parameterType="TUserData">
+			UPDATE t_user_data SET PASSWORD=#{password} WHERE phone=#{phone}
+		</update>
+		
+		<update id="updatenickname" parameterType="TUserData">
+			UPDATE t_user_data SET nickname=#{nickname} WHERE phone=#{phone}
+		</update>
+		
+		<update id="updateinfo" parameterType="TUserData">
+			UPDATE t_user_data SET truename=#{truename},maxeducation=#{maxeducation},userugf=#{userugf},
+			marriage=#{marriage},address=#{address},company=#{company},companysize=#{companysize},
+			position=#{position},moincome=#{moincome},ishouse=#{ishouse},isvehicle=#{isvehicle},
+			udname=#{udname},udphone=#{udphone},udnexus=#{udnexus} 
+			WHERE userid=#{userid}
+		</update>
+		
+	</mapper>

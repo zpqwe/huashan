@@ -1,0 +1,136 @@
+﻿.account-left {
+    width: 140px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    cursor: pointer;
+    border-top: none;
+}
+
+    .account-left dl {
+    }
+
+    .account-left dt {
+        height: 40px;
+        width: 100px;
+        padding-left: 40px;
+        position: relative;
+        border-bottom: 1px solid #e5e5e5;
+        border-top: 1px solid #E5E5E5;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+        .account-left dt i {
+            background: url("//js3.tuandai.com/images/member/left-nav.png?v=2018011001");
+            width: 22px;
+            height: 22px;
+            display: block;
+            position: absolute;
+            left: 13px;
+            top: 10px;
+        }
+
+        .account-left dt .arrow {
+            width: 10px;
+            height: 6px;
+            background-position: -6px -114px;
+            left: 115px;
+            top: 18px;
+            position: absolute;
+        }
+
+        .account-left dt .arrow-change {
+            transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg); /* IE 9 */
+            -moz-transform: rotate(-90deg); /* Firefox */
+            -webkit-transform: rotate(-90deg); /* Safari 和 Chrome */
+            -o-transform: rotate(-90deg);
+        }
+
+    .account-left .dt-1 {
+        background-position: 0 0;
+    }
+
+    .account-left .dt-2 {
+        background-position: 0 -22px;
+    }
+
+    .account-left .dt-3 {
+        background-position: 0 -45px;
+    }
+
+    .account-left .dt-4 {
+        background-position: 0 -66px;
+    }
+
+    .account-left .dt-5 {
+        background-position: 0 -90px;
+    }
+
+    .account-left .dt-6 {
+        background-position: 0 -144px;
+    }
+    .account-left .dt-7 {
+        background-position: 0 -181px;
+    }
+
+    .account-left dd {
+        height: 38px;
+        padding-left: 40px;
+        position: relative;
+        /*z-index: 4!important;*/
+        z-index: 1;        
+    }
+    .emClass{z-index:100!important;}
+        .account-left dd a {
+            line-height: 38px;
+            font-size: 14px;
+        }
+
+            .account-left dd a:hover {
+                text-decoration: none;
+            }
+
+    .account-left .currentMenu {
+        border-left: 2px solid #FF9900;
+        padding-left: 38px;
+    }
+
+        .account-left .currentMenu a {
+            color: #ff9900;
+            font-weight: bold;
+        }
+
+.home {
+    height: 40px;
+    width: 100px;
+    padding-left: 40px;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #E5E5E5;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+    .home a {
+        font-size: 14px;
+    }
+
+    .home i {
+        background: url("//js3.tuandai.com/images/member/left-nav.png?v=2018011001");
+        width: 22px;
+        height: 22px;
+        display: block;
+        position: absolute;
+        left: 13px;
+        top: 8px;
+    }
+
+.left-hot {
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    background:url("//js3.tuandai.com/images/member/left-hot.gif") 0 0 no-repeat;
+    right:24px;
+    top:4px;
+}

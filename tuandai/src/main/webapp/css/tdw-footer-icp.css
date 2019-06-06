@@ -1,0 +1,15 @@
+/*备案信息*/
+.tdw-footer-supervise { margin-bottom: 50px; text-align: center; }
+.tdw-footer-supervise a { height: 26px; margin-left: 29px; background: url("//js4.tuandai.com/images/v2/supervise.png?v=20180712001") no-repeat; }
+.tdw-footer-supervise a img { width: 76px !important; height: 28px !important; }
+.tdw-footer-supervise .super-img1 { width: 80px; margin-left: 0; background-position: 0 0; }
+.tdw-footer-supervise .super-img2 { width: 70px; background-position: -109px 0; }
+.tdw-footer-supervise .super-img3 { width: 80px; background-position: -208px 0; }
+.tdw-footer-supervise .super-img4 { width: 72px; background-position: -316px 0; }
+.tdw-footer-supervise .super-img5 { width: 77px; background-position: -417px 0; }
+.tdw-footer-supervise .super-img6 { width: 76px; background-position: -523px 0; }
+.tdw-footer-supervise .super-img7 { width: 80px; background-position: -624px 0; }
+.tdw-footer-supervise .super-img8 { width: 76px; background-position: -718px 0; }
+.tdw-footer-supervise .super-img9 { width: 76px; background-position: -817px 0; }
+.tdw-footer-address{font-size:12px;}
+.tdw-footer-address a { color: #999; }

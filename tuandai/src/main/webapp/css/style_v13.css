@@ -1,0 +1,1276 @@
+@charset "utf-8";
+/*CSS Document */
+/*共同属性*/
+*, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;;
+}
+
+ul, ul li {
+    list-style-type: none;
+}
+
+a {
+    color: #666;
+}
+
+a:hover {
+    color: #ff1800;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.white, .white:hover {
+    color: #fff;
+}
+
+img {
+    outline: none;
+    border: none;
+}
+
+.fl, .left {
+    float: left;
+}
+
+.fr, .right {
+    float: right;
+}
+
+.cr, .clr, .clear {
+    clear: both;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: normal;
+}
+
+.tc {
+    text-align: center;
+}
+.tc img{
+    vertical-align: middle;
+}
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.blue, .blue a {
+    color: #406dbf;
+}
+
+a.blue:hover {
+    color: #406dbf;
+    text-decoration: underline;
+}
+
+.gray {
+    color: #666;
+}
+.red{
+    color: #f65555;
+}
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    color: #333;
+}
+
+body, input {
+    font-family: "microsoft yahei", "宋体";
+}
+
+.div-m {
+    width: 1000px;
+    margin: 0 auto;
+}
+.div-m1 {
+    width: 1000px;
+    margin: 0 auto;
+}
+/*上中下内容宽度一致以防乱位*/
+.header, .container, .footer {
+    min-width: 1000px;
+}
+
+/*头部属性*/
+.header {
+    height: 65px;
+    padding-top: 15px;
+}
+
+.header .logoImg {
+    display: inline-block;
+}
+
+.welcome {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.welcome .ufc {
+    background: url(../images/ufcPic.png) no-repeat;
+    width: 63px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: -4px;
+    margin-top: 18px;
+}
+
+.infoBar {
+    background: #406dbf;
+    height: 54px;
+    line-height: 54px;
+   /*  border-bottom: 4px solid #2953a0; */
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.subtitle {
+    height: 54px;
+    font-size: 24px;
+    display: inline-block;
+    float: left;
+    width: 145px;
+    padding-left: 40px;
+}
+
+.infoBar li {
+    width: 420px;
+    padding-left: 80px;
+    float: left;
+}
+
+.infoBar li.first {
+    width: 225px;
+}
+
+.container {
+    padding-bottom: 35px;
+    overflow: hidden;
+}
+
+.footer {
+    height: 80px;
+    line-height: 80px;
+    background: #484848;
+    color: #fff;
+}
+
+.infoCard {
+    line-height: 28px;
+    border: 1px solid #406dbf;
+    width: 978px;
+    clear: both;
+    padding: 10px 0 10px 20px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+}
+
+.infoCard li {
+    padding-left: 60px;
+    width: 428px;
+    float: left;
+    overflow: hidden;
+}
+
+.infoCard .sum {
+    font-size: 18px;
+}
+
+.container h2.title {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.formBlock {
+    padding-bottom: 40px;
+    clear: both;
+    overflow: hidden;
+}
+
+.formBlock li {
+    margin-top: 25px;
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.formBlock .mt5 {
+    margin-top: 5px;
+}
+
+.formBlock label {
+    float: left;
+    font-size: 16px;
+    display: inline-block;
+    width: 132px;
+    text-align: right;
+    margin-right: 15px;
+    line-height: 40px;
+}
+
+.inpTips {
+    left: 485px;
+    top: 0;
+    font-size: 14px;
+    border: 1px solid #406dbf;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 15px;
+    color: #406dbf;
+}
+
+.inpTips i {
+    position: absolute;
+    top: 14px;
+    left: -6px;
+    background: url(../images/angle.png) no-repeat;
+    display: block;
+    width: 6px;
+    height: 10px;
+}
+
+.inpText, .bank_area, .bank_area1 {
+    border: 1px solid #ccc;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 15px;
+    width: 288px;
+    font-size: 14px;
+    color: #333;
+    margin-right: 15px;
+    float: left;
+}
+
+.inpText-hover {
+    border-left: 4px solid #406dbf;
+    width: 285px;
+}
+.inpList{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    width: 161px;
+    font-size: 14px;
+    color: #333;
+    margin-right: 15px;
+}
+.inpListItem{
+    margin: 2px 0px;
+}
+.inpListTips{
+    display: inline-block;
+    vertical-align: top;
+    color: #406dbf;
+}
+.inpListTips .ask{
+}
+.inpListTips  .inpListTipsCon{
+    display: none;
+    width: 400px;
+    vertical-align: top;
+    margin: -26px 116px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 1px 3px;
+}
+.inpListTips:hover .inpListTipsCon{
+    display: inline-block;
+}
+
+.inpCode {
+    width: 176px;
+    margin-right: 12px;
+}
+
+.inpCode.inpText-hover {
+    width: 248px;
+}
+
+.codeBtn, .codeAgainBtn {
+    width: 98px;
+    height: 40px;
+    line-height: 34px;
+    font-size: 14px;
+    float: left;
+    margin-right: 15px;
+}
+
+.submitBtn,.layerBtn .codeBtn{
+    width: 318px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 16px;
+}
+
+.codeBtn, .codeAgainBtn, .submitBtn {
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #406dbf;
+    color: #406dbf;
+}
+
+.codeAgainBtn {
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+.codeBtn:hover, .submitBtn:hover,.layerBtn .submitBtn{
+    background: #406dbf;
+    color: #fff;
+}
+
+.phone, .account {
+    line-height: 40px;
+    padding-left: 20px;
+    margin-right: 25px;
+    font-size: 16px;
+}
+
+.bank_area {
+    width: 263px;
+    padding: 0 30px;
+    color: #666;
+}
+
+.bank_area1 {
+    width: 263px;
+    padding: 0 30px;
+    color: #666;
+}
+
+.bank_hide {
+    width: 160px;
+    display: none;
+}
+
+.bankIcon {
+    width: 160px;
+    height: 38px;
+    display: inline-block;
+    margin-right: 25px;
+    float: left;
+    overflow: hidden;
+}
+
+.bank-ICBC {
+    background-position: 0 0;
+}
+
+.tips {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 26px;
+    color: #dc1919;
+    padding: 10px 20px;
+    overflow: hidden;
+    width: 978px;
+    margin: 0 auto;
+}
+
+.formBlock .ruleLi {
+    margin-top: 13px;
+}
+
+.rule {
+    font-size: 16px;
+    margin-left: 70px;
+}
+
+.notTiedtips h3.title {
+    font-size: 42px;
+    line-height: 42px;
+    color: #e54040;
+    padding-top: 70px;
+}
+
+.notTiedtips p {
+    font-size: 24px;
+    padding-top: 30px;
+    color: #505050;
+}
+
+.formBlock .forgetLi {
+    margin-top: 10px;
+    height: 28px;
+}
+
+.formBlock .forgetLi a.blue {
+    margin-left: 225px;
+}
+
+.formBlock li .inpPrompt {
+    line-height: 38px;
+    font-size: 14px;
+    color: #e75353;
+}
+
+.icon-error, .icon-right,.icon-tips {
+    background: url(../images/inpPrompt.png) no-repeat;
+    display: inline-block;
+    margin-right: 6px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.icon-right {
+    background-position: 0 0;
+    margin-top: 13px;
+}
+
+.icon-error {
+    background-position: 0 -25px;
+}
+
+.password-reset {
+    min-height: 350px;
+}
+
+.password-reset p {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+
+.password-reset p span.blue {
+    font-size: 22px;
+}
+
+.password-reset ul {
+    display: block;
+    padding: 0 190px;
+}
+
+.password-reset li {
+    width: 238px;
+    height: 98px;
+    margin: 0 35px;
+    border: 1px solid #406dbf;
+    display: inline-block;
+    text-align: center;
+}
+
+.password-reset li:hover {
+    background: #406dbf;
+}
+
+.password-reset li:hover a {
+    color: #fff;
+}
+
+.password-reset li span, .password-reset li i {
+    display: block;
+    font-size: 20px;
+}
+
+.password-reset li span {
+    padding-top: 25px;
+    padding-bottom: 2px;
+}
+
+.password-reset li i {
+    line-height: 98px;
+}
+
+.formBlock .titleInfo {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.notTiedcon {
+    background: #eeeeee;
+    padding: 15px 50px;
+    font-size: 14px;
+    width: 820px;
+    margin: 15px auto 0;
+    overflow: hidden;
+}
+.notTiedcon span {
+    vertical-align: text-top;
+}
+
+.notTiedcon .icon-error {
+    left: 20px;
+    top: 20px;
+}
+
+.notTiedcon .icon-right {
+    left: 20px;
+    top: 20px;
+    margin: 0px;
+}
+
+.skipCon {
+    font-size: 24px;
+    line-height: 40px;
+    padding-top: 50px;
+}
+
+.skipCon span.blue {
+    font-size: 30px;
+}
+.processingCon,.paymentTips{
+    font-size: 16px;
+    padding-top: 60px;
+}
+.processingCon img{
+    display: block;
+    margin: 0 auto 10px;
+}
+.processingCon span.blue {
+    font-size: 20px;
+}
+.paymentTips{
+    width: 640px;
+    padding-left: 30px;
+    margin: 0 auto;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+.paymentTips span{
+    float: left;
+    margin-left: -30px;
+    margin-top: 4px;
+}
+.icon-tips{
+    background-position: 0 -51px;
+}
+
+
+
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.barCode {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.barCode img {
+    display: block;
+    margin: 15px auto;
+}
+
+/*弹出层*/
+#mask {
+    position: absolute; /*fixed*/
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    filter: Alpha(opacity=60);
+    opacity: 0.6;
+    background: #000;
+    display: none;
+    z-index: 1002;
+}
+
+#alertLayer,#alertLayer-2,.alertLayer {
+    position: fixed;
+    background: #fff;
+    z-index: 9999;
+}
+#alertLayer{
+    width: 840px;
+    height: 480px;
+    padding: 10px 30px 20px;
+}
+.layerTit {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: #406dbf;
+}
+.layerCon{
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.btnClosed {
+    background: url(../images/btnClosed.png) no-repeat 0 0;
+    width: 27px;
+    height: 27px;
+    display: block;
+    top: 0px;
+    right: 0px;
+}
+
+.btnClosed:hover {
+    background-position: 0 -44px;
+}
+
+.layerRule {
+    background: #f1f1f1;
+    padding: 15px 10px 15px 40px;
+    margin-top: 10px;
+}
+
+.layerRule div {
+    overflow-y: scroll;
+    color: #505050;
+    height: 340px;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.layerRule p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.layerCtr .submitBtn {
+    width: 298px;
+    height: 40px;
+    line-height: 38px;
+    margin: 20px auto 0;
+    display: block;
+}
+
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip {
+    display: inline;
+    margin-top: 11px;
+    line-height: 38px;
+    height: 24px;
+    overflow: hidden;
+    color: #999;
+    font-size: 14px;
+}
+
+.Validform_right {
+    color: transparent;
+    padding-left: 32px;
+    background: url(../images/inpPrompt.png) no-repeat 0 0px;
+}
+
+.Validform_wrong {
+    color: #e75353;
+    padding-left: 32px;
+    white-space: nowrap;
+    background: url(../images/inpPrompt.png) no-repeat 0 -25px;
+}
+
+.Validform_loading {
+    padding-left: 20px;
+    background: url(../images/onLoad.gif) no-repeat left center;
+}
+
+.Validform_error {
+    /*background-color:#ffe7e7;*/
+}
+
+#Validform_msg {
+    color: #7d8289;
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+    width: 280px;
+    -webkit-box-shadow: 2px 2px 3px #aaa;
+    -moz-box-shadow: 2px 2px 3px #aaa;
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    z-index: 99999;
+    display: none;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+
+#Validform_msg .iframe {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    z-index: -1;
+}
+
+#Validform_msg .Validform_title {
+    line-height: 25px;
+    height: 25px;
+    text-align: left;
+    font-weight: bold;
+    padding: 0 8px;
+    color: #fff;
+    position: relative;
+    background-color: #000;
+}
+
+#Validform_msg a.Validform_close:link, #Validform_msg a.Validform_close:visited {
+    line-height: 22px;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#Validform_msg a.Validform_close:hover {
+    color: #cc0;
+}
+
+#Validform_msg .Validform_info {
+    padding: 8px;
+    border: 1px solid #000;
+    border-top: none;
+    text-align: left;
+}
+
+.inpText:focus {
+    border-left: 4px solid #406dbf;
+    width: 285px;
+}
+
+.inpTextNew:focus {
+    border-left: 4px solid #406dbf;
+    width: 318px;
+}
+
+.inpCode:focus {
+    border-left: 4px solid #406dbf;
+    width: 173px;
+}
+
+/*==========以上部分是Validform必须的===========*/
+
+/*支持银行及弹窗*/
+.formBlock li.aBank{
+    margin-top: 0;
+    margin-bottom: -18px;
+}
+.formBlock li.aBank a{
+    margin-left: 416px;
+    line-height: 28px;
+}
+.alertLayer{
+    width: 100%;
+    background: none;
+}
+.alertLayerCon{
+    width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+.layerBtn{
+    width: 285px;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.layerBtn .codeBtn{
+    width: 120px;
+    margin: 0 10px;
+}
+.layerBtn-1 .codeBtn{
+    width: 160px;
+    margin: 0 auto;
+    float: inherit;
+}
+.layerBtn p{
+    font-size: 14px;
+    padding-top: 3px;
+}
+.bankList{
+    width: 370px;
+    height: 360px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666;
+}
+.bankList ul{
+    width: 350px;
+    border:1px solid #eee;
+    margin: 0 auto;
+}
+.bankList li{
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #eee;
+}
+.bankLogo{
+    width: 120px;
+    float: left;
+    padding-left: 15px;
+    border-right: 1px dashed #eee;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 8px;
+    margin-right: 15px;
+    color: #333;
+}
+.bankLogo img{
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+/*a  upload */
+.a-upload {
+    padding: 4px 10px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+.selectUl{
+    width: 318px;
+    height: 178px;
+    border: 1px solid #ccc;
+    background: #fff;
+    left: 147px;
+    top: 39px;
+    overflow-y: scroll;
+    z-index: 3;
+}
+.selectUl li{
+    width: 261px;
+    height: 30px;
+    line-height: 30px;
+    padding:0 20px;
+    margin-top: 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.selectUl li:hover{
+    background: #406dbf;
+    color: #fff;
+}
+
+
+
+
+
+/*企业信息变更*/
+.logo .title{
+    font-size: 20px;
+    color: #0057a9;
+    vertical-align: 3px;
+}
+.titleH2{
+    font-size: 18px;
+    line-height: 45px;
+}
+.titleH2 span{
+    font-size: 14px;
+}
+.editCon{
+    padding-bottom: 60px;
+}
+.editBox{
+    background: #f5f5f5;
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.editBox li{
+    width: 100%;
+    min-height: 40px;
+    padding-top: 20px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.editBox li label,.paperStyle label{
+    width: 115px;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+.editBox li .editName{
+    padding-left: 17px;
+    float: left;
+}
+.editBtn,.cancelBtn{
+    float: right;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #406dbf;
+    color: #406dbf;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: -4px;
+    font-size: 14px;
+}
+.editBtn:hover{
+    background: #406dbf;
+    color: #fff;
+}
+.cancelBtn{
+    display: none;
+    border: 1px solid #ef5353;
+    color: #ef5353;
+}
+.cancelBtn:hover{
+    background: #ef5353;
+    color: #fff;
+}
+.editBox .editInput{
+    display: none;
+}
+.editBox .inpText,.paperStyle .bank_area{
+    margin-top: -7px;
+}
+.editBox .inpPrompt{
+    color: #e75353;
+    font-size: 14px;
+}
+.editBox .inpPrompt1{
+    color: #e75353;
+    font-size: 14px;
+}
+.editBox .editCode{
+    width: 1000px;
+    float: left;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    display: none;
+}
+.editBox .editCode label{
+    margin-top: 7px;
+}
+.editBox .editCode .inpText{
+    margin-top: 0;
+}
+.editCon .submitBtn{
+    margin-top: 15px;
+}
+.editBox1 li{
+    width: 500px;
+    float: left;
+}
+.editBox1 li label{
+    margin-right: 40px;
+}
+.editBox1 .second2 label{
+    border-left: 1px solid #eee;
+}
+.paperStyle{
+    padding: 20px 0;
+}
+.paperStyle .selectUl{
+    left: 135px;
+    top: 32px;
+    height: auto;
+}
+.paperStyle .selectUl li{
+    width: 260px;
+}
+.editBox2{
+    padding: 10px 0 15px;
+}
+.editBox2 li{
+    border-bottom: none;
+}
+.auditData li div{
+    float: left;
+    width: 140px;
+    height:80px;
+}
+.auditData ul {
+    overflow: hidden;
+}
+.auditData li {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+.auditData .first{
+    margin: 0;
+}
+.auditData li .upload{
+    width:118px;
+    height: 58px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+.auditData li .Tab{
+    margin-right: 20px;
+}
+.auditData li .upload .icon-add{
+    background: url('../images/icon-add.png') no-repeat 0 -30px;
+}
+.icon-add{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon-add.png') no-repeat;
+    margin: 0 auto;
+}
+.upload p{
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.example img{
+    margin: 0 auto;
+    display: block;
+}
+.auditData li .mask{
+    width: 140px;
+    height: 50px;
+    background: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.auditData .second{
+    margin-top: 24px;
+}
+.mask .icon-add{
+    background: url('../images/icon-add.png') no-repeat 0 -57px;
+}
+.mask  .text{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+.auditData li .active{
+    width:120px;
+    height: 60px;
+    background: #406dbf;
+    padding: 10px;
+    margin-right: 20px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.auditData .inpPrompt{
+    padding:12px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    color: #e75353;
+}
+.auditData .inpPrompt .icon-error{
+    margin-bottom:3px;
+}
+.auditData li .active .icon-add{
+    background: url('../images/icon-add.png') no-repeat 0 0;
+}
+.auditData li .active .download{
+    background: url('../images/icon-add.png') no-repeat 0 -120px;
+}
+.auditData li .upload .down {
+    background: url('../images/icon-add.png') no-repeat 0 -86px;
+}
+.auditData li .active p{
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.again{
+    border: 1px solid #eee;
+}
+.againText{
+    width: 140px;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    line-height: 24px;
+    background: #406dbf;
+    text-align: center;
+}
+.againText a{
+    color: #fff;
+    font-size: 14px;
+}
+.prompt{
+    font-size: 14px;
+    color: #406dbf;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.changed .bank_area{
+    width: 320px;
+    border: 1px solid #eee;
+}
+.changed .selectUl{
+    width: 349px;
+    position: absolute;
+    left: 130px;
+    border: 1px solid #eee;
+}
+.changed .selectUl li{
+    width: 292px;
+}
+.myPop {
+    display: none;
+    height:562px;position:fixed;z-index:9999;left:0;
+}
+.myPop .close {
+    cursor:pointer;
+    width:40px;
+    height:40px;
+    display: block;
+    top:0;
+    position:absolute;
+    right:-53px;
+    background: url('../images/btnClosed.png') no-repeat;
+}
+.myPop .diploma-img {
+    margin:0 auto;
+    display: block;
+}
+.myPop .close:hover {
+    background: url('../images/btnClosed.png') no-repeat 0 -46px;
+}
+/*报错页面*/
+.errorCon{
+    padding-top: 40px;
+}
+.errorCon .errorImg{
+    width: 120px;
+    height: 130px;
+    overflow: hidden;
+    padding-left: 275px;
+    margin-right: 35px;
+    background: url('../images/error-pc.png') no-repeat center right ;
+    /*background-position-x: 250px;*/
+}
+.errorCon p{
+    float: left;
+    width: 340px;
+}
+.errorTitle{
+    padding: 10px 0 5px;
+    border-bottom: 1px solid #efefef;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.errorCode{
+    font-size: 14px;
+}
+
+.isAgreeReg{
+    vertical-align:middle;
+    margin:auto;
+    padding:0;
+}
+
+/* 滚动文字 */
+.scrollPart{
+    margin-bottom: 20px;
+}
+.infoBar{
+    margin-bottom: 0;
+}
+.box {
+    width: 100%;
+    background: #475c93;
+}
+
+.marquee {
+    width: 1000px;
+    overflow: hidden;
+    height: 24px;
+    margin: 0 auto;
+}
+
+.marquee p {
+    min-width: 5000px;
+    color:#fff;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.marquee p span {
+    min-width: 960px;
+    padding:0 20px;
+    float: left;
+}
+
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+	<mapper namespace="dao.DrRecordMapper">
+		<select id="getDrList" resultType="TDealRecord" parameterType="DrQuery" >
+			 SELECT drdate,drdtype,drexpenditure,drincome,drbalance,drexplain FROM 
+			 t_deal_record 
+		<where>
+			<if test="userId !=null and userId!=''">
+				AND userid=#{userId}
+			</if>
+			
+			<if test="drtype ==1">
+				AND drincome>0
+			</if>
+			
+			<if test="drtype ==2">
+				AND drexpenditure>0
+			</if>
+			
+			<if test="drdtype!= null and drdtype!='' and drdtype!=-1">
+				AND drdtype=#{drdtype}
+			</if>
+			
+		 	<if test="startTime !=null and startTime!='' and endTime!=null and endTime!=''">
+				AND DATE_FORMAT(drdate,'%Y-%m-%d') BETWEEN #{startTime} AND #{endTime} 
+			</if> 
+		</where>
+		ORDER BY drdate DESC
+		LIMIT #{pageNow},#{pageSize}
+		</select>
+		
+		<select id="getTotalCount" resultType="Integer" parameterType="DrQuery">
+			SELECT COUNT(1) FROM t_deal_record 
+			<where>
+			<if test="userId !=null and userId!=''">
+				AND userid=#{userId}
+			</if>
+			
+			<if test="drtype ==1">
+				AND drincome>0
+			</if>
+			
+			<if test="drtype ==2">
+				AND drexpenditure>0
+			</if>
+			
+			<if test="drdtype!= null and drdtype!='' and drdtype!=-1">
+				AND drdtype=#{drdtype}
+			</if>
+			
+		 	<if test="startTime !=null and startTime!='' and endTime!=null and endTime!=''">
+				AND DATE_FORMAT(drdate,'%Y-%m-%d') BETWEEN #{startTime} AND #{endTime} 
+			</if> 
+			</where>
+		</select>
+		
+		<select id="getDrReco" parameterType="String" resultType="TReceRecord">
+			SELECT * FROM t_rece_record WHERE rrdate LIKE concat('%',#{date},'%')
+		</select>
+		
+		<insert id="addDrReco" parameterType="TDealRecord">
+			INSERT INTO t_deal_record (userid,drdate,drdtype,drincome,drbalance,drexplain) 
+			VALUE(#{userid},NOW(),#{drdtype},#{drincome},#{drbalance},#{drexplain})
+		</insert>
+		
+		<!-- 查询资金表 -->
+		<select id="getuserac" resultType="TUcAccount" parameterType="Integer">
+		 SELECT * FROM t_uc_account WHERE userid=#{userid}
+		</select>
+		
+		<update id="updateisFinish" parameterType="TReceRecord">
+			UPDATE t_rece_record SET isfinish=${isfinish} where rrid=#{rrid}
+		</update>
+		
+		<select id="selectdate" resultType="TReceRecord" parameterType="String">
+			SELECT r.*,u.userid FROM t_rece_record r INNER JOIN t_si_record s ON r.sirid=s.sirid 
+			INNER JOIN t_uc_account u ON u.userid=s.userid
+			WHERE  DATE_FORMAT(rrdate,'%Y-%m-%d')   &lt;= #{date}  AND isfinish =1 and s.sirstate='正常回款'
+		</select>
+		
+	</mapper>

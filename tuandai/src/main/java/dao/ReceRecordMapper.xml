@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+	<mapper namespace="dao.ReceRecordMapper">
+		<resultMap type="TReceRecord" id="getrrList">
+			<id  column="rrid" property="rrid"/>
+			<result column="rrdate" property="rrdate"/>
+			<result column="rrmoney" property="rrmoney"/>
+			<result column="rrtotal" property="rrtotal"/>
+			<result column="rrinterest" property="rrinterest"/>
+			<result column="rrnownum" property="rrnownum"/>
+			<result column="drid" property="drid"/>
+			<result column="trid" property="trid"/>
+			<result column="sirid" property="sirid"/>
+		
+		<association property="item" javaType="TSiItem">
+		  	<id property="siiid" column="siiid"/>
+		  	<result column="siitmoney" property="siitmoney"/>
+			<result column="siismoney" property="siismoney"/>
+			<result column="siirmoney" property="siirmoney"/>
+			<result column="siireturn" property="siireturn"/>
+			<result column="siiairate" property="siiairate"/>
+			<result column="siipubdate" property="siipubdate"/>
+			<result column="siiresidue" property="siiresidue"/>
+			<result column="siirepayment" property="siirepayment"/>
+			<result column="siiicondition" property="siiicondition"/>
+			<result column="siistate" property="siistate"/>
+			<result column="siititle" property="siititle"/>
+			<result column="siitype" property="siitype"/>
+	 </association>
+		</resultMap>
+	
+	
+		<!-- 根据日期查询回款列表 -->
+		<select id="getTReceRecords" resultType="TReceRecord" parameterType="ReceQuery">
+		SELECT r.*,sirinmoney,siireturn AS rrnumber,rrtotal FROM t_rece_record r INNER JOIN t_si_record d ON d.`sirid`=r.`sirid`
+		INNER JOIN t_si_item s ON s.`siiid`=d.`siiid`
+		<where>
+				d.userid=#{userid} AND isfinish=1
+			<if test="month !=null and month!='' ">
+				AND rrdate BETWEEN DATE_FORMAT(NOW(),'%Y-%m-%d') AND DATE_ADD(CURDATE(), INTERVAL #{month} MONTH)
+			</if>
+			<if test="startTime !=null and startTime!='' and endTime!=null and endTime!=''">
+				AND rrdate BETWEEN #{startTime} AND #{endTime} 
+			</if> 
+		</where>
+		  LIMIT #{pageNow},#{pageSize}
+		</select>
+		<!-- 获取条件下的数量 -->
+		<select id="getTotalCount" resultType="Integer" parameterType="ReceQuery">
+			SELECT COUNT(1) FROM t_rece_record r INNER JOIN t_si_record d ON d.`sirid`=r.`sirid`
+			INNER JOIN t_si_item s ON s.`siiid`=d.`siiid`
+		<where>
+			d.userid=#{userid} AND isfinish=1
+		<if test="month !=null and month!=''">
+			AND rrdate BETWEEN DATE_FORMAT(NOW(),'%Y-%m-%d') AND DATE_ADD(CURDATE(), INTERVAL #{month} MONTH)
+		</if>
+		<if test="startTime !=null and startTime!='' and endTime!=null and endTime!=''">
+			AND rrdate BETWEEN #{startTime} AND #{endTime} 
+		</if> 
+		</where>
+		</select>
+		
+		<!-- 获取最近回款 -->
+		<select id="latelyReturn" resultType="LatelyLoanReturn" parameterType="ReceQuery">
+			SELECT rrdate AS time,rrtotal AS totalmoney FROM t_rece_record r INNER JOIN t_si_record d ON d.`sirid`=r.`sirid`
+			INNER JOIN t_si_item s ON s.`siiid`=d.`siiid` 
+			WHERE rrdate BETWEEN DATE_FORMAT(NOW(),'%Y-%m-%d') AND DATE_ADD(CURDATE(), INTERVAL 1 WEEK)
+			AND d.userid=#{userid} AND isfinish=1
+			ORDER BY rrdate ASC
+		</select>
+		
+		<select id="getTotalRece" resultType="TReceRecord" parameterType="ReceQuery">
+		SELECT r.*,sirinmoney,siireturn AS rrnumber,rrtotal FROM t_rece_record r INNER JOIN t_si_record d ON d.`sirid`=r.`sirid`
+		INNER JOIN t_si_item s ON s.`siiid`=d.`siiid`
+		<where>
+			d.userid=#{userid} AND isfinish=1
+		<if test="month !=null and month!='' ">
+			AND rrdate BETWEEN DATE_FORMAT(NOW(),'%Y-%m-%d') AND DATE_ADD(CURDATE(), INTERVAL #{month} MONTH)
+		</if>
+		<if test="startTime !=null and startTime!='' and endTime!=null and endTime!=''">
+			AND rrdate BETWEEN #{startTime} AND #{endTime} 
+		</if> 
+		</where>
+		</select>
+
+		
+		<!-- 添加回款记录 -->
+	<!-- 添加回款记录 -->
+	<insert id="addRececord" useGeneratedKeys="true" keyProperty="rrid" parameterType="entity.TReceRecord">
+	INSERT  INTO `t_rece_record`(`rrdate`,`rrmoney`,`rrtotal`,`rrinterest`,`rrnownum`,`drid`,`trid`,`sirid`,`isfinish`)
+ VALUES (DATE_FORMAT(#{rrdate},'%Y-%m-%d %h:%i:%s'),#{rrmoney},#{rrtotal},#{rrinterest},#{rrnownum},NULL,NULL,#{sirid},3)
+	</insert>
+	<resultMap type="TReceRecord" id="resultReceRecordList">
+	<result column="rrdate" property="rrdate"/>
+	<result column="rrtotal" property="rrtotal"/>
+	<result column="rrmoney" property="rrmoney"/>
+	<result column="rrinterest" property="rrinterest"/>
+	<result column="isfinish" property="isfinish"/>
+	<result column="sirid" property="sirid"/>
+	<result column="rrid" property="rrid"/>
+  <association property="tSiRecord" javaType="TSiRecord">
+  <id property="sirid" column="sirid"/>
+  <result property="sirinmoney" column="sirinmoney"/>
+  </association>
+  </resultMap>
+	
+	<!-- 根据ID查询回款详情 -->
+	<select id="getReceRecord" resultMap="resultReceRecordList" parameterType="TSiItemQuery">	
+SELECT rr.rrdate,rr.rrtotal,sir.sirinmoney,rr.rrmoney,rr.rrinterest,rr.isfinish FROM
+t_rece_record AS rr INNER JOIN t_si_record AS sir ON sir.sirid=rr.sirid
+INNER JOIN t_si_item AS sii ON sii.siiid=sir.siiid WHERE
+rr.isfinish !=2 and sii.siiid=#{siiid} and sir.sirstate='正常回款'  ORDER BY  rr.rrdate ASC
+  limit #{from},#{pageSize}
+	</select>
+	<!-- 修改回款记录时间用 -->
+	<select id="getRRtime" resultMap="resultReceRecordList" parameterType="TSiItemQuery">	
+ SELECT rr.rrdate,rr.rrtotal,sir.sirinmoney,rr.sirid,rr.rrid,rr.rrmoney,rr.rrinterest,rr.isfinish FROM t_si_record AS sir INNER JOIN
+ t_rece_record AS rr ON sir.sirid=rr.sirid WHERE sir.siiid=#{siiid}
+	</select>
+	<update  id="updateRRtimes" parameterType="Rece2Query" >
+	UPDATE t_rece_record SET rrdate=#{rrdate} WHERE rrid=#{rrid}
+	</update>	
+	
+	<select id="getRRCounts" resultType="Integer" parameterType="TSiItemQuery">
+		SELECT count(1) totalCount FROM
+t_rece_record AS rr INNER JOIN t_si_record AS sir ON sir.sirid=rr.sirid
+INNER JOIN t_si_item AS sii ON sii.siiid=sir.siiid WHERE
+rr.isfinish !=2 and sii.siiid=#{siiid} and sir.sirstate='正常回款' 
+	</select>
+	
+	<!-- 最后回款日期 -->
+	<select id="getLastDate" parameterType="Integer" resultType="String">
+		SELECT rrdate FROM t_rece_record WHERE sirid=#{sirid} ORDER BY rrdate DESC LIMIT 0,1
+	</select>
+	
+	<!-- 获取分期对象 -->
+	<select id="getLastMoney" parameterType="Integer" resultType="TReceRecord">
+		SELECT * FROM t_rece_record WHERE sirid=#{sirid}
+	</select>
+	
+	<select id="getOneTReceRecord" parameterType="Integer" resultMap="getrrList">
+		SELECT si.*,rr.* FROM t_si_item si INNER JOIN t_si_record sr ON si.`siiid`=sr.`siiid`
+		INNER JOIN t_rece_record rr ON rr.`sirid` =sr.`sirid` WHERE rrid=#{rrid}
+	</select>
+</mapper>

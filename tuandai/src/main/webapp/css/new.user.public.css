@@ -1,0 +1,5 @@
+/*底部*/
+.footer{background: none; padding: 5px 0 20px;}
+.footer .address{line-height: 23px;}
+.footer .address a{color: #666;}
+.footer .address a:hover{color: #ffad2c; margin-top:0!important;}

@@ -1,0 +1,597 @@
+.yellow-tip {
+	margin-left: 2px;
+	color: #ed9c00;
+	background: #fffbf0;
+	font-size: 12px;
+	display: inline-block;
+	*display: inline;
+	height: 16px;
+	line-height: 16px;
+	border: 1px solid #ffdeab;
+	border-radius: 2px;
+	padding: 0 5px;
+	vertical-align: 6px;
+	*vertical-align: 1px;
+}
+
+.tip-red {
+	background: #ff0000;
+	border: 1px solid #ff0000;
+	margin-left: 5px;
+	height: 18px;
+	line-height: 19px;
+	vertical-align: 0;
+	border-radius: 2px;
+	padding: 0 10px;
+	color: #fff;
+	font-size: 12px;
+	vertical-align: 6px;
+	*vertical-align: 2px;
+	text-align: center;
+	display: inline-block;
+	*display: inline;
+}
+
+table.past td {
+	text-align: center;
+}
+
+
+/*20180827加息返现标签*/
+
+.tdw-addinterest-tag,
+.tdw-cashback-tag {
+	margin-left: 4px;
+	vertical-align: 2px;
+	*vertical-align: 2px;
+	max-width: 115px;
+}
+
+.tdw-cashback-tag {
+	max-width: 125px;
+}
+
+.invent-data {
+	padding-top: 11px;
+}
+
+.invent_list {
+	background: #fff;
+	width: 1200px;
+	overflow: hidden;
+}
+
+.invent_list .title a {
+	max-width: 300px;
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.invent_list ul {
+	background: #fff;
+	width: 1202px;
+}
+
+.invent_list li {
+	border-right: 1px solid #f7f7f7;
+	cursor: pointer;
+	border-bottom: 1px solid #f7f7f7;
+	float: left;
+	width: 565px;
+	padding-left: 35px;
+	padding-top: 25px;
+	height: 141px;
+}
+
+.invent_list .show-win img {
+	margin-top: -6px;
+}
+
+.per-box {
+	width: 220px;
+}
+
+.date {
+	width: 162px;
+}
+
+.mb22 {
+	margin-bottom: 22px;
+}
+
+.invent-data .submit {
+	width: 160px;
+	*width: 160px;
+}
+
+.submit {
+	vertical-align: 0;
+	*vertical-align: 0px;
+}
+
+.weplan-submit {
+	vertical-align: 40px;
+}
+
+.join {
+	width: 120px!important;
+	margin: 0 auto;
+}
+
+.w450 {
+	width: 450px;
+}
+
+.w226 {
+	width: 226px;
+}
+
+.w293 {
+	width: 293px;
+}
+
+.w132 {
+	width: 132px;
+}
+
+.w115 {
+	width: 115px;
+}
+
+.w48 {
+	width: 48px;
+}
+
+.w253 {
+	width: 253px!important;
+}
+
+.item {
+	background: #fff;
+	margin-top: 15px;
+}
+
+.content {
+	width: 1135px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 18px;
+	color: #555;
+	height: 59px;
+	border-bottom: 1px solid #f3f3f3;
+	line-height: 62px;
+}
+
+.tags {
+	padding-left: 30px;
+}
+
+.invest-tag {
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.invest-tag ul {
+	height: 32px;
+	padding-top: 12px;
+}
+
+.invest-tag li {
+	padding: 0 14px;
+	position: relative;
+	line-height: 32px;
+	border-bottom: 2px solid transparent;
+	display: inline-block;
+	*display: inline;
+	font-size: 16px;
+	color: #666;
+	cursor: pointer;
+	float: left;
+}
+
+.invest-tag li:hover,
+.invest-tag li.on {
+	border-bottom: 2px solid #ffad2c;
+	color: #ffad2c;
+}
+
+.invest-tag li .g {
+	color: #b3b3b3!important;
+}
+
+.invest-tag li .or {
+	color: #ffad2c!important;
+}
+
+.invest-tag li .hot {
+	position: absolute;
+	right: 24px;
+	top: 6px;
+	width: 27px;
+	height: 14px;
+	background-position: 0 -975px;
+}
+
+.progess-list {
+	margin-top: 15px;
+}
+
+.progess-list li {
+	margin-top: 10px;
+	width: 847px;
+}
+
+.progess-list span {
+	display: inline-block;
+	*display: inline;
+}
+
+.progess-list .progess-wrap {
+	display: inline-block;
+	*display: inline;
+	width: 450px;
+	position: relative;
+	padding-right: 50px;
+}
+
+.progess-list .progess-wrap .progess {
+	height: 5px;
+	background: #8acafe;
+	border-radius: 20px;
+	margin-bottom: 2px;
+}
+
+.progess-list .term {
+	width: 180px;
+}
+
+.progess-list .progess-wraper {
+	width: 525px;
+}
+
+.progess-list .profit {
+	width: 137px;
+	color: #555;
+}
+
+.input-box {
+	width: 258px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.input-box input {
+	border: none;
+	padding-left: 5px;
+	font-size: 18px;
+	color: #928f8f;
+	width: 220px;
+	position: relative;
+	top: 2px;
+}
+
+.submit {
+	margin-top: 0;
+	padding-top: 1px;
+}
+
+.submit.mt40 {
+	margin-top: 40px;
+}
+
+.count-btn {
+	height: 36px;
+	line-height: 36px;
+	width: 120px;
+	font-size: 16px;
+}
+
+.financial-effect dl {
+	width: 294px;
+	float: left;
+}
+
+.financial-effect dt,
+.financial-effect dd {
+	float: left;
+}
+
+.re_invent_icon {
+	background: url(//js3.tuandai.com/images/investlist/re_invent_list/re_invent_list_icon.png);
+}
+
+.effect dt {
+	margin-right: 20px;
+	margin-top: 6px;
+}
+
+.p2 {
+	height: 36px;
+	width: 37px;
+	background-position: -0px -0px;
+}
+
+.p3 {
+	height: 35px;
+	width: 36px;
+	background-position: -0px -36px;
+}
+
+.p4 {
+	height: 35px;
+	width: 36px;
+	background-position: -0px -71px;
+}
+
+.p1 {
+	height: 33px;
+	width: 40px;
+	background-position: -0px -106px;
+}
+
+.red-border-input {
+	border: 1px solid #ff0000;
+}
+
+.screen {
+	font-size: 14px;
+	padding: 0 12px;
+	position: absolute;
+	right: 0;
+	top: 15px;
+	border: 1px solid transparent;
+	z-index: 100;
+}
+
+.screen {
+	width: 150px;
+	padding: 0px 11px 10px;
+}
+
+.screen dt,
+.screen dd {
+	cursor: pointer;
+}
+
+.screen dt:hover,
+.screen dd:hover {
+	cursor: pointer;
+	color: #ffa019;
+}
+
+.screen dt {
+	height: 36px;
+	line-height: 36px;
+	/*padding-left: 20px;*/
+	color: #ffa019;
+	margin-bottom: 5px;
+	border-bottom: 1px solid transparent;
+	text-align: center;
+}
+
+.screen dd {
+	height: 30px;
+	line-height: 30px;
+	text-indent: 8px;
+	display: none;
+	background: #fff;
+}
+
+.screen .dd-h {
+	display: block !important;
+}
+
+.screen:hover {
+	border: 1px solid #eeeeee;
+	background: #fff;
+}
+
+.screen:hover dt {
+	border-bottom: 1px solid #eeeeee;
+}
+
+.screen>dt>.re-invent-list-arrow {
+	height: 9px;
+	width: 14px;
+	display: inline-block;
+	*display: inline;
+	background-position: -0px -139px;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	margin-left: 8px;
+	*vertical-align: 3px;
+}
+
+.screen:hover>dt>.re-invent-list-arrow {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.past tr th,
+.past tr td {
+	height: 42px;
+	line-height: 42px;
+	color: #555;
+}
+
+.past th {
+	color: #888!important;
+}
+
+.past tr th {
+	font-weight: normal;
+}
+
+.pro.do-animation {
+	animation: line .7s linear both;
+	-webkit-animation: line .5s linear both;
+}
+
+@keyframes line {
+	from {
+		transform: scaleX(0);
+		-webkit-transform: scaleX(0);
+		transform-origin: 0 50%;
+		-webkit-transform-origin: 0 50%;
+	}
+	to {
+		transform: scaleX(150px);
+		-webkit-transform: scaleX(150px);
+		transform-origin: 0 50%;
+		-webkit-transform-origin: 0 50%;
+	}
+}
+
+@-webkit-keyframes line {
+	from {
+		transform: scaleX(0);
+		-webkit-transform: scaleX(0);
+		transform-origin: 0 50%;
+		-webkit-transform-origin: 0 50%;
+	}
+	to {
+		transform: scaleX(150px);
+		-webkit-transform: scaleX(150px);
+		transform-origin: 0 50%;
+		-webkit-transform-origin: 0 50%;
+	}
+}
+
+
+/*�����*/
+
+.dial {
+	background: url(//js3.tuandai.com/images/investlist/re_invent_list/dial.png) no-repeat!important;
+	position: relative;
+	width: 680px;
+	height: 467px;
+}
+
+.dial-detail {
+	padding: 106px 54px 0 48px;
+	color: #074e67;
+}
+
+.dial-detail .close {
+	background: url(//js3.tuandai.com/images/investlist/re_invent_list/X.png);
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	right: -24px;
+	top: 6px
+}
+
+.dial-detail h4 {
+	font-size: 16px;
+	color: #ff7916;
+	font-weight: bold;
+	margin-top: 35px;
+}
+
+.dial-detail p {
+	line-height: 24px;
+}
+
+.dial-win.hide-win {
+	animation: hide-win .4s linear both;
+	-webkit-animation: hide-win .4s linear both;
+}
+
+@-webkit-keyframes hide-win {
+	from {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+}
+
+@keyframes hide-win {
+	from {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+}
+
+.dial-win.show-win {
+	animation: show-win .4s linear both;
+	-webkit-animation: show-win .4s linear both;
+}
+
+@-webkit-keyframes show-win {
+	from {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes show-win {
+	from {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+
+/*20180901 开启自动投标*/
+
+.lv-we-showtips-box {
+	position: absolute;
+	top: -4px;
+}
+
+.lv-we-showtips-box.left-75 {
+	left: 0;
+}
+
+.auto-service-img {
+	position: relative;
+	height: 60px;
+	margin-bottom: 11px;
+	cursor: pointer;
+	background: url("//js3.tuandai.com/images/investlist/auto-service-img.png") no-repeat;
+}
+
+.auto-ser-close {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 7px;
+	right: 8px;
+	cursor: pointer;
+}
+
+.end-service {
+	margin-top: 14px;
+}
+
+.automation-tag,
+.hand-movement-tag {
+	vertical-align: 2px;
+	*vertical-align: 0px;
+}
+
+.automation-tag {
+	margin-right: 0 !important;
+}

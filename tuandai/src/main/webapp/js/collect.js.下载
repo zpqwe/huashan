@@ -1,0 +1,152 @@
+var uri = {
+	"host" : window.location.hostname,
+	"port" : window.location.port,
+	"path" : window.location.pathname,
+	"search" : window.location.search,
+	getUri : function() {
+		return this;
+	}
+};
+var browser = {
+	"type" : "",
+	"version" : "",
+	"platform" : "",
+	getInfo : function() {
+		this.platform = navigator.platform;
+		var userAgent = navigator.userAgent;
+		var index = userAgent.indexOf("Opera");
+		if (index > -1) {
+			this.type = "Opera";
+			this.version = userAgent.substring(index).replace('/', '');
+		} else if (userAgent.indexOf("Firefox") > -1) {
+			this.type = "Firefox";
+			var regStr_ff = /Firefox\/[\d.]+/gi;
+			this.version = "" + userAgent.match(regStr_ff);
+		} else if (userAgent.indexOf("Edge") > -1) {
+			this.type = "Edge";
+			var regStr_ff = /Edge\/[\d.]+/gi;
+			this.version = "" + userAgent.match(regStr_ff);
+		} else if (userAgent.indexOf("Chrome") > -1) {
+			this.type = "Chrome";
+			var regStr_ff = /Chrome\/[\d.]+/gi;
+			this.version = "" + userAgent.match(regStr_ff);
+		} else if (userAgent.indexOf("Safari") > -1) {
+			this.type = "Safari";
+			var regStr_ff = /Safari\/[\d.]+/gi;
+			this.version = "" + userAgent.match(regStr_ff);
+		} else if (userAgent.indexOf("compatible") > -1
+				&& userAgent.indexOf("MSIE") > -1 && !isOpera) {
+			this.type = "IE"
+			var regStr_ff = /MSIE\/[\d.]+/gi;
+			this.version = "" + userAgent.match(regStr_ff);
+		}
+		return this;
+	}
+};
+var collectConfig = {
+	url : "../../page/collect.json",
+	ajaxType : "POST",
+	timeout : 5000
+}
+var performances = {
+	getPerformance : function() {
+		return window.performance;
+	},
+	getTiming : function() {
+		return this.getPerformance().timing;
+	},
+	getEntries: function () {
+	    var resources = [];
+	    var resourcesTimings = null;
+	    try {
+	        resourcesTimings = this.getPerformance().getEntries();//具体资源时间
+	        $.each(resourcesTimings, function (i, value) {
+	            if (value.duration > 100) {
+	                resources.push(value);
+	            }
+	        });
+	    } catch (err) {
+	    }
+	    return resources;
+	}
+}
+
+var collect = function(type) {
+	try {
+		var timing = performances.getTiming();//总体时间
+		var resourcesTimings = performances.getEntries();
+		$.ajax({
+			url : collectConfig.url,
+			type : collectConfig.ajaxType, //GET
+			async : true, //或false,是否异步
+			data : {
+				"type" : type,
+				"uri" : JSON.stringify(uri.getUri()),
+				"browser" : JSON.stringify(browser.getInfo()),
+				"timing" : JSON.stringify(timing),
+				"resourcesTimings" : JSON.stringify(resourcesTimings),
+				"requestKey":$('#requestKey').val()
+			},
+			timeout : collectConfig.timeout, //超时时间
+			dataType : 'json', //返回的数据格式：json/xml/html/script/jsonp/text
+			beforeSend : function(xhr) {
+			},
+			success : function(data, textStatus, jqXHR) {
+			},
+			error : function(xhr, textStatus) {
+			},
+			complete : function() {
+			}
+		})
+	} catch (err) {
+		// console.log(err);
+	}
+}
+var loadCollect = function() {
+	try {
+		var timing = performances.getTiming();//总体时间
+		if (timing.loadEventEnd <= 0) {//过早获取时,loadEventEnd有时会是0
+			// 未加载完，延迟200ms后继续times方法，直到成功
+			setTimeout(function() {
+				loadCollect();
+			}, 200);
+			return;
+		}
+		collect();
+		clearTimeoutCollect();
+	} catch (err) {
+		//console.log(err)
+	}
+}
+
+var collect5 = setTimeout("collect(5)", 5000);
+var collect10 = setTimeout("collect(10)", 10000);
+var collect15 = setTimeout("collect(15)", 15000);
+
+function clearTimeoutCollect() {
+	try {
+		clearTimeout(collect15);
+		clearTimeout(collect10);
+		clearTimeout(collect5);
+	} catch (err) {
+		//console.log(err)
+	}
+}
+
+function addLoadEvent(func) {
+	try {
+		var oldonload = window.onload;
+		if (typeof window.onload != 'function') {
+			window.onload = func;
+		} else {
+			window.onload = function() {
+				oldonload();
+				func();
+			}
+		}
+	} catch (err) {
+		//console.log(err)
+	}
+}
+
+addLoadEvent(loadCollect);

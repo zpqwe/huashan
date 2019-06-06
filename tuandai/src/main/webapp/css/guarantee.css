@@ -1,0 +1,205 @@
+@charset "UTF-8";
+.cffb400 {
+  color: #ffb400; }
+
+.modular {
+  background: #fff;
+  padding-bottom: 70px; }
+  .modular h3 {
+    font-size: 16px; }
+
+.guarantee-icon {
+  background: url("/dist/images/about_us/guarantee/guarantee-icon.png?201802261417"); }
+
+.pic-4 {
+  height: 294px;
+  width: 304px;
+  background-position: -0px -0px; }
+
+.banner {
+  height: 289px;
+  width: 965px;
+  background-position: -304px -0px;
+  margin-left: -1px; }
+
+.pic-2 {
+  height: 268px;
+  width: 281px;
+  background-position: -0px -294px; }
+
+.pic-5 {
+  height: 268px;
+  width: 293px;
+  background-position: -281px -294px; }
+
+.pic-3 {
+  height: 268px;
+  width: 300px;
+  background-position: -574px -294px; }
+
+.pic-1 {
+  height: 268px;
+  width: 305px;
+  background-position: -874px -294px; }
+
+.title-6 {
+  height: 29px;
+  width: 340px;
+  background-position: -0px -562px; }
+
+.title-4 {
+      height: 27px;
+    width: 933px;
+    background-position: -0px -647px;}
+
+.title-5 {
+    height: 27px;
+    width: 933px;
+    background-position: -0px -702px;}
+
+.title-3 {
+  height: 28px;
+  width: 933px;
+  background-position: -0px -591px; }
+
+.title-1 {
+  height: 26px;
+  width: 933px;
+  background-position: -0px -675px; }
+
+.title-2 {
+    height: 29px;
+    width: 933px;
+    background-position: -0px -729px; }
+
+.page-1,
+.page-2,
+.page-3,
+.page-4,
+.page-5,
+.page-6,
+.page-7 {
+  width: 933px;
+  margin: 0 auto;
+  color: #666; }
+  .page-1 .text,
+  .page-2 .text,
+  .page-3 .text,
+  .page-4 .text,
+  .page-5 .text,
+  .page-6 .text,
+  .page-7 .text {
+    width: 540px;
+    line-height: 28px; }
+    .page-1 .text .baobei,
+    .page-2 .text .baobei,
+    .page-3 .text .baobei,
+    .page-4 .text .baobei,
+    .page-5 .text .baobei,
+    .page-6 .text .baobei,
+    .page-7 .text .baobei {
+      color: #2087fb; }
+      .page-1 .text .baobei:hover,
+      .page-2 .text .baobei:hover,
+      .page-3 .text .baobei:hover,
+      .page-4 .text .baobei:hover,
+      .page-5 .text .baobei:hover,
+      .page-6 .text .baobei:hover,
+      .page-7 .text .baobei:hover {
+        color: #2087fb;
+        text-decoration: underline; }
+    .page-1 .text h3,
+    .page-2 .text h3,
+    .page-3 .text h3,
+    .page-4 .text h3,
+    .page-5 .text h3,
+    .page-6 .text h3,
+    .page-7 .text h3 {
+      font-weight: bold; }
+    .page-1 .text p,
+    .page-2 .text p,
+    .page-3 .text p,
+    .page-4 .text p,
+    .page-5 .text p,
+    .page-6 .text p,
+    .page-7 .text p {
+      margin-bottom: 15px; }
+
+.title {
+  margin: 70px auto; }
+
+
+.pic-3,
+.pic-4,
+.pic-5 {
+  margin-right: 20px; }
+
+.pic-1,
+.pic-2,
+.pic-6 {
+  margin-left: 20px; }
+
+
+.page-3 .text,
+.page-4 .text,
+.page-5 .text {
+  padding-left: 20px; }
+
+.page-1 .text,
+.page-2 .text,
+.page-6 .text {
+  padding-right: 20px; }
+
+.step {
+  width: 929px;
+  height: 140px;
+  overflow: hidden;
+  background: url("/dist/images/about_us/guarantee/step.png?5201") no-repeat; }
+  .step ul {
+    padding-left: 90px;
+    width: 1200px; }
+  .step li:last {
+    padding-right: 0; }
+  .step li {
+    float: left;
+    width: 150px;
+    margin-right: 186px;
+    padding-top: 37px; }
+  .step .title {
+    color: #f16c25;
+    font-size: 18px;
+    margin: 0 0 5px; }
+  .step .int {
+    color: #666;
+    font-size: 15px;
+    line-height: 21px; }
+
+.btn a {
+  width: 290px;
+  height: 56px;
+  line-height: 56px;
+  display: block;
+  background: #2f88da;
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  border-radius: 4px;
+  -webkit-border: 4px;
+  display: inline-block;
+  *display: inline; }
+  .btn a {
+    margin-top: 58px; }
+  .btn a:hover {
+    color: #fff;
+    background: #338ee2; }
+  .btn a .pen {
+    margin-right: 5px;
+    background-position: -1240px -271px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    *display: inline;
+    vertical-align: -6px;
+    *vertical-align: 0; }
+
+/*# sourceMappingURL=guarantee.css.map */

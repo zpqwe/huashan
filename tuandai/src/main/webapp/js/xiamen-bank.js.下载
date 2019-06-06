@@ -1,0 +1,544 @@
+﻿$(function () {
+
+    //下拉菜单
+    function SecBoxList(id, tit) {
+        var index = -1;
+        var lien = $(id).find('ul li').length;
+        var titHtml = $("#tit").find('.txt').html();
+        $(id).find(tit).click(function (event) {
+            $(this).parent(id).find('ul').toggle();
+            $('#selectbox #tit').removeClass('red-border-input');
+            dvbankName.html('');
+            //阻止冒泡事件
+            event.stopPropagation();
+            $('.select-list').hide();
+        });
+        $(id).find('ul li').click(function () {
+            var listxt = $(this).find('.listxt').html();
+            var icon = $(this).find('span').eq(0).attr('class');
+            var spclass = $(tit).find('span').eq(0).attr('class');
+            $(tit).find('span').eq(0).removeClass(spclass);
+            $(tit).find('span').eq(0).addClass(icon);
+            $(tit).find('.txt').html(listxt);
+            $(this).parent("ul").hide();
+        });
+
+        //点击空白处隐藏列表
+        $(document).click(function () {
+            $(id).find('ul').hide();
+        });
+
+    }
+    SecBoxList('#selectbox', '#tit');
+    $('#selectbox #tit').click(function () {
+        $(this).parent('#selectbox').find('ul').hide();
+    });
+
+    //证件选择
+    $('.label-select').on('click', function () {
+        $(this).find('ul').show();
+        $(this).addClass('border-e');
+    });
+    $('.label-select').mouseleave(function () {
+        $(this).find('ul').fadeOut(100).slideUp(100);
+        $(this).removeClass('border-e');
+    });
+    $('#ddlcards').find('li').click(function (event) {
+        event.stopPropagation();
+        var txt = $(this).text();
+        var _val = $(this).attr("val");
+        $('.label-select').removeClass('border-e');
+        $(this).parents('.label-select').find('.values').text(txt);
+        $(this).parent().fadeOut(100).slideUp(100);
+        $(this).parents('.label-select').find('.values').attr('val', _val);
+        // $(this).parents('.label-select').find('input').val(_val);
+    });
+
+    $('.supply-bank').on('click',function(){
+        $('.banksec').show();
+        $('#diallayer').show();
+    });
+
+
+    //提示信息
+    var name = $('#name'), card = $('#idCard'), bankCard = $('#bankCard'), phone = $('#phone'), dvbankName = $('#bankName'), bankNet = $('#bankNet');
+    var dvName = $('#dvName'), dvidCard = $('#dvidCard'), dvbankCard = $('#dvbankCard'), dvPhone = $('#dvPhone'), dvbankNet = $('#dvbankNet'), dvbankAdr = $('#dvbankAdr');
+    var nameReg = /^([\u4e00-\u9fa5]){2,7}$/;
+    var cardReg = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+    var bankCardReg = /^(\d{8,25})$/;
+    var phoneReg = new RegExp("^1[0-9]{10}", "i");
+    var gangaoReg = /^[a-zA-Z0-9]{5,21}$/;
+    var passportReg = /^[a-zA-Z0-9]{3,21}$/;
+    var foreiReg = /^[a-zA-Z]{3}\d{12}$/;
+    var countN = 0;
+
+    //姓名验证
+    $('#name').focus(function () {
+        name.removeClass('red-border-input');
+        dvName.html('');
+    });
+    $('#name').blur(function () {
+        if (!nameBlur()){
+            return;
+        }
+    });
+
+    function nameBlur() {
+        var rtn = true;
+
+        var Val = name.val();
+        var dvName = $('#dvName');
+        var txtUserName = Val.replace(/[ ]/g, "");
+
+        if (Val == '' || Val == null) {
+            // name.removeClass('red-border-input');
+            // dvName.html('');
+        }
+        else if (Val != txtUserName) {
+            name.addClass('red-border-input');
+            dvName.html('姓名不允许有空格');
+            rtn = false;
+        }
+        //else if (!nameReg.test(Val)) {
+        //    name.addClass('red-border-input');
+        //    dvName.html('姓名填写不正确');
+        //    rtn = false;
+        //}
+        return rtn;
+    }
+
+    //身份证验证
+    $('#idCard').focus(function () {
+        card.removeClass('red-border-input');
+        dvidCard.html('');
+    });
+    $('#idCard').blur(function () {
+        if (!idCardblur())
+            return;
+    });
+
+    //银行卡号验证
+    $('#bankCard').focus(function () {
+        bankCard.removeClass('red-border-input')
+        dvbankCard.html('');
+    });
+    var isHaveCard = 0;
+    var bkName = "";
+    $("#bankCard").blur(function () {
+        bankcardblur();
+    });
+    //获取用户年龄
+    function getUserAge(strCard){
+        var dateStr = strCard.substr(6,8),  //截取用户身份证号生日字符串
+            myDate = new Date(),
+            year = myDate.getFullYear(),
+            month = myDate.getMonth() + 1,
+            day = myDate.getDate(),
+            age = year - parseInt(dateStr.substr(0,4))-1;
+            if( parseInt(dateStr.substr(4,2)) <= month && parseInt(dateStr.substr(6,2)) <= day){
+                age++;
+            }
+        return age;
+
+
+    }
+    function idCardblur() {
+        var rtn = true;
+        var _ctype=$("#cards").attr("val");
+        var Val = card.val();
+        var bankno = Val.replace(/[ ]/g, "");
+        var dvidCard = $('#dvidCard');
+        var age = getUserAge(Val);
+        if (_ctype == "1") {
+            if (Val == '' || Val == null) {
+                // card.removeClass('red-border-input');
+                // dvidCard.html('');
+            } else if (Val != bankno) {
+                card.addClass('red-border-input');
+                dvidCard.html('身份证号码不允许有空格');
+                rtn = false;
+            }
+            else if (!cardReg.test(Val) || Val.length < 18) {
+                card.addClass('red-border-input');
+                dvidCard.html('身份证号码填写不正确');
+                rtn = false;
+            }
+            else{  // 年龄限制
+                var ageType = ageLimit(Val);
+                if(ageType == -103){
+                    card.addClass('red-border-input');
+                    dvidCard.html('身份证号码填写不正确');
+                    rtn = false;
+                }
+                if(ageType == -102 && card.attr("disabled") != "disabled"){
+                    card.addClass('red-border-input');
+                    dvidCard.html('平台仅对18至70周岁出借人开放出借服务');
+                    rtn = false;
+                }
+            }
+        }
+        else if (_ctype == "2")
+        {
+            if (Val == '' || Val == null) {
+                // card.removeClass('red-border-input');
+                // dvidCard.html('');
+            } else if (Val != bankno) {
+                card.addClass('red-border-input');
+                dvidCard.html('港澳台通行证不允许有空格');
+                rtn = false;
+            }
+            else if (!gangaoReg.test(Val)) {
+                card.addClass('red-border-input');
+                dvidCard.html('港澳台通行证填写不正确');
+                rtn = false;
+            }
+
+        }
+        else if (_ctype == "4") {
+            if (Val == '' || Val == null) {
+                // card.removeClass('red-border-input');
+                // dvidCard.html('');
+            } else if (Val != bankno) {
+                card.addClass('red-border-input');
+                dvidCard.html('护照不允许有空格');
+                rtn = false;
+            }
+            else if (!passportReg.test(Val)) {
+                card.addClass('red-border-input');
+                dvidCard.html('护照填写不正确');
+                rtn = false;
+            }
+
+        }
+        else if (_ctype == "3") {
+            if (Val == '' || Val == null) {
+                // card.removeClass('red-border-input');
+                // dvidCard.html('');
+            } else if (Val != bankno) {
+                card.addClass('red-border-input');
+                dvidCard.html('外国人永久居留证不允许有空格');
+                rtn = false;
+            }
+            else if (!foreiReg.test(Val)) {
+                card.addClass('red-border-input');
+                dvidCard.html('外国人永久居留证填写不正确');
+                rtn = false;
+            }
+
+        }
+        return rtn;
+    }
+    function bankcardblur() {
+        var rtn = true;
+        var Val = bankCard.val();
+        var dvbankCard = $('#dvbankCard');
+        if (Val == '' || Val == null) {
+            // bankCard.removeClass('red-border-input')
+            // dvbankCard.html('');
+        } else if (!bankCardReg.test(Val)) {
+            bankCard.addClass('red-border-input')
+            dvbankCard.html('银行卡输入错误');
+            rtn = false;
+        }
+        else {
+            //增加
+            //CompleteAccountCheck
+            $.ajax({
+                url: "${pageContext.request.contextPath }/insertBank",
+                type: "post",
+                dataType: "json",
+                async: false,
+                data: {cardNo: Val },
+                success: function (data) {
+                    var obj = data.data;
+                    bkName = "";
+                    if (obj != null && obj != undefined) {
+                        var name = obj.bankName;
+                        bkName = name;
+                        var lst = $("li:contains('" + name + "')");
+                        $('#tit').removeClass("red-border-input");
+                        $('#bankName').html('');
+                        if (lst.length > 0) {
+                            isHaveCard = 1;
+                            $('.icons').css("visibility", "visible").show();
+                            $("#tel_no").html(obj.bankTel);
+                            $("#hd_bktype").val(obj.bankType);
+                            lst.click();
+                        }
+                        else {
+                            $('.icons').css("visibility", "hidden").hide();
+                            if (bkName != null && bkName != "" && bkName.length > 0) {
+                                $('#tit').find('.txt').html(bkName);
+                                isHaveCard = 1;
+                            } else {
+                                $('#tit').find('.txt').html('银行卡号无法识别');
+                                isHaveCard = 0;
+                            }
+
+                        }
+                    }
+                    else {
+                        $('#tit').find('.txt').html('银行卡号无法识别');
+                        isHaveCard = 0;
+                    }
+                }
+            });
+        }
+        return rtn;
+    }
+
+
+    //手机号验证
+    $('#phone').focus(function () {
+        phone.removeClass('red-border-input')
+        dvPhone.removeClass('error-mes').html('');
+    });
+    $("#phone").blur(function () {
+        phoneBlur()
+    });
+    function phoneBlur(){
+        var rtn = true;
+        var Val = phone.val();
+        var dvPhone = $('#dvPhone');
+        if (Val == '' || Val == null) {
+            // phone.removeClass('red-border-input')
+            // dvPhone.html('');
+        } else if (!phoneReg.test(Val) || Val.length < 11) {
+            phone.addClass('red-border-input');
+            dvPhone.addClass('error-mes').html('手机号输入错误');
+            rtn = false;
+        }
+        return rtn;
+    }
+
+    //启用立即绑定按钮（黄色按钮）
+    enabledBlur();
+    function enabledBlur(){
+        if($('#isopen').length>0 && $('#isopen').val() !=1){
+            $('.xm-content .text-input').blur(function(){
+             enabledBtn();
+            });
+        }else{
+            $('.bind-btn a').removeClass('bind-btn-gray');
+        }
+    }
+
+    function enabledBtn(){
+        var nameVal = name.val(), cardVal = card.val(), bankCardVal = bankCard.val(), phoneVal = phone.val();
+        var titHtml = $("#tit").find('.txt').html();
+        if(nameVal!='' && nameBlur() && cardVal!='' && (!card.hasClass('red-border-input')) && bankCardVal!=''  && phoneVal != '' && phoneBlur() && $.trim(titHtml) != $.trim("") && $.trim(titHtml) != $.trim("银行卡号无法识别") && (!$('#bankCard').hasClass('red-border-input'))){
+            $('.bind-btn a').removeClass('bind-btn-gray');
+        }else{
+            $('.bind-btn a').addClass('bind-btn-gray');
+        }
+    }
+
+
+    $('.bind-btn a').on('click', function () {
+
+        if(!checkStopService("binCard")) {
+            return false;
+        }
+
+        $(this).removeAttr('href');
+        var nameVal = name.val(), cardVal = card.val(), bankCardVal = bankCard.val(), phoneVal = phone.val();
+        var titHtml = $("#tit").find('.txt').html();
+        if (nameVal == '') {
+            $('#name').addClass('red-border-input');
+            dvName.html('请输入姓名');
+        }
+        if (!nameBlur())
+            return;
+
+        if (cardVal == '') {
+            $('#idCard').addClass('red-border-input');
+            var _ctype = $("#cards").attr("val");
+            var ttname = "请输入身份证号码";
+            switch (_ctype)
+            {
+                case "1":
+                    ttname = "请输入身份证号码";
+                    break;
+                case "2":
+                    ttname = "请输入港澳台通行证";
+                    break;
+                case "3":
+                    ttname = "请输入外国人永久居留证";
+                    break;
+                case "4":
+                    ttname = "请输入护照";
+                    break;
+            }
+
+            dvidCard.html(ttname);
+        }
+        if (!idCardblur())
+            return;
+
+        if (bankCardVal == '') {
+            $('#bankCard').addClass('red-border-input');
+            dvbankCard.html('请输入银行卡');
+        }
+        if (phoneVal == '') {
+            $('#phone').addClass('red-border-input');
+            dvPhone.addClass('error-mes').html('请输入手机号码');
+        }
+
+
+
+        if (nameVal != '' && cardVal != '' && bankCardVal != '' && phoneVal != '' && $.trim(titHtml) != $.trim("") && $.trim(titHtml) != $.trim("银行卡号无法识别")) {
+            if (bankCardReg.test(bankCardVal) && phoneReg.test(phoneVal)) {
+                // var url = "http://www.tuandai.com/member/Bank/GO_xiamen.aspx?realName=" +  + "&cardNo=" +  + "&bankno=" +  + "&telno=" + + "&bkName=" + ;
+                // window.open(url, '_blank');
+
+                var _ctype = $("#cards").attr("val");
+                if ((_ctype == 1 && !cardReg.test(cardVal)) || (_ctype == 2 && !gangaoReg.test(cardVal)) || (_ctype == 3 && !foreiReg.test(cardVal)) || (_ctype == 4 && !passportReg.test(cardVal)))
+                    return false;
+
+                cmdname = "/member/bank/personRegisterReq";
+                var bktype = "0";
+                if ($('.bind-btn a').attr("opertype") == "bindcard") {
+                    bktype = $("#hd_bktype").val();
+                    cmdname = "/member/bank/personBindBankCard";
+                }
+                var cardType = $("#cards").attr("val");
+                $.ajax({
+                    url: cmdname,
+                    type: "post",
+                    dataType: "json",
+                    async: false,
+                    data: {cardNo: $('#idCard').val(),realName:$("#name").val(), bankno: $('#bankCard').val(), telno: $('#phone').val(), bkName: bkName, bktype: bktype, cardType: cardType },
+                    success: function (json) {
+                        var obj = json;
+                        if (obj.code == "0") {
+                            $('#bankBindAlert').show();
+                            $('#diallayer').show();
+                            var url = obj.data;
+                            //window.open(url);
+                            $('.bind-btn a').attr("href", url);
+                        }else if(obj.code == "-3"){
+                            publicUi.tdPopAlert({
+                                id:'fourElementsIdCard',
+                                type:'dialog',
+                                title:'提示',
+                                contents:'<p class="fz16 text-666">该身份证已被绑定，请重新输入</p><p class="pt15 mb10 text-666">如有疑问请联系客服1010-1218（9:00~22:00）</p>',
+                                TextAlign:'center',
+                                width:480,
+                                height:240,
+                                btnWidth:120,
+                                btnHeight:38,
+                                zindex:9999,
+                                okBtn:'在线客服',
+                                okCallback: function(){
+                                    $('.tdPopAlert .ok-btn').attr('href','http://www.sobot.com/chat/pc/index.html?sysNum=20ab7dce1e3346e8b90b649bd8baf591').attr('target','_blank');
+                                }
+                            });
+                        }else if(obj.code == "-4"){
+                            publicUi.tdPopAlert({
+                                id:'fourElementsTel',
+                                type:'dialog',
+                                title:'提示',
+                                contents:'<p class="fz16 text-666">该银行卡已被绑定，请重新输入</p><p class="pt15 mb10 text-666">如有疑问请联系客服1010-1218（9:00~22:00）</p>',
+                                TextAlign:'center',
+                                width:480,
+                                height:240,
+                                btnWidth:120,
+                                btnHeight:38,
+                                zindex:9999,
+                                okBtn:'在线客服',
+                                okCallback: function(){
+                                    $('.tdPopAlert .ok-btn').attr('href','http://www.sobot.com/chat/pc/index.html?sysNum=20ab7dce1e3346e8b90b649bd8baf591').attr('target','_blank');
+                                }
+                            });
+                        }
+                        else {
+                            showDialWindowsWithoutBtn("提示", obj.message);
+                        }
+
+                    }
+                });
+
+            }
+
+        }
+
+        if ($.trim(titHtml) == $.trim("")) {
+            $('.selectbox #tit').addClass('red-border-input');
+            dvbankName.html('开户银行不能为空');
+        }
+        else if ($.trim(titHtml) == $.trim("银行卡号无法识别")) {
+            $('.selectbox #tit').addClass('red-border-input');
+            dvbankName.html('银行卡号无法识别');
+        }
+        else {
+            $('.selectbox #tit').removeClass('red-border-input');
+            dvbankName.html('');
+        }
+
+    });
+
+    //打开弹窗
+    $('#ForBtn').on('click', function () {
+        $('#diallayer').show();
+        if (isHaveCard == 1) {
+            $('#forgetPhone2').show();
+        }
+        else {
+            $('#forgetPhone').show();
+        }
+    });
+
+    //关闭弹窗
+    function CloseBox() {
+        $('.cgt-close-x').on('click', function () {
+            $(this).parents(".dial-window").hide();
+            $('#diallayer').hide();
+        });
+        $('.alert-btn').on('click', function () {
+            $(this).parent().parent().parent().hide();
+            $('#diallayer').hide();
+        });
+    }
+    CloseBox();
+
+    bankcardblur();
+
+
+});
+function provincechange() {
+    var prov = $("input[name='sel_city1']").val().split(",");
+    var provinceId = prov[0];
+    var html = '<select id="sel_city2"><option selected="selected" value=0>市</option>';
+    if (provinceId != 0) {
+        $.ajax({
+            url: '/member/bank/getAllCityByPrivinceId',
+            type: "post",
+            dataType: "json",
+            async: true,
+            data: {provinceId: provinceId },
+            success: function (data) {
+                $.each(data, function (i, j) {
+                    html += '<option value="' + j.CityID + '" ' + (i == 0 && prov[1] == "直辖市" ? "selected=\"selected\"" : "") + '>' + j.CityName + '</option>';
+                });
+                init_city(html + "</select>");
+            },
+            dataType: 'json'
+        });
+    } else {
+        init_city(html + "</select>");
+    }
+}
+// function init_city(html) {
+//     $("#sel_city2").replaceWith(html);
+//     $("#sel_city2").selectlist({
+//         zIndex: 1,
+//         width: 178,
+//         height: 42,
+//         onChange: function () {
+//             if ($("input[name='sel_city2']").val() != 0)
+//                 $("#dvtxtCity").html("");
+//         }
+//     });
+//     if ($("input[name='sel_city2']").val() != 0)
+//         $("#dvtxtCity").html("");
+// }

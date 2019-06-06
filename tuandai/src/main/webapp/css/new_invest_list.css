@@ -1,0 +1,180 @@
+/*投标页签*/
+.tags{padding-left:30px;}
+.invest-tag{  }
+.invest-tag ul{height:  32px; padding-top: 12px; }
+.invest-tag li{padding:0 14px; position: relative;   line-height: 32px;  border-bottom:2px solid transparent; display:inline-block; *display:inline; font-size: 16px; color:#666; cursor:pointer;  float: left;}
+.invest-tag li:hover, .invest-tag li.on{border-bottom: 2px solid #ffad2c; color:#ffad2c;}
+.invest-tag li .g{color:#b3b3b3!important;}
+.invest-tag li .or{color:#ffad2c!important;}
+.invest-tag li .hot{position: absolute; right: 24px; top:6px; width: 27px;  height: 14px; background-position: 0 -975px; }
+ .toptool{padding-right: 23px; margin-bottom: 3px; pt18}
+  .toptool a{color:#b3b3b3; *padding-top: 5px;}
+  .toptool a:hover{color:#ffad2c;}
+  .toptool i{margin-right: 10px; position: relative;  top: 5px; *top: 1px; display: inline-block; *display:inline; width: 21px;height: 21px;}
+  .toptool .reckon{  background-position: 0 -991px;}
+  .toptool .inv{  background-position: 0 -1013px;}
+  .toptool em{width:2px; height: 26px; vertical-align: -9px;  display: inline-block; *display: inline; border-right:1px solid #f3f3f3; margin:0 20px;}
+/*条件筛选*/
+.conition-tag{ padding-bottom: 20px;}
+.condition-list{width:auto; padding-top: 10px;  *padding-top: 20px;}
+.condition-list dl{margin-top: 10px;}
+.condition-list dt{color: #999999; min-width:83px;  display:inline-block; *display: inline;  line-height: 30px; margin-right: 6px;}
+.condition-list dd{color: #666666; display:inline-block; *display: inline; cursor: pointer; height: 30px; line-height: 30px; margin-right: 20px; padding: 0 11px; border-radius:4px;}
+.condition-list dd .or{color: #ffad2c;}
+.condition-list dd:hover, .condition-list dd.on{color: #fff; background: #ffad2c;}
+.condition-list dd:hover .or, .condition-list dd.on .or{color: #fff;}
+.condition-list dd.gar{color: #b3b3b3!important; cursor: default; background: none!important;}
+
+ /*投资列表*/
+ .lists{}
+ .inv-list-warp{width: 936px; }
+ /*排序*/
+ .inv-list-warp .sort{border-bottom: 1px solid #f3f3f3;width: 876px; font-size:0}
+ .inv-list-warp .sort dt{width: 92px; line-height: 52px;   display:inline-block; *display: inline;   font-size:14px}
+ .inv-list-warp .sort dd .default{color:#ffad2c;}
+ .inv-list-warp .sort dd{width: 106px; line-height: 52px; color: #666;   display:inline-block; *display: inline; position:relative; font-size:14px}
+ .inv-list-warp .sort dd.rate-wth{ width:118px;}
+ .inv-list-warp .sort dd.limit-wth{ width:140px;}
+ .inv-list-warp .sort dd:hover{color:#ffad2c; }
+ .inv-list-warp .sort dd a.on{color:#ffad2c;}
+ .inv-list-warp .sort .arr{width: 12px;height: 12px; display:inline-block; *display: inline; vertical-align: -2px; *vertical-align: 2px; }
+/* .inv-list-warp .sort .up{width: 12px; height: 12px; display: block;    background-position: 0 -961px; cursor: pointer;}
+*/
+.inv-list-warp .sort .up-o{background-position:0 -1070px; display: block; cursor: pointer; width: 10px; height: 12px; }
+.inv-list-warp .sort .up-g{background-position:-23px -1071px; display: block; cursor: pointer; width: 10px; height: 12px;}
+.inv-list-warp .sort .down-o{background-position:0 -1056px; display: block; cursor: pointer; width: 10px; height: 12px; }
+.inv-list-warp .sort .down-g{width: 10px; height: 12px; display: block;  background-position: 0 -1042px;cursor: pointer; }
+ .inv-list-warp .sort-condition dl{width: 102px;  background: #fff; position: absolute; right: 0px; top: 10px; border-radius: 3px;  }
+ .inv-list-warp .sort-condition .val.icon{width: 11px;  height: 5px; margin-left: 5px; display:  inline-block; *display: inline; vertical-align: 2px; background-position: 0 -1035px;}
+ .inv-list-warp .sort-condition .add-border{border:1px solid #f1f0f0;}
+ .inv-list-warp .sort-condition .sort-val-text{width: 102px;   right: 0px; top: 10px; border-radius: 3px; border:1px solid #f1f0f0;}
+ .inv-list-warp .sort-condition dd{display: none;}
+ .inv-list-warp .sort-condition dd,  .inv-list-warp .sort-condition dt{cursor: pointer; color:#666; height: 32px; line-height: 32px;  background: #fff; border-radius: 3px;}
+ .inv-list-warp .sort-condition dd a:hover{color: #ffad2c;}
+ .inv-list-warp .sort-condition {right: 0px; top: 11px;}
+ .inv-list-warp .sort-condition .val{line-height: 28px; height: 28px; font-size:14px; cursor: pointer; text-align: center; border: 1px solid #ccc;border-radius: 2px;  width: 102px;}
+ .inv-list-warp .sort-condition .val .arrow{ width: 11px;  height: 5px; margin-left: 5px; display:  inline-block; *display: inline; vertical-align: 2px; *vertical-align: 6px; background-position: -268px -375px;}
+ .inv-list-warp .sort-condition .val:hover{border:1px solid #ffb700; color:#ffb700;}
+ .inv-list-warp .sort-condition .val:hover .arrow{background-position: -268px -385px;}
+ .inv-list-warp .sort-condition ul{border-radius:2px;   top:0px; cursor: pointer; font-size:14px; width: 104px;}
+ .inv-list-warp .sort-condition li{height: 28px;  line-height: 28px; text-align: center;  border: 1px solid #ccc; -webkit-border-radius:2px; border-radius:2px;}
+.inv-list-warp .sort-condition .sort-condition-first{ border-bottom-left-radius:0; border-bottom-right-radius:0; }
+.inv-list-warp .sort-condition .sort-condition-last{ margin-top:-1px; border-top-left-radius:0; border-top-right-radius:0; }
+.inv-list-warp .sort-condition li:hover{ position:relative; z-index:1; color: #fff; background:#ffb700; border:1px solid #ffb700;}
+
+/*投资详细列表*/
+ .inv-list-detail{  width: 876px; border-bottom: 1px solid #f3f3f3;   overflow: hidden;   }
+ .financial-list dl{padding: 18px 0 16px 0;border-bottom: 1px solid #f3f3f3;height: 74px;overflow: hidden;}
+  .inv-list-detail dt{width: 65px; height: 65px;}
+ .inv-list-detail dt img{border-radius:5px; width: 65px;height: 65px;}
+ .inv-list-detail dd {}
+ .inv-title {height: 26px;  }
+ .inv-title a{  max-width: 280px;  display:inline-block; *zoom:1; *display:inline; text-overflow:ellipsis;  white-space:nowrap; *word-wrap:all; overflow:hidden;}
+ .inv-list-detail .detail {width: 687px;}
+ .inv-list-detail .inv-data{ }
+ .inv-list-detail .inv-data ul{line-height: 35px ;}
+ .inv-list-detail .inv-data li{  width: 135px; display:inline-block;   *display:inline;}
+ .inv-list-detail .inv-data li.percent{width: 140px;}
+ .inv-list-detail .inv-data li.surplus{ width: 115px;}
+ .inv-list-detail .inv-data li.repays{width: 142px;}
+/*债权转让*/
+
+/*项目宝*/
+
+.inv-list-detail .list-5 li{line-height: 42px;}
+.inv-list-detail .list-5 .detail{width: 400px;}
+.inv-list-detail .list-5 .profit{width: 160px;  }
+.inv-list-detail .list-5 .term{width: 127px;  }
+.inv-list-detail .list-5 .term .term-lh42{line-height: 54px;}
+.inv-list-detail .list-5 .more-inv{line-height: 38px;   }
+.inv-list-detail .list-5.simubao-list .man-biao{top: -19px; right:40px;}
+/*债权转让*/
+.inv-list-detail .inv-data li.percent-zq{width: 140px;}
+.inv-list-detail .inv-data li.surplus-zq{ width: 100px;}
+ .inv-list-detail .inv-progress{padding-top: 2px; }
+ .inv-list-detail .inv-progress.fqb{padding-top: 17px;}
+ .inv-list-detail .inv-progress .progress{width: 56px;}
+ .inv-list-detail .inv-progress .buy-input-new{width: 100px;height: 30px;position: relative; margin-bottom:5px;}
+ .inv-list-detail .inv-progress .buy-input-new .input-text{width: 50px;height: 26px;line-height: 26px;border: 2px solid #ffc800;text-align: center;position: absolute;top: 0;left: 26px;font-size: 12px;color: #666;}
+ .inv-list-detail .inv-progress .buy-input-new .btn{width: 26px;height: 30px;display: block;text-align: center;line-height: 26px;font-size: 28px;font-weight: bold;color: #fff;background: #ffc800;cursor: pointer; -moz-user-select:none;}
+ .inv-list-detail .inv-progress .buy-input-new .l-btn{position: absolute;left: 0;top: 0;}
+ .inv-list-detail .inv-progress .buy-input-new .r-btn{position: absolute;left: 78px;top: 0;}
+
+ .inv-list-detail  .list-8 li{line-height: 42px;}
+ .inv-list-detail .list-8 .detail{width: 400px;}
+ .inv-list-detail .list-8 .profit{width: 160px;  }
+ .inv-list-detail .list-8 .term{width: 127px;  }
+ .inv-list-detail .list-8 .term .term-lh42{line-height: 54px;}
+ .inv-list-detail .list-8 .more-inv{line-height: 38px;   }
+ .inv-list-detail .list-8.simubao-list .man-biao{top: -19px; right:40px;}
+/*进度条*/
+.inv-list-detail  .progress{width: 208px; height: 3px; background: #e4e4e4; overflow: hidden; }
+.inv-list-detail  .progress-box{ }
+.inv-list-detail  .progress-box span{display: inline-block; *display:inline; width: 40px; text-align: right;}
+.inv-list-detail .one-percent{width: 45px;height: 18px; background-position:0 -563px;  position: absolute; margin-left: -43px;	line-height: 14px; font-size: 12px; color: #fff; text-indent: 6px;  text-align: left;background: url(../images/plusrate.png) no-repeat;}
+.inv-list-detail  .pro-ed{ background: #ffad2c; height: 3px; left: 0; top: 0;width:0;
+ -webkit-transition: width 1s ease-in;
+ -o-transition: width 1s ease-in;
+ -ms-transition: width 1s ease-in;
+ -moz-transition: width 1s ease-in;
+ transition: width 1s ease-in; } /*进度条动画样式*/
+
+ /*标即投即息提示*/
+ .jing-tip-box{height: 20px;  margin-left: 10px;  display: inline-block; *zoom:1; *display: inline; *vertical-align:-3px; }
+ .jing-tip{float: left; height: 20px;   text-align: center;  line-height: 18px; color: #10c986; background: url("../images/jing-tip.png?v=20151226001.png")  ;}
+ .jing-tip span{vertical-align: 2px;}
+ .jing-tip-l{width: 7px; background-position: 0 0; }
+ .jing-tip-c{padding-left: 3px; background-position:0 -20px;}
+ .jing-tip-r{width: 9px;  background-position:0 -40px;  }
+
+/*分页*/
+ .pagination {
+            width: auto;
+            display: inline-block;
+            *display:inline;
+        }
+.pagetop {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+.pagination .godiv {
+    display: inline-block;
+}
+.pagination a, .pagination span {float:left;border: 1px solid #DDDDDD; color: #666666; border-radius: 2px;  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px; margin: 0px 2px; padding:5px 10px; text-decoration: none; }
+.pagination .current { border: 1px solid #ffbc1b; color: #fff; background-color: #ffbc1b;}
+.pagination a[disabled='disabled']{ color: #ccc; border-color: #ccc; background-color: #fff;}
+.pagination .current.prev, .pagination .current.next{ color: #ccc; border-color: #ccc; background-color: #fff;width:50px;}
+.pagination a:hover, .pagination a.prev:hover, .pagination a.next:hover { border: 1px solid #ffbc1b; color: #666666; background-color: #fff;text-decoration: none; }
+.pagination a[disabled='disabled']:hover{ color: #ccc; border-color: #ccc; background-color: #fff;}
+.pagination a.prev, .pagination a.next { border: 1px solid #DDDDDD; color: #333333; border-radius: 2px; -webkit-border-radius: 2px;
+  -moz-border-radius: 2px; margin: 0px 2px; padding:5px 10px; text-decoration: none;width:50px; }
+
+.loadingWord1{width:100%;height: 160px;margin:0 auto;text-align:center;padding-top: 28px;vertical-align: middle;}
+
+
+/*右边新闻*/
+.news-list{width: 250px;}
+.news-list .news{width: 250px; }
+.news-list .news-body{width: 210px;  margin:0 auto; }
+.news-body h2{height: 52px; line-height: 52px; color: #666; border-bottom: 1px solid #e5e5e5;}
+.news-body h2.more{line-height: 53px;}
+.news-body ul{padding: 5px 0 15px; *padding:3px 0 12px;}
+.news-body ul li{ line-height: 32px; height: 32px;}
+.news-body li a{color: #666;line-height: 32px; height: 32px;}
+/*过长加省略号*/
+.news-body li a{max-width: 200px;  display:inline-block; *zoom:1; *display:inline; text-overflow:ellipsis;  white-space:nowrap; *word-wrap:all; overflow:hidden;}
+
+.news-body li a:hover{color: #ffad2c;}
+.news-list .subject {width: 250px; }
+.news-list .subject-body {width: 242px; margin:0 auto;}
+.news-list .subject-body a{display: block;}
+.news-list .subject-body img{display: block; width: 242px;height: 142px;}
+
+
+/*20180824开启智享自动投标*/
+.open-zx-btn{ right:0; top:11px; padding:0 10px;  height:28px; line-height:28px; display:block; font-size:14px; color:#ffb700; border:1px solid #ffb700; -webkit-border-radius:2px; border-radius:2px;}
+.open-zx-btn:hover{background:#ffb700; color:#fff;}
+.inv-list .huiyan-tag { font-size: 0;  vertical-align:1px; *vertical-align:0; margin-left:2px; *display:inline;}
+.inv-list .automation-tag { margin-right:4px;  }

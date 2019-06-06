@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="dao.BankMapper">
+	<!-- 添加银行卡 -->
+	<insert id="headbank" parameterType="entity.TBankcardtable">
+	INSERT INTO t_bankcardtable (userid,realName,Documenttype,idCardNo,BindingbankImage,cardNo,ReservePhone,Transactionpassword)
+	VALUES (#{userid},#{realName},#{documenttype},#{idCardNo},#{bindingbankImage},#{cardNo},#{reservePhone},#{Transactionpassword})
+	</insert>
+	<!-- 修改用户银行卡信息 -->
+	<update id="updabank" parameterType="entity.TUserData">
+	UPDATE t_user_data SET backnumber=#{backnumber} where userid=#{userid}
+	</update>
+	<!-- 查询银行卡信息 -->
+	<select id="tbank" parameterType="entity.TUserData" resultType="entity.TBankcardtable">
+	SELECT * FROM t_bankcardtable WHERE userid=#{userid}
+	</select>
+	</mapper>

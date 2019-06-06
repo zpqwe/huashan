@@ -1,0 +1,42 @@
+#menu_autoTender{position:relative}
+#menu_myWePlan{position:relative}
+.account-left .emClass,.account-left.emClass{width:18px;height:18px;display:block;left:16px;top:50%;margin-top:-10px;position:absolute;background:url(//js3.tuandai.com/images/investlist/invest_detail/we-financing.png) -191px -23px}
+.account-left .tip-box{position:absolute;left:110px;top:-4px;width:357px;height:126px;cursor:default}
+.account-left .tip{width:357px;position:relative;background:#fef8e0;padding:15px;padding-bottom:0;font-size:14px;line-height:22px;border:1px solid #e4e4e4;z-index:1}
+.account-left .tip p{text-align:right}
+.account-left .tip p a{margin-left:10px;color:#C60}
+.account-left .tip p a:hover{color:#EA7E00}
+.account-left .tip .arrow{width:9px;height:14px;display:block;position:absolute;background:url(//js3.tuandai.com/images/member/icon.png?v=20150808001) 0 -605px;left:-9px}
+.account-left .tip .close{width:9px;height:9px;display:block;position:absolute;background:url(//js3.tuandai.com/images/member/icon.png?v=20150808001) 0 -621px;right:8px;top:8px;cursor:pointer}
+.left-new{position:absolute;width:20px;height:14px;background:url(//js3.tuandai.com/images/member/left-new.gif) 0 0 no-repeat;right:24px;top:4px}
+.ny .tip-box{position:absolute;left:110px;top:-4px;width:357px;height:126px;cursor:default}
+.ny .tip{width:446px;position:relative;background:#fef8e0;padding:10px;font-size:14px;line-height:22px;border:1px solid #e4e4e4;z-index:1}
+.ny .tip p{text-align:right}
+.ny .tip .arrow{width:9px;height:14px;display:block;position:absolute;background:url(//js3.tuandai.com/images/member/icon.png?v=20150808001) 0 -605px;left:-9px}
+.ny .tip .close{width:9px;height:9px;display:block;position:absolute;background:url(//js3.tuandai.com/images/member/icon.png?v=20150808001) 0 -621px;right:8px;top:8px;cursor:pointer}
+
+
+.nav_top{border-bottom:1px solid #e5e5e5;height:46px;margin:0 auto;overflow:hidden;padding:0;position:relative;width:800px}
+.nav_title{float:left;height:44px;line-height:44px}
+.nav_title li{float:left;margin:0;font-size:16px;width:90px}
+.nav_title li:hover{border-bottom:2px solid #ff8c00}
+.nav_title li:hover a{color:#ff8c00}
+.tab_title_a a:active,.tab_title_a a:hover,.tab_title_a a:link,.tab_title_a a:visited{font-size:16px;text-decoration:none;color:#ff8c00}
+.tab_title_b a:active,.tab_title_b a:hover,.tab_title_b a:link,.tab_title_b a:visited{color:#000;text-decoration:none;font-size:16px}
+.tab_title_a{height:44px;line-height:44px;border-bottom:#ff8c00 solid 2px;text-align:center;cursor:pointer}
+.tab_title_b{height:44px;line-height:44px;border-bottom:#fff solid 2px;text-align:center;cursor:pointer}
+.tab2_title_a a:active,.tab2_title_a a:hover,.tab2_title_a a:link,.tab2_title_a a:visited{font-size:16px;text-decoration:none;color:#000}
+.tab2_title_b a:active,.tab2_title_b a:hover,.tab2_title_b a:link,.tab2_title_b a:visited{color:#000;text-decoration:none;font-size:16px}
+.tab2_title_a{width:100px;height:44px;line-height:44px;border-bottom:#ffa200 solid 4px;text-align:center;cursor:pointer}
+.tab2_title_b{width:100px;height:44px;line-height:44px;border-bottom:#fff solid 4px;text-align:center;cursor:pointer}
+
+
+.ann{color:#393;font-size:14px;padding-left:47px;background:#fff url(//js3.tuandai.com/images/member/audio.gif) left no-repeat;top:-25px}
+a.button-yellow-3:hover{color:#fff}
+.modify_describe{width:576px;position:relative;margin:30px auto 0}
+.modify_qq{width:143px;height:50px;padding-left:57px;line-height:50px;font-size:22px;color:#333;cursor:pointer;background:url(//js3.tuandai.com/images/member/my_capital/modify_card_qq.png?v=20170309001) 0 0 no-repeat;margin:0 auto}
+.modify_qq{float:left;margin-left:85px}
+.modify_code{float:left;margin-left:85px;position:relative;background:url(//js3.tuandai.com/images/member/my_capital/code20170426002.png) no-repeat;width:143px;height:50px;padding-left:57px;line-height:50px;font-size:22px;color:#333;cursor:pointer}
+.tcwz{clear:both;padding-left:105px}
+.tcwz span{padding-left:125px}
+.codeda{width:158px;height:165px;background:url(//js3.tuandai.com/images/member/my_capital/codeda.png) no-repeat;position:absolute;top:-164px;left:20px;display:none;z-index:100}

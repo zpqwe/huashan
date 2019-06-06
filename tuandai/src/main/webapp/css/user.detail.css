@@ -1,0 +1,199 @@
+.user-center{margin: 18px auto 0; width: 1000px; }
+.step{height: 42px; width: 727px; margin-bottom: 40px; background: url("../images/step.png") no-repeat;}
+.step-1{background-position:0 0; }
+.step-2{background-position:0 -42px; }
+.step-3{background-position: 0 -84px;}
+.step span{width: 230px; height: 42px;  color: #666; overflow: hidden; display: inline-block; float: left; text-align: center; line-height: 42px!important;}
+.select-question{height: 30px; min-width: 250px;}
+.edit-success{line-height: 62px!important; width:172px!important; }
+/*左侧导航*/
+.user-left{width: 218px;float: left; background: #fff; overflow: hidden;}
+.user-left dl dt{height: 42px; line-height: 40px; padding-left: 40px;  overflow: hidden;  position: relative;  font-size: 16px; color: #333; background: #ffffff; border: 1px solid #e6e6e6 }
+.user-left dl dd{height: 38px; line-height: 34px; border: 1px solid #e6e6e6; border-top:none; position: relative; overflow: hidden; }
+.user-left dl dt i{width: 28px; height:25px; left: 15px; top: 9px;  display:block; position: absolute; background: url("../images/baktag.png") no-repeat; }
+.user-left dl dt .icon-1{background-position:0 0; }
+.user-left dl dt .icon-2{background-position:-2px -42px;}
+.user-left dl dt .icon-3{background-position:-2px -84px;}
+.user-left dl dt .icon-4{background-position:-2px -127px;}
+.user-left dl dt .icon-5{background-position:-2px -169px;}
+.user-left dl dd a{height: 38px; width: 218px; line-height: 34px; display: block;  padding-left: 40px;  font-size: 14px; text-decoration: none; text-align: left;}
+.user-left dl dd a:hover{background: #f5f5f5;}
+.user-left dl dd .selected{background: #ffc600!important; color: #fff!important; font-weight: bold!important;}
+/*END左侧导航*/
+
+/*右侧*/
+.user-right{width: 766px; border: 1px solid #e6e6e6; float: right; background: #fff;}
+.user-right .tag{height: 38px; background: #f5f5f5; position: relative; border-bottom: 1px solid #e6e6e6;}
+.user-right .tag ul{height: 39px; bottom:-1px ; left: -1px; position: absolute;}
+.user-right .tag ul li{height: 39px; float: left}
+.user-right .tag ul li a{height: 39px; line-height: 38px; text-align: center;  text-decoration: none; float: left; padding: 0 18px;}
+.user-right .tag ul li a:hover{color: #ff9600;}
+.user-right .tag .selected{height:39px; display:inline-block; border-left: 1px solid #e6e6e6; padding: 0 30px 0 26px; font-size:15px; text-decoration:none; line-height:38px; float:left; background:url("../images/tabBack.jpg") right no-repeat;  }
+.user-right .user-right-center{background:#fff;}
+.user-right .right-details{width: 730px; margin:15px auto 0;}
+
+
+.items-type-1{ background: #fff;}
+.items-type-1 ul{}
+.items-type-1 ul li{height: 74px; border-bottom: 1px solid #e6e6e6; overflow: hidden; background: #fff;}
+.items-type-1 ul .li-height-auto{  height: auto;}
+.items-type-1 li span{float: left; display: inline-block; line-height: 74px; position: relative; font-size: 14px;}
+.items-type-1 li span i{width:20px; height: 20px; left: 11px; top: 27px; display: block;   background: url("../images/icon_01.png") no-repeat; }
+
+/*验证图标*/
+.right-details .items-type-1 .right-icons{width:20px; height: 20px; display: block; position: absolute; }
+.right-details .items-type-1 .icon-green{background-position:  0 -20px; position: absolute;}
+.right-details .items-type-1 .icon-orange{background-position: 0 0; position: absolute;}
+.right-details .items-type-1 .enter-password-icon{width: 52px; height: 19px; display: inline-block; background: url("../images/icon_01.png") no-repeat; position: absolute; left: 153px; top:28px; cursor: pointer;}
+.right-details .items-type-1 .enter-password-y{background-position: 0 -130px;}
+.right-details .items-type-1 .enter-password-n{background-position: 0 -149px;}
+
+.items-type-1 .item-1{color: #333; font-size: 16px; padding-left: 42px;  width: 170px}
+.items-type-1 .item-2{color: #ff0000; font-size: 14px; margin-right: 6px;}
+.items-type-1 .item-3{line-height: 77px; font-size: 12px; }
+.items-type-1 .item-4{padding-top: 20px; float: right; margin-right: 10px;}
+
+
+.verification-box{padding-top: 30px; background: #fff; }
+.verification-box .item{ height: 43px;  overflow: hidden; padding-bottom: 20px; line-height: 43px; font-size: 14px;}
+.verification-box .item .red-star{color: #ff0000;}
+.verification-box .item .verification-1{float: left;width:119px; display:inline-block; padding-right: 5px; text-align: right; line-height: 33px; height: 33px; }
+.verification-box .item .verification-2{float: left; display:inline-block; text-align: left;  line-height: 33px; }
+.verification-box .item .verification-3{float: left; display:inline-block; text-align: left;  line-height: 33px; margin-left: 15px; padding-top: 1px; }
+.verification-box .item .verification-4{float: left; color:#666666; padding-left: 16px;   display:inline-block; text-align: left;  line-height: 33px; margin-left: 15px; padding-top: 1px; }
+.verification-box .item .submit{height: 40px; display: block; float: left; background: #fcc300; line-height: 40px; border: 1px  solid #f7b614; padding: 0 22px; color: #fff; text-decoration: none!important;}
+.verification-box .verification-form{padding-left: 50px;}
+
+/*手机验证成功*/
+.verification-box .phone-verification-success{width: 280px; margin: 50px auto; padding-left: 80px; font-size: 22px; position: relative;}
+.verification-box .phone-verification-success i.success{width: 63px; height: 63px; display: block; position: absolute; left: 0; background: url("../images/icon_01.png") 0 -67px no-repeat;}
+/*修改手机*/
+.verification-box .edit-phone-box{width: 726px; margin-left: 10px;  margin-bottom: 36px;  }
+.verification-box .edit-phone{float: left; cursor: pointer; width: 164px; display:inline-block; margin-right: 40px; height: 120px; padding:26px 20px 0; border-radius: 5px; border: 1px solid #e6e6e6;}
+.verification-box .edit-phone:hover{background: #eaeaea; border: 1px solid #999999;}
+.verification-box .edit-phone .title{text-align: center; font-size: 16px; padding-bottom: 18px;}
+.verification-box .edit-phone .description{  padding-bottom: 22px; font-size: 12px; color: #999999; line-height: 24px; text-align: left;}
+
+/*手机设置邮箱*/
+.verification-email-tip{color: #666; font-size: 14px; line-height: 18px;padding-left: 108px;}
+.verification-email-tip .send{font-size: 16px; color: #333; line-height: 16px;margin-bottom: 10px; }
+.verification-email-tip .address a{font-size: 24px; color: #ff6600; line-height: 24px;    text-decoration: none; font-family: arial;}
+.verification-email-tip .click-email{font-size: 14px;  color: #666; margin: 10px 0 20px;}
+
+/*原邮箱设置新邮箱*/
+.verification-box .verification-form .send-old-address{ font-size: 14px;  color: #666; text-align: center; }
+.verification-box .verification-form .send-btn{text-align: center;padding-left: 255px;}
+.verification-box .verification-form .send-btn a{margin: 0 auto; }
+.verification-box .verification-form .send-btn .gra{background: #d2d2d2;  border: 1px solid #b9b9b9;}
+
+
+/*问题设置成功提示*/
+.verification-box .question-verification-success{width: 395px;margin: 50px auto; padding-left: 80px; font-size: 22px; position: relative;}
+.verification-box .question-verification-success .success-tip{color: #333; font-size: 22px; margin-bottom: 15px;}
+.verification-box .question-verification-success i.success{width: 63px; height: 63px; display: block; position: absolute; left: 0; top: 10px; background: url("../images/icon_01.png") 0 -67px no-repeat;}
+.verification-box .edit-password-box{width: 494px; margin: 0 auto 36px;}
+
+
+/*重置交易密码成功*/
+.verification-box .password-verification-success{width: 268px; height: 64px; margin: 50px auto; padding-left: 80px; line-height: 60px; font-size: 22px; position: relative;}
+.verification-box .password-verification-success i.success{width: 63px; height: 63px; display: block; position: absolute; left: 0; top: 0px; background: url("../images/icon_01.png") 0 -67px no-repeat;}
+
+
+/*充值*/
+.recharge{margin-top: 50px;}
+.recharge .recharge-item{ color: #333; font-size: 14px; margin-bottom:20px; overflow: hidden;}
+.recharge .rech-item-1{  width:134px;height: 48px; text-align:right; float: left; display: inline-block; font-size: 14px; line-height: 44px; padding-right: 10px;}
+.recharge .rech-item-2{  width: 653px; float: left; display: inline-block; *padding-bottom: 20px;   }
+.recharge .bank-num{ color: #000;  padding-top: 10px;}
+.recharge .bank-num p{font-size: 20px; float: left; margin-right: 15px;}
+.recharge .bank-num span{color: #999; font-size:12px;  float: left; display: inline-block; padding-top: 7px;  margin-right: 10px;}
+.recharge .bank-num a{color: #0064cb; font-size: 12px;  float: left; display: inline-block;  padding-top: 7px;}
+.recharge .rech-item-2 .more{ height: 50px;  cursor: pointer;  line-height: 50px; color: #666; float:left; display: block; position: relative;}
+.recharge .rech-item-2 i{width: 7px; height: 5px; display: block; position: absolute; background: url("../images/icon_01.png") no-repeat;  left: 31px; top: 23px; }
+.recharge .rech-item-2 .arrow-1{ background-position: 0 -168px;}
+.recharge .rech-item-2 .arrow-2{background-position: 0 -173px;}
+.recharge .all-bank{height: 170px; *height: 152px; overflow: hidden; background: #fff; position: relative;}
+.recharge .all-bank-height-auto{height: auto;}
+.recharge .all-bank-ie7height{height: 170px; *height: 152px;}
+.recharge .rech-item-text{  color: #999; height: 12px!important; line-height: 12px!important;  padding-left: 142px; margin-bottom: 10px; display: block ; float: left;}
+.recharge .rech-item-3{    float: left; display: inline-block; line-height: 41px; margin-bottom: 20px; padding-left: 10px;}
+ .recharge .recharge-type .recharge-type-pic{width: 120px; height: 50px; float:left; display: block; margin-right: 10px; margin-bottom: 20px; position: relative;}
+.recharge .recharge-type .recharge-type-pic img{width: 120px; height: 50px; position: absolute;  z-index: 99;}
+.recharge .recharge-type-pic .recharge-type-select{width: 120px; height: 50px; display: block; z-index: 100; position: absolute;  background: url("../images/icon_01.png") 0 -179px no-repeat; top: 0; left: 0;}
+.recharge .recharge-bank .recharge-bank-pic{width: 125px; height: 40px; position: relative; z-index: 100; float:left; display: block; margin-right: 20px; margin-bottom: 20px; }
+.recharge .recharge-bank .recharge-bank-pic img{width: 123px; height: 36px; position: absolute; z-index: 99;  }
+.recharge .recharge-bank-pic .recharge-bank-select{width: 125px; height: 40px;  display: block; position: absolute; z-index: 100; background: url("../images/icon_01.png") 0 -229px no-repeat; top: 0; left: 0;}
+.recharge  .show-bank{  width:720px;text-align: center; color: #999;  display: inline-block; cursor: pointer;  height: 30px; line-height: 30px; position: relative;}
+.recharge  .show-bank:hover{ color: #333;}
+.recharge  .show-bank i{width: 7px; height: 5px; display: block; position: absolute; background: url("../images/icon_01.png") no-repeat;  left: 390px; top: 13px;}
+.recharge  .show-bank .arrow-1{ background-position: 0 -168px;}
+.recharge  .show-bank .arrow-2{background-position: 0 -173px; left: 377px;}
+.recharge .recharge-bank .tip{margin-top: 16px; line-height: 12px; color: #ff0000;}
+.right-details .line{width: 100%; border-bottom: 1px solid #e6e6e6; font-size: 1px; height: 1px ; line-height: 1px; margin: 20px 0 30px;}
+.recharge  .recharge-btn{height: 46px;padding: 0 24px; display: block; line-height: 46px; font-size: 22px; color: #fff; text-decoration: none;  background: #ffa019;border-radius: 3px;  -webkit-border-radius: 3px;-moz-border-radius: 3px;}
+.recharge .recharge-tagging{display: inline-block; width: 720px; line-height: 24px; color: #666; margin-top: 30px;}
+.bank_notice{ width:710px; height:60px; line-height:24px; padding:0px 10px 6px; border-bottom:#E5E5E5 solid 1px; margin:5px auto 10px; font-size:12px;}
+.bank_notice span{ color:#f00;}
+
+
+
+
+
+.message{background: #5b5b5b; position: relative; width: 34px; height: 24px; top: 2px;   background: url("../images/message-icon.png") no-repeat;}
+.message .num{width: 15px; height: 13px; text-align: center; line-height: 13px; font-size: 9px; color: #fff; right: 0px; position: absolute;}
+.top_bar .member-list{position: absolute; top: 30px; right: -9px; z-index: 100000;}
+.top_bar .member-list ul{display: none;}
+.top_bar .member-list li{height: 34px; background: #5b5b5b; padding-left: 20px; padding-right: 16px; }
+.top_bar .member-list li:hover{background: #515151;}
+.top_bar .login{position: relative;}
+.top_bar .login .member-arrow{width: 9px; height: 5px; display: block; position: absolute; right: 6px; top: 13px; background: url("../images/top-arrow2.png") 0 -5px;}
+.top_bar .login .member-arrow-hover{ background-position: 0 0px;}
+.top_bar .tuandai_id{padding-right: 28px;}
+
+
+
+.bank_limit_box{ width:680px; margin:20px auto; background: #fff; padding: 30px; border: 1px solid #E6E6E6; position: absolute; top: 10%; left: 50%; margin-left: -340px; z-index:1000002;}
+.bank_limit_box .close{width: 36px; height: 35px; display: block; background: url("../images/fancybox_sprite.png"); position:absolute;  float: right; right: -15px; top: -15px; cursor: pointer;}
+.bank_limit_box p{ font-size:14px; line-height:24px !important; padding-bottom:15px;}
+.bank_recharge_limit{ font-size:12px; border:#ccc solid 1px; border-collapse:collapse; color:#333; text-align:center;}
+.bank_recharge_limit th{ font-weight:normal; height:40px; background:#d7d7d7; border:#ccc solid 1px;}
+.bank_recharge_limit td{ height:40px; background:#fff; border:#ccc solid 1px;}
+.limit_01{ width:120px;}
+.limit_02,.limit_03,.limit_04{ width:100px;}
+.bank_recharge_limit td.limit_05{ padding-left:5px; text-align:left;}
+.layer{ position: fixed; background: #000; opacity: 0.3; filter:alpha(opacity:30); width: 100%; height: 100%; top: 0; left: 0;  }
+
+/*微信充值*/
+.weixin_recharge_title{width:120px; height:42px; margin:20px auto 25px; background: url(../images/weixin_img4.png) 0 0 no-repeat; padding-left:54px; color:#333; font-size:30px; line-height:40psx;}
+.weixin_rechargebox{ width:1000px; height:auto; margin:0px auto 60px; background:#FFF; padding-top:54px;}
+.weixin_eweibox{ width:246px; height:264px; margin:0px 376px 0px 378px; position:relative;}
+.weixin_ewei{ position:absolute; left:0px; top:9px; width:246px; height:246px; display:block;}
+.weixin_case{filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity: 0;opacity: 0;visibility: hidden;width: 246px;height: 264px;position: absolute;left: 67px;top: 0px;background: url(../images/weixin_img1.png) 0 0 no-repeat;-webkit-transition:left .5s linear,visibility .5s linear,opacity .5s linear;transition:left .5s linear,visibility .5s linear,opacity .5s linear;}
+.weixin_eweibox.z-touch .weixin_case,.c-wechat-qr-hover .weixin_case,.weixin_eweibox:hover .weixin_case{visibility:visible;opacity:1;left:290px}
+.weixin_notice{ width:182px; height:70px;background: url(../images/weixin_img3.jpg) 0 0 no-repeat; margin:25px auto 0px; padding:17px 0px 0px 82px; font-size:17px; color:#f26a00; line-height:24px;}
+.weixin_sum{ width:402px; height:54px; line-height:54px; font-size:48px; color:#f26a00; margin:0px auto; padding:36px 0px; text-align:center;}
+.weixin_prompt{ width:600px; height:60px; text-align:center; line-height:30px; color:#4b4b4b; margin:0px auto; padding:30px 0px 80px; border-top:#ececec solid 1px; font-size:15px;}
+.weixin_prompt span{ color:#9a9a9a;}
+.weixin_limitbtn{ color:#ff9961;}
+/*微信充值弹窗*/
+.hidden{ display: none;}
+.mask{ height: 100%; width: 100%; background:url(../images/mask.png) repeat; background: rgba(0,0,0,.5); position: fixed; top: 0; left: 0; z-index: 1000001;}
+.recharge_popup{ position:fixed; top:50%; left: 50%; z-index:1100000; background:#fff; width:420px; height:260px; margin-left: -210px; margin-top:-130px;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+.recharge_popup01{width:420px; height:340px; margin-left: -210px; margin-top:-170px;}
+.recharge_popup02{width:420px; height:260px; margin-left: -210px; margin-top:-130px;}
+.popupTitle{ width:406px; height:40px; padding-left:14px; background:#f7f7f7; position:relative; font-size:15px; color:#666; line-height:38px;border-radius:3px 3px 0px 0px; -moz-border-radius:3px 3px 0px 0px; -webkit-border-radius:3px 3px 0px 0px;}
+.close_tcbtn{ width:14px; height:14px; display: block;  position:absolute; top:12px; right:12px;width:  -webkit-transition: all .3s linear;transition: all .3s linear;transform:rotate(0deg);}
+.close_tcbtn:hover{transform:rotate(180deg);}
+.popup_limitbox{ width:340px; height:auto; margin:40px auto;}
+.weixin_recharge_limit{ font-size:14px; border:#e9e9e9 solid 1px; border-collapse:collapse; color:#5f5f5f; text-align:center;}
+.weixin_recharge_limit td{ height:30px; background:#fff; border:#e9e9e9 solid 1px;}
+.popupNotice{ width:280px; height:90px; background:url(../images/tc_icon02.png) 0 0 no-repeat; padding-left:40px; color:#aaa; font-size:12px; line-height:20px; margin:34px 56px 14px 43px;}
+.popupNotice p{ font-size:20px; color:#666; line-height:32px; padding-bottom:8px;}
+.popupBtn{width:264px; height:38px; margin:0px auto;}
+.popupBtn dd{ float:left; padding:0px 6px; width:120px; height:38px;}
+.recharge_tcbtn{width:120px; height:38px; display:block; line-height:36px; text-align:center; font-size:16px; color:#FFF; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px;}
+.recharge_tcbtn:hover{ color:#FFF; text-decoration:none;}
+.recharge_tcbtn01{background:#ffbc1b;}
+.recharge_tcbtn01:hover{background:#ffa019;}
+.recharge_tcbtn02{background:#c2c2c2;}
+.recharge_tcbtn02:hover{background:#aaa;}

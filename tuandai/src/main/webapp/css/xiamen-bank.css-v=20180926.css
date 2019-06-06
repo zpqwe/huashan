@@ -1,0 +1,281 @@
+﻿/* CSS Document */
+@charset "utf-8";
+
+/*厦门银行托管*/
+.xiamen-wrap{width: 1200px; margin: 10px auto 0; height: auto}
+.xiamen-wrap .xm-top{height: 135px; padding-top: 45px; text-align: center; background: url("../../../images/member/Bank/xm_bank/topbg.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/topbg.png*//*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/topbg.png*/) no-repeat;}
+.xiamen-wrap .xm-top h3{width: 478px; height: 66px; margin: 0 auto; background: url("../../../images/member/Bank/xm_bank/logo-01.png-v=20180115.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/logo-01.png?v=20180115*/) no-repeat;}
+.xiamen-wrap .xm-top p{line-height: 42px; color: #fff; font-size: 16px}
+.xiamen-wrap .xm-content{height: auto;/* overflow: hidden; */padding: 44px 0 68px; background: #fff;}
+.xiamen-wrap .xm-content .tips{width: 964px; height: 46px; margin: 0 auto; line-height: 46px; color: #888; text-align: center; background: #fffae0; }
+.xm-content .personal-form{padding: 38px 0 26px; border-bottom: 1px solid #f3f3f3;}
+.xm-content .bankcard-form{padding-top: 46px;}
+.xm-content .inner{width: 534px; margin: 0 auto; height: auto}
+.xm-content .input-group{clear: both; height: auto; }
+.xm-content .input-group label{width: 144px; height: 44px; line-height: 44px; text-align: right; color: #888; margin-right: 6px; display: inline-block; float: left;}
+.xm-content .input-group .text{height: 44px; line-height: 44px; color: #333}
+.xm-content .input-group .text-input{width: 294px; height: 18px; line-height: 18px;  padding: 12px 60px 12px 10px; border: 1px solid #d5d5d5; font-size: 14px; color: #2b2b2b;}
+.xm-content .input-group .no-input{width: 346px; height: 20px; line-height: 20px;  padding: 12px 10px;  font-size: 14px; color: #2b2b2b; border: 0}
+.xm-content .input-group .no-input:disabled{background: none}
+.xm-content .input-group .no-input[disabled]{background: none}
+.xm-content .input-group .error-mes{height: 20px; line-height: 18px; padding-left: 148px; color: #f00; clear: both; overflow: hidden;}
+.xm-content .bankcard-form .input-group .text-input{border: 1px solid #e3e3e3;}
+.xm-content .input-group .red-border-input,.xm-content .bankcard-form .input-group .red-border-input{border: 1px solid #f00}
+
+
+.xm-content .selectbox{position:relative;float:left;display:inline-block;width:366px;height:42px;color:#333;}
+.xm-content .selectbox .tit{padding-left:10px;height:42px;border:1px solid #e3e3e3;background:#fff;color:#333;line-height:42px;}
+.xm-content .selectbox .bg-f5{background:#f5f5f5;}
+.xm-content .selectbox .bg-f5 .txt{color:#999;}
+.xm-content .selectbox .icons,.xm-content .input-group .icons{display:inline-block;width:24px;height:24px;background:url("../../../images/member/Bank/banklogo/banklogo-mini.png"/*tpa=https://js3.tuandai.com/images/member/Bank/banklogo/banklogo-mini.png*//*tpa=https://js3.tuandai.com/images/member/Bank/banklogo/banklogo-mini.png*/) no-repeat;vertical-align:-6px;}
+.xm-content .selectbox .arrow{position:absolute;top:1pc;right:14px;display:block;width:1pc;height:10px;background:url("../../../images/member/Bank/xm_bank/arrow.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/arrow.png*//*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/arrow.png*/) no-repeat;}
+.xm-content .input-group .zsyh-ico{background-position:0 0;}
+.xm-content .input-group .zgyh-ico{background-position:0 -24px;}
+.xm-content .input-group .zggsyh-ico{background-position:0 -48px;}
+.xm-content .input-group .zgjsyh-ico{background-position:0 -72px;}
+.xm-content .input-group .zgnyyh-ico{background-position:0 -96px;}
+.xm-content .input-group .jtyh-ico{background-position:0 -120px;}
+.xm-content .input-group .pfyh-ico{background-position:0 -144px;}
+.xm-content .input-group .msyh-ico{background-position:0 -168px;}
+.xm-content .input-group .xyyh-ico{background-position:0 -192px;}
+.xm-content .input-group .gdyh-ico{background-position:0 -216px;}
+.xm-content .input-group .fzyh-ico{background-position:0 -240px;}
+.xm-content .input-group .bjyh-ico{background-position:0 -264px;}
+.xm-content .input-group .zxyh-ico{background-position:0 -288px;}
+.xm-content .input-group .gfyh-ico{background-position:0 -312px;}
+.xm-content .input-group .payh-ico{background-position:0 -336px;}
+.xm-content .input-group .yzyh-ico{background-position:0 -360px;}
+.xm-content .input-group .hxyh-ico{background-position:0 -384px;}
+.xm-content .selectbox ul{position:absolute;top:43px;display:none;overflow-y:scroll;width:364px;height:212px;border:1px solid #e3e3e3;background:#fff;}
+.xm-content .selectbox ul li{padding-left:10px;height:42px;line-height:42px;cursor:pointer;}
+.xm-content .hover,.selectbox ul li:hover{background:#f7f7f7;}
+.xm-content .selectbox .em{margin-left: 15px; padding-left: 15px; border-left:1px solid #e9e9e9; font-size: 12px; *height: 16px; line-height: 16px;}
+.xm-content .bankcard-form .infos{padding-left: 148px; line-height: 35px;}
+.xm-content .bankcard-form .infos a{color: #c5c5c5;}
+.xm-content .bankcard-form .infos a:hover{text-decoration: underline;}
+.xm-content .bankcard-form .bind-btn{padding-left: 148px; margin-top: 30px;}
+.xm-content .bankcard-form .bind-btn a{width: 366px; height: 52px; line-height: 52px; cursor: pointer; display: block; text-align: center; font-size: 20px; color: #fff; border-radius: 4px; -webkit-border-radius: 4px; background: #ffbc1b; -webkit-transition:all .3s linear; transition:all .3s linear;}
+.xm-content .bankcard-form .bind-btn a:hover{background: #ffa019; cursor: pointer;}
+
+/*开户行地区*/
+.xm-content .text-box{width: 178px; border-radius:5px;  }
+.xm-content .select-wrapper{position:relative; cursor:pointer; display:inline-block; *display:inline; *float:left; *margin-right:10px; background:#fff; border:1px solid #e3e3e3; }
+.xm-content .select-button{width: 138px; height:34px; font-size: 14px; border:0; border-radius:2px; outline: none; color: #333; background:url("../../../images/member/Bank/xm_bank/arrow.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/arrow.png*//*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/arrow.png*/) no-repeat #fff; cursor:pointer; background-position: 147px 15px; padding:0 26px 0 10px; overflow:hidden; text-align:left; outline:none; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.xm-content .select1 .select-button{background-position: 257px -207px;}
+.xm-content .select-button:focus{outline: none;}
+.xm-content .select-down{position:absolute; top:0; right:0;  overflow:hidden; }  
+.xm-content .select-list{width: 140px; background:#fff; border-radius:2px; display:none; z-index:2; position:absolute; left:-1px;top:34px; overflow:hidden;}
+.xm-content .select-list ul{margin:0;padding:0; height: 165px; overflow-y: auto; overflow-x:hidden; border: 1px solid #e3e3e3; color: #666}
+.xm-content .select-list ul li{text-indent: 12px; height: 34px; line-height: 34px; font-size: 14px; cursor:pointer; overflow:hidden; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.xm-content .select-list ul li.selected,
+.xm-content .select-list ul li:hover{background: #ffa019; color: #fff;}
+
+/*20161226证件选择*/
+.label-select{position: relative; float: left; width: 127px; height: 42px; line-height: 42px; padding: 0 15px 0 0px; margin-right: 6px; color: #888; cursor: pointer; z-index: 1; text-align: right; border: 1px solid #fff;}
+.label-select1{width: 142px; padding: 0 0 0 0px; cursor:default}
+.label-select.border-e{border: 1px solid #eee; border-bottom: 0;}
+.label-select .arrow{background:url("../../../images/member/Bank/xm_bank/arrow1.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/arrow1.png*//*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/arrow1.png*/) 3px 19px no-repeat; right: -1px!important; width: 16px; height: 42px; position: absolute; right: 0; top: 0; cursor: pointer;
+}
+.label-select ul{position: absolute; background: #fff; top: 42px; left: -1px; width: 142px; max-height: 150px;overflow: auto; border: 1px solid #eee; border-top: 0}
+.label-select ul li{height: 30px; background: #fff; line-height: 30px;  padding-right: 15px;  font-size: 14px; cursor: pointer; }
+.label-select ul li:hover{background: #ff9900; color: #fff; }
+
+.supply-bank{position: absolute; color: #ffad2c; cursor: pointer; right: 28px; top: 14px; font-size: 12px;}
+.supply-bank:hover{text-decoration: underline;}
+
+/*弹窗 打开新页面完成绑卡*/
+.xm-window{width: 531px;}
+.bankBindAlert .body{width: auto; padding: 50px 38px 0px;}
+.bankBindAlert .body .p1{margin-bottom: 18px; font-size: 26px; color: #555;}
+.bankBindAlert .body .p2{font-size: 16px; color: #b5b5b5;}
+.bankBindAlert .bottom{height: auto; margin-top: 50px; text-align: center; padding-bottom: 40px;}
+.xm-window .bottom .btn{ height: 38px; margin: 0 auto; line-height: 38px; display: block; -webkit-border-radius: 3px; border-radius: 3px; cursor: pointer; color: #fff; text-align: center; font-size: 16px; background: #ffbc1b; -webkit-transition:all .3s linear; transition:all .3s linear;}
+.xm-window .bottom .btn:hover{background: #ffa019}
+.bankBindAlert .bottom .btn{width: 243px;}
+.bankBindAlert .bottom .question{color: #b5b5b5; font-size: 16px;  line-height: 34px; margin-top: 8px;}
+.bankBindAlert .bottom .question:hover{text-decoration: underline;}
+
+.xm-window.hongkong {width: 610px; margin-top:-209px; margin-left:-305px}
+.xm-window.hongkong .body{width: auto; padding: 40px 50px;}
+.xm-window.hongkong .body p{text-align: left;}
+.xm-window.hongkong .body p{padding-bottom: 26px; color: #333; line-height: 26px;}
+.xm-window.hongkong .body p b{font-size: 16px; }
+.xm-window.hongkong .body p span{font-weight: 700; color: #f00}
+.xm-window.hongkong .btn{width: 235px;}
+
+/*弹窗 忘记银行手机号*/
+.forgetPhone {margin-top: -176px; margin-left: -265px;}
+.forgetPhone .body{width: auto; padding: 35px 90px 0px; text-align: left;}
+.forgetPhone .body .p1{color: #666; padding-top: 20px; line-height: 24px; width:auto; height:auto;}
+.forgetPhone .col{float: left; color: #666;}
+.forgetPhone .col1{width: 198px; height: 96px; border-right: 1px solid #ddd}
+.forgetPhone .col2{padding-left: 38px; }
+.forgetPhone .col .t{font-size: 18px; color: #b5b5b5; margin-bottom: 10px;}
+.forgetPhone .bottom{clear: both; padding-top: 42px; padding-bottom: 43px;}
+.forgetPhone .bottom .btn{width: 184px;}
+
+/*弹窗 开通免密功能*/
+.password{width: 487px; margin-left: -243px;}
+.password .body{height: auto; padding: 35px 68px 0px;  text-align: left;}
+.password .body p{color: #555; line-height: 22px;}
+.password .body .p2 {margin-top: 12px;}
+.password .body .p2 em{width: 16px; height: 16px; margin-right: 5px; vertical-align: -3px; *vertical-align: 1px; display: inline-block; background: url("../../../images/member/Bank/xm_bank/ok-icon.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/ok-icon.png*//*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/ok-icon.png*/) no-repeat 0 -52px;}
+.password .body .p2 span{color: #b5b5b5;}
+.password .bottom{clear: both; padding-top: 30px; padding-bottom: 43px;}
+.password .bottom .btn{width: 243px;}
+
+/*支持银行*/
+.banksec{width: 400px; margin-top: -259px; margin-left: -200px; }
+.banksec .body{width: 400px;}
+.banksec .bankList{ width: 370px; height: 360px; overflow-y: scroll; margin: 0 auto; font-size: 14px; color: #666;}
+.banksec .bankList ul{width: 350px; border:1px solid #eee; margin: 0 auto;}
+.banksec .bankList li{width: 350px; height: 45px; line-height: 45px; border-bottom: 1px solid #eee; text-align: left;}
+.banksec .bankLogo{ width: 120px; float: left; padding-left: 15px; border-right: 1px dashed #eee; height: 30px; line-height: 30px; margin-top: 8px; margin-right: 15px; color: #333;}
+.banksec .bankLogo img{ width: 32px; height: 32px; vertical-align: middle; margin-right: 3px;}
+.banksec .bankList .red{color: #f65555;}
+.banksec .bottom{clear: both; padding-top: 0px; padding-bottom: 20px;}
+.banksec .bottom .btn{width: 162px;}
+
+/*前往厦门银行*/
+.go-xm-content{height: auto; overflow: hidden; padding: 150px 0 168px; background: #fff;}
+.go-xm-content h3{color: #666; font-size: 26px; text-align: center;}
+.go-xm-content h3 span{color: #ff9204}
+.go-xm-content .loading{width: 436px; height: 56px; margin: 40px auto 0; text-align: center; background:url("../../../images/member/Bank/xm_bank/logo-02.png-v=20170622001.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/logo-02.png?v=20170622001*/) no-repeat;}
+.go-xm-content .loading p{display: inline-block; margin: 21px auto 0; margin-left: -22px; *display: inline; *zoom:1;}
+.go-xm-content .loading .loading-icon{width: 12px; height: 18px;  display: block; float: left; background:url("../../../images/member/Bank/xm_bank/loading-icon.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/loading-icon.png*//*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/loading-icon.png*/) no-repeat;}
+.go-xm-content .loading .loading-icon{
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	opacity: 0;
+}
+.go-xm-content .loading .load1{
+	-webkit-animation-name: loader1;
+	animation-name: loader1;
+}
+.go-xm-content .loading .load2{
+	-webkit-animation-name: loader2;
+	animation-name: loader2;
+	-webkit-animation-delay:.5s;
+    animation-delay:.5s;
+}
+.go-xm-content .loading .load3{
+	-webkit-animation-name: loader3;
+	animation-name: loader3;
+	-webkit-animation-delay:1s;
+    animation-delay:1s;
+}
+.go-xm-content .loading .load4{
+	-webkit-animation-name: loader4;
+	animation-name: loader4;
+	-webkit-animation-delay:1.5s;
+    animation-delay:1.5s;
+}
+@-webkit-keyframes loader1{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes loader1{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@-webkit-keyframes loader2{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes loader2{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@-webkit-keyframes loader3{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes loader3{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@-webkit-keyframes loader4{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes loader4{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
+}
+
+/*充值成功*/
+.succeed-xm-content{height: auto; overflow: hidden; padding: 100px 240px 120px; background: #fff;}
+.succeed-xm-content .top{  line-height: 58px; padding-bottom: 20px; color: #333; font-size: 30px; text-align: center;}
+.succeed-xm-content .border-bottom{border-bottom: 1px solid #e9e9e9; }
+.succeed-xm-content .top p{display: inline-block; margin: 0 auto; *display: inline; *zoom:1;}
+.succeed-xm-content .top .ok-icon,.succeed-xm-content .top .failed-icon,.succeed-xm-content .top .warn-icon{width: 47px; height: 47px; vertical-align: -12px; display: inline-block; margin-right:10px; background: url("../../../images/member/Bank/xm_bank/ok-icon.png-v=20180726001.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/ok-icon.png?v=20180726001*/) no-repeat;}
+.succeed-xm-content .top .ok-icon{  background-position: 0 0;}
+.succeed-xm-content .top .warn-icon{background-position:-48px 0}
+.succeed-xm-content .top .failed-icon{background-position:-144px 0}
+
+
+
+.succeed-xm-content .bottom{/*margin-top: 35px;*/ height: auto; overflow: hidden; text-align: center;}
+.succeed-xm-content .bottom .money{display: inline-block; margin: 0 auto 46px; *display: inline; *zoom:1;}
+.succeed-xm-content .bottom .money p{color: #888; font-size: 16px;}
+.succeed-xm-content .bottom .money p span{color: #333}
+.succeed-xm-content .bottom .money .p1{padding-right: 40px; border-right: 1px solid #ccc}
+.succeed-xm-content .bottom .money .p2{padding-left: 40px;}
+.succeed-xm-content .bottom .count{clear: both; }
+.succeed-xm-content .bottom .count p{line-height: 40px; color: #999;}
+.succeed-xm-content .bottom .count .num{color: #ffbc1b;}
+.succeed-xm-content .bottom .count .btn{width: 366px; height: 52px; line-height: 52px; font-size: 18px; margin: 0 auto;-webkit-transition:all .3s linear; transition:all .3s linear;}
+.succeed-xm-content .info{padding-left: 115px;}
+.succeed-xm-content .info p{padding-bottom: 30px; color: #333; line-height: 26px;}
+.succeed-xm-content .info p b{font-size: 16px; }
+.succeed-xm-content .info p span{font-weight: 700; color: #ff9705}
+
+.succeed-xm-content .top .fail-icon{background-position: -48px 0}
+
+.XMCGQQ{font-weight: 700;
+    color: #fff;
+    width: 79px;
+    height: 24px;
+    padding-left: 26px;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+    color:#333;
+    background: url("../../../images/member/Bank/xm_bank/qq_btn.png-v=20170309001.png"/*tpa=https://js3.tuandai.com/images/member/Bank/xm_bank/qq_btn.png?v=20170309001*/) no-repeat;}
+.XMCGQQ:hover{color:#333;}
+
+/*20180801 银行卡已开通转账功能提示弹窗*/
+.open-transter-alert{text-align:center;}
+.open-transter-alert .title{text-align:left;}
+.open-transter-alert .btn-group{ display:inline-block; *width:300px; *display:inline; *zoom:1; }
+.open-transter-alert .btn-group a{font-size:16px;}
+.open-transter-alert .btn-group .ok-btn{float:right; margin-right:20px; *margin-right:10px;}
+
+
+

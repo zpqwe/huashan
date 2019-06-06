@@ -1,0 +1,281 @@
+.account_notice a:hover {
+    text-decoration: underline;
+}
+.recharge-content {
+    height: auto;
+    overflow: hidden;
+}
+.recharge-content .re-tabtit {
+    border-bottom: 1px solid #fe9b00;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.recharge-content .re-tabtit li {
+    border: 1px solid transparent;
+    cursor: pointer;
+    float: left;
+    line-height: 38px;
+    width: 128px;
+}
+.recharge-content .re-tabtit .on {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #fe9b00 #fe9b00 #fff;
+    border-image: none;
+    border-radius: 2px 2px 0 0;
+    border-style: solid;
+    border-width: 1px;
+    color: #333;
+    height: 37px;
+}
+.re-tabbox{ margin-top:25px;}
+.recharge-content .re-tabbox .hide {
+    display: none;
+}
+.recharge-content .re-tabbox .one-pay{
+    padding-bottom:20px;
+    border-bottom:1px solid #eee;
+}
+.recharge-content .re-tabbox .one-pay ul {
+    height: 155px;
+    overflow: hidden;
+}
+.re-tabbox .one-pay li {
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    padding: 6px 0;
+    position: relative;
+    text-align: center;
+    width: 190px;
+}
+.re-tabbox .one-pay li.last {
+    margin-right: 0;
+}
+.re-tabbox .one-pay li.sec, .re-tabbox .one-pay li:hover {
+    border: 1px solid #fe9b00;
+}
+.re-tabbox .one-pay li .current, .re-tabbox .three-pay li .current, .re-tabbox .one-pay .arrow {
+    background: rgba(0, 0, 0, 0) url("../images/onselect.png") no-repeat scroll 0 0;
+}
+.re-tabbox .one-pay li .current, .re-tabbox .three-pay li .current {
+    background-position: 0 0;
+    display: block;
+    height: 17px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 17px;
+}
+.re-tabbox .one-pay li p {
+    display: inline-block;
+    height: 29px;
+    margin: 0 auto;
+}
+.re-tabbox .one-pay li p img {
+    float: left;
+    height: 26px;
+    margin-top: 2px;
+}
+.re-tabbox .one-pay .company-icon {
+    background: rgba(0, 0, 0, 0) url("../images/company.png") no-repeat scroll 0 0;
+    display: inline-block;
+    float: left;
+    height: 16px;
+    margin-left: 4px;
+    margin-top: 8px;
+    width: 27px;
+}
+.re-tabbox .one-pay .more, .re-tabbox .one-pay .up {
+    background: #fff9ed none repeat scroll 0 0;
+    border: medium none;
+    color: #aa6504;
+    font-size: 14px;
+    height: 43px;
+    line-height: 43px;
+    padding: 0;
+    width: 194px;
+}
+.re-tabbox .one-pay .more:hover, .re-tabbox .one-pay .up:hover {
+    border: medium none;
+}
+.re-tabbox .one-pay .arrow {
+    display: inline-block;
+    height: 9px;
+    margin-left: 8px;
+    width: 14px;
+}
+.re-tabbox .one-pay .arrow-down {
+    background-position: 0 -40px;
+}
+.re-tabbox .one-pay .arrow-up {
+    background-position: 0 -23px;
+}
+.re-tabbox .two-pay ul {
+    height: auto;
+    overflow: hidden;
+}
+.re-tabbox .two-pay ul li {
+    border: 1px solid #fe9b00;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+    height: 31px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    padding: 6px 0;
+    text-align: center;
+    width: 218px;
+}
+.re-tabbox .two-pay li p {
+    display: inline-block;
+    *display: inline;
+    height: 31px;
+    margin: 0 auto;
+}
+.re-tabbox .two-pay li p img {
+    float: left;
+    height: 26px;
+    margin-top: 2px;
+}
+.re-tabbox .two-pay ul li span {
+    display: inline-block;
+    float: left;
+    line-height: 29px;
+    margin-left: 10px;
+}
+.re-tabbox .pay-intro {
+    height: auto;
+    margin-top: 13px;
+}
+.re-tabbox .pay-intro p {
+    line-height: 25px;
+}
+.re-tabbox .pay-intro p span {
+    color: #ff0000;
+}
+.re-tabbox .pay-intro a {
+    color: #37a5ff;
+}
+.re-tabbox .three-pay ul {
+    height: auto;
+    overflow: hidden;
+}
+.re-tabbox .three-pay ul li {
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+    height: 38px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    padding: 2px 0 3px;
+    position: relative;
+    text-align: center;
+    width: 190px;
+}
+.re-tabbox .three-pay li.on {
+    border: 1px solid #fe9b00;
+}
+.re-tabbox .three-pay .in-tabox {
+    height: auto;
+}
+.re-tabbox .three-pay .in-tabox .wechat {
+    padding-bottom: 15px;
+    padding-top: 13px;
+}
+.recharge-content .in-tabox table {
+    width: 695px;
+    margin-top: 30px;
+}
+.recharge-content .in-tabox table td {
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+    height: 26px;
+    text-align: center;
+}
+.recharge-content .pay-input-box {
+    margin-top: 49px;
+    margin-bottom:40px;
+}
+.recharge-content .pay-input-box .inputgroup label {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: top;
+    width: 76px;
+}
+.recharge-content .pay-input-box .inputgroup .text-input {
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5px;
+    width: 238px;
+}
+.recharge-content .error-mes {
+    color: #ff0000;
+    height: 39px;
+    line-height: 39px;
+    margin-left: 80px;
+    padding-left:3px;
+}
+.reg_wrong img{vertical-align:-5px;}
+.recharge-content .pay-input-box .btn {
+    padding-left: 80px;
+}
+.recharge-content .pay-input-box .btn a {
+    height: 40px;
+    line-height: 40px;
+    width: 160px;
+}
+
+/*20180731 充值转账 充值页面优化*/
+.bank-pay-status{ height:auto; padding:18px 33px 18px 18px; margin-top:25px; margin-bottom:24px; border:1px dashed #ddd; overflow:hidden;}
+.bank-pay-status p{ height:auto; overflow:hidden;}
+.bank-pay-status span{ float:left; display:block;}
+.bank-pay-status .i-o-tips,.bank-pay-status .i-selected{margin-top:4px; margin-right:9px; width:13px; height:13px; background:url("../images/member-icon.png") no-repeat;}
+.bank-pay-status .i-o-tips{background-position:0 -390px; }
+.bank-pay-status .opreat-text{ width:498px;}
+.bank-pay-status .opreate-btn{ width:160px; height:40px; line-height:40px; font-size:16px;}
+.bank-pay-status .i-selected{background-position:-15px -390px;}
+.bank-pay-limit{ margin-bottom:40px;}
+.bank-pay-status .i-mem-star{margin-top:4px; margin-right:7px; width:13px; height:13px;  background: url("../images/accountStar.png") 0 0 no-repeat;}
+.recharge-content .transfer-status p{color:#333; font-size:12px; line-height:20px;}
+.recharge-content .transfer-status i{color:#f00}
+.cgt-account-info{ margin-bottom:25px; border-collapse:collapse;}
+.cgt-account-info tr{ height:52px;}
+.cgt-account-info .tr-height1{ height:62px;}
+.cgt-account-info th,
+.cgt-account-info td{border:1px solid #ddd; text-align:center; color:#666;}
+.cgt-account-info th{font-size:16px; color:#333;}
+.cgt-account-info .tr-gray{background:#f9f9f9; font-weight:700; }
+.cgt-account-info .tr-gray td{color:#333;}
+.cgt-account-info .xm-sm-logo{display:inline-block; width:20px; height:20px; margin-right:8px; vertical-align:-3px; *vertical-align:0px; background:url("../images/xm-logo-1.png");}
+    
+    /*20180801 银行卡已开通转账功能提示弹窗*/
+.open-transter-alert1{text-align:center;}
+.open-transter-alert1 .title{text-align:left;}
+.open-transter-alert1 .btn-group{ display:inline-block; *width:300px; *display:inline; *zoom:1; }
+.open-transter-alert1 .btn-group a{font-size:16px;}
+.open-transter-alert1 .btn-group .ok-btn{float:right; margin-right:20px; *margin-right:10px;}
+
+/*20180806 网银额度设置*/
+.limit-bankname{ margin-top:40px; height:62px; line-height:62px; text-align:center; border:1px solid #ddd; border-bottom:0}
+.limit-bankname img{vertical-align:middle;}
+.limit-bank-table{background:#fff;}
+.limit-bank-table th{color:#333}
+.limit-bank-table td,.limit-bank-table th{ padding:18px 20px; border:1px solid #ddd; text-align:center; font-size:12px;}
+.limit-bank-tips{ padding-left:30px; height:53px; line-height:53px; color:#999; font-size:12px; border:1px solid #ddd; border-top:0}

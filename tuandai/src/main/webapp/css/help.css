@@ -1,0 +1,107 @@
+/* CSS Document */
+@charset "utf-8";
+.clearboth:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearboth{zoom:1}
+.pr0{ padding-right:0px !important;}
+.mr0{ margin-right:0px !important;}
+/* 帮助中心主页 */
+.search_container{ width:100%; height:168px; background:url(../images/help_searchbg01.png) #00a3ff center top no-repeat;}
+.search_container2{ width:100%; height:105px; background:url(../images/help_searchbg02.png) #00a3ff center top no-repeat;}
+.search_box{ width:880px; height:58px; margin:0px auto; padding:44px 0px 5px;}
+.search_box2{ height:53px; padding-top:26px;}
+.search_txt{ width:700px; height:30px; padding:14px 18px; border:none; background:url(../images/help_icon.png) 0px -72px no-repeat; line-height:30px; font-size:16px; color:#555;}
+.search_txt2{height:25px; line-height:25px; font-size:14px; background-position:0px -130px;}
+.search_btn{cursor: pointer; width:68px; height:30px; padding:14px 6px 14px 60px; background:url(../images/help_icon.png) -735px -72px no-repeat; display:block; font-size:20px; font-weight:bold; color:#FFF;}
+.search_btn:hover{ color:#FFF; background-position:-869px -72px;}
+.search_btn2{ height:25px;background-position:-735px -130px;}
+.search_btn2:hover{background-position:-869px -130px;}
+.search_keyword{ width:736px; padding-right:144px; height:24px; margin:5px auto; text-align:center;}
+.search_keyword a{ padding:0px 12px; color:#FFF; font-size:14px;}
+.search_keyword a:hover{ color:#ffe400;}
+.help_container{ width:1108px; height:auto; padding:0px 46px 70px; margin-top:20px;}
+.help_title{ height:40px; line-height:40px; color:#ff9600; font-size:16px; padding:20px 0px 0px 6px; border-bottom:#e5e5e5 solid 1px;}
+.help_hot{ width:1038px; height:120px; padding-top:25px;}
+.help_hot ul li{ float:left; width:320px; height:40px; line-height:40px; font-size:16px; padding-left:16px; background:url(../images/help_dian.png) 0px no-repeat;overflow: hidden; white-space:nowrap; text-overflow:ellipsis; margin-right:13px; }
+.help_self_service{ width:1038px; height:118px; padding-top:45px;}
+.help_self_service ul li{ width:72px; height:118px; float:left; padding-right:121px;}
+.help_self_service ul li i{ width:72px; height:72px; overflow:hidden; background:url(../images/help_icon.png) no-repeat; display:block;}
+.help_self_service ul li i.self_icon01{ background-position:0px 0px;}
+.help_self_service ul li i.self_icon02{ background-position:-72px 0px;}
+.help_self_service ul li i.self_icon03{ background-position:-144px 0px;}
+.help_self_service ul li i.self_icon04{ background-position:-216px 0px;}
+.help_self_service ul li i.self_icon05{ background-position:-288px 0px;}
+.help_self_service ul li i.self_icon06{ background-position:-360px 0px;}
+.help_self_service ul li a{ display:block; height:46px; line-height:46px; text-align:center; font-size:16px;}
+.help_FAQ{width:1038px; padding-top:40px;}
+.help_FAQBox{ width:444px;}
+.help_FAQBox dt,.help_contactusBox dt{ height:32px; line-height:32px; font-size:16px; color:#484848; font-weight:bold; background:#f2f2f2; padding:0px 15px;}
+.help_FAQBox dd{ padding:13px 15px 40px; font-size:14px; color:#666; line-height:34px;}
+.help_FAQBox dd span{ padding:0px 14px;}
+.help_FAQBox dd a{ display:inline-block;}
+.help_contactus01{ width:976px; height:110px; padding-top:36px;}
+.help_contactus01 dt{ width:826px;}
+.help_contactus01 dd{ width:126px; padding-top:52px;}
+.consult_btn{ width:126px; height:38px; display:block; line-height:38px; background:#ffbc1b; color:#FFF; text-align:center; font-size:16px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -ms-border-radius:3px;}
+.consult_btn:hover{ background:#ffa019; color:#FFF;}
+.help_contactus02{width:1038px; padding-top:62px;}
+.help_contactusBox{ width:262px;height:112px; padding-right:125px;}
+.help_contactusBox dd{ height:64px; padding:8px 15px; font-size:14px; color:#989898; line-height:28px;}
+.contactus_btn{width:88px; height:23px; margin-top:8px; display:block; line-height:22px; background:#fff; border:#29b5f7 solid 1px; color:#29b5f7; text-align:center; font-size:15px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -ms-border-radius:3px;}
+.contactus_btn:hover{ background:#29b5f7; color:#FFF;}
+
+/* 帮助中心二级页 */
+.helpContainer{ width:1200px; margin-top:15px;}
+.w218{ width:218px;}
+.w966{width:966px;}
+.w926{width:926px;}
+.left-side .first dd {display: block;}
+.left-side dl~ dl {margin-top: 0px;}
+.left-side dl {background: #fff;font-size: 14px;}
+.left-side dt {border-bottom: 1px solid #fff;line-height: 50px;height: 50px;color: #484848;text-indent: 73px;font-size: 16px;cursor: pointer;background: url(../images/down.png) 178px 24px no-repeat #f9f9f9;}
+.left-side dt.cur{background: url(../images/up.png) 178px 24px no-repeat #f9f9f9;}
+.left-side dt:hover i {transform: rotate(180deg);}
+.left-side dd {line-height: 45px;border-bottom:#f4f4f4 solid 1px;display: none;}
+.left-side dd a:hover,.left-side .left-selected {color: #ffad2c;margin-left: -1px;text-indent: 71px;border-left: 2px solid #ffad2c;}
+.left-side dd a,.left-side dt {display: block;text-indent: 72px;}
+.shareholder-icon{display: inline-block;*display: inline;background: url(../images/help_icon.png);}
+.left-arrow-down{height: 7px;width: 12px;margin-left: 42px;background-position: -470px 0px;}
+.left-arrow-up{height: 7px;width: 12px;margin-left: 42px;background-position: -458px 0px;}
+
+.help_rightTitle{ width:900px; height:46px; padding-left:26px; position:relative; font-size:20px; color:#333; border-bottom:#e6e6e6 solid 1px; margin-top:22px;}
+.h2-arrow {height:10px;width:19px;background-position:-439px 0;position:absolute;left:56px;top:37px;}
+.help_questions{ width:874px; margin:0px auto 10px;}
+.help_questionBox{ margin-top:30px;}
+.help_questionBox dt{ width:850px; padding:0px 12px; height:44px; line-height:44px; background:#f2f2f2; color:#666; font-size:14px; cursor:pointer; position:relative;}
+.help_questionBox dd{ padding:25px 35px 0px 35px;color:#666; font-size:14px; line-height:30px;}
+.help_questions .hide{display: none;}
+.help_questionBox dt i{display: inline-block;*display: inline;background: url(../images/help_icon.png);height: 7px;width: 12px;position:absolute;right:15px;top:18px;}
+.help_questionBox dt i.arrow-down{background-position: -470px 0px;}
+.help_questionBox dt i.arrow-up{background-position: -458px 0px;}
+.help_questionBox p img{max-width:800px;}
+.relate_problems{ width:874px; border-top:#e6e6e6 solid 1px;}
+.relate_title{ height:40px; font-size:16px; color:#ffad2c; line-height:40px; padding-bottom:5px;}
+.relate_list{ width:874px; height:80px; margin:0px auto 40px;}
+.relate_list ul li{ float:left; width:256px; margin-right:22px; height:40px; line-height:40px; font-size:16px; padding-left:16px; background:url(../images/help_dian.png) 0px no-repeat;overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.help_detail{ width:874px; margin:40px auto 50px; font-size:14px; color:#666; line-height:30px;}
+/* weixin二维码弹窗 */
+.weixinbox{ width:268px; height:332px; background:#FFF; position:fixed;  top:50%; left: 50%; margin-left: -134px; margin-top:-161px; z-index:1100;}
+.weixinboxclose{ width:28px; height:28px; position:absolute; top:-27px; right:-32px;}
+.weixinbox p{ text-align:center; padding-top:12px; font-size:14px; line-height:22px; color:#828282;}
+.weixinbox p span{ color:#ff9600;}
+.hidden{ display: none;}
+.mask{ height: 100%; width: 100%; background:url(../images/mask_bg.png) repeat; background: rgba(0,0,0,.5); position: fixed; top: 0; left: 0; z-index: 1000;}
+
+/*20170606001 首页社会责任入口*/
+.t-b .right-side .soc{color: #ff2929}
+.t-b .right-side .hot-icon{width: 33px; height: 13px; padding: 0; margin-right: 5px; vertical-align: -3px; display: inline-block; background: url("/dist/help/images/new-icon.png") no-repeat}
+.t-b .right-side .soc{color: #ff2929 !important}
+
+/*20170807001 认证图片重置*/
+.footer .security a {background: url(/dist/images/default/icon-verify.png) no-repeat !important;  }
+.footer .security .case1{background-position: 0 0 !important;}
+.footer .security .case2{background-position: -81px 0 !important;}
+.footer .security .case3{background-position: -162px 0 !important;}
+.footer .security .case4{background-position: -243px 0 !important;}
+.footer .security .case5{background-position: -324px 0 !important;}
+.footer .security .case6{background-position: -405px 0 !important;}
+.footer .security .case7{background-position: -486px 0 !important;}
